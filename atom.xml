@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>InitCool</title>
+  
+  <subtitle>陈列者立，不能者止</subtitle>
+  <link href="https://blog.nmslwsnd.com/atom.xml" rel="self"/>
+  
+  <link href="https://blog.nmslwsnd.com/"/>
+  <updated>2020-08-15T16:54:52.460Z</updated>
+  <id>https://blog.nmslwsnd.com/</id>
+  
+  <author>
+    <name>InitCool</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Powertoys功能介绍及使用教程</title>
+    <link href="https://blog.nmslwsnd.com/2020/08/16/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/"/>
+    <id>https://blog.nmslwsnd.com/2020/08/16/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/</id>
+    <published>2020-08-15T16:43:34.000Z</published>
+    <updated>2020-08-15T16:54:52.460Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;PowerToys 是微软最初发布于 Windows 95 平台的系统增强工具，这一项目在当时因为 Bug 多，功能不稳定，测试不严格，在安全审查中未能幸免，被微软从 Windows 系统移除。而现在，微软重启了该项目，并在 Github</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Windows下安装Hexo教程</title>
+    <link href="https://blog.nmslwsnd.com/2020/08/16/windows-xia-an-zhuang-hexo-jiao-cheng/"/>
+    <id>https://blog.nmslwsnd.com/2020/08/16/windows-xia-an-zhuang-hexo-jiao-cheng/</id>
+    <published>2020-08-15T16:43:08.000Z</published>
+    <updated>2020-08-15T16:49:45.366Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Hexo 是一个快速、简洁且高效的博客框架，本文笔者带大家安装 Hexo。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;安装前提&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Node.js:&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Centos8安装lychee图床，搭建属于你自己的图床！</title>
+    <link href="https://blog.nmslwsnd.com/2020/08/16/centos-an-zhuang-lychee-tu-chuang/"/>
+    <id>https://blog.nmslwsnd.com/2020/08/16/centos-an-zhuang-lychee-tu-chuang/</id>
+    <published>2020-08-15T16:42:47.000Z</published>
+    <updated>2020-08-15T16:47:20.414Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Lychee 是一款开源的图床，由 php 构建，该项目一直在 Github 更新，会 Docker 的同学也可以使用 Docker 进行构建。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;安装前提&quot;&gt;&lt;a href=&quot;#安装前提&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="CentOS" scheme="https://blog.nmslwsnd.com/tags/CentOS/"/>
+    
+    <category term="图床" scheme="https://blog.nmslwsnd.com/tags/%E5%9B%BE%E5%BA%8A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>个人常用软件汇总</title>
+    <link href="https://blog.nmslwsnd.com/2019/07/02/software-summary/"/>
+    <id>https://blog.nmslwsnd.com/2019/07/02/software-summary/</id>
+    <published>2019-07-01T16:15:26.000Z</published>
+    <updated>2019-07-01T16:32:54.000Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;视频&quot;&gt;&lt;a href=&quot;#视频&quot; class=&quot;headerlink&quot; title=&quot;视频&quot;&gt;&lt;/a&gt;视频&lt;/h1&gt;&lt;p id=&quot;div-border-left-red&quot;&gt;&lt;a href=&quot;http://potplayer.daum.net/?lang=zh_CN&quot;&gt;PotPlayer&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;音乐&quot;&gt;&lt;a href=&quot;#音乐&quot; class=&quot;headerlink&quot; title=&quot;音乐&quot;&gt;&lt;/a&gt;音乐&lt;/h1&gt;&lt;p id=&quot;div-border-left-red&quot;&gt;&lt;a href=&quot;https://www.spotify.com/&quot;&gt;Spotify&lt;/a&gt;&lt;/p&gt;
+&lt;p id=&quot;div-border-left-red&quot;&gt;&lt;a href=&quot;https://y.qq.com/&quot;&gt;QQ音乐&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;社交&quot;&gt;&lt;a href=&quot;#社交&quot; class=&quot;headerlink&quot; title=&quot;社交&quot;&gt;&lt;/a&gt;社交&lt;/h1&gt;&lt;p id=&quot;div-border-left-red&quot;&gt;Telegram&lt;/p&gt;
+&lt;p id=&quot;div-border-left-red&quot;&gt;Discord&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="汇总" scheme="https://blog.nmslwsnd.com/categories/%E6%B1%87%E6%80%BB/"/>
+    
+    
+    <category term="汇总" scheme="https://blog.nmslwsnd.com/tags/%E6%B1%87%E6%80%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS8安装并激活Office</title>
+    <link href="https://blog.nmslwsnd.com/2019/07/01/centos8-an-zhuang-bing-ji-huo-office/"/>
+    <id>https://blog.nmslwsnd.com/2019/07/01/centos8-an-zhuang-bing-ji-huo-office/</id>
+    <published>2019-07-01T10:58:35.000Z</published>
+    <updated>2020-08-15T17:46:16.736Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Key Management Service（简称：KMS），这个功能是在 Windows Vista 之后的产品中的一种新型产品激活机制，目的是为了 Microsoft 更好的遏制非法软件授权行为</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Centos" scheme="https://blog.nmslwsnd.com/tags/Centos/"/>
+    
+    <category term="office" scheme="https://blog.nmslwsnd.com/tags/office/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown基本语法</title>
+    <link href="https://blog.nmslwsnd.com/2019/07/01/markdown-ji-ben-yu-fa/"/>
+    <id>https://blog.nmslwsnd.com/2019/07/01/markdown-ji-ben-yu-fa/</id>
+    <published>2019-07-01T10:58:35.000Z</published>
+    <updated>2020-08-15T16:17:47.856Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，如今 Markdown 越来越受人欢迎，本文就向大家介绍一下 MarkDown</summary>
+        
+      
+    
+    
+    
+    
+    <category term="markdown" scheme="https://blog.nmslwsnd.com/tags/markdown/"/>
+    
+    <category term="语法" scheme="https://blog.nmslwsnd.com/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 文章内样式设置</title>
+    <link href="https://blog.nmslwsnd.com/2019/07/01/post-style-set/"/>
+    <id>https://blog.nmslwsnd.com/2019/07/01/post-style-set/</id>
+    <published>2019-07-01T10:58:35.000Z</published>
+    <updated>2020-08-15T15:58:16.427Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;文章内超链接样式设置&quot;&gt;&lt;a href=&quot;#文章内超链接样式设置&quot; class=&quot;headerlink&quot; title=&quot;文章内超链接样式设置&quot;&gt;&lt;/a&gt;文章内超链接样式设置&lt;/h1&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&amp;lt;section class=&amp;quot;link-braces&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;这是一个&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;超链接&amp;lt;/a&amp;gt;
+&amp;lt;/section&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span id=&quot;inline-blue&quot;&gt;Demo:&lt;/span&gt;&lt;/p&gt;
+&lt;section class=&quot;link-braces&quot;&gt;
+&lt;p&gt;这是一个&lt;a href=&quot;#&quot;&gt;超链接&lt;/a&gt;
+&lt;/section&gt;
+
+&lt;p&gt;需要注意的是，使用时需要在”a”标签前增加”p”标签进行分割。&lt;/p&gt;
+&lt;h1 id=&quot;文章内居中引用设置&quot;&gt;&lt;a href=&quot;#文章内居中引用设置&quot; class=&quot;headerlink&quot; title=&quot;文章内居中引用设置&quot;&gt;&lt;/a&gt;文章内居中引用设置&lt;/h1&gt;&lt;p&gt;将文章内部分内容自动居中，并加上引号。推荐单行使用。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;
+&amp;lt;!-- Html方式: 直接在 Markdown 文件中编写 Html 来调用 --&amp;gt;
+&amp;lt;!-- 其中 class=&amp;quot;blockquote-center&amp;quot; 是必须的 --&amp;gt;
+&amp;lt;blockquote class=&amp;quot;blockquote-center&amp;quot;&amp;gt;Html方式文本居中&amp;lt;/blockquote&amp;gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- Html方式: 直接在 Markdown 文件中编写 Html 来调用 --&gt;
+&lt;!-- 其中 class=&quot;blockquote-center&quot; 是必须的 --&gt;
+&lt;blockquote class=&quot;blockquote-center&quot;&gt;Html方式文本居中&lt;/blockquote&gt;
+
+&lt;!-- 标签方式 --&gt;
+
+
+&lt;!-- 标签简写 --&gt;</summary>
+    
+    
+    
+    
+    <category term="Hexo优化" scheme="https://blog.nmslwsnd.com/tags/Hexo%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Win10开启 Hyper-V 以及 Device Guard 和 Credential Guard</title>
+    <link href="https://blog.nmslwsnd.com/2019/05/28/win10-open-hyper-v/"/>
+    <id>https://blog.nmslwsnd.com/2019/05/28/win10-open-hyper-v/</id>
+    <published>2019-05-28T13:39:04.000Z</published>
+    <updated>2020-08-15T15:58:41.496Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;由于无良的网易MuMu模拟器关闭了Hyper-V,并且他们不提供开启Hyper-V的方法，笔者为大家提供教程来开启Hyper-V&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;cmd 或 powershell 下运行 Enable-WindowsOptionalFeature -Online</summary>
+        
+      
+    
+    
+    
+    <category term="Windows" scheme="https://blog.nmslwsnd.com/categories/Windows/"/>
+    
+    
+    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
+    
+    <category term="Hyper-V" scheme="https://blog.nmslwsnd.com/tags/Hyper-V/"/>
+    
+    <category term="Win10" scheme="https://blog.nmslwsnd.com/tags/Win10/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为你的网站加上小绿锁</title>
+    <link href="https://blog.nmslwsnd.com/2018/07/29/wei-ni-de-wang-zhan-jia-shang-xiao-lu-suo/"/>
+    <id>https://blog.nmslwsnd.com/2018/07/29/wei-ni-de-wang-zhan-jia-shang-xiao-lu-suo/</id>
+    <published>2018-07-29T10:39:09.000Z</published>
+    <updated>2018-07-29T11:29:40.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;使用Coding部署Blog站点添加https证书&quot;&gt;&lt;a href=&quot;#使用Coding部署Blog站点添加https证书&quot; class=&quot;headerlink&quot; title=&quot;使用Coding部署Blog站点添加https证书&quot;&gt;&lt;/a&gt;使用Coding部署Blog站点添加https证书&lt;/h2&gt;&lt;p&gt;进入Coding，在代码下，选择Pages服务。&lt;br&gt;&lt;img src=&quot;https://i.loli.net/2018/07/29/5b5d9adc4f513.png&quot; alt=&quot;9}PTMC[Q72%OEVZC(@D`2~X.png](https://i.loli.net/2018/07/29/5b5d9adc4f513.png)&quot;&gt;&lt;br&gt;在SSL/TLS 证书出，进行申请。（30分钟内只能申请一次，如果你的Blog同时部署至了GitHub和Coding，并且海外的线路解析至了GitHub，Coding申请证书的时候要把海外线路修改为Coding）&lt;/p&gt;
+&lt;h2 id=&quot;云服务器添加https证书&quot;&gt;&lt;a href=&quot;#云服务器添加https证书&quot; class=&quot;headerlink&quot; title=&quot;云服务器添加https证书&quot;&gt;&lt;/a&gt;云服务器添加https证书&lt;/h2&gt;&lt;p&gt;如果你使用的是云服务器，那么你需要先申请证书，在阿里云和腾讯云，都可以申请免费的证书。&lt;br&gt;申请证书，需要验证域名所有权，大致为文件验证（上传文件至指定目录）和DNS验证（添加DNS解析记录进行验证）。&lt;br&gt;证书申请完毕后，可进行下载证书。&lt;br&gt;下载得到的文件解压获得3个文件夹，分别是Apache、IIS、Nginx 服务器的证书文件。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="https" scheme="https://blog.nmslwsnd.com/tags/https/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>个人常用网站汇总</title>
+    <link href="https://blog.nmslwsnd.com/2017/05/12/website/"/>
+    <id>https://blog.nmslwsnd.com/2017/05/12/website/</id>
+    <published>2017-05-12T15:15:25.000Z</published>
+    <updated>2020-08-15T15:52:44.798Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;社区&quot;&gt;&lt;a href=&quot;#社区&quot; class=&quot;headerlink&quot; title=&quot;社区&quot;&gt;&lt;/a&gt;社区&lt;/h1&gt;&lt;p id=&quot;div-border-left-red&quot;&gt;&lt;a href=&quot;https://www.v2ex.com/&quot;&gt;V2EX: 汇集各类奇妙好玩的话题和流行动向的网站。&lt;/a&gt;&lt;/p&gt;
+&lt;p id=&quot;div-border-left-red&quot;&gt;&lt;a href=&quot;https://segmentfault.com/&quot;&gt;SegmentFault：纯粹、高质的技术交流的平台。&lt;/a&gt;&lt;/p&gt;
+&lt;p id=&quot;div-border-left-red&quot;&gt;&lt;a href=&quot;https://www.reddit.com/&quot;&gt;Reddit：提前于新闻发声，来自互联网的声音。&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;资讯&quot;&gt;&lt;a href=&quot;#资讯&quot; class=&quot;headerlink&quot; title=&quot;资讯&quot;&gt;&lt;/a&gt;资讯&lt;/h1&gt;&lt;p id=&quot;div-border-left-yellow&quot;&gt;&lt;a href=&quot;https://36kr.com/newsflashes&quot;&gt;36kr：让一部分人先看到未来。&lt;/a&gt;&lt;/p&gt;
+&lt;p id=&quot;div-border-left-yellow&quot;&gt;&lt;a href=&quot;https://www.iyingdi.com/&quot;&gt;旅法师营地：卡牌游戏资讯社区&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;h1 id=&quot;编程学习&quot;&gt;&lt;a href=&quot;#编程学习&quot; class=&quot;headerlink&quot; title=&quot;编程学习&quot;&gt;&lt;/a&gt;编程学习&lt;/h1&gt;&lt;p id=&quot;div-border-left-blue&quot;&gt;&lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/learn&quot;&gt;MDN：学习 Web 开发。&lt;/a&gt;&lt;/p&gt;
+&lt;p id=&quot;div-border-left-blue&quot;&gt;&lt;a href=&quot;https://www.w3school.com.cn/index.html&quot;&gt;W3school:W3c非官方中文站。&lt;/a&gt;&lt;/p&gt;
+&lt;p id=&quot;div-border-left-blue&quot;&gt;&lt;a href=&quot;https://www.icourse163.org/&quot;&gt;中国大学Mooc：可能是最好的中文Mooc。&lt;/a&gt;&lt;/p&gt;
+&lt;p id=&quot;div-border-left-blue&quot;&gt;&lt;a href=&quot;https://htmlreference.io/&quot;&gt;Htmlreference：通过实例学习Html。&lt;/a&gt;&lt;/p&gt;
+&lt;p id=&quot;div-border-left-blue&quot;&gt;&lt;a href=&quot;https://https://cssreference.io&quot;&gt;Cssreference：通过实例学习Css。&lt;/a&gt;&lt;/p&gt;
+&lt;p id=&quot;div-border-left-blue&quot;&gt;&lt;a href=&quot;https://www.shiyanlou.com/&quot;&gt;实验楼：IT在线编程及在线实训学习平台。&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="汇总" scheme="https://blog.nmslwsnd.com/categories/%E6%B1%87%E6%80%BB/"/>
+    
+    
+    <category term="汇总" scheme="https://blog.nmslwsnd.com/tags/%E6%B1%87%E6%80%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为你的网站加上小绿锁</title>
+    <link href="https://blog.nmslwsnd.com/2016/04/29/website-add-https/"/>
+    <id>https://blog.nmslwsnd.com/2016/04/29/website-add-https/</id>
+    <published>2016-04-29T13:39:04.000Z</published>
+    <updated>2019-07-01T14:49:42.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;使用Coding部署Blog站点添加https证书&quot;&gt;&lt;a href=&quot;#使用Coding部署Blog站点添加https证书&quot; class=&quot;headerlink&quot; title=&quot;使用Coding部署Blog站点添加https证书&quot;&gt;&lt;/a&gt;使用Coding部署Blog站点添加https证书&lt;/h2&gt;&lt;p&gt;进入Coding，在代码下，选择Pages服务。&lt;br&gt;&lt;img src=&quot;https://i.loli.net/2018/07/29/5b5d9adc4f513.png&quot; alt=&quot; &quot;&gt;&lt;br&gt;在SSL/TLS 证书出，进行申请。（30分钟内只能申请一次，如果你的Blog同时部署至了GitHub和Coding，并且海外的线路解析至了GitHub，Coding申请证书的时候要把海外线路修改为Coding）&lt;/p&gt;
+&lt;h2 id=&quot;云服务器添加https证书&quot;&gt;&lt;a href=&quot;#云服务器添加https证书&quot; class=&quot;headerlink&quot; title=&quot;云服务器添加https证书&quot;&gt;&lt;/a&gt;云服务器添加https证书&lt;/h2&gt;&lt;p&gt;如果你使用的是云服务器，那么你需要先申请证书，在阿里云和腾讯云，都可以申请免费的证书。&lt;br&gt;申请证书，需要验证域名所有权，大致为文件验证（上传文件至指定目录）和DNS验证（添加DNS解析记录进行验证）。&lt;br&gt;证书申请完毕后，可进行下载证书。&lt;br&gt;下载得到的文件解压获得3个文件夹，分别是Apache、IIS、Nginx 服务器的证书文件。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="https" scheme="https://blog.nmslwsnd.com/tags/https/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript学习日记02-JavaScript数据类型</title>
+    <link href="https://blog.nmslwsnd.com/2016/01/07/javascript-learning-diary-two/"/>
+    <id>https://blog.nmslwsnd.com/2016/01/07/javascript-learning-diary-two/</id>
+    <published>2016-01-07T13:39:04.000Z</published>
+    <updated>2019-07-01T14:20:36.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;ECMAScript-5种基本数据类型&quot;&gt;&lt;a href=&quot;#ECMAScript-5种基本数据类型&quot; class=&quot;headerlink&quot; title=&quot;ECMAScript 5种基本数据类型&quot;&gt;&lt;/a&gt;ECMAScript 5种基本数据类型&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;Undefined Null Boolean Number String&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Boolean&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;DATE TYPE&lt;/th&gt;
+&lt;th&gt;VALUES CONVERTED TO TRUE&lt;/th&gt;
+&lt;th&gt;VALUES CONVERTED TO  FALSE&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;Boolean&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;String&lt;/td&gt;
+&lt;td&gt;Any nonempty string&lt;/td&gt;
+&lt;td&gt;- -(empty string)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Number&lt;/td&gt;
+&lt;td&gt;Any nonzero number(including infinity)&lt;/td&gt;
+&lt;td&gt;0,NaN(See the “NaN” section later in this chapter.)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Object&lt;/td&gt;
+&lt;td&gt;Any object&lt;/td&gt;
+&lt;td&gt;null&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Undefind&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td&gt;undefind&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://blog.nmslwsnd.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/categories/%E5%AD%A6%E4%B9%A0/JavaScript/"/>
+    
+    
+    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/tags/JavaScript/"/>
+    
+    <category term="学习" scheme="https://blog.nmslwsnd.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="数据类型" scheme="https://blog.nmslwsnd.com/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript学习日记01-JavaScript基础知识</title>
+    <link href="https://blog.nmslwsnd.com/2016/01/06/javascript-learning-diary-one/"/>
+    <id>https://blog.nmslwsnd.com/2016/01/06/javascript-learning-diary-one/</id>
+    <published>2016-01-06T13:45:21.000Z</published>
+    <updated>2019-07-01T14:20:42.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;JavaScript三部分：&quot;&gt;&lt;a href=&quot;#JavaScript三部分：&quot; class=&quot;headerlink&quot; title=&quot;JavaScript三部分：&quot;&gt;&lt;/a&gt;JavaScript三部分：&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;ECMAScript&lt;/li&gt;
+&lt;li&gt;DOM&lt;/li&gt;
+&lt;li&gt;BOM&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;浏览器内核：&quot;&gt;&lt;a href=&quot;#浏览器内核：&quot; class=&quot;headerlink&quot; title=&quot;浏览器内核：&quot;&gt;&lt;/a&gt;浏览器内核：&lt;/h2&gt;&lt;h3 id=&quot;渲染引擎&quot;&gt;&lt;a href=&quot;#渲染引擎&quot; class=&quot;headerlink&quot; title=&quot;渲染引擎&quot;&gt;&lt;/a&gt;渲染引擎&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Blink&lt;/li&gt;
+&lt;li&gt;Webkit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;JavaScript引擎&quot;&gt;&lt;a href=&quot;#JavaScript引擎&quot; class=&quot;headerlink&quot; title=&quot;JavaScript引擎&quot;&gt;&lt;/a&gt;JavaScript引擎&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;V8&lt;/li&gt;
+&lt;li&gt;Chakra&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://blog.nmslwsnd.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/categories/%E5%AD%A6%E4%B9%A0/JavaScript/"/>
+    
+    
+    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/tags/JavaScript/"/>
+    
+    <category term="学习" scheme="https://blog.nmslwsnd.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="编程" scheme="https://blog.nmslwsnd.com/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="日记" scheme="https://blog.nmslwsnd.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="变量" scheme="https://blog.nmslwsnd.com/tags/%E5%8F%98%E9%87%8F/"/>
+    
+    <category term="严格模式" scheme="https://blog.nmslwsnd.com/tags/%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+</feed>
