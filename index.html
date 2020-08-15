@@ -531,6 +531,38 @@
                     
 
                     
+                        <link rel="stylesheet" href="/libs/dplayer/DPlayer.min.css">
+<div class="video-player">
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="dplayer" class="dplayer-video"
+                    ></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/dplayer/DPlayer.min.js"></script>
+<script>
+    $(function () {
+        new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: 'true' === 'true',
+            theme: '#42b983',
+            loop: 'false' === 'true',
+            lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
+            preload: 'auto',
+            volume: Number('0.5'),
+            video: {
+                url: 'https://img.vim-cn.com/86/b27a875a1e9cd3ecab17d288641ef450db8512.webm',
+                pic: '',
+                thumbnails: ''
+            }
+        });
+    });
+</script>
+
+                    
 
                     
                     <div id="recommend-sections" class="recommend">
@@ -585,6 +617,18 @@ PowerToys 是微软最初发布于 Windows 95 平台的系统增强工具，这�
                     </div>
 
                     
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/windows/">
+                            <span class="chip bg-color">windows</span>
+                        </a>
+                        
+                        <a href="/tags/powertoys/">
+                            <span class="chip bg-color">powertoys</span>
+                        </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
             
@@ -625,6 +669,18 @@ Git:https://git-scm.com/安装 Hexonpm install -g
                         </div>
                     </div>
 
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/windows/">
+                            <span class="chip bg-color">windows</span>
+                        </a>
+                        
+                        <a href="/tags/hexo/">
+                            <span class="chip bg-color">hexo</span>
+                        </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -748,7 +804,7 @@ Foxma
                     <a href="/2019/07/01/centos8-an-zhuang-bing-ji-huo-office/">
                         <div class="card-image">
                             
-                            <img src="https://i0.hdslb.com/bfs/article/47739e6588621212691e404938da1f42a23dc0d3.jpg" class="responsive-img" alt="CentOS8安装并激活Office">
+                            <img src="https://i.loli.net/2020/08/16/kRsvqYxANjSIymO.png" class="responsive-img" alt="CentOS8安装并激活Office">
                             
                             <span class="card-title">CentOS8安装并激活Office</span>
                         </div>
@@ -785,6 +841,56 @@ Key Management Service（简称：KMS），这个功能是在 Windows Vista 之�
                         
                         <a href="/tags/office/">
                             <span class="chip bg-color">office</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/07/01/markdown-ji-ben-yu-fa/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Markdown基本语法">
+                            
+                            <span class="card-title">Markdown基本语法</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，如今 Markdown 越来越受人欢迎，本文就向大家介绍一下 MarkDown 常用的一些语法。
+
+标题标题是 Mark
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-07-01
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                InitCool
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/markdown/">
+                            <span class="chip bg-color">markdown</span>
+                        </a>
+                        
+                        <a href="/tags/%E8%AF%AD%E6%B3%95/">
+                            <span class="chip bg-color">语法</span>
                         </a>
                         
                     </div>
@@ -836,56 +942,6 @@ Demo:
                         
                         <a href="/tags/Hexo%E4%BC%98%E5%8C%96/">
                             <span class="chip bg-color">Hexo优化</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2019/07/01/markdown-ji-ben-yu-fa/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Markdown基本语法">
-                            
-                            <span class="card-title">Markdown基本语法</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                
-Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，如今 Markdown 越来越受人欢迎，本文就向大家介绍一下 MarkDown 常用的一些语法。
-
-标题标题是 Mark
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-07-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                InitCool
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/markdown/">
-                            <span class="chip bg-color">markdown</span>
-                        </a>
-                        
-                        <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                            <span class="chip bg-color">语法</span>
                         </a>
                         
                     </div>
@@ -1116,7 +1172,7 @@ Reddit：提前于新闻发声，来自互联网的声音。
                    type="playlist"
                    id="7209763424"
                    fixed='true'
-                   autoplay='true'
+                   autoplay='false'
                    theme='#42b983'
                    loop='all'
                    order='random'

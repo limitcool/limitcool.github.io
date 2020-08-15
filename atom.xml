@@ -6,7 +6,7 @@
   <link href="https://blog.nmslwsnd.com/atom.xml" rel="self"/>
   
   <link href="https://blog.nmslwsnd.com/"/>
-  <updated>2020-08-15T16:54:52.460Z</updated>
+  <updated>2020-08-15T18:52:17.013Z</updated>
   <id>https://blog.nmslwsnd.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.nmslwsnd.com/2020/08/16/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/"/>
     <id>https://blog.nmslwsnd.com/2020/08/16/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/</id>
     <published>2020-08-15T16:43:34.000Z</published>
-    <updated>2020-08-15T16:54:52.460Z</updated>
+    <updated>2020-08-15T18:52:17.013Z</updated>
     
     
       
@@ -36,6 +36,10 @@
     
     
     
+    <category term="windows" scheme="https://blog.nmslwsnd.com/tags/windows/"/>
+    
+    <category term="powertoys" scheme="https://blog.nmslwsnd.com/tags/powertoys/"/>
+    
   </entry>
   
   <entry>
@@ -43,7 +47,7 @@
     <link href="https://blog.nmslwsnd.com/2020/08/16/windows-xia-an-zhuang-hexo-jiao-cheng/"/>
     <id>https://blog.nmslwsnd.com/2020/08/16/windows-xia-an-zhuang-hexo-jiao-cheng/</id>
     <published>2020-08-15T16:43:08.000Z</published>
-    <updated>2020-08-15T16:49:45.366Z</updated>
+    <updated>2020-08-15T18:52:11.069Z</updated>
     
     
       
@@ -61,6 +65,10 @@
     
     
     
+    
+    <category term="windows" scheme="https://blog.nmslwsnd.com/tags/windows/"/>
+    
+    <category term="hexo" scheme="https://blog.nmslwsnd.com/tags/hexo/"/>
     
   </entry>
   
@@ -122,7 +130,7 @@
     <link href="https://blog.nmslwsnd.com/2019/07/01/centos8-an-zhuang-bing-ji-huo-office/"/>
     <id>https://blog.nmslwsnd.com/2019/07/01/centos8-an-zhuang-bing-ji-huo-office/</id>
     <published>2019-07-01T10:58:35.000Z</published>
-    <updated>2020-08-15T17:46:16.736Z</updated>
+    <updated>2020-08-15T18:58:25.450Z</updated>
     
     
       
@@ -140,6 +148,32 @@
     <category term="Centos" scheme="https://blog.nmslwsnd.com/tags/Centos/"/>
     
     <category term="office" scheme="https://blog.nmslwsnd.com/tags/office/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown基本语法</title>
+    <link href="https://blog.nmslwsnd.com/2019/07/01/markdown-ji-ben-yu-fa/"/>
+    <id>https://blog.nmslwsnd.com/2019/07/01/markdown-ji-ben-yu-fa/</id>
+    <published>2019-07-01T10:58:35.000Z</published>
+    <updated>2020-08-15T16:17:47.856Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，如今 Markdown 越来越受人欢迎，本文就向大家介绍一下 MarkDown</summary>
+        
+      
+    
+    
+    
+    
+    <category term="markdown" scheme="https://blog.nmslwsnd.com/tags/markdown/"/>
+    
+    <category term="语法" scheme="https://blog.nmslwsnd.com/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
@@ -181,32 +215,6 @@
     
     
     <category term="Hexo优化" scheme="https://blog.nmslwsnd.com/tags/Hexo%E4%BC%98%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Markdown基本语法</title>
-    <link href="https://blog.nmslwsnd.com/2019/07/01/markdown-ji-ben-yu-fa/"/>
-    <id>https://blog.nmslwsnd.com/2019/07/01/markdown-ji-ben-yu-fa/</id>
-    <published>2019-07-01T10:58:35.000Z</published>
-    <updated>2020-08-15T16:17:47.856Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，如今 Markdown 越来越受人欢迎，本文就向大家介绍一下 MarkDown</summary>
-        
-      
-    
-    
-    
-    
-    <category term="markdown" scheme="https://blog.nmslwsnd.com/tags/markdown/"/>
-    
-    <category term="语法" scheme="https://blog.nmslwsnd.com/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
