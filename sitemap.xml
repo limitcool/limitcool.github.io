@@ -221,6 +221,13 @@
   </url>
   
   <url>
+    <loc>https://blog.nmslwsnd.com/tags/Hexo%E4%BC%98%E5%8C%96/</loc>
+    <lastmod>2020-08-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.nmslwsnd.com/tags/markdown/</loc>
     <lastmod>2020-08-16</lastmod>
     <changefreq>daily</changefreq>
@@ -229,20 +236,6 @@
   
   <url>
     <loc>https://blog.nmslwsnd.com/tags/%E8%AF%AD%E6%B3%95/</loc>
-    <lastmod>2020-08-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.nmslwsnd.com/tags/Hexo%E4%BC%98%E5%8C%96/</loc>
-    <lastmod>2020-08-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.nmslwsnd.com/tags/%E6%B1%87%E6%80%BB/</loc>
     <lastmod>2020-08-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -263,7 +256,7 @@
   </url>
   
   <url>
-    <loc>https://blog.nmslwsnd.com/tags/hexo/</loc>
+    <loc>https://blog.nmslwsnd.com/tags/%E6%B1%87%E6%80%BB/</loc>
     <lastmod>2020-08-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -285,6 +278,13 @@
   
   <url>
     <loc>https://blog.nmslwsnd.com/tags/Win10/</loc>
+    <lastmod>2020-08-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/hexo/</loc>
     <lastmod>2020-08-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
