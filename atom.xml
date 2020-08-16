@@ -18,8 +18,8 @@
   
   <entry>
     <title>Powertoys功能介绍及使用教程</title>
-    <link href="https://blog.nmslwsnd.com/2020/08/16/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/"/>
-    <id>https://blog.nmslwsnd.com/2020/08/16/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/</id>
+    <link href="https://blog.nmslwsnd.com/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/"/>
+    <id>https://blog.nmslwsnd.com/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/</id>
     <published>2020-08-15T16:43:34.000Z</published>
     <updated>2020-08-15T18:52:17.013Z</updated>
     
@@ -44,8 +44,8 @@
   
   <entry>
     <title>Windows下安装Hexo教程</title>
-    <link href="https://blog.nmslwsnd.com/2020/08/16/windows-xia-an-zhuang-hexo-jiao-cheng/"/>
-    <id>https://blog.nmslwsnd.com/2020/08/16/windows-xia-an-zhuang-hexo-jiao-cheng/</id>
+    <link href="https://blog.nmslwsnd.com/windows-xia-an-zhuang-hexo-jiao-cheng/"/>
+    <id>https://blog.nmslwsnd.com/windows-xia-an-zhuang-hexo-jiao-cheng/</id>
     <published>2020-08-15T16:43:08.000Z</published>
     <updated>2020-08-15T18:52:11.069Z</updated>
     
@@ -74,8 +74,8 @@
   
   <entry>
     <title>Centos8安装lychee图床，搭建属于你自己的图床！</title>
-    <link href="https://blog.nmslwsnd.com/2020/08/16/centos-an-zhuang-lychee-tu-chuang/"/>
-    <id>https://blog.nmslwsnd.com/2020/08/16/centos-an-zhuang-lychee-tu-chuang/</id>
+    <link href="https://blog.nmslwsnd.com/centos-an-zhuang-lychee-tu-chuang/"/>
+    <id>https://blog.nmslwsnd.com/centos-an-zhuang-lychee-tu-chuang/</id>
     <published>2020-08-15T16:42:47.000Z</published>
     <updated>2020-08-15T16:47:20.414Z</updated>
     
@@ -102,8 +102,8 @@
   
   <entry>
     <title>个人常用软件汇总</title>
-    <link href="https://blog.nmslwsnd.com/2019/07/02/software-summary/"/>
-    <id>https://blog.nmslwsnd.com/2019/07/02/software-summary/</id>
+    <link href="https://blog.nmslwsnd.com/software-summary/"/>
+    <id>https://blog.nmslwsnd.com/software-summary/</id>
     <published>2019-07-01T16:15:26.000Z</published>
     <updated>2019-07-01T16:32:54.000Z</updated>
     
@@ -127,8 +127,8 @@
   
   <entry>
     <title>CentOS8安装并激活Office</title>
-    <link href="https://blog.nmslwsnd.com/2019/07/01/centos8-an-zhuang-bing-ji-huo-office/"/>
-    <id>https://blog.nmslwsnd.com/2019/07/01/centos8-an-zhuang-bing-ji-huo-office/</id>
+    <link href="https://blog.nmslwsnd.com/centos8-an-zhuang-bing-ji-huo-office/"/>
+    <id>https://blog.nmslwsnd.com/centos8-an-zhuang-bing-ji-huo-office/</id>
     <published>2019-07-01T10:58:35.000Z</published>
     <updated>2020-08-15T18:58:25.450Z</updated>
     
@@ -153,8 +153,8 @@
   
   <entry>
     <title>Markdown基本语法</title>
-    <link href="https://blog.nmslwsnd.com/2019/07/01/markdown-ji-ben-yu-fa/"/>
-    <id>https://blog.nmslwsnd.com/2019/07/01/markdown-ji-ben-yu-fa/</id>
+    <link href="https://blog.nmslwsnd.com/markdown-ji-ben-yu-fa/"/>
+    <id>https://blog.nmslwsnd.com/markdown-ji-ben-yu-fa/</id>
     <published>2019-07-01T10:58:35.000Z</published>
     <updated>2020-08-15T16:17:47.856Z</updated>
     
@@ -179,8 +179,8 @@
   
   <entry>
     <title>Hexo 文章内样式设置</title>
-    <link href="https://blog.nmslwsnd.com/2019/07/01/post-style-set/"/>
-    <id>https://blog.nmslwsnd.com/2019/07/01/post-style-set/</id>
+    <link href="https://blog.nmslwsnd.com/post-style-set/"/>
+    <id>https://blog.nmslwsnd.com/post-style-set/</id>
     <published>2019-07-01T10:58:35.000Z</published>
     <updated>2020-08-15T19:19:44.280Z</updated>
     
@@ -220,8 +220,8 @@
   
   <entry>
     <title>Win10开启 Hyper-V 以及 Device Guard 和 Credential Guard</title>
-    <link href="https://blog.nmslwsnd.com/2019/05/28/win10-open-hyper-v/"/>
-    <id>https://blog.nmslwsnd.com/2019/05/28/win10-open-hyper-v/</id>
+    <link href="https://blog.nmslwsnd.com/win10-open-hyper-v/"/>
+    <id>https://blog.nmslwsnd.com/win10-open-hyper-v/</id>
     <published>2019-05-28T13:39:04.000Z</published>
     <updated>2020-08-15T15:58:41.496Z</updated>
     
@@ -251,8 +251,8 @@
   
   <entry>
     <title>为你的网站加上小绿锁</title>
-    <link href="https://blog.nmslwsnd.com/2018/07/29/wei-ni-de-wang-zhan-jia-shang-xiao-lu-suo/"/>
-    <id>https://blog.nmslwsnd.com/2018/07/29/wei-ni-de-wang-zhan-jia-shang-xiao-lu-suo/</id>
+    <link href="https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-jia-shang-xiao-lu-suo/"/>
+    <id>https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-jia-shang-xiao-lu-suo/</id>
     <published>2018-07-29T10:39:09.000Z</published>
     <updated>2018-07-29T11:29:40.000Z</updated>
     
@@ -269,8 +269,8 @@
   
   <entry>
     <title>个人常用网站汇总</title>
-    <link href="https://blog.nmslwsnd.com/2017/05/12/website/"/>
-    <id>https://blog.nmslwsnd.com/2017/05/12/website/</id>
+    <link href="https://blog.nmslwsnd.com/website/"/>
+    <id>https://blog.nmslwsnd.com/website/</id>
     <published>2017-05-12T15:15:25.000Z</published>
     <updated>2020-08-15T19:21:02.308Z</updated>
     
@@ -301,8 +301,8 @@
   
   <entry>
     <title>为你的网站加上小绿锁</title>
-    <link href="https://blog.nmslwsnd.com/2016/04/29/website-add-https/"/>
-    <id>https://blog.nmslwsnd.com/2016/04/29/website-add-https/</id>
+    <link href="https://blog.nmslwsnd.com/website-add-https/"/>
+    <id>https://blog.nmslwsnd.com/website-add-https/</id>
     <published>2016-04-29T13:39:04.000Z</published>
     <updated>2019-07-01T14:49:42.000Z</updated>
     
@@ -319,8 +319,8 @@
   
   <entry>
     <title>JavaScript学习日记02-JavaScript数据类型</title>
-    <link href="https://blog.nmslwsnd.com/2016/01/07/javascript-learning-diary-two/"/>
-    <id>https://blog.nmslwsnd.com/2016/01/07/javascript-learning-diary-two/</id>
+    <link href="https://blog.nmslwsnd.com/javascript-learning-diary-two/"/>
+    <id>https://blog.nmslwsnd.com/javascript-learning-diary-two/</id>
     <published>2016-01-07T13:39:04.000Z</published>
     <updated>2019-07-01T14:20:36.000Z</updated>
     
@@ -379,8 +379,8 @@
   
   <entry>
     <title>JavaScript学习日记01-JavaScript基础知识</title>
-    <link href="https://blog.nmslwsnd.com/2016/01/06/javascript-learning-diary-one/"/>
-    <id>https://blog.nmslwsnd.com/2016/01/06/javascript-learning-diary-one/</id>
+    <link href="https://blog.nmslwsnd.com/javascript-learning-diary-one/"/>
+    <id>https://blog.nmslwsnd.com/javascript-learning-diary-one/</id>
     <published>2016-01-06T13:45:21.000Z</published>
     <updated>2019-07-01T14:20:42.000Z</updated>
     
