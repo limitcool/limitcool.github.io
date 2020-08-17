@@ -6,7 +6,7 @@
   <link href="https://blog.nmslwsnd.com/atom.xml" rel="self"/>
   
   <link href="https://blog.nmslwsnd.com/"/>
-  <updated>2020-08-17T09:47:46.488Z</updated>
+  <updated>2020-08-17T11:32:00.706Z</updated>
   <id>https://blog.nmslwsnd.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Powertoys功能介绍及使用教程</title>
-    <link href="https://blog.nmslwsnd.com/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/"/>
-    <id>https://blog.nmslwsnd.com/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/</id>
-    <published>2020-08-15T16:43:34.000Z</published>
-    <updated>2020-08-17T09:47:46.488Z</updated>
+    <title>MPV快捷键大全</title>
+    <link href="https://blog.nmslwsnd.com/mpv-kuai-jie-jian-da-quan/"/>
+    <id>https://blog.nmslwsnd.com/mpv-kuai-jie-jian-da-quan/</id>
+    <published>2020-08-17T10:19:11.000Z</published>
+    <updated>2020-08-17T11:32:00.706Z</updated>
     
     
       
@@ -29,46 +29,45 @@
         
         
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;PowerToys 是微软最初发布于 Windows 95 平台的系统增强工具，这一项目在当时因为 Bug 多，功能不稳定，测试不严格，在安全审查中未能幸免，被微软从 Windows 系统移除。而现在，微软重启了该项目，并在 Github</summary>
+&lt;h3 id=&quot;MPV是基于MPlayer和mplayer2的媒体播放器。-它支持多种视频文件格式，音频和视频编解码器以及字幕类型。&quot;&gt;&lt;a</summary>
         
       
     
     
     
     
-    <category term="windows" scheme="https://blog.nmslwsnd.com/tags/windows/"/>
+    <category term="MPV" scheme="https://blog.nmslwsnd.com/tags/MPV/"/>
     
-    <category term="powertoys" scheme="https://blog.nmslwsnd.com/tags/powertoys/"/>
+    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
+    
+    <category term="视频播放器" scheme="https://blog.nmslwsnd.com/tags/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/"/>
     
   </entry>
   
   <entry>
-    <title>Windows下安装Hexo教程</title>
-    <link href="https://blog.nmslwsnd.com/windows-xia-an-zhuang-hexo-jiao-cheng/"/>
-    <id>https://blog.nmslwsnd.com/windows-xia-an-zhuang-hexo-jiao-cheng/</id>
-    <published>2020-08-15T16:43:08.000Z</published>
-    <updated>2020-08-15T18:52:11.069Z</updated>
+    <title>matery主题优化及常用设置</title>
+    <link href="https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/"/>
+    <id>https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/</id>
+    <published>2020-08-16T11:33:19.000Z</published>
+    <updated>2020-08-17T11:37:17.472Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Hexo 是一个快速、简洁且高效的博客框架，本文笔者带大家安装 Hexo。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;安装前提&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Node.js:&lt;a</summary>
+    <summary type="html">&lt;h3 id=&quot;Front-matter-选项详解&quot;&gt;&lt;a href=&quot;#Front-matter-选项详解&quot; class=&quot;headerlink&quot; title=&quot;Front-matter 选项详解&quot;&gt;&lt;/a&gt;Front-matter</summary>
         
       
     
     
     
     
-    <category term="windows" scheme="https://blog.nmslwsnd.com/tags/windows/"/>
+    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
     
-    <category term="hexo" scheme="https://blog.nmslwsnd.com/tags/hexo/"/>
+    <category term="Hexo" scheme="https://blog.nmslwsnd.com/tags/Hexo/"/>
+    
+    <category term="matery" scheme="https://blog.nmslwsnd.com/tags/matery/"/>
     
   </entry>
   
@@ -97,6 +96,32 @@
     <category term="CentOS" scheme="https://blog.nmslwsnd.com/tags/CentOS/"/>
     
     <category term="图床" scheme="https://blog.nmslwsnd.com/tags/%E5%9B%BE%E5%BA%8A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Powertoys功能介绍及使用教程</title>
+    <link href="https://blog.nmslwsnd.com/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/"/>
+    <id>https://blog.nmslwsnd.com/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/</id>
+    <published>2020-04-09T16:43:34.000Z</published>
+    <updated>2020-08-17T10:02:35.223Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;PowerToys 是微软最初发布于 Windows 95 平台的系统增强工具，这一项目在当时因为 Bug 多，功能不稳定，测试不严格，在安全审查中未能幸免，被微软从 Windows 系统移除。而现在，微软重启了该项目，并在 Github</summary>
+        
+      
+    
+    
+    
+    
+    <category term="windows" scheme="https://blog.nmslwsnd.com/tags/windows/"/>
+    
+    <category term="powertoys" scheme="https://blog.nmslwsnd.com/tags/powertoys/"/>
     
   </entry>
   
@@ -148,32 +173,6 @@
     <category term="Centos" scheme="https://blog.nmslwsnd.com/tags/Centos/"/>
     
     <category term="office" scheme="https://blog.nmslwsnd.com/tags/office/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Markdown基本语法</title>
-    <link href="https://blog.nmslwsnd.com/markdown-ji-ben-yu-fa/"/>
-    <id>https://blog.nmslwsnd.com/markdown-ji-ben-yu-fa/</id>
-    <published>2019-07-01T10:58:35.000Z</published>
-    <updated>2020-08-15T16:17:47.856Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，如今 Markdown 越来越受人欢迎，本文就向大家介绍一下 MarkDown</summary>
-        
-      
-    
-    
-    
-    
-    <category term="markdown" scheme="https://blog.nmslwsnd.com/tags/markdown/"/>
-    
-    <category term="语法" scheme="https://blog.nmslwsnd.com/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
@@ -253,8 +252,8 @@
     <title>为你的网站加上小绿锁</title>
     <link href="https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-jia-shang-xiao-lu-suo/"/>
     <id>https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-jia-shang-xiao-lu-suo/</id>
-    <published>2018-07-29T10:39:09.000Z</published>
-    <updated>2018-07-29T11:29:40.000Z</updated>
+    <published>2017-07-29T10:39:09.000Z</published>
+    <updated>2020-08-17T10:22:54.967Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;使用Coding部署Blog站点添加https证书&quot;&gt;&lt;a href=&quot;#使用Coding部署Blog站点添加https证书&quot; class=&quot;headerlink&quot; title=&quot;使用Coding部署Blog站点添加https证书&quot;&gt;&lt;/a&gt;使用Coding部署Blog站点添加https证书&lt;/h2&gt;&lt;p&gt;进入Coding，在代码下，选择Pages服务。&lt;br&gt;&lt;img src=&quot;https://i.loli.net/2018/07/29/5b5d9adc4f513.png&quot; alt=&quot;9}PTMC[Q72%OEVZC(@D`2~X.png](https://i.loli.net/2018/07/29/5b5d9adc4f513.png)&quot;&gt;&lt;br&gt;在SSL/TLS 证书出，进行申请。（30分钟内只能申请一次，如果你的Blog同时部署至了GitHub和Coding，并且海外的线路解析至了GitHub，Coding申请证书的时候要把海外线路修改为Coding）&lt;/p&gt;
@@ -296,6 +295,62 @@
     
     
     <category term="汇总" scheme="https://blog.nmslwsnd.com/tags/%E6%B1%87%E6%80%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown基本语法</title>
+    <link href="https://blog.nmslwsnd.com/markdown-ji-ben-yu-fa/"/>
+    <id>https://blog.nmslwsnd.com/markdown-ji-ben-yu-fa/</id>
+    <published>2017-02-05T10:58:35.000Z</published>
+    <updated>2020-08-17T10:15:24.422Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，如今 Markdown 越来越受人欢迎，本文就向大家介绍一下 MarkDown</summary>
+        
+      
+    
+    
+    
+    
+    <category term="markdown" scheme="https://blog.nmslwsnd.com/tags/markdown/"/>
+    
+    <category term="语法" scheme="https://blog.nmslwsnd.com/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows下安装Hexo教程</title>
+    <link href="https://blog.nmslwsnd.com/windows-xia-an-zhuang-hexo-jiao-cheng/"/>
+    <id>https://blog.nmslwsnd.com/windows-xia-an-zhuang-hexo-jiao-cheng/</id>
+    <published>2017-02-02T16:43:08.000Z</published>
+    <updated>2020-08-17T10:14:26.934Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Hexo 是一个快速、简洁且高效的博客框架，本文笔者带大家安装 Hexo。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;安装前提&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Node.js:&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="windows" scheme="https://blog.nmslwsnd.com/tags/windows/"/>
+    
+    <category term="hexo" scheme="https://blog.nmslwsnd.com/tags/hexo/"/>
     
   </entry>
   

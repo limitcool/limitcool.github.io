@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="为你的网站加上小绿锁, initcool blog">
+    <meta name="keywords" content="hexo,matery,matery优化">
     <meta name="description" content="We&#39;re all heroes if you catch us at the right moment.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>为你的网站加上小绿锁 | InitCool</title>
+    <title>matery主题优化及常用设置 | InitCool</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -397,12 +397,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">为你的网站加上小绿锁</h1>
+                    <h1 class="description center-align post-title">matery主题优化及常用设置</h1>
                 </div>
             </div>
         </div>
@@ -519,8 +519,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/https/">
-                                <span class="chip bg-color">https</span>
+                            <a href="/tags/Windows/">
+                                <span class="chip bg-color">Windows</span>
+                            </a>
+                        
+                            <a href="/tags/Hexo/">
+                                <span class="chip bg-color">Hexo</span>
+                            </a>
+                        
+                            <a href="/tags/matery/">
+                                <span class="chip bg-color">matery</span>
                             </a>
                         
                     </div>
@@ -535,7 +543,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2017-07-29
+                    2020-08-16
                 </div>
                 
 
@@ -549,14 +557,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    705
+                    543
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    2 分
                 </div>
                 
 
@@ -571,41 +579,91 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="使用Coding部署Blog站点添加https证书"><a href="#使用Coding部署Blog站点添加https证书" class="headerlink" title="使用Coding部署Blog站点添加https证书"></a>使用Coding部署Blog站点添加https证书</h2><p>进入Coding，在代码下，选择Pages服务。<br><img src="https://i.loli.net/2018/07/29/5b5d9adc4f513.png" alt="9}PTMC[Q72%OEVZC(@D`2~X.png](https://i.loli.net/2018/07/29/5b5d9adc4f513.png)"><br>在SSL/TLS 证书出，进行申请。（30分钟内只能申请一次，如果你的Blog同时部署至了GitHub和Coding，并且海外的线路解析至了GitHub，Coding申请证书的时候要把海外线路修改为Coding）</p>
-<h2 id="云服务器添加https证书"><a href="#云服务器添加https证书" class="headerlink" title="云服务器添加https证书"></a>云服务器添加https证书</h2><p>如果你使用的是云服务器，那么你需要先申请证书，在阿里云和腾讯云，都可以申请免费的证书。<br>申请证书，需要验证域名所有权，大致为文件验证（上传文件至指定目录）和DNS验证（添加DNS解析记录进行验证）。<br>证书申请完毕后，可进行下载证书。<br>下载得到的文件解压获得3个文件夹，分别是Apache、IIS、Nginx 服务器的证书文件。</p>
-<a id="more"></a>
-<p><strong><em>以下节选自<a target="_blank" rel="noopener" href="https://cloud.tencent.com/document/product/400/4143">腾讯云证书安装指引</a></em></strong></p>
-<h3 id="Apache-证书部署"><a href="#Apache-证书部署" class="headerlink" title="Apache 证书部署"></a>Apache 证书部署</h3><h4 id="获取证书"><a href="#获取证书" class="headerlink" title="获取证书"></a>获取证书</h4><p><em>Apache文件夹内获得证书文件 1_root_bundle.crt，2_<a target="_blank" rel="noopener" href="http://www.domain.com_cert.crt/">www.domain.com_cert.crt</a> 和私钥文件 3_<a target="_blank" rel="noopener" href="http://www.domain.com.key/">www.domain.com.key</a>,</em><br>1_root_bundle.crt 文件包括一段证书代码 “—–BEGIN CERTIFICATE—–”和“—–END CERTIFICATE—–”,<br>2_<a target="_blank" rel="noopener" href="http://www.domain.com_cert.crt/">www.domain.com_cert.crt</a> 文件包括一段证书代码 “—–BEGIN CERTIFICATE—–”和“—–END CERTIFICATE—–”,<br>3_<a target="_blank" rel="noopener" href="http://www.domain.com.key/">www.domain.com.key</a> 文件包括一段私钥代码“—–BEGIN RSA PRIVATE KEY—–”和“—–END RSA PRIVATE KEY—–”。</p>
-<h4 id="证书安装"><a href="#证书安装" class="headerlink" title="证书安装"></a>证书安装</h4><p>编辑Apache根目录下 conf/httpd.conf 文件，<br>找到 <code>#LoadModule ssl_module modules/mod_ssl.so</code> 和 <code>#Include conf/extra/httpd-ssl.conf</code>，去掉前面的#号注释；<br>编辑Apache根目录下 conf/extra/httpd-ssl.conf 文件，修改如下内容：</p>
-<pre><code>< VirtualHost 0.0.0.0:443>
-    DocumentRoot "/var/www/html"
-    ServerName www.domain.com
-    SSLEngine on
-    SSLCertificateFile /usr/local/apache/conf/2_www.domain.com_cert.crt
-    SSLCertificateKeyFile /usr/local/apache/conf/3_www.domain.com.key
-    SSLCertificateChainFile /usr/local/apache/conf/1_root_bundle.crt
-< /VirtualHost>
-</code></pre>
-<p>配置完成后，重新启动 Apache 就可以使用 <a target="_blank" rel="noopener" href="https://www.domain.com/">https://www.domain.com</a> 来访问了。</p>
-<h3 id="Nginx-证书部署"><a href="#Nginx-证书部署" class="headerlink" title="Nginx 证书部署"></a>Nginx 证书部署</h3><h4 id="获取证书-1"><a href="#获取证书-1" class="headerlink" title="获取证书"></a>获取证书</h4><p><em>Nginx文件夹内获得SSL证书文件 1_<a target="_blank" rel="noopener" href="http://www.domain.com_bundle.crt/">www.domain.com_bundle.crt</a> 和私钥文件 2_<a target="_blank" rel="noopener" href="http://www.domain.com.key/">www.domain.com.key</a>,</em><br>1_<a target="_blank" rel="noopener" href="http://www.domain.com_bundle.crt/">www.domain.com_bundle.crt</a> 文件包括两段证书代码 “—–BEGIN CERTIFICATE—–”和“—–END CERTIFICATE—–”,<br>2_<a target="_blank" rel="noopener" href="http://www.domain.com.key/">www.domain.com.key</a> 文件包括一段私钥代码“—–BEGIN RSA PRIVATE KEY—–”和“—–END RSA PRIVATE KEY—–”。</p>
-<h4 id="证书安装-1"><a href="#证书安装-1" class="headerlink" title="证书安装"></a>证书安装</h4><p>将域名 <a target="_blank" rel="noopener" href="http://www.domain.com/">www.domain.com</a> 的证书文件1_<a target="_blank" rel="noopener" href="http://www.domain.com_bundle.crt/">www.domain.com_bundle.crt</a> 、私钥文件2_<a target="_blank" rel="noopener" href="http://www.domain.com.key/">www.domain.com.key</a> 保存到同一个目录，例如/usr/local/nginx/conf 目录下。<br>更新Nginx根目录下 conf/nginx.conf 文件如下：</p>
-<pre><code>server &#123;
-        listen 443;
-        server_name www.domain.com; #填写绑定证书的域名
-        ssl on;
-        ssl_certificate 1_www.domain.com_bundle.crt;
-        ssl_certificate_key 2_www.domain.com.key;
-        ssl_session_timeout 5m;
-        ssl_protocols TLSv1 TLSv1.1 TLSv1.2; #按照这个协议配置
-        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;#按照这个套件配置
-        ssl_prefer_server_ciphers on;
-        location / &#123;
-            root   html; #站点目录
-            index  index.html index.htm;
-        &#125;
-    &#125;
-</code></pre>
-<p>配置完成后，先用bin/nginx –t来测试下配置是否有误，正确无误的话，重启nginx。就可以使 <a target="_blank" rel="noopener" href="https://www.domain.com/">https://www.domain.com</a> 来访问了。</p>
+                <h3 id="Front-matter-选项详解"><a href="#Front-matter-选项详解" class="headerlink" title="Front-matter 选项详解"></a>Front-matter 选项详解</h3><p><code>Front-matter</code> 选项中的所有内容均为<strong>非必填</strong>的。但原作者建议至少填写 <code>title</code> 和 <code>date</code> 的值。</p>
+<table>
+<thead>
+<tr>
+<th>配置选项</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>title</td>
+<td><code>Markdown</code> 的文件标题</td>
+<td>文章标题，强烈建议填写此选项</td>
+</tr>
+<tr>
+<td>date</td>
+<td>文件创建时的日期时间</td>
+<td>发布时间，强烈建议填写此选项，且最好保证全局唯一</td>
+</tr>
+<tr>
+<td>author</td>
+<td>根 <code>_config.yml</code> 中的 <code>author</code></td>
+<td>文章作者</td>
+</tr>
+<tr>
+<td>img</td>
+<td><code>featureImages</code> 中的某个值</td>
+<td>文章特征图，推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如: <code>http://xxx.com/xxx.jpg</code></td>
+</tr>
+<tr>
+<td>top</td>
+<td><code>true</code></td>
+<td>推荐文章（文章是否置顶），如果 <code>top</code> 值为 <code>true</code>，则会作为首页推荐文章</td>
+</tr>
+<tr>
+<td>cover</td>
+<td><code>false</code></td>
+<td><code>v1.0.2</code>版本新增，表示该文章是否需要加入到首页轮播封面中</td>
+</tr>
+<tr>
+<td>coverImg</td>
+<td>无</td>
+<td><code>v1.0.2</code>版本新增，表示该文章在首页轮播封面需要显示的图片路径，如果没有，则默认使用文章的特色图片</td>
+</tr>
+<tr>
+<td>password</td>
+<td>无</td>
+<td>文章阅读密码，如果要对文章设置阅读验证密码的话，就可以设置 <code>password</code> 的值，该值必须是用 <code>SHA256</code> 加密后的密码，防止被他人识破。前提是在主题的 <code>config.yml</code> 中激活了 <code>verifyPassword</code> 选项</td>
+</tr>
+<tr>
+<td>toc</td>
+<td><code>true</code></td>
+<td>是否开启 TOC，可以针对某篇文章单独关闭 TOC 的功能。前提是在主题的 <code>config.yml</code> 中激活了 <code>toc</code> 选项</td>
+</tr>
+<tr>
+<td>mathjax</td>
+<td><code>false</code></td>
+<td>是否开启数学公式支持 ，本文章是否开启 <code>mathjax</code>，且需要在主题的 <code>_config.yml</code> 文件中也需要开启才行</td>
+</tr>
+<tr>
+<td>summary</td>
+<td>无</td>
+<td>文章摘要，自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要</td>
+</tr>
+<tr>
+<td>categories</td>
+<td>无</td>
+<td>文章分类，本主题的分类表示宏观上大的分类，只建议一篇文章一个分类</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>无</td>
+<td>文章标签，一篇文章可以多个标签</td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>文章标题</td>
+<td>文章关键字，SEO 时需要</td>
+</tr>
+<tr>
+<td>reprintPolicy</td>
+<td>cc_by</td>
+<td>文章转载规则， 可以是 cc_by, cc_by_nd, cc_by_sa, cc_by_nc, cc_by_nc_nd, cc_by_nc_sa, cc0, noreprint 或 pay 中的一个</td>
+</tr>
+</tbody></table>
 
             </div>
             <hr/>
@@ -631,7 +689,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-jia-shang-xiao-lu-suo/">https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-jia-shang-xiao-lu-suo/</a>
+                    <a href="https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/">https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -669,8 +727,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/https/">
-                                    <span class="chip bg-color">https</span>
+                                <a href="/tags/Windows/">
+                                    <span class="chip bg-color">Windows</span>
+                                </a>
+                            
+                                <a href="/tags/Hexo/">
+                                    <span class="chip bg-color">Hexo</span>
+                                </a>
+                            
+                                <a href="/tags/matery/">
+                                    <span class="chip bg-color">matery</span>
                                 </a>
                             
                         </div>
@@ -1105,35 +1171,29 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/win10-open-hyper-v/">
+                <a href="/mpv-kuai-jie-jian-da-quan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Win10开启 Hyper-V 以及 Device Guard 和 Credential Guard">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="MPV快捷键大全">
                         
-                        <span class="card-title">Win10开启 Hyper-V 以及 Device Guard 和 Credential Guard</span>
+                        <span class="card-title">MPV快捷键大全</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            由于无良的网易MuMu模拟器关闭了Hyper-V,并且他们不提供开启Hyper-V的方法，笔者为大家提供教程来开启Hyper-V
-
-cmd 或 powershell 下运行 Enable-WindowsOptionalFeature -On
+                            MPV是基于MPlayer和mplayer2的媒体播放器。 它支持多种视频文件格式，音频和视频编解码器以及字幕类型。
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-05-28
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-17
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Windows/" class="post-category">
-                                    Windows
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            InitCool
                             
                         </span>
                     </div>
@@ -1141,16 +1201,16 @@ cmd 或 powershell 下运行 Enable-WindowsOptionalFeature -On
                 
                 <div class="card-action article-tags">
                     
+                    <a href="/tags/MPV/">
+                        <span class="chip bg-color">MPV</span>
+                    </a>
+                    
                     <a href="/tags/Windows/">
                         <span class="chip bg-color">Windows</span>
                     </a>
                     
-                    <a href="/tags/Hyper-V/">
-                        <span class="chip bg-color">Hyper-V</span>
-                    </a>
-                    
-                    <a href="/tags/Win10/">
-                        <span class="chip bg-color">Win10</span>
+                    <a href="/tags/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/">
+                        <span class="chip bg-color">视频播放器</span>
                     </a>
                     
                 </div>
@@ -1164,41 +1224,35 @@ cmd 或 powershell 下运行 Enable-WindowsOptionalFeature -On
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/website/">
+                <a href="/centos-an-zhuang-lychee-tu-chuang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="个人常用网站汇总">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Centos8安装lychee图床，搭建属于你自己的图床！">
                         
-                        <span class="card-title">个人常用网站汇总</span>
+                        <span class="card-title">Centos8安装lychee图床，搭建属于你自己的图床！</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            社区V2EX: 汇集各类奇妙好玩的话题和流行动向的网站。
-SegmentFault：纯粹、高质的技术交流的平台。
-Reddit：提前于新闻发声，来自互联网的声音。
+                            
+Lychee 是一款开源的图床，由 php 构建，该项目一直在 Github 更新，会 Docker 的同学也可以使用 Docker 进行构建。
 
-资讯36kr：让一部分人先看到未来。
-旅法师营地：卡牌游戏资讯社区
-
-
-编
+安装前提
+PHP7.3 或以上版本
+MySql 数据库
+安装以上 PHP 插件 sessi
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-05-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-16
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%B1%87%E6%80%BB/" class="post-category">
-                                    汇总
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            InitCool
                             
                         </span>
                     </div>
@@ -1206,8 +1260,12 @@ Reddit：提前于新闻发声，来自互联网的声音。
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%B1%87%E6%80%BB/">
-                        <span class="chip bg-color">汇总</span>
+                    <a href="/tags/CentOS/">
+                        <span class="chip bg-color">CentOS</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%9B%BE%E5%BA%8A/">
+                        <span class="chip bg-color">图床</span>
                     </a>
                     
                 </div>

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="为你的网站加上小绿锁, initcool blog">
+    <meta name="keywords" content="MPV快捷键大全, initcool blog">
     <meta name="description" content="We&#39;re all heroes if you catch us at the right moment.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>为你的网站加上小绿锁 | InitCool</title>
+    <title>MPV快捷键大全 | InitCool</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -397,12 +397,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">为你的网站加上小绿锁</h1>
+                    <h1 class="description center-align post-title">MPV快捷键大全</h1>
                 </div>
             </div>
         </div>
@@ -519,8 +519,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/https/">
-                                <span class="chip bg-color">https</span>
+                            <a href="/tags/MPV/">
+                                <span class="chip bg-color">MPV</span>
+                            </a>
+                        
+                            <a href="/tags/Windows/">
+                                <span class="chip bg-color">Windows</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/">
+                                <span class="chip bg-color">视频播放器</span>
                             </a>
                         
                     </div>
@@ -535,7 +543,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2017-07-29
+                    2020-08-17
                 </div>
                 
 
@@ -549,7 +557,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    705
+                    805
                 </div>
                 
 
@@ -571,41 +579,293 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="使用Coding部署Blog站点添加https证书"><a href="#使用Coding部署Blog站点添加https证书" class="headerlink" title="使用Coding部署Blog站点添加https证书"></a>使用Coding部署Blog站点添加https证书</h2><p>进入Coding，在代码下，选择Pages服务。<br><img src="https://i.loli.net/2018/07/29/5b5d9adc4f513.png" alt="9}PTMC[Q72%OEVZC(@D`2~X.png](https://i.loli.net/2018/07/29/5b5d9adc4f513.png)"><br>在SSL/TLS 证书出，进行申请。（30分钟内只能申请一次，如果你的Blog同时部署至了GitHub和Coding，并且海外的线路解析至了GitHub，Coding申请证书的时候要把海外线路修改为Coding）</p>
-<h2 id="云服务器添加https证书"><a href="#云服务器添加https证书" class="headerlink" title="云服务器添加https证书"></a>云服务器添加https证书</h2><p>如果你使用的是云服务器，那么你需要先申请证书，在阿里云和腾讯云，都可以申请免费的证书。<br>申请证书，需要验证域名所有权，大致为文件验证（上传文件至指定目录）和DNS验证（添加DNS解析记录进行验证）。<br>证书申请完毕后，可进行下载证书。<br>下载得到的文件解压获得3个文件夹，分别是Apache、IIS、Nginx 服务器的证书文件。</p>
-<a id="more"></a>
-<p><strong><em>以下节选自<a target="_blank" rel="noopener" href="https://cloud.tencent.com/document/product/400/4143">腾讯云证书安装指引</a></em></strong></p>
-<h3 id="Apache-证书部署"><a href="#Apache-证书部署" class="headerlink" title="Apache 证书部署"></a>Apache 证书部署</h3><h4 id="获取证书"><a href="#获取证书" class="headerlink" title="获取证书"></a>获取证书</h4><p><em>Apache文件夹内获得证书文件 1_root_bundle.crt，2_<a target="_blank" rel="noopener" href="http://www.domain.com_cert.crt/">www.domain.com_cert.crt</a> 和私钥文件 3_<a target="_blank" rel="noopener" href="http://www.domain.com.key/">www.domain.com.key</a>,</em><br>1_root_bundle.crt 文件包括一段证书代码 “—–BEGIN CERTIFICATE—–”和“—–END CERTIFICATE—–”,<br>2_<a target="_blank" rel="noopener" href="http://www.domain.com_cert.crt/">www.domain.com_cert.crt</a> 文件包括一段证书代码 “—–BEGIN CERTIFICATE—–”和“—–END CERTIFICATE—–”,<br>3_<a target="_blank" rel="noopener" href="http://www.domain.com.key/">www.domain.com.key</a> 文件包括一段私钥代码“—–BEGIN RSA PRIVATE KEY—–”和“—–END RSA PRIVATE KEY—–”。</p>
-<h4 id="证书安装"><a href="#证书安装" class="headerlink" title="证书安装"></a>证书安装</h4><p>编辑Apache根目录下 conf/httpd.conf 文件，<br>找到 <code>#LoadModule ssl_module modules/mod_ssl.so</code> 和 <code>#Include conf/extra/httpd-ssl.conf</code>，去掉前面的#号注释；<br>编辑Apache根目录下 conf/extra/httpd-ssl.conf 文件，修改如下内容：</p>
-<pre><code>< VirtualHost 0.0.0.0:443>
-    DocumentRoot "/var/www/html"
-    ServerName www.domain.com
-    SSLEngine on
-    SSLCertificateFile /usr/local/apache/conf/2_www.domain.com_cert.crt
-    SSLCertificateKeyFile /usr/local/apache/conf/3_www.domain.com.key
-    SSLCertificateChainFile /usr/local/apache/conf/1_root_bundle.crt
-< /VirtualHost>
-</code></pre>
-<p>配置完成后，重新启动 Apache 就可以使用 <a target="_blank" rel="noopener" href="https://www.domain.com/">https://www.domain.com</a> 来访问了。</p>
-<h3 id="Nginx-证书部署"><a href="#Nginx-证书部署" class="headerlink" title="Nginx 证书部署"></a>Nginx 证书部署</h3><h4 id="获取证书-1"><a href="#获取证书-1" class="headerlink" title="获取证书"></a>获取证书</h4><p><em>Nginx文件夹内获得SSL证书文件 1_<a target="_blank" rel="noopener" href="http://www.domain.com_bundle.crt/">www.domain.com_bundle.crt</a> 和私钥文件 2_<a target="_blank" rel="noopener" href="http://www.domain.com.key/">www.domain.com.key</a>,</em><br>1_<a target="_blank" rel="noopener" href="http://www.domain.com_bundle.crt/">www.domain.com_bundle.crt</a> 文件包括两段证书代码 “—–BEGIN CERTIFICATE—–”和“—–END CERTIFICATE—–”,<br>2_<a target="_blank" rel="noopener" href="http://www.domain.com.key/">www.domain.com.key</a> 文件包括一段私钥代码“—–BEGIN RSA PRIVATE KEY—–”和“—–END RSA PRIVATE KEY—–”。</p>
-<h4 id="证书安装-1"><a href="#证书安装-1" class="headerlink" title="证书安装"></a>证书安装</h4><p>将域名 <a target="_blank" rel="noopener" href="http://www.domain.com/">www.domain.com</a> 的证书文件1_<a target="_blank" rel="noopener" href="http://www.domain.com_bundle.crt/">www.domain.com_bundle.crt</a> 、私钥文件2_<a target="_blank" rel="noopener" href="http://www.domain.com.key/">www.domain.com.key</a> 保存到同一个目录，例如/usr/local/nginx/conf 目录下。<br>更新Nginx根目录下 conf/nginx.conf 文件如下：</p>
-<pre><code>server &#123;
-        listen 443;
-        server_name www.domain.com; #填写绑定证书的域名
-        ssl on;
-        ssl_certificate 1_www.domain.com_bundle.crt;
-        ssl_certificate_key 2_www.domain.com.key;
-        ssl_session_timeout 5m;
-        ssl_protocols TLSv1 TLSv1.1 TLSv1.2; #按照这个协议配置
-        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;#按照这个套件配置
-        ssl_prefer_server_ciphers on;
-        location / &#123;
-            root   html; #站点目录
-            index  index.html index.htm;
-        &#125;
-    &#125;
-</code></pre>
-<p>配置完成后，先用bin/nginx –t来测试下配置是否有误，正确无误的话，重启nginx。就可以使 <a target="_blank" rel="noopener" href="https://www.domain.com/">https://www.domain.com</a> 来访问了。</p>
+                <blockquote>
+<h3 id="MPV是基于MPlayer和mplayer2的媒体播放器。-它支持多种视频文件格式，音频和视频编解码器以及字幕类型。"><a href="#MPV是基于MPlayer和mplayer2的媒体播放器。-它支持多种视频文件格式，音频和视频编解码器以及字幕类型。" class="headerlink" title="MPV是基于MPlayer和mplayer2的媒体播放器。 它支持多种视频文件格式，音频和视频编解码器以及字幕类型。"></a>MPV是基于MPlayer和mplayer2的媒体播放器。 它支持多种视频文件格式，音频和视频编解码器以及字幕类型。</h3></blockquote>
+<h4 id="键盘控制"><a href="#键盘控制" class="headerlink" title="键盘控制"></a>键盘控制</h4><table>
+<thead>
+<tr>
+<th>键盘按键控制</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Left/左键</strong></td>
+<td>视频后退5秒</td>
+</tr>
+<tr>
+<td><strong>Right/右键</strong></td>
+<td>视频前进5秒</td>
+</tr>
+<tr>
+<td><strong>Shift+Left</strong></td>
+<td>视频前进1秒</td>
+</tr>
+<tr>
+<td><strong>Shift+Right</strong></td>
+<td>视频后退1秒</td>
+</tr>
+<tr>
+<td><strong>Ctrl+LEFT</strong></td>
+<td>查找上一个字幕</td>
+</tr>
+<tr>
+<td><strong>Ctrl+RIGHT</strong></td>
+<td>查找下一个字幕</td>
+</tr>
+<tr>
+<td><strong>Ctrl+Shift+Left/Ctrl+Shift+Right</strong></td>
+<td>调整字幕速度以匹配声道</td>
+</tr>
+<tr>
+<td><strong>[</strong> <strong>and</strong> <strong>]</strong></td>
+<td>降低10%的视频播放速度/增加10%的视频播放速度</td>
+</tr>
+<tr>
+<td><strong>{ and }</strong></td>
+<td>减少一半的视频播放速度/增加一半的视频播放速度</td>
+</tr>
+<tr>
+<td><strong>BACKSPACE</strong></td>
+<td>重置视频播放速度</td>
+</tr>
+<tr>
+<td><strong>Shift+Ctrl+BACKSPACE</strong></td>
+<td>标记当前视频播放位置</td>
+</tr>
+<tr>
+<td><strong>Shift+BACKSPACE</strong></td>
+<td>还原视频播放位置</td>
+</tr>
+<tr>
+<td><strong>&lt; and &gt;</strong></td>
+<td>在播放列表中后退/在播放列表中前进</td>
+</tr>
+<tr>
+<td><strong>ENTER</strong></td>
+<td>在播放列表中前进</td>
+</tr>
+<tr>
+<td><strong>p / SPACE</strong></td>
+<td>暂停视频播放</td>
+</tr>
+<tr>
+<td><strong>.</strong></td>
+<td>视频前进1帧</td>
+</tr>
+<tr>
+<td><strong>,</strong></td>
+<td>视频后退1帧</td>
+</tr>
+<tr>
+<td><strong>q</strong></td>
+<td>停止播放视频并退出MPV</td>
+</tr>
+<tr>
+<td><strong>Q</strong></td>
+<td>停止播放视频并退出MPV并保留视频位置</td>
+</tr>
+<tr>
+<td><strong>/ and *</strong></td>
+<td>减少音量/增加音量</td>
+</tr>
+<tr>
+<td><strong>9 and 0</strong></td>
+<td>减少音量/增加音量</td>
+</tr>
+<tr>
+<td><strong>m</strong></td>
+<td>静音</td>
+</tr>
+<tr>
+<td><strong>_</strong></td>
+<td>浏览视频源</td>
+</tr>
+<tr>
+<td><strong>#</strong></td>
+<td>浏览音轨</td>
+</tr>
+<tr>
+<td><strong>f</strong></td>
+<td>进入全屏模式 / CLI下使用 <strong>- -fs</strong></td>
+</tr>
+<tr>
+<td><strong>ESC</strong></td>
+<td>退出全屏模式</td>
+</tr>
+<tr>
+<td><strong>T</strong></td>
+<td>置顶播放窗口  / CLI下使用 <strong>- -ontop</strong></td>
+</tr>
+<tr>
+<td><strong>w and W</strong></td>
+<td>增加视频显示范围</td>
+</tr>
+<tr>
+<td><strong>o (长按)</strong></td>
+<td>显示进度条</td>
+</tr>
+<tr>
+<td><strong>O</strong></td>
+<td>显示进度条</td>
+</tr>
+<tr>
+<td><strong>v</strong></td>
+<td>显示字幕/隐藏字幕</td>
+</tr>
+<tr>
+<td><strong>j and J</strong></td>
+<td>循环播放可用的字幕</td>
+</tr>
+<tr>
+<td><strong>z and Z</strong></td>
+<td>调整字幕延迟 每次调整0.1秒</td>
+</tr>
+<tr>
+<td><strong>l</strong></td>
+<td>设置A-B视频循环点</td>
+</tr>
+<tr>
+<td><strong>L</strong></td>
+<td>设置无限循环<strong>（A-B视频）</strong></td>
+</tr>
+<tr>
+<td><strong>Ctrl + and Ctrl -</strong></td>
+<td>调整音频延迟 每次调整0.1秒</td>
+</tr>
+<tr>
+<td><strong>u</strong></td>
+<td>切换字幕样式</td>
+</tr>
+<tr>
+<td><strong>V</strong></td>
+<td>切换字幕样式 <strong>VSFilter</strong></td>
+</tr>
+<tr>
+<td><strong>r and R</strong></td>
+<td>上下移动字幕</td>
+</tr>
+<tr>
+<td><strong>s</strong></td>
+<td>生成截图 <strong>（不带字幕）</strong></td>
+</tr>
+<tr>
+<td><strong>S</strong></td>
+<td>生成截图 <strong>（带字幕）</strong></td>
+</tr>
+<tr>
+<td><strong>Ctrl s</strong></td>
+<td>生成截图 <strong>（带字幕，进度条）</strong></td>
+</tr>
+<tr>
+<td><strong>PGUP and PGDWN</strong></td>
+<td>切换至上一个视频的开头/切换至下一个视频的开头</td>
+</tr>
+<tr>
+<td><strong>Shift+PGUP and Shift+PGDWN</strong></td>
+<td>向前10分钟/向后10分钟</td>
+</tr>
+<tr>
+<td><strong>d</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>A</strong></td>
+<td>更改宽高比</td>
+</tr>
+<tr>
+<td><strong>Ctrl h</strong></td>
+<td>开启/关闭 硬件编码</td>
+</tr>
+<tr>
+<td><strong>Alt+LEFT, Alt+RIGHT, Alt+UP, Alt+DOWN</strong></td>
+<td>移动视频位置</td>
+</tr>
+<tr>
+<td><strong>Alt + and Alt -</strong></td>
+<td>更改视频缩放</td>
+</tr>
+<tr>
+<td><strong>Alt+BACKSPACE</strong></td>
+<td>重置平移/缩放设置</td>
+</tr>
+<tr>
+<td><strong>F8</strong></td>
+<td>显示视频在播放列表中的位置</td>
+</tr>
+<tr>
+<td><strong>F9</strong></td>
+<td>显示音轨和视频源</td>
+</tr>
+<tr>
+<td><strong>i and I</strong></td>
+<td>显示当前播放视频的信息</td>
+</tr>
+<tr>
+<td><strong>del</strong></td>
+<td>隐藏窗口上的鼠标及UI</td>
+</tr>
+<tr>
+<td><strong>`</strong></td>
+<td>显示控制台（按ESC退出）</td>
+</tr>
+<tr>
+<td><strong>1 and 2</strong></td>
+<td>调整对比度</td>
+</tr>
+<tr>
+<td><strong>3 and 4</strong></td>
+<td>调整亮度</td>
+</tr>
+<tr>
+<td><strong>5 and 6</strong></td>
+<td>调整gamma值</td>
+</tr>
+<tr>
+<td><strong>7 and 8</strong></td>
+<td>调整饱和度</td>
+</tr>
+<tr>
+<td><strong>Alt+0 (and command+0 on OSX)</strong></td>
+<td>将视频窗口调整为原始大小的一半</td>
+</tr>
+<tr>
+<td><strong>Alt+1 (and command+1 on OSX)</strong></td>
+<td>将视频窗口调整为原始大小</td>
+</tr>
+<tr>
+<td><strong>Alt+2 (and command+2 on OSX)</strong></td>
+<td>调整视频窗口的大小以使其原始大小增加一倍</td>
+</tr>
+</tbody></table>
+<h4 id="鼠标控制"><a href="#鼠标控制" class="headerlink" title="鼠标控制"></a>鼠标控制</h4><table>
+<thead>
+<tr>
+<th>鼠标控制</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>左键双击</strong></td>
+<td>切换全屏</td>
+</tr>
+<tr>
+<td><strong>右键双击</strong></td>
+<td>暂停/播放 视频</td>
+</tr>
+<tr>
+<td><strong>前进/后退</strong></td>
+<td>播放列表切换</td>
+</tr>
+<tr>
+<td><strong>鼠标上下滑轮</strong></td>
+<td>视频快进/后退 10秒</td>
+</tr>
+<tr>
+<td><strong>鼠标左右滑轮</strong></td>
+<td>减少音量/增加音量</td>
+</tr>
+</tbody></table>
+<p><strong>本文参考</strong>:<a target="_blank" rel="noopener" href="http://mpv.io/">MPV官网</a></p>
 
             </div>
             <hr/>
@@ -631,7 +891,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-jia-shang-xiao-lu-suo/">https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-jia-shang-xiao-lu-suo/</a>
+                    <a href="https://blog.nmslwsnd.com/mpv-kuai-jie-jian-da-quan/">https://blog.nmslwsnd.com/mpv-kuai-jie-jian-da-quan/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -669,8 +929,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/https/">
-                                    <span class="chip bg-color">https</span>
+                                <a href="/tags/MPV/">
+                                    <span class="chip bg-color">MPV</span>
+                                </a>
+                            
+                                <a href="/tags/Windows/">
+                                    <span class="chip bg-color">Windows</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/">
+                                    <span class="chip bg-color">视频播放器</span>
                                 </a>
                             
                         </div>
@@ -1101,56 +1369,52 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/win10-open-hyper-v/">
+                <a href="/mpv-kuai-jie-jian-da-quan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Win10开启 Hyper-V 以及 Device Guard 和 Credential Guard">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="MPV快捷键大全">
                         
-                        <span class="card-title">Win10开启 Hyper-V 以及 Device Guard 和 Credential Guard</span>
+                        <span class="card-title">MPV快捷键大全</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            由于无良的网易MuMu模拟器关闭了Hyper-V,并且他们不提供开启Hyper-V的方法，笔者为大家提供教程来开启Hyper-V
-
-cmd 或 powershell 下运行 Enable-WindowsOptionalFeature -On
+                            MPV是基于MPlayer和mplayer2的媒体播放器。 它支持多种视频文件格式，音频和视频编解码器以及字幕类型。
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-05-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-17
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Windows/" class="post-category">
-                                    Windows
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            InitCool
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
+                    
+                    <a href="/tags/MPV/">
+                        <span class="chip bg-color">MPV</span>
+                    </a>
                     
                     <a href="/tags/Windows/">
                         <span class="chip bg-color">Windows</span>
                     </a>
                     
-                    <a href="/tags/Hyper-V/">
-                        <span class="chip bg-color">Hyper-V</span>
-                    </a>
-                    
-                    <a href="/tags/Win10/">
-                        <span class="chip bg-color">Win10</span>
+                    <a href="/tags/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/">
+                        <span class="chip bg-color">视频播放器</span>
                     </a>
                     
                 </div>
@@ -1164,41 +1428,41 @@ cmd 或 powershell 下运行 Enable-WindowsOptionalFeature -On
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/website/">
+                <a href="/matery-zhu-ti-she-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="个人常用网站汇总">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="matery主题优化及常用设置">
                         
-                        <span class="card-title">个人常用网站汇总</span>
+                        <span class="card-title">matery主题优化及常用设置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            社区V2EX: 汇集各类奇妙好玩的话题和流行动向的网站。
-SegmentFault：纯粹、高质的技术交流的平台。
-Reddit：提前于新闻发声，来自互联网的声音。
-
-资讯36kr：让一部分人先看到未来。
-旅法师营地：卡牌游戏资讯社区
+                            Front-matter 选项详解Front-matter 选项中的所有内容均为非必填的。但原作者建议至少填写 title 和 date 的值。
 
 
-编
+
+配置选项
+默认值
+描述
+
+
+
+title
+Markdown 的文件标题
+文章标题，强烈建
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-05-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-16
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%B1%87%E6%80%BB/" class="post-category">
-                                    汇总
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            InitCool
                             
                         </span>
                     </div>
@@ -1206,8 +1470,16 @@ Reddit：提前于新闻发声，来自互联网的声音。
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%B1%87%E6%80%BB/">
-                        <span class="chip bg-color">汇总</span>
+                    <a href="/tags/Windows/">
+                        <span class="chip bg-color">Windows</span>
+                    </a>
+                    
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
+                    <a href="/tags/matery/">
+                        <span class="chip bg-color">matery</span>
                     </a>
                     
                 </div>

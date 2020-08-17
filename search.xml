@@ -4,19 +4,21 @@
   
     
     <entry>
-      <title>Powertoys功能介绍及使用教程</title>
-      <link href="/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/"/>
-      <url>/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/</url>
+      <title>MPV快捷键大全</title>
+      <link href="/mpv-kuai-jie-jian-da-quan/"/>
+      <url>/mpv-kuai-jie-jian-da-quan/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>PowerToys 是微软最初发布于 Windows 95 平台的系统增强工具，这一项目在当时因为 Bug 多，功能不稳定，测试不严格，在安全审查中未能幸免，被微软从 Windows 系统移除。而现在，微软重启了该项目，并在 Github 上开源，现已更新到了 0.16.1 版本。</p></blockquote><p>本文将向大家介绍 Powertoys 的功能和使用方式。</p><p>Powertoys 项目 Github 地址：<a href="https://github.com/microsoft/PowerToys">https://github.com/microsoft/PowerToys</a></p><h1 id="Powertoys"><a href="#Powertoys" class="headerlink" title="Powertoys"></a>Powertoys</h1><p><img src="https://i.loli.net/2020/04/20/V6BhISEt8FTmvkZ.png" alt="Powertoys设置页面"></p><p>为了更方便使用 Powertoys，我建议大家开启开机自动启动 Powertoys 功能。</p><h1 id="FancyZones"><a href="#FancyZones" class="headerlink" title="FancyZones"></a>FancyZones</h1><p><img src="https://i.loli.net/2020/04/20/EFwQmSK7psk6feq.png" alt="FancyZones设置页面"></p><p>FancyZones 的主要功能是对 Win 应用进行分屏排列，这个功能 Win10 是自带的，但是自带的分屏只可以将应用按照固定的规则进行排列，使用 FancyZone，可以更改排列规则，如需使用此功能，选定应用拖动时同时按下 Shift 即可使用 FancyZones 功能！</p><h1 id="File-Explorer"><a href="#File-Explorer" class="headerlink" title="File Explorer"></a>File Explorer</h1><p><img src="https://i.loli.net/2020/04/20/He7PAnDlfUZ4OCa.png" alt="资源管理器预览功能"></p><p>File Explore 功能开启后，可以在资源管理器中预览 SVG 图片和 Markdown 的效果，后续可能会增加其他文件的支持。<br>SVG预览效果.gif<br>SVG 预览效果.gif</p><h1 id="Image-Resizer"><a href="#Image-Resizer" class="headerlink" title="Image Resizer"></a>Image Resizer</h1><p><img src="https://i.loli.net/2020/04/20/VWc8CzUaGephwRi.png" alt="ImageResizer可以修改图片尺寸"></p><p>ImageResizer 可以快捷的修改图片尺寸，默认提供一些固定的尺寸，也可以自定义尺寸。<br><img src="https://github.com/microsoft/PowerToys/wiki/images/imageresizer/resizeSettings.gif" alt="ImageResizer效果演示"></p><h1 id="power-Rename"><a href="#power-Rename" class="headerlink" title="power Rename"></a>power Rename</h1><p>power Rename 功能可以进行文件批量重命名，方便快捷并支持正则表达式。<br><img src="https://raw.githubusercontent.com/wiki/microsoft/PowerToys/images/powerrename/PowerRenameDemo.gif" alt="power Rename效果演示"></p><h1 id="Windows-Key-Shortcut-Guide"><a href="#Windows-Key-Shortcut-Guide" class="headerlink" title="Windows Key Shortcut Guide"></a>Windows Key Shortcut Guide</h1><p>Windows Key Shortcut Guide 功能在长按 Win 键的时候会弹出 windows 快捷键使用教程。<br><img src="https://github.com/microsoft/PowerToys/wiki/images/shortcut_guide/usage.png" alt="Windows Key Shortcut Guide效果演示"></p><h1 id="Windows-Walker"><a href="#Windows-Walker" class="headerlink" title="Windows Walker"></a>Windows Walker</h1><p>Windows Walker 可以进行当前运行的应用搜索，使用方式为按下 ALT+SAPCE 键位。<br><img src="https://raw.githubusercontent.com/betsegaw/windowwalker/master/Window-Walker.gif" alt="Windows Walker效果演示"></p><h1 id="Color-Picker"><a href="#Color-Picker" class="headerlink" title="Color Picker"></a>Color Picker</h1><p><img src="https://github.com/microsoft/PowerToys/wiki/images/colorpicker/ColorPicker.gif" alt="颜色拾取器"></p><p>颜色拾取器通过Shift+Win+C开启，开启后可以拾取鼠标指针处的颜色！</p>]]></content>
+        <content type="html"><![CDATA[<blockquote><h3 id="MPV是基于MPlayer和mplayer2的媒体播放器。-它支持多种视频文件格式，音频和视频编解码器以及字幕类型。"><a href="#MPV是基于MPlayer和mplayer2的媒体播放器。-它支持多种视频文件格式，音频和视频编解码器以及字幕类型。" class="headerlink" title="MPV是基于MPlayer和mplayer2的媒体播放器。 它支持多种视频文件格式，音频和视频编解码器以及字幕类型。"></a>MPV是基于MPlayer和mplayer2的媒体播放器。 它支持多种视频文件格式，音频和视频编解码器以及字幕类型。</h3></blockquote><h4 id="键盘控制"><a href="#键盘控制" class="headerlink" title="键盘控制"></a>键盘控制</h4><table><thead><tr><th>键盘按键控制</th><th>效果</th></tr></thead><tbody><tr><td><strong>Left/左键</strong></td><td>视频后退5秒</td></tr><tr><td><strong>Right/右键</strong></td><td>视频前进5秒</td></tr><tr><td><strong>Shift+Left</strong></td><td>视频前进1秒</td></tr><tr><td><strong>Shift+Right</strong></td><td>视频后退1秒</td></tr><tr><td><strong>Ctrl+LEFT</strong></td><td>查找上一个字幕</td></tr><tr><td><strong>Ctrl+RIGHT</strong></td><td>查找下一个字幕</td></tr><tr><td><strong>Ctrl+Shift+Left/Ctrl+Shift+Right</strong></td><td>调整字幕速度以匹配声道</td></tr><tr><td><strong>[</strong> <strong>and</strong> <strong>]</strong></td><td>降低10%的视频播放速度/增加10%的视频播放速度</td></tr><tr><td><strong>{ and }</strong></td><td>减少一半的视频播放速度/增加一半的视频播放速度</td></tr><tr><td><strong>BACKSPACE</strong></td><td>重置视频播放速度</td></tr><tr><td><strong>Shift+Ctrl+BACKSPACE</strong></td><td>标记当前视频播放位置</td></tr><tr><td><strong>Shift+BACKSPACE</strong></td><td>还原视频播放位置</td></tr><tr><td><strong>&lt; and &gt;</strong></td><td>在播放列表中后退/在播放列表中前进</td></tr><tr><td><strong>ENTER</strong></td><td>在播放列表中前进</td></tr><tr><td><strong>p / SPACE</strong></td><td>暂停视频播放</td></tr><tr><td><strong>.</strong></td><td>视频前进1帧</td></tr><tr><td><strong>,</strong></td><td>视频后退1帧</td></tr><tr><td><strong>q</strong></td><td>停止播放视频并退出MPV</td></tr><tr><td><strong>Q</strong></td><td>停止播放视频并退出MPV并保留视频位置</td></tr><tr><td><strong>/ and *</strong></td><td>减少音量/增加音量</td></tr><tr><td><strong>9 and 0</strong></td><td>减少音量/增加音量</td></tr><tr><td><strong>m</strong></td><td>静音</td></tr><tr><td><strong>_</strong></td><td>浏览视频源</td></tr><tr><td><strong>#</strong></td><td>浏览音轨</td></tr><tr><td><strong>f</strong></td><td>进入全屏模式 / CLI下使用 <strong>- -fs</strong></td></tr><tr><td><strong>ESC</strong></td><td>退出全屏模式</td></tr><tr><td><strong>T</strong></td><td>置顶播放窗口  / CLI下使用 <strong>- -ontop</strong></td></tr><tr><td><strong>w and W</strong></td><td>增加视频显示范围</td></tr><tr><td><strong>o (长按)</strong></td><td>显示进度条</td></tr><tr><td><strong>O</strong></td><td>显示进度条</td></tr><tr><td><strong>v</strong></td><td>显示字幕/隐藏字幕</td></tr><tr><td><strong>j and J</strong></td><td>循环播放可用的字幕</td></tr><tr><td><strong>z and Z</strong></td><td>调整字幕延迟 每次调整0.1秒</td></tr><tr><td><strong>l</strong></td><td>设置A-B视频循环点</td></tr><tr><td><strong>L</strong></td><td>设置无限循环<strong>（A-B视频）</strong></td></tr><tr><td><strong>Ctrl + and Ctrl -</strong></td><td>调整音频延迟 每次调整0.1秒</td></tr><tr><td><strong>u</strong></td><td>切换字幕样式</td></tr><tr><td><strong>V</strong></td><td>切换字幕样式 <strong>VSFilter</strong></td></tr><tr><td><strong>r and R</strong></td><td>上下移动字幕</td></tr><tr><td><strong>s</strong></td><td>生成截图 <strong>（不带字幕）</strong></td></tr><tr><td><strong>S</strong></td><td>生成截图 <strong>（带字幕）</strong></td></tr><tr><td><strong>Ctrl s</strong></td><td>生成截图 <strong>（带字幕，进度条）</strong></td></tr><tr><td><strong>PGUP and PGDWN</strong></td><td>切换至上一个视频的开头/切换至下一个视频的开头</td></tr><tr><td><strong>Shift+PGUP and Shift+PGDWN</strong></td><td>向前10分钟/向后10分钟</td></tr><tr><td><strong>d</strong></td><td></td></tr><tr><td><strong>A</strong></td><td>更改宽高比</td></tr><tr><td><strong>Ctrl h</strong></td><td>开启/关闭 硬件编码</td></tr><tr><td><strong>Alt+LEFT, Alt+RIGHT, Alt+UP, Alt+DOWN</strong></td><td>移动视频位置</td></tr><tr><td><strong>Alt + and Alt -</strong></td><td>更改视频缩放</td></tr><tr><td><strong>Alt+BACKSPACE</strong></td><td>重置平移/缩放设置</td></tr><tr><td><strong>F8</strong></td><td>显示视频在播放列表中的位置</td></tr><tr><td><strong>F9</strong></td><td>显示音轨和视频源</td></tr><tr><td><strong>i and I</strong></td><td>显示当前播放视频的信息</td></tr><tr><td><strong>del</strong></td><td>隐藏窗口上的鼠标及UI</td></tr><tr><td><strong>`</strong></td><td>显示控制台（按ESC退出）</td></tr><tr><td><strong>1 and 2</strong></td><td>调整对比度</td></tr><tr><td><strong>3 and 4</strong></td><td>调整亮度</td></tr><tr><td><strong>5 and 6</strong></td><td>调整gamma值</td></tr><tr><td><strong>7 and 8</strong></td><td>调整饱和度</td></tr><tr><td><strong>Alt+0 (and command+0 on OSX)</strong></td><td>将视频窗口调整为原始大小的一半</td></tr><tr><td><strong>Alt+1 (and command+1 on OSX)</strong></td><td>将视频窗口调整为原始大小</td></tr><tr><td><strong>Alt+2 (and command+2 on OSX)</strong></td><td>调整视频窗口的大小以使其原始大小增加一倍</td></tr></tbody></table><h4 id="鼠标控制"><a href="#鼠标控制" class="headerlink" title="鼠标控制"></a>鼠标控制</h4><table><thead><tr><th>鼠标控制</th><th>效果</th></tr></thead><tbody><tr><td><strong>左键双击</strong></td><td>切换全屏</td></tr><tr><td><strong>右键双击</strong></td><td>暂停/播放 视频</td></tr><tr><td><strong>前进/后退</strong></td><td>播放列表切换</td></tr><tr><td><strong>鼠标上下滑轮</strong></td><td>视频快进/后退 10秒</td></tr><tr><td><strong>鼠标左右滑轮</strong></td><td>减少音量/增加音量</td></tr></tbody></table><p><strong>本文参考</strong>:<a href="http://mpv.io/">MPV官网</a></p>]]></content>
       
       
       
         <tags>
             
-            <tag> windows </tag>
+            <tag> MPV </tag>
             
-            <tag> powertoys </tag>
+            <tag> Windows </tag>
+            
+            <tag> 视频播放器 </tag>
             
         </tags>
       
@@ -25,19 +27,21 @@
     
     
     <entry>
-      <title>Windows下安装Hexo教程</title>
-      <link href="/windows-xia-an-zhuang-hexo-jiao-cheng/"/>
-      <url>/windows-xia-an-zhuang-hexo-jiao-cheng/</url>
+      <title>matery主题优化及常用设置</title>
+      <link href="/matery-zhu-ti-she-zhi/"/>
+      <url>/matery-zhu-ti-she-zhi/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>Hexo 是一个快速、简洁且高效的博客框架，本文笔者带大家安装 Hexo。</p></blockquote><p>安装前提</p><ul><li>Node.js:<a href="https://nodejs.org/">https://nodejs.org/</a></li><li>Git:<a href="https://git-scm.com/">https://git-scm.com/</a><h1 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h1><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g hexo-clihexo init <span class="token operator">&lt;</span><span class="token operator">></span> //<span class="token operator">&lt;</span><span class="token operator">></span>内填Hexo初始化目录，会自动新建目录。<span class="token function">cd</span> <span class="token operator">&lt;</span><span class="token operator">></span> //进入刚刚初始化的新目录<span class="token function">npm</span> <span class="token function">install</span> //进行安装</code></pre><h1 id="启动-Hexo"><a href="#启动-Hexo" class="headerlink" title="启动 Hexo"></a>启动 Hexo</h1>完成了安装 Hexo 步骤之后，便可以在本地启动 Hexo 了。<pre class=" language-bash"><code class="language-bash">hexo clean //清除缓存hexo g //生成静态文件hexo s //在本地部署Hexo</code></pre>执行 Hexo s 之后，Hexo 便会在本地运行，浏览器输入 127.0.0.1:4000 便可看到效果。</li></ul><h1 id="部署-Hexo-到-Github-或-Coding"><a href="#部署-Hexo-到-Github-或-Coding" class="headerlink" title="部署 Hexo 到 Github 或 Coding"></a>部署 Hexo 到 Github 或 Coding</h1><p>如需部署 hexo 到 Github 或 Coding，需要在 Hexo 根目录的_config.yml 文件内填写 Github 的仓库地址，并在 Git 中配置用户名及邮箱地址。</p><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#Hexo执行清除缓存，生成静态文件，以及推送到Github。</span>Hexo clean<span class="token operator">&amp;&amp;</span>hexo g<span class="token operator">&amp;&amp;</span>hexo d</code></pre>]]></content>
+        <content type="html"><![CDATA[<h3 id="Front-matter-选项详解"><a href="#Front-matter-选项详解" class="headerlink" title="Front-matter 选项详解"></a>Front-matter 选项详解</h3><p><code>Front-matter</code> 选项中的所有内容均为<strong>非必填</strong>的。但原作者建议至少填写 <code>title</code> 和 <code>date</code> 的值。</p><table><thead><tr><th>配置选项</th><th>默认值</th><th>描述</th></tr></thead><tbody><tr><td>title</td><td><code>Markdown</code> 的文件标题</td><td>文章标题，强烈建议填写此选项</td></tr><tr><td>date</td><td>文件创建时的日期时间</td><td>发布时间，强烈建议填写此选项，且最好保证全局唯一</td></tr><tr><td>author</td><td>根 <code>_config.yml</code> 中的 <code>author</code></td><td>文章作者</td></tr><tr><td>img</td><td><code>featureImages</code> 中的某个值</td><td>文章特征图，推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如: <code>http://xxx.com/xxx.jpg</code></td></tr><tr><td>top</td><td><code>true</code></td><td>推荐文章（文章是否置顶），如果 <code>top</code> 值为 <code>true</code>，则会作为首页推荐文章</td></tr><tr><td>cover</td><td><code>false</code></td><td><code>v1.0.2</code>版本新增，表示该文章是否需要加入到首页轮播封面中</td></tr><tr><td>coverImg</td><td>无</td><td><code>v1.0.2</code>版本新增，表示该文章在首页轮播封面需要显示的图片路径，如果没有，则默认使用文章的特色图片</td></tr><tr><td>password</td><td>无</td><td>文章阅读密码，如果要对文章设置阅读验证密码的话，就可以设置 <code>password</code> 的值，该值必须是用 <code>SHA256</code> 加密后的密码，防止被他人识破。前提是在主题的 <code>config.yml</code> 中激活了 <code>verifyPassword</code> 选项</td></tr><tr><td>toc</td><td><code>true</code></td><td>是否开启 TOC，可以针对某篇文章单独关闭 TOC 的功能。前提是在主题的 <code>config.yml</code> 中激活了 <code>toc</code> 选项</td></tr><tr><td>mathjax</td><td><code>false</code></td><td>是否开启数学公式支持 ，本文章是否开启 <code>mathjax</code>，且需要在主题的 <code>_config.yml</code> 文件中也需要开启才行</td></tr><tr><td>summary</td><td>无</td><td>文章摘要，自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要</td></tr><tr><td>categories</td><td>无</td><td>文章分类，本主题的分类表示宏观上大的分类，只建议一篇文章一个分类</td></tr><tr><td>tags</td><td>无</td><td>文章标签，一篇文章可以多个标签</td></tr><tr><td>keywords</td><td>文章标题</td><td>文章关键字，SEO 时需要</td></tr><tr><td>reprintPolicy</td><td>cc_by</td><td>文章转载规则， 可以是 cc_by, cc_by_nd, cc_by_sa, cc_by_nc, cc_by_nc_nd, cc_by_nc_sa, cc0, noreprint 或 pay 中的一个</td></tr></tbody></table>]]></content>
       
       
       
         <tags>
             
-            <tag> windows </tag>
+            <tag> Windows </tag>
             
-            <tag> hexo </tag>
+            <tag> Hexo </tag>
+            
+            <tag> matery </tag>
             
         </tags>
       
@@ -59,6 +63,27 @@
             <tag> CentOS </tag>
             
             <tag> 图床 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Powertoys功能介绍及使用教程</title>
+      <link href="/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/"/>
+      <url>/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>PowerToys 是微软最初发布于 Windows 95 平台的系统增强工具，这一项目在当时因为 Bug 多，功能不稳定，测试不严格，在安全审查中未能幸免，被微软从 Windows 系统移除。而现在，微软重启了该项目，并在 Github 上开源，现已更新到了 0.16.1 版本。</p></blockquote><p>本文将向大家介绍 Powertoys 的功能和使用方式。</p><p>Powertoys 项目 Github 地址：<a href="https://github.com/microsoft/PowerToys">https://github.com/microsoft/PowerToys</a></p><h1 id="Powertoys"><a href="#Powertoys" class="headerlink" title="Powertoys"></a>Powertoys</h1><p><img src="https://i.loli.net/2020/04/20/V6BhISEt8FTmvkZ.png" alt="Powertoys设置页面"></p><p>为了更方便使用 Powertoys，我建议大家开启开机自动启动 Powertoys 功能。</p><h1 id="FancyZones"><a href="#FancyZones" class="headerlink" title="FancyZones"></a>FancyZones</h1><p><img src="https://i.loli.net/2020/04/20/EFwQmSK7psk6feq.png" alt="FancyZones设置页面"></p><p>FancyZones 的主要功能是对 Win 应用进行分屏排列，这个功能 Win10 是自带的，但是自带的分屏只可以将应用按照固定的规则进行排列，使用 FancyZone，可以更改排列规则，如需使用此功能，选定应用拖动时同时按下 Shift 即可使用 FancyZones 功能！</p><h1 id="File-Explorer"><a href="#File-Explorer" class="headerlink" title="File Explorer"></a>File Explorer</h1><p><img src="https://i.loli.net/2020/04/20/He7PAnDlfUZ4OCa.png" alt="资源管理器预览功能"></p><p>File Explore 功能开启后，可以在资源管理器中预览 SVG 图片和 Markdown 的效果，后续可能会增加其他文件的支持。<br>SVG预览效果.gif<br>SVG 预览效果.gif</p><h1 id="Image-Resizer"><a href="#Image-Resizer" class="headerlink" title="Image Resizer"></a>Image Resizer</h1><p><img src="https://i.loli.net/2020/04/20/VWc8CzUaGephwRi.png" alt="ImageResizer可以修改图片尺寸"></p><p>ImageResizer 可以快捷的修改图片尺寸，默认提供一些固定的尺寸，也可以自定义尺寸。<br><img src="https://github.com/microsoft/PowerToys/wiki/images/imageresizer/resizeSettings.gif" alt="ImageResizer效果演示"></p><h1 id="power-Rename"><a href="#power-Rename" class="headerlink" title="power Rename"></a>power Rename</h1><p>power Rename 功能可以进行文件批量重命名，方便快捷并支持正则表达式。<br><img src="https://raw.githubusercontent.com/wiki/microsoft/PowerToys/images/powerrename/PowerRenameDemo.gif" alt="power Rename效果演示"></p><h1 id="Windows-Key-Shortcut-Guide"><a href="#Windows-Key-Shortcut-Guide" class="headerlink" title="Windows Key Shortcut Guide"></a>Windows Key Shortcut Guide</h1><p>Windows Key Shortcut Guide 功能在长按 Win 键的时候会弹出 windows 快捷键使用教程。（也可以使用Shift+Win+？开启）<br><img src="https://github.com/microsoft/PowerToys/wiki/images/shortcut_guide/usage.png" alt="Windows Key Shortcut Guide效果演示"></p><h1 id="Windows-Walker"><a href="#Windows-Walker" class="headerlink" title="Windows Walker"></a>Windows Walker</h1><p>Windows Walker 可以进行当前运行的应用搜索，使用方式为按下 ALT+SAPCE 键位。<br><img src="https://raw.githubusercontent.com/betsegaw/windowwalker/master/Window-Walker.gif" alt="Windows Walker效果演示"></p><h1 id="Color-Picker"><a href="#Color-Picker" class="headerlink" title="Color Picker"></a>Color Picker</h1><p>颜色拾取器通过Shift+Win+C开启，开启后可以拾取鼠标指针处的颜色！</p><p><img src="https://github.com/microsoft/PowerToys/wiki/images/colorpicker/ColorPicker.gif" alt="颜色拾取器效果展示"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> windows </tag>
+            
+            <tag> powertoys </tag>
             
         </tags>
       
@@ -105,27 +130,6 @@
             <tag> Centos </tag>
             
             <tag> office </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Markdown基本语法</title>
-      <link href="/markdown-ji-ben-yu-fa/"/>
-      <url>/markdown-ji-ben-yu-fa/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，如今 Markdown 越来越受人欢迎，本文就向大家介绍一下 MarkDown 常用的一些语法。</p></blockquote><p>标题<br>标题是 Markdown 中非常常用的格式，只要在文本前，添加 #空格，就可以将文本定义为标题了，总共六级标题，每多一级便多一个 #。</p><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>列表<br>和 HTML 一样，MarkDown 也是存在无序列表和有序列表的。</p><p>无序列表<br>无序列表只需在文本前，前缀 - 或者 *，即可将文本定义为无序列表。</p><ul><li>苹果</li><li>香蕉</li><li>牛奶<br>有序列表<br>有序列表只需在文本前，前缀序号，例如 1.、2.、3., 即可将文本定义为有序列表。</li></ul><ol><li>苹果</li><li>香蕉</li><li>牛奶<br>字体<br>斜体<br>需要斜体的文本，在前后均使用 * 即可对文本进行倾斜。</li></ol><p><em>斜体效果</em></p><p>加粗<br>需要加粗的文本，在前后均使用 ** 即可对文本进行加粗。</p><p><strong>加粗效果</strong></p><p>斜体加粗<br>若要同时使用斜体和加粗效果，在前后均使用 *** 即可对文本进行倾斜和加粗的效果。</p><p><strong><em>倾斜和加粗同时使用</em></strong></p><p>删除线<br>需要使用删除线的文本，在前后均使用～～即可对文本添加删除线效果。</p><p><code>删除线效果</code></p><p>分割线<br>分割线需要三个 *** 即可实现分割线的效果，以下为分割线效果。</p><hr><p>引用<br>如果你需要使用用引用的格式，则需要在文本前增加 &gt;（大于号）即可实现引用效果</p><blockquote><p>引用效果</p></blockquote><p>代码<br>如果你需要将一块文本定义为代码，则需要使用3个<code>，并用三个</code>进行结尾，可在`后指定代码语言。</p><pre><code>代码效果</code></pre><p>表格<br>表头|表头|表头<br>-|:-:|-:<br>内容|内容|内容<br>内容|内容|内容<br>第二行用 - 分割表头和内容。<br>文字默认居左</p><ul><li>两边加：表示文字居中</li><li>右边加：表示文字居右</li></ul><table><thead><tr><th>水果</th><th align="left">家电</th></tr></thead><tbody><tr><td>香蕉</td><td align="left">手机</td></tr><tr><td>牛奶</td><td align="left">电脑</td></tr><tr><td>苹果</td><td align="left">冰箱</td></tr></tbody></table>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> markdown </tag>
-            
-            <tag> 语法 </tag>
             
         </tags>
       
@@ -218,6 +222,48 @@
         <tags>
             
             <tag> 汇总 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown基本语法</title>
+      <link href="/markdown-ji-ben-yu-fa/"/>
+      <url>/markdown-ji-ben-yu-fa/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，如今 Markdown 越来越受人欢迎，本文就向大家介绍一下 MarkDown 常用的一些语法。</p></blockquote><p>标题<br>标题是 Markdown 中非常常用的格式，只要在文本前，添加 #空格，就可以将文本定义为标题了，总共六级标题，每多一级便多一个 #。</p><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>列表<br>和 HTML 一样，MarkDown 也是存在无序列表和有序列表的。</p><p>无序列表<br>无序列表只需在文本前，前缀 - 或者 *，即可将文本定义为无序列表。</p><ul><li>苹果</li><li>香蕉</li><li>牛奶<br>有序列表<br>有序列表只需在文本前，前缀序号，例如 1.、2.、3., 即可将文本定义为有序列表。</li></ul><ol><li>苹果</li><li>香蕉</li><li>牛奶<br>字体<br>斜体<br>需要斜体的文本，在前后均使用 * 即可对文本进行倾斜。</li></ol><p><em>斜体效果</em></p><p>加粗<br>需要加粗的文本，在前后均使用 ** 即可对文本进行加粗。</p><p><strong>加粗效果</strong></p><p>斜体加粗<br>若要同时使用斜体和加粗效果，在前后均使用 *** 即可对文本进行倾斜和加粗的效果。</p><p><strong><em>倾斜和加粗同时使用</em></strong></p><p>删除线<br>需要使用删除线的文本，在前后均使用～～即可对文本添加删除线效果。</p><p><code>删除线效果</code></p><p>分割线<br>分割线需要三个 *** 即可实现分割线的效果，以下为分割线效果。</p><hr><p>引用<br>如果你需要使用用引用的格式，则需要在文本前增加 &gt;（大于号）即可实现引用效果</p><blockquote><p>引用效果</p></blockquote><p>代码<br>如果你需要将一块文本定义为代码，则需要使用3个<code>，并用三个</code>进行结尾，可在`后指定代码语言。</p><pre><code>代码效果</code></pre><p>表格<br>表头|表头|表头<br>-|:-:|-:<br>内容|内容|内容<br>内容|内容|内容<br>第二行用 - 分割表头和内容。<br>文字默认居左</p><ul><li>两边加：表示文字居中</li><li>右边加：表示文字居右</li></ul><table><thead><tr><th>水果</th><th align="left">家电</th></tr></thead><tbody><tr><td>香蕉</td><td align="left">手机</td></tr><tr><td>牛奶</td><td align="left">电脑</td></tr><tr><td>苹果</td><td align="left">冰箱</td></tr></tbody></table>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> markdown </tag>
+            
+            <tag> 语法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Windows下安装Hexo教程</title>
+      <link href="/windows-xia-an-zhuang-hexo-jiao-cheng/"/>
+      <url>/windows-xia-an-zhuang-hexo-jiao-cheng/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>Hexo 是一个快速、简洁且高效的博客框架，本文笔者带大家安装 Hexo。</p></blockquote><p>安装前提</p><ul><li>Node.js:<a href="https://nodejs.org/">https://nodejs.org/</a></li><li>Git:<a href="https://git-scm.com/">https://git-scm.com/</a><h1 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h1><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g hexo-clihexo init <span class="token operator">&lt;</span><span class="token operator">></span> //<span class="token operator">&lt;</span><span class="token operator">></span>内填Hexo初始化目录，会自动新建目录。<span class="token function">cd</span> <span class="token operator">&lt;</span><span class="token operator">></span> //进入刚刚初始化的新目录<span class="token function">npm</span> <span class="token function">install</span> //进行安装</code></pre><h1 id="启动-Hexo"><a href="#启动-Hexo" class="headerlink" title="启动 Hexo"></a>启动 Hexo</h1>完成了安装 Hexo 步骤之后，便可以在本地启动 Hexo 了。<pre class=" language-bash"><code class="language-bash">hexo clean //清除缓存hexo g //生成静态文件hexo s //在本地部署Hexo</code></pre>执行 Hexo s 之后，Hexo 便会在本地运行，浏览器输入 127.0.0.1:4000 便可看到效果。</li></ul><h1 id="部署-Hexo-到-Github-或-Coding"><a href="#部署-Hexo-到-Github-或-Coding" class="headerlink" title="部署 Hexo 到 Github 或 Coding"></a>部署 Hexo 到 Github 或 Coding</h1><p>如需部署 hexo 到 Github 或 Coding，需要在 Hexo 根目录的_config.yml 文件内填写 Github 的仓库地址，并在 Git 中配置用户名及邮箱地址。</p><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#Hexo执行清除缓存，生成静态文件，以及推送到Github。</span>Hexo clean<span class="token operator">&amp;&amp;</span>hexo g<span class="token operator">&amp;&amp;</span>hexo d</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> windows </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
