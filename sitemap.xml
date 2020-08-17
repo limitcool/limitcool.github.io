@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-tian-jia-xiao-lu-suo/</loc>
+    
+    <lastmod>2020-08-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/centos8-an-zhuang-bing-ji-huo-office/</loc>
+    
+    <lastmod>2020-08-17</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/</loc>
     
     <lastmod>2020-08-17</lastmod>
@@ -10,13 +24,6 @@
   
   <url>
     <loc>https://blog.nmslwsnd.com/mpv-kuai-jie-jian-da-quan/</loc>
-    
-    <lastmod>2020-08-17</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-jia-shang-xiao-lu-suo/</loc>
     
     <lastmod>2020-08-17</lastmod>
     
@@ -79,13 +86,6 @@
   </url>
   
   <url>
-    <loc>https://blog.nmslwsnd.com/centos8-an-zhuang-bing-ji-huo-office/</loc>
-    
-    <lastmod>2020-08-15</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.nmslwsnd.com/centos-an-zhuang-lychee-tu-chuang/</loc>
     
     <lastmod>2020-08-15</lastmod>
@@ -128,13 +128,6 @@
   </url>
   
   <url>
-    <loc>https://blog.nmslwsnd.com/website-add-https/</loc>
-    
-    <lastmod>2019-07-01</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.nmslwsnd.com/javascript-learning-diary-one/</loc>
     
     <lastmod>2019-07-01</lastmod>
@@ -158,20 +151,6 @@
 
   
   <url>
-    <loc>https://blog.nmslwsnd.com/tags/Centos/</loc>
-    <lastmod>2020-08-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.nmslwsnd.com/tags/office/</loc>
-    <lastmod>2020-08-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.nmslwsnd.com/tags/CentOS/</loc>
     <lastmod>2020-08-17</lastmod>
     <changefreq>daily</changefreq>
@@ -180,6 +159,20 @@
   
   <url>
     <loc>https://blog.nmslwsnd.com/tags/%E5%9B%BE%E5%BA%8A/</loc>
+    <lastmod>2020-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/Centos/</loc>
+    <lastmod>2020-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/office/</loc>
     <lastmod>2020-08-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -334,6 +327,27 @@
   
   <url>
     <loc>https://blog.nmslwsnd.com/tags/https/</loc>
+    <lastmod>2020-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/Nginx/</loc>
+    <lastmod>2020-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/ssl%E8%AF%81%E4%B9%A6/</loc>
+    <lastmod>2020-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/Apache/</loc>
     <lastmod>2020-08-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

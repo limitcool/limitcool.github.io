@@ -49,7 +49,7 @@
     <link href="https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/"/>
     <id>https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/</id>
     <published>2020-08-16T11:33:19.000Z</published>
-    <updated>2020-08-17T17:26:57.040Z</updated>
+    <updated>2020-08-17T18:16:44.062Z</updated>
     
     
       
@@ -155,7 +155,7 @@
     <link href="https://blog.nmslwsnd.com/centos8-an-zhuang-bing-ji-huo-office/"/>
     <id>https://blog.nmslwsnd.com/centos8-an-zhuang-bing-ji-huo-office/</id>
     <published>2019-07-01T10:58:35.000Z</published>
-    <updated>2020-08-15T18:58:25.450Z</updated>
+    <updated>2020-08-17T18:22:15.636Z</updated>
     
     
       
@@ -249,11 +249,11 @@
   </entry>
   
   <entry>
-    <title>为你的网站加上小绿锁</title>
-    <link href="https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-jia-shang-xiao-lu-suo/"/>
-    <id>https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-jia-shang-xiao-lu-suo/</id>
-    <published>2017-07-29T10:39:09.000Z</published>
-    <updated>2020-08-17T10:22:54.967Z</updated>
+    <title>为你的网站添加小绿锁！</title>
+    <link href="https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-tian-jia-xiao-lu-suo/"/>
+    <id>https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-tian-jia-xiao-lu-suo/</id>
+    <published>2017-06-04T18:19:37.000Z</published>
+    <updated>2020-08-17T18:25:48.884Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;使用Coding部署Blog站点添加https证书&quot;&gt;&lt;a href=&quot;#使用Coding部署Blog站点添加https证书&quot; class=&quot;headerlink&quot; title=&quot;使用Coding部署Blog站点添加https证书&quot;&gt;&lt;/a&gt;使用Coding部署Blog站点添加https证书&lt;/h2&gt;&lt;p&gt;进入Coding，在代码下，选择Pages服务。&lt;br&gt;&lt;img src=&quot;https://i.loli.net/2018/07/29/5b5d9adc4f513.png&quot; alt=&quot;9}PTMC[Q72%OEVZC(@D`2~X.png](https://i.loli.net/2018/07/29/5b5d9adc4f513.png)&quot;&gt;&lt;br&gt;在SSL/TLS 证书出，进行申请。（30分钟内只能申请一次，如果你的Blog同时部署至了GitHub和Coding，并且海外的线路解析至了GitHub，Coding申请证书的时候要把海外线路修改为Coding）&lt;/p&gt;
@@ -263,6 +263,12 @@
     
     
     <category term="https" scheme="https://blog.nmslwsnd.com/tags/https/"/>
+    
+    <category term="Nginx" scheme="https://blog.nmslwsnd.com/tags/Nginx/"/>
+    
+    <category term="ssl证书" scheme="https://blog.nmslwsnd.com/tags/ssl%E8%AF%81%E4%B9%A6/"/>
+    
+    <category term="Apache" scheme="https://blog.nmslwsnd.com/tags/Apache/"/>
     
   </entry>
   
@@ -351,24 +357,6 @@
     <category term="windows" scheme="https://blog.nmslwsnd.com/tags/windows/"/>
     
     <category term="hexo" scheme="https://blog.nmslwsnd.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>为你的网站加上小绿锁</title>
-    <link href="https://blog.nmslwsnd.com/website-add-https/"/>
-    <id>https://blog.nmslwsnd.com/website-add-https/</id>
-    <published>2016-04-29T13:39:04.000Z</published>
-    <updated>2019-07-01T14:49:42.000Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;使用Coding部署Blog站点添加https证书&quot;&gt;&lt;a href=&quot;#使用Coding部署Blog站点添加https证书&quot; class=&quot;headerlink&quot; title=&quot;使用Coding部署Blog站点添加https证书&quot;&gt;&lt;/a&gt;使用Coding部署Blog站点添加https证书&lt;/h2&gt;&lt;p&gt;进入Coding，在代码下，选择Pages服务。&lt;br&gt;&lt;img src=&quot;https://i.loli.net/2018/07/29/5b5d9adc4f513.png&quot; alt=&quot; &quot;&gt;&lt;br&gt;在SSL/TLS 证书出，进行申请。（30分钟内只能申请一次，如果你的Blog同时部署至了GitHub和Coding，并且海外的线路解析至了GitHub，Coding申请证书的时候要把海外线路修改为Coding）&lt;/p&gt;
-&lt;h2 id=&quot;云服务器添加https证书&quot;&gt;&lt;a href=&quot;#云服务器添加https证书&quot; class=&quot;headerlink&quot; title=&quot;云服务器添加https证书&quot;&gt;&lt;/a&gt;云服务器添加https证书&lt;/h2&gt;&lt;p&gt;如果你使用的是云服务器，那么你需要先申请证书，在阿里云和腾讯云，都可以申请免费的证书。&lt;br&gt;申请证书，需要验证域名所有权，大致为文件验证（上传文件至指定目录）和DNS验证（添加DNS解析记录进行验证）。&lt;br&gt;证书申请完毕后，可进行下载证书。&lt;br&gt;下载得到的文件解压获得3个文件夹，分别是Apache、IIS、Nginx 服务器的证书文件。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="https" scheme="https://blog.nmslwsnd.com/tags/https/"/>
     
   </entry>
   

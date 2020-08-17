@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="为你的网站加上小绿锁, initcool blog">
+    <meta name="keywords" content="为你的网站添加小绿锁！, initcool blog">
     <meta name="description" content="We&#39;re all heroes if you catch us at the right moment.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>为你的网站加上小绿锁 | InitCool</title>
+    <title>为你的网站添加小绿锁！ | InitCool</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -397,12 +397,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://gitee.com/initcool/Picture/raw/master/featureimages/89zfZZ8Z.webp')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">为你的网站加上小绿锁</h1>
+                    <h1 class="description center-align post-title">为你的网站添加小绿锁！</h1>
                 </div>
             </div>
         </div>
@@ -523,6 +523,18 @@
                                 <span class="chip bg-color">https</span>
                             </a>
                         
+                            <a href="/tags/Nginx/">
+                                <span class="chip bg-color">Nginx</span>
+                            </a>
+                        
+                            <a href="/tags/ssl%E8%AF%81%E4%B9%A6/">
+                                <span class="chip bg-color">ssl证书</span>
+                            </a>
+                        
+                            <a href="/tags/Apache/">
+                                <span class="chip bg-color">Apache</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -535,14 +547,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2016-04-29
+                    2017-06-05
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-07-01
+                    2020-08-18
                 </div>
                 
 
@@ -571,7 +583,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="使用Coding部署Blog站点添加https证书"><a href="#使用Coding部署Blog站点添加https证书" class="headerlink" title="使用Coding部署Blog站点添加https证书"></a>使用Coding部署Blog站点添加https证书</h2><p>进入Coding，在代码下，选择Pages服务。<br><img src="https://i.loli.net/2018/07/29/5b5d9adc4f513.png" alt=" "><br>在SSL/TLS 证书出，进行申请。（30分钟内只能申请一次，如果你的Blog同时部署至了GitHub和Coding，并且海外的线路解析至了GitHub，Coding申请证书的时候要把海外线路修改为Coding）</p>
+                <h2 id="使用Coding部署Blog站点添加https证书"><a href="#使用Coding部署Blog站点添加https证书" class="headerlink" title="使用Coding部署Blog站点添加https证书"></a>使用Coding部署Blog站点添加https证书</h2><p>进入Coding，在代码下，选择Pages服务。<br><img src="https://i.loli.net/2018/07/29/5b5d9adc4f513.png" alt="9}PTMC[Q72%OEVZC(@D`2~X.png](https://i.loli.net/2018/07/29/5b5d9adc4f513.png)"><br>在SSL/TLS 证书出，进行申请。（30分钟内只能申请一次，如果你的Blog同时部署至了GitHub和Coding，并且海外的线路解析至了GitHub，Coding申请证书的时候要把海外线路修改为Coding）</p>
 <h2 id="云服务器添加https证书"><a href="#云服务器添加https证书" class="headerlink" title="云服务器添加https证书"></a>云服务器添加https证书</h2><p>如果你使用的是云服务器，那么你需要先申请证书，在阿里云和腾讯云，都可以申请免费的证书。<br>申请证书，需要验证域名所有权，大致为文件验证（上传文件至指定目录）和DNS验证（添加DNS解析记录进行验证）。<br>证书申请完毕后，可进行下载证书。<br>下载得到的文件解压获得3个文件夹，分别是Apache、IIS、Nginx 服务器的证书文件。</p>
 <a id="more"></a>
 <p><strong><em>以下节选自<a target="_blank" rel="noopener" href="https://cloud.tencent.com/document/product/400/4143">腾讯云证书安装指引</a></em></strong></p>
@@ -586,6 +598,7 @@
     SSLCertificateChainFile /usr/local/apache/conf/1_root_bundle.crt
 < /VirtualHost>
 </code></pre>
+
 <p>配置完成后，重新启动 Apache 就可以使用 <a target="_blank" rel="noopener" href="https://www.domain.com/">https://www.domain.com</a> 来访问了。</p>
 <h3 id="Nginx-证书部署"><a href="#Nginx-证书部署" class="headerlink" title="Nginx 证书部署"></a>Nginx 证书部署</h3><h4 id="获取证书-1"><a href="#获取证书-1" class="headerlink" title="获取证书"></a>获取证书</h4><p><em>Nginx文件夹内获得SSL证书文件 1_<a target="_blank" rel="noopener" href="http://www.domain.com_bundle.crt/">www.domain.com_bundle.crt</a> 和私钥文件 2_<a target="_blank" rel="noopener" href="http://www.domain.com.key/">www.domain.com.key</a>,</em><br>1_<a target="_blank" rel="noopener" href="http://www.domain.com_bundle.crt/">www.domain.com_bundle.crt</a> 文件包括两段证书代码 “—–BEGIN CERTIFICATE—–”和“—–END CERTIFICATE—–”,<br>2_<a target="_blank" rel="noopener" href="http://www.domain.com.key/">www.domain.com.key</a> 文件包括一段私钥代码“—–BEGIN RSA PRIVATE KEY—–”和“—–END RSA PRIVATE KEY—–”。</p>
 <h4 id="证书安装-1"><a href="#证书安装-1" class="headerlink" title="证书安装"></a>证书安装</h4><p>将域名 <a target="_blank" rel="noopener" href="http://www.domain.com/">www.domain.com</a> 的证书文件1_<a target="_blank" rel="noopener" href="http://www.domain.com_bundle.crt/">www.domain.com_bundle.crt</a> 、私钥文件2_<a target="_blank" rel="noopener" href="http://www.domain.com.key/">www.domain.com.key</a> 保存到同一个目录，例如/usr/local/nginx/conf 目录下。<br>更新Nginx根目录下 conf/nginx.conf 文件如下：</p>
@@ -605,6 +618,7 @@
         &#125;
     &#125;
 </code></pre>
+
 <p>配置完成后，先用bin/nginx –t来测试下配置是否有误，正确无误的话，重启nginx。就可以使 <a target="_blank" rel="noopener" href="https://www.domain.com/">https://www.domain.com</a> 来访问了。</p>
 
             </div>
@@ -631,7 +645,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://blog.nmslwsnd.com/website-add-https/">https://blog.nmslwsnd.com/website-add-https/</a>
+                    <a href="https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-tian-jia-xiao-lu-suo/">https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-tian-jia-xiao-lu-suo/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -671,6 +685,18 @@
                             
                                 <a href="/tags/https/">
                                     <span class="chip bg-color">https</span>
+                                </a>
+                            
+                                <a href="/tags/Nginx/">
+                                    <span class="chip bg-color">Nginx</span>
+                                </a>
+                            
+                                <a href="/tags/ssl%E8%AF%81%E4%B9%A6/">
+                                    <span class="chip bg-color">ssl证书</span>
+                                </a>
+                            
+                                <a href="/tags/Apache/">
+                                    <span class="chip bg-color">Apache</span>
                                 </a>
                             
                         </div>
@@ -1105,35 +1131,35 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/windows-xia-an-zhuang-hexo-jiao-cheng/">
+                <a href="/win10-open-hyper-v/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Windows下安装Hexo教程">
+                        <img src="https://gitee.com/initcool/Picture/raw/master/featureimages/u8wIaCmS.webp" class="responsive-img" alt="Win10开启 Hyper-V 以及 Device Guard 和 Credential Guard">
                         
-                        <span class="card-title">Windows下安装Hexo教程</span>
+                        <span class="card-title">Win10开启 Hyper-V 以及 Device Guard 和 Credential Guard</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-Hexo 是一个快速、简洁且高效的博客框架，本文笔者带大家安装 Hexo。
+                            由于无良的网易MuMu模拟器关闭了Hyper-V,并且他们不提供开启Hyper-V的方法，笔者为大家提供教程来开启Hyper-V
 
-安装前提
-
-Node.js:https://nodejs.org/
-Git:https://git-scm.com/安装 Hexonpm install -g 
+cmd 或 powershell 下运行 Enable-WindowsOptionalFeature -On
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2017-02-03
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-05-28
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            InitCool
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Windows/" class="post-category">
+                                    Windows
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -1141,12 +1167,16 @@ Git:https://git-scm.com/安装 Hexonpm install -g
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/windows/">
-                        <span class="chip bg-color">windows</span>
+                    <a href="/tags/Windows/">
+                        <span class="chip bg-color">Windows</span>
                     </a>
                     
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/Hyper-V/">
+                        <span class="chip bg-color">Hyper-V</span>
+                    </a>
+                    
+                    <a href="/tags/Win10/">
+                        <span class="chip bg-color">Win10</span>
                     </a>
                     
                 </div>
@@ -1160,42 +1190,39 @@ Git:https://git-scm.com/安装 Hexonpm install -g
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/javascript-learning-diary-two/">
+                <a href="/website/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="JavaScript学习日记02-JavaScript数据类型">
+                        <img src="https://gitee.com/initcool/Picture/raw/master/featureimages/tb5oqnCv.webp" class="responsive-img" alt="个人常用网站汇总">
                         
-                        <span class="card-title">JavaScript学习日记02-JavaScript数据类型</span>
+                        <span class="card-title">个人常用网站汇总</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ECMAScript 5种基本数据类型Undefined Null Boolean Number String
-Boolean
+                            社区V2EX: 汇集各类奇妙好玩的话题和流行动向的网站。
+SegmentFault：纯粹、高质的技术交流的平台。
+Reddit：提前于新闻发声，来自互联网的声音。
+
+资讯36kr：让一部分人先看到未来。
+旅法师营地：卡牌游戏资讯社区
 
 
-
-DATE TYPE
-VALUES CONVERTED TO TRUE
-VALUES CONVERTED T
+编
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2016-01-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-05-12
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                    学习
-                                </a>
-                            
-                            <a href="/categories/%E5%AD%A6%E4%B9%A0/JavaScript/" class="post-category">
-                                    JavaScript
+                            <a href="/categories/%E6%B1%87%E6%80%BB/" class="post-category">
+                                    汇总
                                 </a>
                             
                             
@@ -1205,16 +1232,8 @@ VALUES CONVERTED T
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JavaScript/">
-                        <span class="chip bg-color">JavaScript</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">学习</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
-                        <span class="chip bg-color">数据类型</span>
+                    <a href="/tags/%E6%B1%87%E6%80%BB/">
+                        <span class="chip bg-color">汇总</span>
                     </a>
                     
                 </div>
@@ -1452,7 +1471,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.7k</span>&nbsp;字
+                class="white-color">7.1k</span>&nbsp;字
             
             
             
