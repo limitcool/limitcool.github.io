@@ -134,7 +134,7 @@
       
       <i class="fas fa-list" style="zoom: 0.6;"></i>
       
-      <span>Medias</span>
+      <span>媒体</span>
       <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
     </a>
     <ul class="sub-nav menus_item_child ">
@@ -144,7 +144,7 @@
           
           <i class="fas fa-gamepad" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>Games</span>
+          <span>游戏</span>
         </a>
       </li>
       
@@ -153,7 +153,7 @@
           
           <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>Movies</span>
+          <span>影视</span>
         </a>
       </li>
       
@@ -162,7 +162,7 @@
           
           <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>Books</span>
+          <span>阅读</span>
         </a>
       </li>
       
@@ -279,7 +279,7 @@
 			
 				<i class="fa-fw fas fa-list"></i>
 			
-			Medias
+			媒体
 			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
 		</a>
             <ul  style="background:  ;" >
@@ -290,7 +290,7 @@
 				  
 				   <i class="fa fas fa-gamepad" style="position: absolute;left:50px" ></i>
 			      
-		          <span>Games</span>
+		          <span>游戏</span>
                   </a>
                 </li>
               
@@ -300,7 +300,7 @@
 				  
 				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
 			      
-		          <span>Movies</span>
+		          <span>影视</span>
                   </a>
                 </li>
               
@@ -310,7 +310,7 @@
 				  
 				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
 			      
-		          <span>Books</span>
+		          <span>阅读</span>
                   </a>
                 </li>
               
@@ -397,7 +397,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://gitee.com/initcool/Picture/raw/master/OoUBjWCE.webp')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -550,14 +550,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-08-17
+                    2020-08-18
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    543
+                    753
                 </div>
                 
 
@@ -579,7 +579,16 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="Front-matter-选项详解"><a href="#Front-matter-选项详解" class="headerlink" title="Front-matter 选项详解"></a>Front-matter 选项详解</h3><p><code>Front-matter</code> 选项中的所有内容均为<strong>非必填</strong>的。但原作者建议至少填写 <code>title</code> 和 <code>date</code> 的值。</p>
+                <h3 id="修改轮播图图片格式为Webp"><a href="#修改轮播图图片格式为Webp" class="headerlink" title="修改轮播图图片格式为Webp"></a>修改轮播图图片格式为Webp</h3><p>你可以直接在 <code>/source/medias/banner</code> 文件夹中更换你喜欢的 <code>banner</code> 图片，主题代码中是每天动态切换一张，只需 <code>7</code> 张即可。默认的图片格式为<code>Jpg</code>，为了加快网站加载速度，可以将<code>jpg</code>格式修改为<code>webp</code>从而加快网站加载。</p>
+<p> 在<code>/layout/_partial/bg-cover-content.ejs</code> 文件的 <code>&lt;script&gt;&lt;/script&gt;</code> 代码中进行以下修改：</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">//修改前</span>
+<span class="token keyword">var</span> bannerUrl <span class="token operator">=</span> <span class="token string">"&lt;%- theme.jsDelivr.url %>&lt;%- url_for('/medias/banner/') %>"</span> <span class="token operator">+</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDay</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'.jpg'</span><span class="token punctuation">;</span>
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.bg-cover'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">'background-image'</span><span class="token punctuation">,</span> <span class="token string">'url(/medias/banner/'</span> <span class="token operator">+</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDay</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'.jpg)'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//修改后</span>
+<span class="token keyword">var</span> bannerUrl <span class="token operator">=</span> <span class="token string">"&lt;%- theme.jsDelivr.url %>&lt;%- url_for('/medias/banner/') %>"</span> <span class="token operator">+</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDay</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'.webp'</span><span class="token punctuation">;</span>
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.bg-cover'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">'background-image'</span><span class="token punctuation">,</span> <span class="token string">'url(/medias/banner/'</span> <span class="token operator">+</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDay</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'.webp)'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>在 <code>/source/medias/featureimages</code> 文件夹中默认有 24 张特色图片，你可以再增加或者减少，并需要在 <code>_config.yml</code> 做同步修改。</p>
+<h3 id="Front-matter-选项详解"><a href="#Front-matter-选项详解" class="headerlink" title="Front-matter 选项详解"></a>Front-matter 选项详解</h3><p><code>Front-matter</code> 选项中的所有内容均为<strong>非必填</strong>的。但原作者建议至少填写 <code>title</code> 和 <code>date</code> 的值。</p>
 <table>
 <thead>
 <tr>
@@ -1503,7 +1512,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.5k</span>&nbsp;字
+                class="white-color">7.7k</span>&nbsp;字
             
             
             
