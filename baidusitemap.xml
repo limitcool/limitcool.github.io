@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.nmslwsnd.com/ge-ren-chang-yong-ruan-jian-hui-zong/</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.nmslwsnd.com/ge-ren-chang-yong-wang-zhan-hui-zong/</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.nmslwsnd.com/mpv-kuai-jie-jian-da-quan/</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.nmslwsnd.com/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.nmslwsnd.com/markdown-ji-ben-yu-fa/</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.nmslwsnd.com/javascript-learning-diary-one/</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.nmslwsnd.com/javascript-learning-diary-two/</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+  <url>
     <loc>https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-tian-jia-xiao-lu-suo/</loc>
     <lastmod>2020-08-17</lastmod>
   </url>
@@ -13,24 +41,8 @@
     <lastmod>2020-08-17</lastmod>
   </url>
   <url>
-    <loc>https://blog.nmslwsnd.com/mpv-kuai-jie-jian-da-quan/</loc>
-    <lastmod>2020-08-17</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.nmslwsnd.com/markdown-ji-ben-yu-fa/</loc>
-    <lastmod>2020-08-17</lastmod>
-  </url>
-  <url>
     <loc>https://blog.nmslwsnd.com/windows-xia-an-zhuang-hexo-jiao-cheng/</loc>
     <lastmod>2020-08-17</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.nmslwsnd.com/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/</loc>
-    <lastmod>2020-08-17</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.nmslwsnd.com/website/</loc>
-    <lastmod>2020-08-15</lastmod>
   </url>
   <url>
     <loc>https://blog.nmslwsnd.com/post-style-set/</loc>
@@ -43,17 +55,5 @@
   <url>
     <loc>https://blog.nmslwsnd.com/win10-open-hyper-v/</loc>
     <lastmod>2020-08-15</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.nmslwsnd.com/software-summary/</loc>
-    <lastmod>2019-07-01</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.nmslwsnd.com/javascript-learning-diary-one/</loc>
-    <lastmod>2019-07-01</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.nmslwsnd.com/javascript-learning-diary-two/</loc>
-    <lastmod>2019-07-01</lastmod>
   </url>
 </urlset> 

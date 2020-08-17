@@ -6,7 +6,7 @@
   <link href="https://blog.nmslwsnd.com/atom.xml" rel="self"/>
   
   <link href="https://blog.nmslwsnd.com/"/>
-  <updated>2020-08-17T12:19:03.726Z</updated>
+  <updated>2020-08-17T18:51:33.692Z</updated>
   <id>https://blog.nmslwsnd.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.nmslwsnd.com/mpv-kuai-jie-jian-da-quan/"/>
     <id>https://blog.nmslwsnd.com/mpv-kuai-jie-jian-da-quan/</id>
     <published>2020-08-17T10:19:11.000Z</published>
-    <updated>2020-08-17T12:19:03.726Z</updated>
+    <updated>2020-08-17T18:51:33.692Z</updated>
     
     
       
@@ -41,6 +41,8 @@
     <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
     
     <category term="视频播放器" scheme="https://blog.nmslwsnd.com/tags/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/"/>
+    
+    <category term="快捷键" scheme="https://blog.nmslwsnd.com/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     
   </entry>
   
@@ -104,7 +106,7 @@
     <link href="https://blog.nmslwsnd.com/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/"/>
     <id>https://blog.nmslwsnd.com/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/</id>
     <published>2020-04-09T16:43:34.000Z</published>
-    <updated>2020-08-17T10:02:35.223Z</updated>
+    <updated>2020-08-17T18:40:21.732Z</updated>
     
     
       
@@ -122,31 +124,6 @@
     <category term="windows" scheme="https://blog.nmslwsnd.com/tags/windows/"/>
     
     <category term="powertoys" scheme="https://blog.nmslwsnd.com/tags/powertoys/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>个人常用软件汇总</title>
-    <link href="https://blog.nmslwsnd.com/software-summary/"/>
-    <id>https://blog.nmslwsnd.com/software-summary/</id>
-    <published>2019-07-01T16:15:26.000Z</published>
-    <updated>2019-07-01T16:32:54.000Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;视频&quot;&gt;&lt;a href=&quot;#视频&quot; class=&quot;headerlink&quot; title=&quot;视频&quot;&gt;&lt;/a&gt;视频&lt;/h1&gt;&lt;p id=&quot;div-border-left-red&quot;&gt;&lt;a href=&quot;http://potplayer.daum.net/?lang=zh_CN&quot;&gt;PotPlayer&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;音乐&quot;&gt;&lt;a href=&quot;#音乐&quot; class=&quot;headerlink&quot; title=&quot;音乐&quot;&gt;&lt;/a&gt;音乐&lt;/h1&gt;&lt;p id=&quot;div-border-left-red&quot;&gt;&lt;a href=&quot;https://www.spotify.com/&quot;&gt;Spotify&lt;/a&gt;&lt;/p&gt;
-&lt;p id=&quot;div-border-left-red&quot;&gt;&lt;a href=&quot;https://y.qq.com/&quot;&gt;QQ音乐&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;社交&quot;&gt;&lt;a href=&quot;#社交&quot; class=&quot;headerlink&quot; title=&quot;社交&quot;&gt;&lt;/a&gt;社交&lt;/h1&gt;&lt;p id=&quot;div-border-left-red&quot;&gt;Telegram&lt;/p&gt;
-&lt;p id=&quot;div-border-left-red&quot;&gt;Discord&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="汇总" scheme="https://blog.nmslwsnd.com/categories/%E6%B1%87%E6%80%BB/"/>
-    
-    
-    <category term="汇总" scheme="https://blog.nmslwsnd.com/tags/%E6%B1%87%E6%80%BB/"/>
     
   </entry>
   
@@ -273,27 +250,155 @@
   </entry>
   
   <entry>
+    <title>JavaScript学习日记02-JavaScript数据类型</title>
+    <link href="https://blog.nmslwsnd.com/javascript-learning-diary-two/"/>
+    <id>https://blog.nmslwsnd.com/javascript-learning-diary-two/</id>
+    <published>2017-05-15T13:39:04.000Z</published>
+    <updated>2020-08-17T18:29:16.122Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;ECMAScript-5种基本数据类型&quot;&gt;&lt;a href=&quot;#ECMAScript-5种基本数据类型&quot; class=&quot;headerlink&quot; title=&quot;ECMAScript 5种基本数据类型&quot;&gt;&lt;/a&gt;ECMAScript 5种基本数据类型&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;Undefined Null Boolean Number String&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Boolean&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;DATE TYPE&lt;/th&gt;
+&lt;th&gt;VALUES CONVERTED TO TRUE&lt;/th&gt;
+&lt;th&gt;VALUES CONVERTED TO  FALSE&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;Boolean&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;String&lt;/td&gt;
+&lt;td&gt;Any nonempty string&lt;/td&gt;
+&lt;td&gt;- -(empty string)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Number&lt;/td&gt;
+&lt;td&gt;Any nonzero number(including infinity)&lt;/td&gt;
+&lt;td&gt;0,NaN(See the “NaN” section later in this chapter.)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Object&lt;/td&gt;
+&lt;td&gt;Any object&lt;/td&gt;
+&lt;td&gt;null&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Undefind&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td&gt;undefind&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://blog.nmslwsnd.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/categories/%E5%AD%A6%E4%B9%A0/JavaScript/"/>
+    
+    
+    <category term="学习" scheme="https://blog.nmslwsnd.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="数据类型" scheme="https://blog.nmslwsnd.com/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    
+    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript学习日记01-JavaScript基础知识</title>
+    <link href="https://blog.nmslwsnd.com/javascript-learning-diary-one/"/>
+    <id>https://blog.nmslwsnd.com/javascript-learning-diary-one/</id>
+    <published>2017-05-14T13:45:21.000Z</published>
+    <updated>2020-08-17T18:29:27.243Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;JavaScript三部分：&quot;&gt;&lt;a href=&quot;#JavaScript三部分：&quot; class=&quot;headerlink&quot; title=&quot;JavaScript三部分：&quot;&gt;&lt;/a&gt;JavaScript三部分：&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;ECMAScript&lt;/li&gt;
+&lt;li&gt;DOM&lt;/li&gt;
+&lt;li&gt;BOM&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;浏览器内核：&quot;&gt;&lt;a href=&quot;#浏览器内核：&quot; class=&quot;headerlink&quot; title=&quot;浏览器内核：&quot;&gt;&lt;/a&gt;浏览器内核：&lt;/h2&gt;&lt;h3 id=&quot;渲染引擎&quot;&gt;&lt;a href=&quot;#渲染引擎&quot; class=&quot;headerlink&quot; title=&quot;渲染引擎&quot;&gt;&lt;/a&gt;渲染引擎&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Blink&lt;/li&gt;
+&lt;li&gt;Webkit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;JavaScript引擎&quot;&gt;&lt;a href=&quot;#JavaScript引擎&quot; class=&quot;headerlink&quot; title=&quot;JavaScript引擎&quot;&gt;&lt;/a&gt;JavaScript引擎&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;V8&lt;/li&gt;
+&lt;li&gt;Chakra&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://blog.nmslwsnd.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/categories/%E5%AD%A6%E4%B9%A0/JavaScript/"/>
+    
+    
+    <category term="学习" scheme="https://blog.nmslwsnd.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/tags/JavaScript/"/>
+    
+    <category term="编程" scheme="https://blog.nmslwsnd.com/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="日记" scheme="https://blog.nmslwsnd.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="变量" scheme="https://blog.nmslwsnd.com/tags/%E5%8F%98%E9%87%8F/"/>
+    
+    <category term="严格模式" scheme="https://blog.nmslwsnd.com/tags/%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>个人常用网站汇总</title>
-    <link href="https://blog.nmslwsnd.com/website/"/>
-    <id>https://blog.nmslwsnd.com/website/</id>
+    <link href="https://blog.nmslwsnd.com/ge-ren-chang-yong-wang-zhan-hui-zong/"/>
+    <id>https://blog.nmslwsnd.com/ge-ren-chang-yong-wang-zhan-hui-zong/</id>
     <published>2017-05-12T15:15:25.000Z</published>
-    <updated>2020-08-15T19:21:02.308Z</updated>
+    <updated>2020-08-17T19:11:37.609Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;社区&quot;&gt;&lt;a href=&quot;#社区&quot; class=&quot;headerlink&quot; title=&quot;社区&quot;&gt;&lt;/a&gt;社区&lt;/h1&gt;&lt;p id=&quot;div-border-left-red&quot;&gt;&lt;a href=&quot;https://www.v2ex.com/&quot;&gt;V2EX: 汇集各类奇妙好玩的话题和流行动向的网站。&lt;/a&gt;&lt;/p&gt;
-&lt;p id=&quot;div-border-left-red&quot;&gt;&lt;a href=&quot;https://segmentfault.com/&quot;&gt;SegmentFault：纯粹、高质的技术交流的平台。&lt;/a&gt;&lt;/p&gt;
-&lt;p id=&quot;div-border-left-red&quot;&gt;&lt;a href=&quot;https://www.reddit.com/&quot;&gt;Reddit：提前于新闻发声，来自互联网的声音。&lt;/a&gt;&lt;/p&gt;
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;社区&quot;&gt;&lt;a href=&quot;#社区&quot; class=&quot;headerlink&quot; title=&quot;社区&quot;&gt;&lt;/a&gt;社区&lt;/h1&gt;&lt;p id=&quot;div-border-left-red&quot;&gt;&lt;a href=&quot;https://www.v2ex.com/&quot;&gt;V2EX:</summary>
+        
+      
+    
+    
+    
+    <category term="汇总" scheme="https://blog.nmslwsnd.com/categories/%E6%B1%87%E6%80%BB/"/>
+    
+    
+    <category term="网站" scheme="https://blog.nmslwsnd.com/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="常用网站" scheme="https://blog.nmslwsnd.com/tags/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="汇总" scheme="https://blog.nmslwsnd.com/tags/%E6%B1%87%E6%80%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>个人常用软件汇总</title>
+    <link href="https://blog.nmslwsnd.com/ge-ren-chang-yong-ruan-jian-hui-zong/"/>
+    <id>https://blog.nmslwsnd.com/ge-ren-chang-yong-ruan-jian-hui-zong/</id>
+    <published>2017-05-11T16:15:26.000Z</published>
+    <updated>2020-08-17T19:21:35.744Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;视频&quot;&gt;&lt;a href=&quot;#视频&quot; class=&quot;headerlink&quot; title=&quot;视频&quot;&gt;&lt;/a&gt;视频&lt;/h1&gt;&lt;p id=&quot;div-border-right-red&quot;&gt;&lt;a href=&quot;http://potplayer.daum.net/?lang=zh_CN&quot;&gt;PotPlayer&lt;/a&gt;&lt;/p&gt;
+&lt;p id=&quot;div-border-right-red&quot;&gt;&lt;a href=&quot;https://ffmpeg.org/&quot;&gt;FFMPEG&lt;/a&gt;&lt;/p&gt;
+&lt;p id=&quot;div-border-right-red&quot;&gt;&lt;a href=&quot;https://mpv.io/&quot;&gt;MPV&lt;/a&gt;&lt;/p&gt;
+&lt;p id=&quot;div-border-right-red&quot;&gt;OBS Studio&lt;/p&gt;
 
-&lt;h1 id=&quot;资讯&quot;&gt;&lt;a href=&quot;#资讯&quot; class=&quot;headerlink&quot; title=&quot;资讯&quot;&gt;&lt;/a&gt;资讯&lt;/h1&gt;&lt;p id=&quot;div-border-left-yellow&quot;&gt;&lt;a href=&quot;https://36kr.com/newsflashes&quot;&gt;36kr：让一部分人先看到未来。&lt;/a&gt;&lt;/p&gt;
-&lt;p id=&quot;div-border-left-yellow&quot;&gt;&lt;a href=&quot;https://www.iyingdi.com/&quot;&gt;旅法师营地：卡牌游戏资讯社区&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;音乐&quot;&gt;&lt;a href=&quot;#音乐&quot; class=&quot;headerlink&quot; title=&quot;音乐&quot;&gt;&lt;/a&gt;音乐&lt;/h1&gt;&lt;p id=&quot;div-border-right-red&quot;&gt;&lt;a href=&quot;https://www.spotify.com/&quot;&gt;Spotify&lt;/a&gt;&lt;/p&gt;
+&lt;p id=&quot;div-border-right-red&quot;&gt;&lt;a href=&quot;https://y.qq.com/&quot;&gt;QQ音乐&lt;/a&gt;&lt;/p&gt;
 
-
-&lt;h1 id=&quot;编程学习&quot;&gt;&lt;a href=&quot;#编程学习&quot; class=&quot;headerlink&quot; title=&quot;编程学习&quot;&gt;&lt;/a&gt;编程学习&lt;/h1&gt;&lt;p id=&quot;div-border-left-blue&quot;&gt;&lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/learn&quot;&gt;MDN：学习 Web 开发。&lt;/a&gt;&lt;/p&gt;
-&lt;p id=&quot;div-border-left-blue&quot;&gt;&lt;a href=&quot;https://www.w3school.com.cn/index.html&quot;&gt;W3school:W3c非官方中文站。&lt;/a&gt;&lt;/p&gt;
-&lt;p id=&quot;div-border-left-blue&quot;&gt;&lt;a href=&quot;https://www.icourse163.org/&quot;&gt;中国大学Mooc：可能是最好的中文Mooc。&lt;/a&gt;&lt;/p&gt;
-&lt;p id=&quot;div-border-left-blue&quot;&gt;&lt;a href=&quot;https://htmlreference.io/&quot;&gt;Htmlreference：通过实例学习Html。&lt;/a&gt;&lt;/p&gt;
-&lt;p id=&quot;div-border-left-blue&quot;&gt;&lt;a href=&quot;https://https://cssreference.io&quot;&gt;Cssreference：通过实例学习Css。&lt;/a&gt;&lt;/p&gt;
-&lt;p id=&quot;div-border-left-blue&quot;&gt;&lt;a href=&quot;https://www.shiyanlou.com/&quot;&gt;实验楼：IT在线编程及在线实训学习平台。&lt;/a&gt;&lt;/p&gt;</summary>
+&lt;h1 id=&quot;社交&quot;&gt;&lt;a href=&quot;#社交&quot; class=&quot;headerlink&quot; title=&quot;社交&quot;&gt;&lt;/a&gt;社交&lt;/h1&gt;&lt;p id=&quot;div-border-right-red&quot;&gt;Telegram&lt;/p&gt;
+&lt;p id=&quot;div-border-right-red&quot;&gt;Discord&lt;/p&gt;</summary>
     
     
     
@@ -309,7 +414,7 @@
     <link href="https://blog.nmslwsnd.com/markdown-ji-ben-yu-fa/"/>
     <id>https://blog.nmslwsnd.com/markdown-ji-ben-yu-fa/</id>
     <published>2017-02-05T10:58:35.000Z</published>
-    <updated>2020-08-17T10:15:24.422Z</updated>
+    <updated>2020-08-17T18:29:34.732Z</updated>
     
     
       
@@ -357,109 +462,6 @@
     <category term="windows" scheme="https://blog.nmslwsnd.com/tags/windows/"/>
     
     <category term="hexo" scheme="https://blog.nmslwsnd.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript学习日记02-JavaScript数据类型</title>
-    <link href="https://blog.nmslwsnd.com/javascript-learning-diary-two/"/>
-    <id>https://blog.nmslwsnd.com/javascript-learning-diary-two/</id>
-    <published>2016-01-07T13:39:04.000Z</published>
-    <updated>2019-07-01T14:20:36.000Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;ECMAScript-5种基本数据类型&quot;&gt;&lt;a href=&quot;#ECMAScript-5种基本数据类型&quot; class=&quot;headerlink&quot; title=&quot;ECMAScript 5种基本数据类型&quot;&gt;&lt;/a&gt;ECMAScript 5种基本数据类型&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;Undefined Null Boolean Number String&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Boolean&lt;/strong&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;DATE TYPE&lt;/th&gt;
-&lt;th&gt;VALUES CONVERTED TO TRUE&lt;/th&gt;
-&lt;th&gt;VALUES CONVERTED TO  FALSE&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;Boolean&lt;/td&gt;
-&lt;td&gt;true&lt;/td&gt;
-&lt;td&gt;false&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;String&lt;/td&gt;
-&lt;td&gt;Any nonempty string&lt;/td&gt;
-&lt;td&gt;- -(empty string)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Number&lt;/td&gt;
-&lt;td&gt;Any nonzero number(including infinity)&lt;/td&gt;
-&lt;td&gt;0,NaN(See the “NaN” section later in this chapter.)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Object&lt;/td&gt;
-&lt;td&gt;Any object&lt;/td&gt;
-&lt;td&gt;null&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Undefind&lt;/td&gt;
-&lt;td&gt;n/a&lt;/td&gt;
-&lt;td&gt;undefind&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;</summary>
-    
-    
-    
-    <category term="学习" scheme="https://blog.nmslwsnd.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/categories/%E5%AD%A6%E4%B9%A0/JavaScript/"/>
-    
-    
-    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/tags/JavaScript/"/>
-    
-    <category term="学习" scheme="https://blog.nmslwsnd.com/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="数据类型" scheme="https://blog.nmslwsnd.com/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript学习日记01-JavaScript基础知识</title>
-    <link href="https://blog.nmslwsnd.com/javascript-learning-diary-one/"/>
-    <id>https://blog.nmslwsnd.com/javascript-learning-diary-one/</id>
-    <published>2016-01-06T13:45:21.000Z</published>
-    <updated>2019-07-01T14:20:42.000Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;JavaScript三部分：&quot;&gt;&lt;a href=&quot;#JavaScript三部分：&quot; class=&quot;headerlink&quot; title=&quot;JavaScript三部分：&quot;&gt;&lt;/a&gt;JavaScript三部分：&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;ECMAScript&lt;/li&gt;
-&lt;li&gt;DOM&lt;/li&gt;
-&lt;li&gt;BOM&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;浏览器内核：&quot;&gt;&lt;a href=&quot;#浏览器内核：&quot; class=&quot;headerlink&quot; title=&quot;浏览器内核：&quot;&gt;&lt;/a&gt;浏览器内核：&lt;/h2&gt;&lt;h3 id=&quot;渲染引擎&quot;&gt;&lt;a href=&quot;#渲染引擎&quot; class=&quot;headerlink&quot; title=&quot;渲染引擎&quot;&gt;&lt;/a&gt;渲染引擎&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;Blink&lt;/li&gt;
-&lt;li&gt;Webkit&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;JavaScript引擎&quot;&gt;&lt;a href=&quot;#JavaScript引擎&quot; class=&quot;headerlink&quot; title=&quot;JavaScript引擎&quot;&gt;&lt;/a&gt;JavaScript引擎&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;V8&lt;/li&gt;
-&lt;li&gt;Chakra&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="学习" scheme="https://blog.nmslwsnd.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/categories/%E5%AD%A6%E4%B9%A0/JavaScript/"/>
-    
-    
-    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/tags/JavaScript/"/>
-    
-    <category term="学习" scheme="https://blog.nmslwsnd.com/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="编程" scheme="https://blog.nmslwsnd.com/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="日记" scheme="https://blog.nmslwsnd.com/tags/%E6%97%A5%E8%AE%B0/"/>
-    
-    <category term="变量" scheme="https://blog.nmslwsnd.com/tags/%E5%8F%98%E9%87%8F/"/>
-    
-    <category term="严格模式" scheme="https://blog.nmslwsnd.com/tags/%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
