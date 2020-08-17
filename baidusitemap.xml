@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.nmslwsnd.com/post-style-set/</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.nmslwsnd.com/win10-open-hyper-v/</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-tian-jia-xiao-lu-suo/</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.nmslwsnd.com/markdown-ji-ben-yu-fa/</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.nmslwsnd.com/centos8-an-zhuang-bing-ji-huo-office/</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+  <url>
     <loc>https://blog.nmslwsnd.com/centos-an-zhuang-lychee-tu-chuang/</loc>
     <lastmod>2020-08-17</lastmod>
   </url>
@@ -21,23 +41,11 @@
     <lastmod>2020-08-17</lastmod>
   </url>
   <url>
-    <loc>https://blog.nmslwsnd.com/markdown-ji-ben-yu-fa/</loc>
-    <lastmod>2020-08-17</lastmod>
-  </url>
-  <url>
     <loc>https://blog.nmslwsnd.com/javascript-learning-diary-one/</loc>
     <lastmod>2020-08-17</lastmod>
   </url>
   <url>
     <loc>https://blog.nmslwsnd.com/javascript-learning-diary-two/</loc>
-    <lastmod>2020-08-17</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-tian-jia-xiao-lu-suo/</loc>
-    <lastmod>2020-08-17</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.nmslwsnd.com/centos8-an-zhuang-bing-ji-huo-office/</loc>
     <lastmod>2020-08-17</lastmod>
   </url>
   <url>
@@ -47,13 +55,5 @@
   <url>
     <loc>https://blog.nmslwsnd.com/windows-xia-an-zhuang-hexo-jiao-cheng/</loc>
     <lastmod>2020-08-17</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.nmslwsnd.com/post-style-set/</loc>
-    <lastmod>2020-08-15</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.nmslwsnd.com/win10-open-hyper-v/</loc>
-    <lastmod>2020-08-15</lastmod>
   </url>
 </urlset> 
