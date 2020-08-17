@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.nmslwsnd.com/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/</loc>
+    
+    <lastmod>2020-08-17</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.nmslwsnd.com/categories/index.html</loc>
     
     <lastmod>2020-08-15</lastmod>
@@ -38,13 +45,6 @@
   
   <url>
     <loc>https://blog.nmslwsnd.com/centos8-an-zhuang-bing-ji-huo-office/</loc>
-    
-    <lastmod>2020-08-15</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.nmslwsnd.com/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/</loc>
     
     <lastmod>2020-08-15</lastmod>
     
@@ -158,20 +158,6 @@
   </url>
   
   <url>
-    <loc>https://blog.nmslwsnd.com/tags/CentOS/</loc>
-    <lastmod>2020-08-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.nmslwsnd.com/tags/%E5%9B%BE%E5%BA%8A/</loc>
-    <lastmod>2020-08-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.nmslwsnd.com/tags/JavaScript/</loc>
     <lastmod>2020-08-17</lastmod>
     <changefreq>daily</changefreq>
@@ -221,6 +207,20 @@
   </url>
   
   <url>
+    <loc>https://blog.nmslwsnd.com/tags/CentOS/</loc>
+    <lastmod>2020-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/%E5%9B%BE%E5%BA%8A/</loc>
+    <lastmod>2020-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.nmslwsnd.com/tags/markdown/</loc>
     <lastmod>2020-08-17</lastmod>
     <changefreq>daily</changefreq>
@@ -242,6 +242,13 @@
   </url>
   
   <url>
+    <loc>https://blog.nmslwsnd.com/tags/%E6%B1%87%E6%80%BB/</loc>
+    <lastmod>2020-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.nmslwsnd.com/tags/windows/</loc>
     <lastmod>2020-08-17</lastmod>
     <changefreq>daily</changefreq>
@@ -250,13 +257,6 @@
   
   <url>
     <loc>https://blog.nmslwsnd.com/tags/powertoys/</loc>
-    <lastmod>2020-08-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.nmslwsnd.com/tags/%E6%B1%87%E6%80%BB/</loc>
     <lastmod>2020-08-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
