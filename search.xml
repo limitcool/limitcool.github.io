@@ -52,27 +52,6 @@
     
     
     <entry>
-      <title>Centos8安装lychee图床，搭建属于你自己的图床！</title>
-      <link href="/centos-an-zhuang-lychee-tu-chuang/"/>
-      <url>/centos-an-zhuang-lychee-tu-chuang/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>Lychee 是一款开源的图床，由 php 构建，该项目一直在 Github 更新，会 Docker 的同学也可以使用 Docker 进行构建。</p></blockquote><h1 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h1><ol><li>PHP7.3 或以上版本</li><li>MySql 数据库</li><li>安装以上 PHP 插件 session，exif，mbstring，gd，mysqli，json，xml，zip，pdo，tokenizer 和可选 imagick。</li><li>PHP.ini 文件设置<pre class=" language-php"><code class="language-php">max_execution_time <span class="token operator">=</span> <span class="token number">200</span>post_max_size <span class="token operator">=</span> <span class="token constant">100M</span>upload_max_filesize <span class="token operator">=</span> <span class="token constant">20M</span>memory_limit <span class="token operator">=</span> <span class="token constant">256M</span></code></pre><h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#将Lychee下载至服务器上。</span><span class="token function">git</span> clone --recurse-submodules https://www.github.com/LycheeOrg/Lychee-Laravel /var/www/Lychee<span class="token comment" spellcheck="true">#进入Lychee目录</span><span class="token function">cd</span> Lychee-Laravel<span class="token comment" spellcheck="true">#安装依赖</span>composer <span class="token function">install</span> --no-dev</code></pre><h1 id="设置上传的存储权限"><a href="#设置上传的存储权限" class="headerlink" title="设置上传的存储权限"></a>设置上传的存储权限</h1><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">chgrp</span> www-data -R storage public/dist public/sym public/uploads<span class="token function">sudo</span> <span class="token function">chmod</span> -R 775 storage/* app/* public/dist public/sym public/uploads bootstrap/<span class="token function">sudo</span> <span class="token function">chmod</span> 775 <span class="token keyword">.</span><span class="token comment" spellcheck="true">#也可以使用另外一种方法</span><span class="token function">sudo</span> <span class="token function">chown</span> -R www-data:www-data <span class="token keyword">.</span></code></pre>当你完成了以上步骤，Lychee 就已经安装完成了，只需要打开页面设置填写数据库配置即可。<br><img src="https://camo.githubusercontent.com/b9010f02c634219795950e034f511f4cf4af5c60/68747470733a2f2f732e656c6563746572696f75732e636f6d2f696d616765732f6c79636865652f312e6a706567" alt="荔枝图床效果展示"></li></ol>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> CentOS </tag>
-            
-            <tag> 图床 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Powertoys功能介绍及使用教程</title>
       <link href="/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/"/>
       <url>/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/</url>
@@ -86,6 +65,33 @@
             <tag> windows </tag>
             
             <tag> powertoys </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Centos安装Lychee图床</title>
+      <link href="/centos-an-zhuang-lychee-tu-chuang/"/>
+      <url>/centos-an-zhuang-lychee-tu-chuang/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>Lychee 是一款开源的图床，由 php 构建，该项目一直在 Github 更新，会 Docker 的同学也可以使用 Docker 进行构建。</p></blockquote><h1 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h1><ol><li>PHP7.3 或以上版本</li><li>MySql 数据库</li><li>安装以上 PHP 插件 session，exif，mbstring，gd，mysqli，json，xml，zip，pdo，tokenizer 和可选 imagick。</li><li>PHP.ini 文件设置<pre class=" language-php"><code class="language-php">max_execution_time <span class="token operator">=</span> <span class="token number">200</span>post_max_size <span class="token operator">=</span> <span class="token constant">100M</span>upload_max_filesize <span class="token operator">=</span> <span class="token constant">20M</span>memory_limit <span class="token operator">=</span> <span class="token constant">256M</span></code></pre><h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#将Lychee下载至服务器上。</span><span class="token function">git</span> clone --recurse-submodules https://www.github.com/LycheeOrg/Lychee-Laravel /var/www/Lychee<span class="token comment" spellcheck="true">#进入Lychee目录</span><span class="token function">cd</span> Lychee-Laravel<span class="token comment" spellcheck="true">#安装依赖</span>composer <span class="token function">install</span> --no-dev</code></pre><h1 id="设置上传的存储权限"><a href="#设置上传的存储权限" class="headerlink" title="设置上传的存储权限"></a>设置上传的存储权限</h1><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">chgrp</span> www-data -R storage public/dist public/sym public/uploads<span class="token function">sudo</span> <span class="token function">chmod</span> -R 775 storage/* app/* public/dist public/sym public/uploads bootstrap/<span class="token function">sudo</span> <span class="token function">chmod</span> 775 <span class="token keyword">.</span><span class="token comment" spellcheck="true">#也可以使用另外一种方法</span><span class="token function">sudo</span> <span class="token function">chown</span> -R www-data:www-data <span class="token keyword">.</span></code></pre>当你完成了以上步骤，Lychee 就已经安装完成了，只需要打开页面设置填写数据库配置即可。<br><img src="https://camo.githubusercontent.com/b9010f02c634219795950e034f511f4cf4af5c60/68747470733a2f2f732e656c6563746572696f75732e636f6d2f696d616765732f6c79636865652f312e6a706567" alt="荔枝图床效果展示"></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Lychee </tag>
+            
+            <tag> 荔枝 </tag>
+            
+            <tag> 图床 </tag>
+            
+            <tag> CentOS </tag>
+            
+            <tag> PHP </tag>
             
         </tags>
       

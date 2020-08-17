@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.nmslwsnd.com/centos-an-zhuang-lychee-tu-chuang/</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+  <url>
     <loc>https://blog.nmslwsnd.com/ge-ren-chang-yong-ruan-jian-hui-zong/</loc>
     <lastmod>2020-08-17</lastmod>
   </url>
@@ -46,10 +50,6 @@
   </url>
   <url>
     <loc>https://blog.nmslwsnd.com/post-style-set/</loc>
-    <lastmod>2020-08-15</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.nmslwsnd.com/centos-an-zhuang-lychee-tu-chuang/</loc>
     <lastmod>2020-08-15</lastmod>
   </url>
   <url>

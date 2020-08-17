@@ -74,34 +74,6 @@
   </entry>
   
   <entry>
-    <title>Centos8安装lychee图床，搭建属于你自己的图床！</title>
-    <link href="https://blog.nmslwsnd.com/centos-an-zhuang-lychee-tu-chuang/"/>
-    <id>https://blog.nmslwsnd.com/centos-an-zhuang-lychee-tu-chuang/</id>
-    <published>2020-08-15T16:42:47.000Z</published>
-    <updated>2020-08-15T16:47:20.414Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Lychee 是一款开源的图床，由 php 构建，该项目一直在 Github 更新，会 Docker 的同学也可以使用 Docker 进行构建。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;安装前提&quot;&gt;&lt;a href=&quot;#安装前提&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="CentOS" scheme="https://blog.nmslwsnd.com/tags/CentOS/"/>
-    
-    <category term="图床" scheme="https://blog.nmslwsnd.com/tags/%E5%9B%BE%E5%BA%8A/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Powertoys功能介绍及使用教程</title>
     <link href="https://blog.nmslwsnd.com/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/"/>
     <id>https://blog.nmslwsnd.com/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/</id>
@@ -124,6 +96,40 @@
     <category term="windows" scheme="https://blog.nmslwsnd.com/tags/windows/"/>
     
     <category term="powertoys" scheme="https://blog.nmslwsnd.com/tags/powertoys/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Centos安装Lychee图床</title>
+    <link href="https://blog.nmslwsnd.com/centos-an-zhuang-lychee-tu-chuang/"/>
+    <id>https://blog.nmslwsnd.com/centos-an-zhuang-lychee-tu-chuang/</id>
+    <published>2020-03-17T19:49:17.000Z</published>
+    <updated>2020-08-17T19:53:06.738Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Lychee 是一款开源的图床，由 php 构建，该项目一直在 Github 更新，会 Docker 的同学也可以使用 Docker 进行构建。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;安装前提&quot;&gt;&lt;a href=&quot;#安装前提&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Lychee" scheme="https://blog.nmslwsnd.com/tags/Lychee/"/>
+    
+    <category term="荔枝" scheme="https://blog.nmslwsnd.com/tags/%E8%8D%94%E6%9E%9D/"/>
+    
+    <category term="图床" scheme="https://blog.nmslwsnd.com/tags/%E5%9B%BE%E5%BA%8A/"/>
+    
+    <category term="CentOS" scheme="https://blog.nmslwsnd.com/tags/CentOS/"/>
+    
+    <category term="PHP" scheme="https://blog.nmslwsnd.com/tags/PHP/"/>
     
   </entry>
   
