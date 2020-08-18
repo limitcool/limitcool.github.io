@@ -51,14 +51,14 @@
     <link href="https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/"/>
     <id>https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/</id>
     <published>2020-08-16T11:33:19.000Z</published>
-    <updated>2020-08-18T07:11:26.515Z</updated>
+    <updated>2020-08-18T13:20:22.095Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;新建文章模板修改&quot;&gt;&lt;a href=&quot;#新建文章模板修改&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;一、主题优化&quot;&gt;&lt;a href=&quot;#一、主题优化&quot; class=&quot;headerlink&quot; title=&quot;一、主题优化&quot;&gt;&lt;/a&gt;一、主题优化&lt;/h1&gt;&lt;h3 id=&quot;1-新建文章模板修改&quot;&gt;&lt;a href=&quot;#1-新建文章模板修改&quot;</summary>
         
       
     
@@ -167,23 +167,25 @@
     <updated>2020-08-17T20:25:35.394Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;文章内超链接样式设置&quot;&gt;&lt;a href=&quot;#文章内超链接样式设置&quot; class=&quot;headerlink&quot; title=&quot;文章内超链接样式设置&quot;&gt;&lt;/a&gt;文章内超链接样式设置&lt;/h1&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&amp;lt;section class=&quot;link-braces&quot;&amp;gt;
-&amp;lt;p&amp;gt;这是一个&amp;lt;a href=&quot;#&quot;&amp;gt;超链接&amp;lt;/a&amp;gt;
-&amp;lt;/section&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+    <summary type="html">&lt;h1 id=&quot;文章内超链接样式设置&quot;&gt;&lt;a href=&quot;#文章内超链接样式设置&quot; class=&quot;headerlink&quot; title=&quot;文章内超链接样式设置&quot;&gt;&lt;/a&gt;文章内超链接样式设置&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-html&quot; data-language=&quot;html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;section&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;link-braces&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;p&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;这是一个&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;#&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;超链接&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;section&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;span id=&quot;inline-blue&quot;&gt;Demo:&lt;/span&gt;&lt;/p&gt;
 &lt;section class=&quot;link-braces&quot;&gt;
 &lt;p&gt;这是一个&lt;a href=&quot;#&quot;&gt;超链接&lt;/a&gt;
-&lt;/p&gt;&lt;/section&gt;
+&lt;/section&gt;
 
 &lt;p&gt;需要注意的是，使用时需要在”a”标签前增加”p”标签进行分割。&lt;/p&gt;
 &lt;h1 id=&quot;文章内居中引用设置&quot;&gt;&lt;a href=&quot;#文章内居中引用设置&quot; class=&quot;headerlink&quot; title=&quot;文章内居中引用设置&quot;&gt;&lt;/a&gt;文章内居中引用设置&lt;/h1&gt;&lt;p&gt;将文章内部分内容自动居中，并加上引号。推荐单行使用。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;
-&amp;lt;!-- Html方式: 直接在 Markdown 文件中编写 Html 来调用 --&amp;gt;
-&amp;lt;!-- 其中 class=&quot;blockquote-center&quot; 是必须的 --&amp;gt;
-&amp;lt;blockquote class=&quot;blockquote-center&quot;&amp;gt;Html方式文本居中&amp;lt;/blockquote&amp;gt;
+&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;
+&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;-- Html方式: 直接在 Markdown 文件中编写 Html 来调用 --&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;-- 其中 &lt;span class=&quot;token assign-left variable&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;blockquote-center&quot;&lt;/span&gt; 是必须的 --&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;blockquote &lt;span class=&quot;token assign-left variable&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;blockquote-center&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;Html方式文本居中&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;/blockquote&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
 
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+
 &lt;!-- Html方式: 直接在 Markdown 文件中编写 Html 来调用 --&gt;
 &lt;!-- 其中 class=&quot;blockquote-center&quot; 是必须的 --&gt;
 &lt;blockquote class=&quot;blockquote-center&quot;&gt;Html方式文本居中&lt;/blockquote&gt;
