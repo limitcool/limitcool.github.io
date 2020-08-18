@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 
 
+
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="标签: 快捷键, initcool blog">
@@ -565,6 +566,15 @@
                 </a>
                 
                 
+                <a href="/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="数据类型: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="数据类型" style="background-color: #F8C471;">数据类型
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/tags/MPV/" title="MPV: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
@@ -596,15 +606,6 @@
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
                             data-tagname="快捷键" style="background-color: #FEF9E7;">快捷键
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="数据类型: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="数据类型" style="background-color: #F8C471;">数据类型
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -682,24 +683,6 @@
                 </a>
                 
                 
-                <a href="/tags/Hexo/" title="Hexo: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="Hexo" style="background-color: #E8F8F5;">Hexo
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/matery/" title="matery: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="matery" style="background-color: #D7BDE2;">matery
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/tags/%E7%BD%91%E7%AB%99/" title="网站: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
@@ -758,6 +741,24 @@
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             data-tagname="Apache" style="background-color: #82E0AA;">Apache
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Hexo/" title="Hexo: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Hexo" style="background-color: #E8F8F5;">Hexo
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/matery/" title="matery: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="matery" style="background-color: #D7BDE2;">matery
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -868,7 +869,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.2k</span>&nbsp;字
+                class="white-color">10.9k</span>&nbsp;字
             
             
             
@@ -1046,6 +1047,26 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
+    <!-- 添加樱花飘落特效 -->
+    
+        <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+        </script>
+    
+
+    <!-- 添加天气插件 -->
+    <script type="text/javascript">
+        WIDGET = {FID: '1tFpFZ5Mtj'}
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+    
+
+    <!-- 添加博客动态标签 -->
+    <script type="text/javascript"> var OriginTitile = document.title, st; document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title = "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) }) </script>
 </body>
 
 </html>

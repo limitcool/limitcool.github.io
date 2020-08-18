@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 
 
+
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="为你的网站添加小绿锁！, initcool blog">
@@ -561,7 +562,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    705
+                    757
                 </div>
                 
 
@@ -589,20 +590,20 @@
 <p><strong><em>以下节选自<a target="_blank" rel="noopener" href="https://cloud.tencent.com/document/product/400/4143">腾讯云证书安装指引</a></em></strong></p>
 <h3 id="Apache-证书部署"><a href="#Apache-证书部署" class="headerlink" title="Apache 证书部署"></a>Apache 证书部署</h3><h4 id="获取证书"><a href="#获取证书" class="headerlink" title="获取证书"></a>获取证书</h4><p><em>Apache文件夹内获得证书文件 1_root_bundle.crt，2_<a target="_blank" rel="noopener" href="http://www.domain.com_cert.crt/">www.domain.com_cert.crt</a> 和私钥文件 3_<a target="_blank" rel="noopener" href="http://www.domain.com.key/">www.domain.com.key</a>,</em><br>1_root_bundle.crt 文件包括一段证书代码 “—–BEGIN CERTIFICATE—–”和“—–END CERTIFICATE—–”,<br>2_<a target="_blank" rel="noopener" href="http://www.domain.com_cert.crt/">www.domain.com_cert.crt</a> 文件包括一段证书代码 “—–BEGIN CERTIFICATE—–”和“—–END CERTIFICATE—–”,<br>3_<a target="_blank" rel="noopener" href="http://www.domain.com.key/">www.domain.com.key</a> 文件包括一段私钥代码“—–BEGIN RSA PRIVATE KEY—–”和“—–END RSA PRIVATE KEY—–”。</p>
 <h4 id="证书安装"><a href="#证书安装" class="headerlink" title="证书安装"></a>证书安装</h4><p>编辑Apache根目录下 conf/httpd.conf 文件，<br>找到 <code>#LoadModule ssl_module modules/mod_ssl.so</code> 和 <code>#Include conf/extra/httpd-ssl.conf</code>，去掉前面的#号注释；<br>编辑Apache根目录下 conf/extra/httpd-ssl.conf 文件，修改如下内容：</p>
-<pre><code>< VirtualHost 0.0.0.0:443>
+<pre><code>&lt; VirtualHost 0.0.0.0:443&gt;
     DocumentRoot "/var/www/html"
     ServerName www.domain.com
     SSLEngine on
     SSLCertificateFile /usr/local/apache/conf/2_www.domain.com_cert.crt
     SSLCertificateKeyFile /usr/local/apache/conf/3_www.domain.com.key
     SSLCertificateChainFile /usr/local/apache/conf/1_root_bundle.crt
-< /VirtualHost>
+&lt; /VirtualHost&gt;
 </code></pre>
 
 <p>配置完成后，重新启动 Apache 就可以使用 <a target="_blank" rel="noopener" href="https://www.domain.com/">https://www.domain.com</a> 来访问了。</p>
 <h3 id="Nginx-证书部署"><a href="#Nginx-证书部署" class="headerlink" title="Nginx 证书部署"></a>Nginx 证书部署</h3><h4 id="获取证书-1"><a href="#获取证书-1" class="headerlink" title="获取证书"></a>获取证书</h4><p><em>Nginx文件夹内获得SSL证书文件 1_<a target="_blank" rel="noopener" href="http://www.domain.com_bundle.crt/">www.domain.com_bundle.crt</a> 和私钥文件 2_<a target="_blank" rel="noopener" href="http://www.domain.com.key/">www.domain.com.key</a>,</em><br>1_<a target="_blank" rel="noopener" href="http://www.domain.com_bundle.crt/">www.domain.com_bundle.crt</a> 文件包括两段证书代码 “—–BEGIN CERTIFICATE—–”和“—–END CERTIFICATE—–”,<br>2_<a target="_blank" rel="noopener" href="http://www.domain.com.key/">www.domain.com.key</a> 文件包括一段私钥代码“—–BEGIN RSA PRIVATE KEY—–”和“—–END RSA PRIVATE KEY—–”。</p>
 <h4 id="证书安装-1"><a href="#证书安装-1" class="headerlink" title="证书安装"></a>证书安装</h4><p>将域名 <a target="_blank" rel="noopener" href="http://www.domain.com/">www.domain.com</a> 的证书文件1_<a target="_blank" rel="noopener" href="http://www.domain.com_bundle.crt/">www.domain.com_bundle.crt</a> 、私钥文件2_<a target="_blank" rel="noopener" href="http://www.domain.com.key/">www.domain.com.key</a> 保存到同一个目录，例如/usr/local/nginx/conf 目录下。<br>更新Nginx根目录下 conf/nginx.conf 文件如下：</p>
-<pre><code>server &#123;
+<pre><code>server {
         listen 443;
         server_name www.domain.com; #填写绑定证书的域名
         ssl on;
@@ -612,15 +613,33 @@
         ssl_protocols TLSv1 TLSv1.1 TLSv1.2; #按照这个协议配置
         ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;#按照这个套件配置
         ssl_prefer_server_ciphers on;
-        location / &#123;
+        location / {
             root   html; #站点目录
             index  index.html index.htm;
-        &#125;
-    &#125;
+        }
+    }
 </code></pre>
 
 <p>配置完成后，先用bin/nginx –t来测试下配置是否有误，正确无误的话，重启nginx。就可以使 <a target="_blank" rel="noopener" href="https://www.domain.com/">https://www.domain.com</a> 来访问了。</p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -1481,7 +1500,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.2k</span>&nbsp;字
+                class="white-color">10.9k</span>&nbsp;字
             
             
             
@@ -1659,6 +1678,26 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
+    <!-- 添加樱花飘落特效 -->
+    
+        <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+        </script>
+    
+
+    <!-- 添加天气插件 -->
+    <script type="text/javascript">
+        WIDGET = {FID: '1tFpFZ5Mtj'}
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+    
+
+    <!-- 添加博客动态标签 -->
+    <script type="text/javascript"> var OriginTitile = document.title, st; document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title = "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) }) </script>
 </body>
 
 </html>

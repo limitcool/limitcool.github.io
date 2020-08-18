@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 
 
+
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="个人常用网站汇总, initcool blog">
@@ -566,7 +567,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    340
+                    392
                 </div>
                 
 
@@ -633,7 +634,25 @@
 <h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p id="div-border-top-red"><a target="_blank" rel="noopener" href="https://zh.moegirl.org/Mainpage/">萌娘百科：万物皆可萌的百科全书。</a></p>
 <p id="div-border-top-red"><a target="_blank" rel="noopener" href="https://www.pixiv.net/">Pixiv：插画交流网站。</a></p>
 <p id="div-border-top-red"><a target="_blank" rel="noopener" href="https://opensource.builders/">Open-source：开源程序汇总站。</a></p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -1519,7 +1538,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.2k</span>&nbsp;字
+                class="white-color">10.9k</span>&nbsp;字
             
             
             
@@ -1697,6 +1716,26 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
+    <!-- 添加樱花飘落特效 -->
+    
+        <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+        </script>
+    
+
+    <!-- 添加天气插件 -->
+    <script type="text/javascript">
+        WIDGET = {FID: '1tFpFZ5Mtj'}
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+    
+
+    <!-- 添加博客动态标签 -->
+    <script type="text/javascript"> var OriginTitile = document.title, st; document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title = "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) }) </script>
 </body>
 
 </html>

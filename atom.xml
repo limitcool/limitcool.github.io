@@ -51,14 +51,14 @@
     <link href="https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/"/>
     <id>https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/</id>
     <published>2020-08-16T11:33:19.000Z</published>
-    <updated>2020-08-17T18:16:44.062Z</updated>
+    <updated>2020-08-18T06:15:45.831Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;修改轮播图图片格式为Webp&quot;&gt;&lt;a href=&quot;#修改轮播图图片格式为Webp&quot; class=&quot;headerlink&quot; title=&quot;修改轮播图图片格式为Webp&quot;&gt;&lt;/a&gt;修改轮播图图片格式为Webp&lt;/h3&gt;&lt;p&gt;你可以直接在</summary>
+    <summary type="html">&lt;h3 id=&quot;新建文章模板修改&quot;&gt;&lt;a href=&quot;#新建文章模板修改&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -167,20 +167,20 @@
     <updated>2020-08-17T20:25:35.394Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;文章内超链接样式设置&quot;&gt;&lt;a href=&quot;#文章内超链接样式设置&quot; class=&quot;headerlink&quot; title=&quot;文章内超链接样式设置&quot;&gt;&lt;/a&gt;文章内超链接样式设置&lt;/h1&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&amp;lt;section class=&amp;quot;link-braces&amp;quot;&amp;gt;
-&amp;lt;p&amp;gt;这是一个&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;超链接&amp;lt;/a&amp;gt;
+    <summary type="html">&lt;h1 id=&quot;文章内超链接样式设置&quot;&gt;&lt;a href=&quot;#文章内超链接样式设置&quot; class=&quot;headerlink&quot; title=&quot;文章内超链接样式设置&quot;&gt;&lt;/a&gt;文章内超链接样式设置&lt;/h1&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&amp;lt;section class=&quot;link-braces&quot;&amp;gt;
+&amp;lt;p&amp;gt;这是一个&amp;lt;a href=&quot;#&quot;&amp;gt;超链接&amp;lt;/a&amp;gt;
 &amp;lt;/section&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;span id=&quot;inline-blue&quot;&gt;Demo:&lt;/span&gt;&lt;/p&gt;
 &lt;section class=&quot;link-braces&quot;&gt;
 &lt;p&gt;这是一个&lt;a href=&quot;#&quot;&gt;超链接&lt;/a&gt;
-&lt;/section&gt;
+&lt;/p&gt;&lt;/section&gt;
 
 &lt;p&gt;需要注意的是，使用时需要在”a”标签前增加”p”标签进行分割。&lt;/p&gt;
 &lt;h1 id=&quot;文章内居中引用设置&quot;&gt;&lt;a href=&quot;#文章内居中引用设置&quot; class=&quot;headerlink&quot; title=&quot;文章内居中引用设置&quot;&gt;&lt;/a&gt;文章内居中引用设置&lt;/h1&gt;&lt;p&gt;将文章内部分内容自动居中，并加上引号。推荐单行使用。&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;
 &amp;lt;!-- Html方式: 直接在 Markdown 文件中编写 Html 来调用 --&amp;gt;
-&amp;lt;!-- 其中 class=&amp;quot;blockquote-center&amp;quot; 是必须的 --&amp;gt;
-&amp;lt;blockquote class=&amp;quot;blockquote-center&amp;quot;&amp;gt;Html方式文本居中&amp;lt;/blockquote&amp;gt;
+&amp;lt;!-- 其中 class=&quot;blockquote-center&quot; 是必须的 --&amp;gt;
+&amp;lt;blockquote class=&quot;blockquote-center&quot;&amp;gt;Html方式文本居中&amp;lt;/blockquote&amp;gt;
 
 
 &lt;/code&gt;&lt;/pre&gt;

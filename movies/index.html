@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 
 
+
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="This is my movie title, initcool blog">
@@ -545,14 +546,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    636
+                    824
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    4 分
                 </div>
                 
 
@@ -652,7 +653,7 @@
     <a class="hexo-douban-tab" id="hexo-douban-tab1" href="javascript:;"
        rel="external">
         在看
-        (0)</a>
+        (1)</a>
     <a class="hexo-douban-tab" id="hexo-douban-tab2" href="javascript:;"
        rel="external">
         想看
@@ -664,6 +665,18 @@
 </div>
 <div>
     <div id="hexo-douban-item1">
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture"><img src="/assets/douban-loading.gif" data-src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2501253616.jpg" referrerPolicy="no-referrer" /></div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title">
+            <a target="_blank" href="https://movie.douban.com/subject/1444534/">飞出个未来 第一季 / Futurama Season 1</a>
+        </div>
+        <div class="hexo-douban-meta">1999-03-28(美国) / 比利·维斯特 / 凯特蕾·萨加尔 / 约翰·迪·马吉欧 / 特蕾丝·麦克尼尔 / 菲尔·拉马 / 劳伦·汤姆 / 莫里斯·拉马奇 / 大卫·赫尔曼 / 南茜·卡特莱特 / 弗兰克·维尔克 / 凯斯·索西 / 汤姆·肯尼 / 伦纳德·尼莫伊 / 迪克·克拉克 / 帕米拉·安德森 / 麦克·D / 亚当·霍罗维茨 / 丹尼·雅各布斯 / 丹·卡斯泰兰尼塔 / 克劳迪亚·席弗 / 催眠蛤蟆 / 美国 / www.comedycentral.com/shows/futurama/index.jhtml / 瑞奇·摩尔 / 皮特·阿凡季诺 / 马特·格罗宁 / 飞出个未来 / 22分钟 / 飞出个未来 / 喜剧 / 科幻 / 动画 / 马特·格罗宁 Matt Groening / 大卫 X·科恩 David X. Cohen / 英语</div>
+    </div>
+</div>
+
+
         
         <div class="hexo-douban-pagination">
     <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> 首页</a>
@@ -1627,7 +1640,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.2k</span>&nbsp;字
+                class="white-color">10.9k</span>&nbsp;字
             
             
             
@@ -1805,6 +1818,26 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
+    <!-- 添加樱花飘落特效 -->
+    
+        <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+        </script>
+    
+
+    <!-- 添加天气插件 -->
+    <script type="text/javascript">
+        WIDGET = {FID: '1tFpFZ5Mtj'}
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+    
+
+    <!-- 添加博客动态标签 -->
+    <script type="text/javascript"> var OriginTitile = document.title, st; document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title = "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) }) </script>
 </body>
 
 </html>

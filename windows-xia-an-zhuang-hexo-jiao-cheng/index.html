@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 
 
+
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Windows下安装Hexo教程, initcool blog">
@@ -553,7 +554,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    240
+                    292
                 </div>
                 
 
@@ -593,7 +594,25 @@ hexo s //在本地部署Hexo</code></pre>
 <h1 id="部署-Hexo-到-Github-或-Coding"><a href="#部署-Hexo-到-Github-或-Coding" class="headerlink" title="部署 Hexo 到 Github 或 Coding"></a>部署 Hexo 到 Github 或 Coding</h1><p>如需部署 hexo 到 Github 或 Coding，需要在 Hexo 根目录的_config.yml 文件内填写 Github 的仓库地址，并在 Git 中配置用户名及邮箱地址。</p>
 <pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#Hexo执行清除缓存，生成静态文件，以及推送到Github。</span>
 Hexo clean<span class="token operator">&amp;&amp;</span>hexo g<span class="token operator">&amp;&amp;</span>hexo d</code></pre>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -1427,7 +1446,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.2k</span>&nbsp;字
+                class="white-color">10.9k</span>&nbsp;字
             
             
             
@@ -1605,6 +1624,26 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
+    <!-- 添加樱花飘落特效 -->
+    
+        <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+        </script>
+    
+
+    <!-- 添加天气插件 -->
+    <script type="text/javascript">
+        WIDGET = {FID: '1tFpFZ5Mtj'}
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+    
+
+    <!-- 添加博客动态标签 -->
+    <script type="text/javascript"> var OriginTitile = document.title, st; document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title = "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) }) </script>
 </body>
 
 </html>

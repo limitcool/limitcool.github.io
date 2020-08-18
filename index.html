@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 
 
+
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="initcool blog">
@@ -569,7 +570,10 @@
                             <div class="title center-align">matery主题优化及常用设置</div>
                             <div class="description center-align">
                                 
-                                    修改轮播图图片格式为Webp你可以直接在 /source/medias/banner 文件夹中更换你喜欢的 banner 图片，主题代码中是每天动态切换一张，只需 7 张即可。默认的图片格式为Jpg，为了加快网站加载速度，可以将jpg格式修
+                                    新建文章模板修改
+首先为了新建文章方便，我们可以修改一下文章模板，可以将/scaffolds/post.md修改为如下代码：
+---
+title: &amp;#123;&amp;#123; title &amp;#125;&amp;#125
                                 
                             </div>
                             <div class="cover-btns">
@@ -795,7 +799,10 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                修改轮播图图片格式为Webp你可以直接在 /source/medias/banner 文件夹中更换你喜欢的 banner 图片，主题代码中是每天动态切换一张，只需 7 张即可。默认的图片格式为Jpg，为了加快网站加载速度，可以将jpg格式修
+                                新建文章模板修改
+首先为了新建文章方便，我们可以修改一下文章模板，可以将/scaffolds/post.md修改为如下代码：
+---
+title: &amp;#123;&amp;#123; title &amp;#125;&amp;#125
                             
                         </div>
                         <div class="publish-info">
@@ -1525,7 +1532,7 @@ Ar
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.2k</span>&nbsp;字
+                class="white-color">10.9k</span>&nbsp;字
             
             
             
@@ -1703,6 +1710,26 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
+    <!-- 添加樱花飘落特效 -->
+    
+        <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+        </script>
+    
+
+    <!-- 添加天气插件 -->
+    <script type="text/javascript">
+        WIDGET = {FID: '1tFpFZ5Mtj'}
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+    
+
+    <!-- 添加博客动态标签 -->
+    <script type="text/javascript"> var OriginTitile = document.title, st; document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title = "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) }) </script>
 </body>
 
 </html>
