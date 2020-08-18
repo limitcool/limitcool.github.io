@@ -6,7 +6,7 @@
   <link href="https://blog.nmslwsnd.com/atom.xml" rel="self"/>
   
   <link href="https://blog.nmslwsnd.com/"/>
-  <updated>2020-08-17T18:51:33.692Z</updated>
+  <updated>2020-08-18T17:04:07.234Z</updated>
   <id>https://blog.nmslwsnd.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.nmslwsnd.com/mpv-kuai-jie-jian-da-quan/"/>
     <id>https://blog.nmslwsnd.com/mpv-kuai-jie-jian-da-quan/</id>
     <published>2020-08-17T10:19:11.000Z</published>
-    <updated>2020-08-17T18:51:33.692Z</updated>
+    <updated>2020-08-18T17:04:07.234Z</updated>
     
     
       
@@ -51,7 +51,7 @@
     <link href="https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/"/>
     <id>https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/</id>
     <published>2020-08-16T11:33:19.000Z</published>
-    <updated>2020-08-18T14:36:39.592Z</updated>
+    <updated>2020-08-18T17:04:06.268Z</updated>
     
     
       
@@ -78,7 +78,7 @@
     <link href="https://blog.nmslwsnd.com/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/"/>
     <id>https://blog.nmslwsnd.com/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/</id>
     <published>2020-04-09T16:43:34.000Z</published>
-    <updated>2020-08-17T18:40:21.732Z</updated>
+    <updated>2020-08-18T17:04:09.029Z</updated>
     
     
       
@@ -104,7 +104,7 @@
     <link href="https://blog.nmslwsnd.com/centos-an-zhuang-lychee-tu-chuang/"/>
     <id>https://blog.nmslwsnd.com/centos-an-zhuang-lychee-tu-chuang/</id>
     <published>2020-03-17T19:49:17.000Z</published>
-    <updated>2020-08-17T19:53:06.738Z</updated>
+    <updated>2020-08-18T17:04:02.206Z</updated>
     
     
       
@@ -138,7 +138,7 @@
     <link href="https://blog.nmslwsnd.com/centos8-an-zhuang-bing-ji-huo-office/"/>
     <id>https://blog.nmslwsnd.com/centos8-an-zhuang-bing-ji-huo-office/</id>
     <published>2019-07-01T10:58:35.000Z</published>
-    <updated>2020-08-17T20:16:01.676Z</updated>
+    <updated>2020-08-18T17:06:58.882Z</updated>
     
     
       
@@ -164,7 +164,7 @@
     <link href="https://blog.nmslwsnd.com/post-style-set/"/>
     <id>https://blog.nmslwsnd.com/post-style-set/</id>
     <published>2019-07-01T10:58:35.000Z</published>
-    <updated>2020-08-17T20:25:35.394Z</updated>
+    <updated>2020-08-18T17:04:08.336Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;文章内超链接样式设置&quot;&gt;&lt;a href=&quot;#文章内超链接样式设置&quot; class=&quot;headerlink&quot; title=&quot;文章内超链接样式设置&quot;&gt;&lt;/a&gt;文章内超链接样式设置&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-html&quot; data-language=&quot;html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;section&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;link-braces&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
@@ -207,7 +207,7 @@
     <link href="https://blog.nmslwsnd.com/win10-open-hyper-v/"/>
     <id>https://blog.nmslwsnd.com/win10-open-hyper-v/</id>
     <published>2019-05-28T13:39:04.000Z</published>
-    <updated>2020-08-18T07:25:38.226Z</updated>
+    <updated>2020-08-18T17:04:09.736Z</updated>
     
     
       
@@ -238,7 +238,7 @@
     <link href="https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-tian-jia-xiao-lu-suo/"/>
     <id>https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-tian-jia-xiao-lu-suo/</id>
     <published>2017-06-04T18:19:37.000Z</published>
-    <updated>2020-08-17T20:20:46.716Z</updated>
+    <updated>2020-08-18T17:04:00.598Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;使用Coding部署Blog站点添加https证书&quot;&gt;&lt;a href=&quot;#使用Coding部署Blog站点添加https证书&quot; class=&quot;headerlink&quot; title=&quot;使用Coding部署Blog站点添加https证书&quot;&gt;&lt;/a&gt;使用Coding部署Blog站点添加https证书&lt;/h2&gt;&lt;p&gt;进入Coding，在代码下，选择Pages服务。&lt;br&gt;&lt;img src=&quot;https://i.loli.net/2018/07/29/5b5d9adc4f513.png&quot; alt=&quot;9}PTMC[Q72%OEVZC(@D`2~X.png](https://i.loli.net/2018/07/29/5b5d9adc4f513.png)&quot;&gt;&lt;br&gt;在SSL/TLS 证书出，进行申请。（30分钟内只能申请一次，如果你的Blog同时部署至了GitHub和Coding，并且海外的线路解析至了GitHub，Coding申请证书的时候要把海外线路修改为Coding）&lt;/p&gt;
@@ -262,7 +262,7 @@
     <link href="https://blog.nmslwsnd.com/javascript-learning-diary-two/"/>
     <id>https://blog.nmslwsnd.com/javascript-learning-diary-two/</id>
     <published>2017-05-15T13:39:04.000Z</published>
-    <updated>2020-08-17T18:29:16.122Z</updated>
+    <updated>2020-08-18T17:09:55.193Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;ECMAScript-5种基本数据类型&quot;&gt;&lt;a href=&quot;#ECMAScript-5种基本数据类型&quot; class=&quot;headerlink&quot; title=&quot;ECMAScript 5种基本数据类型&quot;&gt;&lt;/a&gt;ECMAScript 5种基本数据类型&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;Undefined Null Boolean Number String&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -322,7 +322,7 @@
     <link href="https://blog.nmslwsnd.com/javascript-learning-diary-one/"/>
     <id>https://blog.nmslwsnd.com/javascript-learning-diary-one/</id>
     <published>2017-05-14T13:45:21.000Z</published>
-    <updated>2020-08-17T18:29:27.243Z</updated>
+    <updated>2020-08-18T17:09:49.167Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;JavaScript三部分：&quot;&gt;&lt;a href=&quot;#JavaScript三部分：&quot; class=&quot;headerlink&quot; title=&quot;JavaScript三部分：&quot;&gt;&lt;/a&gt;JavaScript三部分：&lt;/h2&gt;&lt;ol&gt;
@@ -365,7 +365,7 @@
     <link href="https://blog.nmslwsnd.com/ge-ren-chang-yong-wang-zhan-hui-zong/"/>
     <id>https://blog.nmslwsnd.com/ge-ren-chang-yong-wang-zhan-hui-zong/</id>
     <published>2017-05-12T15:15:25.000Z</published>
-    <updated>2020-08-17T19:11:37.609Z</updated>
+    <updated>2020-08-18T17:14:55.588Z</updated>
     
     
       
@@ -394,19 +394,16 @@
     <link href="https://blog.nmslwsnd.com/ge-ren-chang-yong-ruan-jian-hui-zong/"/>
     <id>https://blog.nmslwsnd.com/ge-ren-chang-yong-ruan-jian-hui-zong/</id>
     <published>2017-05-11T16:15:26.000Z</published>
-    <updated>2020-08-17T19:21:35.744Z</updated>
+    <updated>2020-08-18T17:19:32.270Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;视频&quot;&gt;&lt;a href=&quot;#视频&quot; class=&quot;headerlink&quot; title=&quot;视频&quot;&gt;&lt;/a&gt;视频&lt;/h1&gt;&lt;p id=&quot;div-border-right-red&quot;&gt;&lt;a href=&quot;http://potplayer.daum.net/?lang=zh_CN&quot;&gt;PotPlayer&lt;/a&gt;&lt;/p&gt;
-&lt;p id=&quot;div-border-right-red&quot;&gt;&lt;a href=&quot;https://ffmpeg.org/&quot;&gt;FFMPEG&lt;/a&gt;&lt;/p&gt;
-&lt;p id=&quot;div-border-right-red&quot;&gt;&lt;a href=&quot;https://mpv.io/&quot;&gt;MPV&lt;/a&gt;&lt;/p&gt;
-&lt;p id=&quot;div-border-right-red&quot;&gt;OBS Studio&lt;/p&gt;
-
-&lt;h1 id=&quot;音乐&quot;&gt;&lt;a href=&quot;#音乐&quot; class=&quot;headerlink&quot; title=&quot;音乐&quot;&gt;&lt;/a&gt;音乐&lt;/h1&gt;&lt;p id=&quot;div-border-right-red&quot;&gt;&lt;a href=&quot;https://www.spotify.com/&quot;&gt;Spotify&lt;/a&gt;&lt;/p&gt;
-&lt;p id=&quot;div-border-right-red&quot;&gt;&lt;a href=&quot;https://y.qq.com/&quot;&gt;QQ音乐&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;社交&quot;&gt;&lt;a href=&quot;#社交&quot; class=&quot;headerlink&quot; title=&quot;社交&quot;&gt;&lt;/a&gt;社交&lt;/h1&gt;&lt;p id=&quot;div-border-right-red&quot;&gt;Telegram&lt;/p&gt;
-&lt;p id=&quot;div-border-right-red&quot;&gt;Discord&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;视频&quot;&gt;&lt;a href=&quot;#视频&quot; class=&quot;headerlink&quot; title=&quot;视频&quot;&gt;&lt;/a&gt;视频&lt;/h1&gt;&lt;p id=&quot;div-border-right-red&quot;&gt;&lt;a</summary>
+        
+      
     
     
     
@@ -418,37 +415,11 @@
   </entry>
   
   <entry>
-    <title>Markdown基本语法</title>
-    <link href="https://blog.nmslwsnd.com/markdown-ji-ben-yu-fa/"/>
-    <id>https://blog.nmslwsnd.com/markdown-ji-ben-yu-fa/</id>
-    <published>2017-02-05T10:58:35.000Z</published>
-    <updated>2020-08-17T20:17:58.563Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，如今 Markdown 越来越受人欢迎，本文就向大家介绍一下 MarkDown</summary>
-        
-      
-    
-    
-    
-    
-    <category term="markdown" scheme="https://blog.nmslwsnd.com/tags/markdown/"/>
-    
-    <category term="语法" scheme="https://blog.nmslwsnd.com/tags/%E8%AF%AD%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Windows下安装Hexo教程</title>
     <link href="https://blog.nmslwsnd.com/windows-xia-an-zhuang-hexo-jiao-cheng/"/>
     <id>https://blog.nmslwsnd.com/windows-xia-an-zhuang-hexo-jiao-cheng/</id>
     <published>2017-02-02T16:43:08.000Z</published>
-    <updated>2020-08-17T10:14:26.934Z</updated>
+    <updated>2020-08-18T17:22:08.164Z</updated>
     
     
       
