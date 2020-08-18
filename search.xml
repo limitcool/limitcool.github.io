@@ -316,6 +316,27 @@
     
     
     <entry>
+      <title>Markdown基本语法</title>
+      <link href="/markdown-ji-ben-yu-fa/"/>
+      <url>/markdown-ji-ben-yu-fa/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，如今 Markdown 越来越受人欢迎，本文就向大家介绍一下 MarkDown 常用的一些语法。</p></blockquote><p>标题<br>标题是 Markdown 中非常常用的格式，只要在文本前，添加 #空格，就可以将文本定义为标题了，总共六级标题，每多一级便多一个 #。</p><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>列表<br>和 HTML 一样，MarkDown 也是存在无序列表和有序列表的。</p><p>无序列表<br>无序列表只需在文本前，前缀 - 或者 *，即可将文本定义为无序列表。</p><ul><li>苹果</li><li>香蕉</li><li>牛奶<br>有序列表<br>有序列表只需在文本前，前缀序号，例如 1.、2.、3., 即可将文本定义为有序列表。</li></ul><ol><li>苹果</li><li>香蕉</li><li>牛奶<br>字体<br>斜体<br>需要斜体的文本，在前后均使用 * 即可对文本进行倾斜。</li></ol><p><em>斜体效果</em></p><p>加粗<br>需要加粗的文本，在前后均使用 ** 即可对文本进行加粗。</p><p><strong>加粗效果</strong></p><p>斜体加粗<br>若要同时使用斜体和加粗效果，在前后均使用 *** 即可对文本进行倾斜和加粗的效果。</p><p><strong><em>倾斜和加粗同时使用</em></strong></p><p>删除线<br>需要使用删除线的文本，在前后均使用～～即可对文本添加删除线效果。</p><p><code>删除线效果</code></p><p>分割线<br>分割线需要三个 *** 即可实现分割线的效果，以下为分割线效果。</p><hr><p>引用<br>如果你需要使用用引用的格式，则需要在文本前增加 &gt;（大于号）即可实现引用效果</p><blockquote><p>引用效果</p></blockquote><p>代码<br>如果你需要将一块文本定义为代码，则需要使用3个<code>，并用三个</code>进行结尾，可在`后指定代码语言。</p><pre class="line-numbers language-none"><code class="language-none">代码效果<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>表格<br>表头|表头|表头<br>-|:-:|-:<br>内容|内容|内容<br>内容|内容|内容<br>第二行用 - 分割表头和内容。<br>文字默认居左</p><ul><li>两边加：表示文字居中</li><li>右边加：表示文字居右</li></ul><table><thead><tr><th>水果</th><th align="left">家电</th></tr></thead><tbody><tr><td>香蕉</td><td align="left">手机</td></tr><tr><td>牛奶</td><td align="left">电脑</td></tr><tr><td>苹果</td><td align="left">冰箱</td></tr></tbody></table>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> markdown </tag>
+            
+            <tag> 语法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Windows下安装Hexo教程</title>
       <link href="/windows-xia-an-zhuang-hexo-jiao-cheng/"/>
       <url>/windows-xia-an-zhuang-hexo-jiao-cheng/</url>

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.nmslwsnd.com/markdown-ji-ben-yu-fa/</loc>
+    
+    <lastmod>2020-08-18</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.nmslwsnd.com/windows-xia-an-zhuang-hexo-jiao-cheng/</loc>
     
     <lastmod>2020-08-18</lastmod>
@@ -271,6 +278,20 @@
   
   <url>
     <loc>https://blog.nmslwsnd.com/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
+    <lastmod>2020-08-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/markdown/</loc>
+    <lastmod>2020-08-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/%E8%AF%AD%E6%B3%95/</loc>
     <lastmod>2020-08-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
