@@ -333,13 +333,6 @@
   </url>
   
   <url>
-    <loc>https://blog.nmslwsnd.com/tags/hexo/</loc>
-    <lastmod>2020-08-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.nmslwsnd.com/tags/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2020-08-19</lastmod>
     <changefreq>daily</changefreq>
@@ -355,6 +348,13 @@
   
   <url>
     <loc>https://blog.nmslwsnd.com/tags/%E6%B1%87%E6%80%BB/</loc>
+    <lastmod>2020-08-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/hexo/</loc>
     <lastmod>2020-08-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
