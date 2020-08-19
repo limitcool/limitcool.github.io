@@ -207,21 +207,14 @@
   </url>
   
   <url>
-    <loc>https://blog.nmslwsnd.com/tags/%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2020-08-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.nmslwsnd.com/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
-    <lastmod>2020-08-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.nmslwsnd.com/tags/JavaScript/</loc>
+    <lastmod>2020-08-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2020-08-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -250,6 +243,13 @@
   
   <url>
     <loc>https://blog.nmslwsnd.com/tags/%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/</loc>
+    <lastmod>2020-08-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
     <lastmod>2020-08-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -319,14 +319,7 @@
   </url>
   
   <url>
-    <loc>https://blog.nmslwsnd.com/tags/Hyper-V/</loc>
-    <lastmod>2020-08-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.nmslwsnd.com/tags/Win10/</loc>
+    <loc>https://blog.nmslwsnd.com/tags/hexo/</loc>
     <lastmod>2020-08-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -354,7 +347,14 @@
   </url>
   
   <url>
-    <loc>https://blog.nmslwsnd.com/tags/hexo/</loc>
+    <loc>https://blog.nmslwsnd.com/tags/Hyper-V/</loc>
+    <lastmod>2020-08-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/Win10/</loc>
     <lastmod>2020-08-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -419,14 +419,14 @@
   </url>
   
   <url>
-    <loc>https://blog.nmslwsnd.com/categories/Windows/</loc>
+    <loc>https://blog.nmslwsnd.com/categories/%E6%B1%87%E6%80%BB/</loc>
     <lastmod>2020-08-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.nmslwsnd.com/categories/%E6%B1%87%E6%80%BB/</loc>
+    <loc>https://blog.nmslwsnd.com/categories/Windows/</loc>
     <lastmod>2020-08-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
