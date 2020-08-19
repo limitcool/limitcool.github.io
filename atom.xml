@@ -6,7 +6,7 @@
   <link href="https://blog.nmslwsnd.com/atom.xml" rel="self"/>
   
   <link href="https://blog.nmslwsnd.com/"/>
-  <updated>2020-08-18T17:04:07.234Z</updated>
+  <updated>2020-08-19T07:38:54.817Z</updated>
   <id>https://blog.nmslwsnd.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.nmslwsnd.com/mpv-kuai-jie-jian-da-quan/"/>
     <id>https://blog.nmslwsnd.com/mpv-kuai-jie-jian-da-quan/</id>
     <published>2020-08-17T10:19:11.000Z</published>
-    <updated>2020-08-18T17:04:07.234Z</updated>
+    <updated>2020-08-19T07:38:54.817Z</updated>
     
     
       
@@ -35,14 +35,18 @@
     
     
     
+    <category term="Windows" scheme="https://blog.nmslwsnd.com/categories/Windows/"/>
     
-    <category term="MPV" scheme="https://blog.nmslwsnd.com/tags/MPV/"/>
     
     <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
+    
+    <category term="MPV" scheme="https://blog.nmslwsnd.com/tags/MPV/"/>
     
     <category term="视频播放器" scheme="https://blog.nmslwsnd.com/tags/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/"/>
     
     <category term="快捷键" scheme="https://blog.nmslwsnd.com/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+    <category term="开源软件" scheme="https://blog.nmslwsnd.com/tags/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
@@ -51,7 +55,7 @@
     <link href="https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/"/>
     <id>https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/</id>
     <published>2020-08-16T11:33:19.000Z</published>
-    <updated>2020-08-19T07:08:52.072Z</updated>
+    <updated>2020-08-19T07:51:21.377Z</updated>
     
     
       
@@ -64,10 +68,14 @@
     
     
     
+    <category term="Hexo" scheme="https://blog.nmslwsnd.com/categories/Hexo/"/>
+    
     
     <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
     
     <category term="Hexo" scheme="https://blog.nmslwsnd.com/tags/Hexo/"/>
+    
+    <category term="Hexo优化" scheme="https://blog.nmslwsnd.com/tags/Hexo%E4%BC%98%E5%8C%96/"/>
     
     <category term="matery" scheme="https://blog.nmslwsnd.com/tags/matery/"/>
     
@@ -78,7 +86,7 @@
     <link href="https://blog.nmslwsnd.com/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/"/>
     <id>https://blog.nmslwsnd.com/powertoys-gong-neng-jie-shao-ji-shi-yong-jiao-cheng/</id>
     <published>2020-04-09T16:43:34.000Z</published>
-    <updated>2020-08-18T17:04:09.029Z</updated>
+    <updated>2020-08-19T07:57:24.427Z</updated>
     
     
       
@@ -92,10 +100,12 @@
     
     
     
+    <category term="Windows" scheme="https://blog.nmslwsnd.com/categories/Windows/"/>
     
-    <category term="windows" scheme="https://blog.nmslwsnd.com/tags/windows/"/>
     
-    <category term="powertoys" scheme="https://blog.nmslwsnd.com/tags/powertoys/"/>
+    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
+    
+    <category term="Powertoys" scheme="https://blog.nmslwsnd.com/tags/Powertoys/"/>
     
   </entry>
   
@@ -104,7 +114,7 @@
     <link href="https://blog.nmslwsnd.com/centos-an-zhuang-lychee-tu-chuang/"/>
     <id>https://blog.nmslwsnd.com/centos-an-zhuang-lychee-tu-chuang/</id>
     <published>2020-03-17T19:49:17.000Z</published>
-    <updated>2020-08-18T17:04:02.206Z</updated>
+    <updated>2020-08-19T07:50:29.964Z</updated>
     
     
       
@@ -120,14 +130,16 @@
     
     
     
+    <category term="图床" scheme="https://blog.nmslwsnd.com/categories/%E5%9B%BE%E5%BA%8A/"/>
+    
+    
+    <category term="CentOS" scheme="https://blog.nmslwsnd.com/tags/CentOS/"/>
     
     <category term="Lychee" scheme="https://blog.nmslwsnd.com/tags/Lychee/"/>
     
     <category term="荔枝" scheme="https://blog.nmslwsnd.com/tags/%E8%8D%94%E6%9E%9D/"/>
     
     <category term="图床" scheme="https://blog.nmslwsnd.com/tags/%E5%9B%BE%E5%BA%8A/"/>
-    
-    <category term="CentOS" scheme="https://blog.nmslwsnd.com/tags/CentOS/"/>
     
     <category term="PHP" scheme="https://blog.nmslwsnd.com/tags/PHP/"/>
     
@@ -138,7 +150,7 @@
     <link href="https://blog.nmslwsnd.com/centos8-an-zhuang-bing-ji-huo-office/"/>
     <id>https://blog.nmslwsnd.com/centos8-an-zhuang-bing-ji-huo-office/</id>
     <published>2019-07-01T10:58:35.000Z</published>
-    <updated>2020-08-18T17:06:58.882Z</updated>
+    <updated>2020-08-19T08:00:00.025Z</updated>
     
     
       
@@ -152,10 +164,18 @@
     
     
     
+    <category term="Office" scheme="https://blog.nmslwsnd.com/categories/Office/"/>
     
-    <category term="Centos" scheme="https://blog.nmslwsnd.com/tags/Centos/"/>
     
-    <category term="office" scheme="https://blog.nmslwsnd.com/tags/office/"/>
+    <category term="CentOS" scheme="https://blog.nmslwsnd.com/tags/CentOS/"/>
+    
+    <category term="Office" scheme="https://blog.nmslwsnd.com/tags/Office/"/>
+    
+    <category term="KMS" scheme="https://blog.nmslwsnd.com/tags/KMS/"/>
+    
+    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
+    
+    <category term="Linux" scheme="https://blog.nmslwsnd.com/tags/Linux/"/>
     
   </entry>
   
@@ -164,7 +184,7 @@
     <link href="https://blog.nmslwsnd.com/post-style-set/"/>
     <id>https://blog.nmslwsnd.com/post-style-set/</id>
     <published>2019-07-01T10:58:35.000Z</published>
-    <updated>2020-08-18T17:04:08.336Z</updated>
+    <updated>2020-08-19T07:43:59.266Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;文章内超链接样式设置&quot;&gt;&lt;a href=&quot;#文章内超链接样式设置&quot; class=&quot;headerlink&quot; title=&quot;文章内超链接样式设置&quot;&gt;&lt;/a&gt;文章内超链接样式设置&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-html&quot; data-language=&quot;html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;section&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;link-braces&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
@@ -197,8 +217,14 @@
     
     
     
+    <category term="Hexo" scheme="https://blog.nmslwsnd.com/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://blog.nmslwsnd.com/tags/Hexo/"/>
     
     <category term="Hexo优化" scheme="https://blog.nmslwsnd.com/tags/Hexo%E4%BC%98%E5%8C%96/"/>
+    
+    <category term="Css样式" scheme="https://blog.nmslwsnd.com/tags/Css%E6%A0%B7%E5%BC%8F/"/>
     
   </entry>
   
@@ -207,7 +233,7 @@
     <link href="https://blog.nmslwsnd.com/win10-open-hyper-v/"/>
     <id>https://blog.nmslwsnd.com/win10-open-hyper-v/</id>
     <published>2019-05-28T13:39:04.000Z</published>
-    <updated>2020-08-18T17:04:09.736Z</updated>
+    <updated>2020-08-19T07:56:26.210Z</updated>
     
     
       
@@ -229,8 +255,6 @@
     
     <category term="Hyper-V" scheme="https://blog.nmslwsnd.com/tags/Hyper-V/"/>
     
-    <category term="Win10" scheme="https://blog.nmslwsnd.com/tags/Win10/"/>
-    
   </entry>
   
   <entry>
@@ -238,13 +262,15 @@
     <link href="https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-tian-jia-xiao-lu-suo/"/>
     <id>https://blog.nmslwsnd.com/wei-ni-de-wang-zhan-tian-jia-xiao-lu-suo/</id>
     <published>2017-06-04T18:19:37.000Z</published>
-    <updated>2020-08-18T17:04:00.598Z</updated>
+    <updated>2020-08-19T07:37:09.611Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;使用Coding部署Blog站点添加https证书&quot;&gt;&lt;a href=&quot;#使用Coding部署Blog站点添加https证书&quot; class=&quot;headerlink&quot; title=&quot;使用Coding部署Blog站点添加https证书&quot;&gt;&lt;/a&gt;使用Coding部署Blog站点添加https证书&lt;/h2&gt;&lt;p&gt;进入Coding，在代码下，选择Pages服务。&lt;br&gt;&lt;img src=&quot;https://i.loli.net/2018/07/29/5b5d9adc4f513.png&quot; alt=&quot;9}PTMC[Q72%OEVZC(@D`2~X.png](https://i.loli.net/2018/07/29/5b5d9adc4f513.png)&quot;&gt;&lt;br&gt;在SSL/TLS 证书出，进行申请。（30分钟内只能申请一次，如果你的Blog同时部署至了GitHub和Coding，并且海外的线路解析至了GitHub，Coding申请证书的时候要把海外线路修改为Coding）&lt;/p&gt;
 &lt;h2 id=&quot;云服务器添加https证书&quot;&gt;&lt;a href=&quot;#云服务器添加https证书&quot; class=&quot;headerlink&quot; title=&quot;云服务器添加https证书&quot;&gt;&lt;/a&gt;云服务器添加https证书&lt;/h2&gt;&lt;p&gt;如果你使用的是云服务器，那么你需要先申请证书，在阿里云和腾讯云，都可以申请免费的证书。&lt;br&gt;申请证书，需要验证域名所有权，大致为文件验证（上传文件至指定目录）和DNS验证（添加DNS解析记录进行验证）。&lt;br&gt;证书申请完毕后，可进行下载证书。&lt;br&gt;下载得到的文件解压获得3个文件夹，分别是Apache、IIS、Nginx 服务器的证书文件。&lt;/p&gt;</summary>
     
     
+    
+    <category term="SSL证书部署" scheme="https://blog.nmslwsnd.com/categories/SSL%E8%AF%81%E4%B9%A6%E9%83%A8%E7%BD%B2/"/>
     
     
     <category term="https" scheme="https://blog.nmslwsnd.com/tags/https/"/>
@@ -262,7 +288,7 @@
     <link href="https://blog.nmslwsnd.com/javascript-learning-diary-two/"/>
     <id>https://blog.nmslwsnd.com/javascript-learning-diary-two/</id>
     <published>2017-05-15T13:39:04.000Z</published>
-    <updated>2020-08-19T05:19:09.335Z</updated>
+    <updated>2020-08-19T07:38:09.632Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;ECMAScript-5种基本数据类型&quot;&gt;&lt;a href=&quot;#ECMAScript-5种基本数据类型&quot; class=&quot;headerlink&quot; title=&quot;ECMAScript 5种基本数据类型&quot;&gt;&lt;/a&gt;ECMAScript 5种基本数据类型&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;Undefined Null Boolean Number String&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -304,9 +330,7 @@
     
     
     
-    <category term="学习" scheme="https://blog.nmslwsnd.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/categories/%E5%AD%A6%E4%B9%A0/JavaScript/"/>
+    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/categories/JavaScript/"/>
     
     
     <category term="JavaScript" scheme="https://blog.nmslwsnd.com/tags/JavaScript/"/>
@@ -322,7 +346,7 @@
     <link href="https://blog.nmslwsnd.com/javascript-learning-diary-one/"/>
     <id>https://blog.nmslwsnd.com/javascript-learning-diary-one/</id>
     <published>2017-05-14T13:45:21.000Z</published>
-    <updated>2020-08-19T05:19:06.698Z</updated>
+    <updated>2020-08-19T07:38:03.846Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;JavaScript三部分：&quot;&gt;&lt;a href=&quot;#JavaScript三部分：&quot; class=&quot;headerlink&quot; title=&quot;JavaScript三部分：&quot;&gt;&lt;/a&gt;JavaScript三部分：&lt;/h2&gt;&lt;ol&gt;
@@ -341,9 +365,7 @@
     
     
     
-    <category term="学习" scheme="https://blog.nmslwsnd.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/categories/%E5%AD%A6%E4%B9%A0/JavaScript/"/>
+    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/categories/JavaScript/"/>
     
     
     <category term="JavaScript" scheme="https://blog.nmslwsnd.com/tags/JavaScript/"/>
@@ -365,7 +387,7 @@
     <link href="https://blog.nmslwsnd.com/ge-ren-chang-yong-wang-zhan-hui-zong/"/>
     <id>https://blog.nmslwsnd.com/ge-ren-chang-yong-wang-zhan-hui-zong/</id>
     <published>2017-05-12T15:15:25.000Z</published>
-    <updated>2020-08-19T05:14:49.111Z</updated>
+    <updated>2020-08-19T07:45:17.666Z</updated>
     
     
       
@@ -394,7 +416,7 @@
     <link href="https://blog.nmslwsnd.com/ge-ren-chang-yong-ruan-jian-hui-zong/"/>
     <id>https://blog.nmslwsnd.com/ge-ren-chang-yong-ruan-jian-hui-zong/</id>
     <published>2017-05-11T16:15:26.000Z</published>
-    <updated>2020-08-19T05:14:45.076Z</updated>
+    <updated>2020-08-19T07:45:09.556Z</updated>
     
     
       
@@ -412,6 +434,10 @@
     
     <category term="汇总" scheme="https://blog.nmslwsnd.com/tags/%E6%B1%87%E6%80%BB/"/>
     
+    <category term="软件" scheme="https://blog.nmslwsnd.com/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="常用软件" scheme="https://blog.nmslwsnd.com/tags/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+    
   </entry>
   
   <entry>
@@ -419,7 +445,7 @@
     <link href="https://blog.nmslwsnd.com/markdown-ji-ben-yu-fa/"/>
     <id>https://blog.nmslwsnd.com/markdown-ji-ben-yu-fa/</id>
     <published>2017-02-05T10:58:35.000Z</published>
-    <updated>2020-08-18T18:41:40.259Z</updated>
+    <updated>2020-08-19T08:02:14.814Z</updated>
     
     
       
@@ -433,10 +459,14 @@
     
     
     
+    <category term="Markdown" scheme="https://blog.nmslwsnd.com/categories/Markdown/"/>
     
-    <category term="markdown" scheme="https://blog.nmslwsnd.com/tags/markdown/"/>
+    
+    <category term="Markdown" scheme="https://blog.nmslwsnd.com/tags/Markdown/"/>
     
     <category term="语法" scheme="https://blog.nmslwsnd.com/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+    <category term="Hexo" scheme="https://blog.nmslwsnd.com/tags/Hexo/"/>
     
   </entry>
   
@@ -445,7 +475,7 @@
     <link href="https://blog.nmslwsnd.com/windows-xia-an-zhuang-hexo-jiao-cheng/"/>
     <id>https://blog.nmslwsnd.com/windows-xia-an-zhuang-hexo-jiao-cheng/</id>
     <published>2017-02-02T16:43:08.000Z</published>
-    <updated>2020-08-18T17:22:08.164Z</updated>
+    <updated>2020-08-19T07:51:49.519Z</updated>
     
     
       
@@ -463,10 +493,12 @@
     
     
     
+    <category term="Hexo" scheme="https://blog.nmslwsnd.com/categories/Hexo/"/>
     
-    <category term="windows" scheme="https://blog.nmslwsnd.com/tags/windows/"/>
     
-    <category term="hexo" scheme="https://blog.nmslwsnd.com/tags/hexo/"/>
+    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
+    
+    <category term="Hexo" scheme="https://blog.nmslwsnd.com/tags/Hexo/"/>
     
   </entry>
   
