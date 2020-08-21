@@ -6,7 +6,7 @@
   <link href="https://blog.nmslwsnd.com/atom.xml" rel="self"/>
   
   <link href="https://blog.nmslwsnd.com/"/>
-  <updated>2020-08-19T07:38:54.817Z</updated>
+  <updated>2020-08-21T14:33:44.064Z</updated>
   <id>https://blog.nmslwsnd.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>又拍云全站加速使用指南</title>
+    <link href="https://blog.nmslwsnd.com/you-pai-yun-quan-zhan-jia-su-shi-yong-zhi-nan/"/>
+    <id>https://blog.nmslwsnd.com/you-pai-yun-quan-zhan-jia-su-shi-yong-zhi-nan/</id>
+    <published>2020-08-20T17:33:29.000Z</published>
+    <updated>2020-08-21T14:33:44.064Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;之前博客一直部署在Coding，由于Coding频繁抽风，4月份的时候，朋友推荐了又拍云全站加速。又拍云有一个又拍云联盟的活动，加入之后每月可以获取10G的存储空间和15G的CDN流量。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1</summary>
+        
+      
+    
+    
+    
+    <category term="CDN" scheme="https://blog.nmslwsnd.com/categories/CDN/"/>
+    
+    
+    <category term="又拍云" scheme="https://blog.nmslwsnd.com/tags/%E5%8F%88%E6%8B%8D%E4%BA%91/"/>
+    
+    <category term="CDN" scheme="https://blog.nmslwsnd.com/tags/CDN/"/>
+    
+  </entry>
   
   <entry>
     <title>MPV快捷键大全</title>
@@ -55,7 +85,7 @@
     <link href="https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/"/>
     <id>https://blog.nmslwsnd.com/matery-zhu-ti-she-zhi/</id>
     <published>2020-08-16T11:33:19.000Z</published>
-    <updated>2020-08-19T07:51:21.377Z</updated>
+    <updated>2020-08-21T14:32:28.578Z</updated>
     
     
       
