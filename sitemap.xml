@@ -340,6 +340,13 @@
   </url>
   
   <url>
+    <loc>https://blog.nmslwsnd.com/tags/Powertoys/</loc>
+    <lastmod>2020-09-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.nmslwsnd.com/tags/Hexo%E4%BC%98%E5%8C%96/</loc>
     <lastmod>2020-09-12</lastmod>
     <changefreq>daily</changefreq>
@@ -348,13 +355,6 @@
   
   <url>
     <loc>https://blog.nmslwsnd.com/tags/Css%E6%A0%B7%E5%BC%8F/</loc>
-    <lastmod>2020-09-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.nmslwsnd.com/tags/Powertoys/</loc>
     <lastmod>2020-09-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
