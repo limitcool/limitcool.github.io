@@ -40,11 +40,11 @@
     
     <category term="视频" scheme="https://blog.nmslwsnd.com/tags/%E8%A7%86%E9%A2%91/"/>
     
+    <category term="CDN" scheme="https://blog.nmslwsnd.com/tags/CDN/"/>
+    
     <category term="Github" scheme="https://blog.nmslwsnd.com/tags/Github/"/>
     
     <category term="jsDelivr" scheme="https://blog.nmslwsnd.com/tags/jsDelivr/"/>
-    
-    <category term="CDN" scheme="https://blog.nmslwsnd.com/tags/CDN/"/>
     
     <category term="FFMPEG" scheme="https://blog.nmslwsnd.com/tags/FFMPEG/"/>
     
@@ -101,9 +101,9 @@
     <category term="CDN" scheme="https://blog.nmslwsnd.com/categories/CDN/"/>
     
     
-    <category term="CDN" scheme="https://blog.nmslwsnd.com/tags/CDN/"/>
-    
     <category term="又拍云" scheme="https://blog.nmslwsnd.com/tags/%E5%8F%88%E6%8B%8D%E4%BA%91/"/>
+    
+    <category term="CDN" scheme="https://blog.nmslwsnd.com/tags/CDN/"/>
     
   </entry>
   
@@ -492,11 +492,11 @@
     <category term="汇总" scheme="https://blog.nmslwsnd.com/categories/%E6%B1%87%E6%80%BB/"/>
     
     
+    <category term="汇总" scheme="https://blog.nmslwsnd.com/tags/%E6%B1%87%E6%80%BB/"/>
+    
     <category term="网站" scheme="https://blog.nmslwsnd.com/tags/%E7%BD%91%E7%AB%99/"/>
     
     <category term="常用网站" scheme="https://blog.nmslwsnd.com/tags/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99/"/>
-    
-    <category term="汇总" scheme="https://blog.nmslwsnd.com/tags/%E6%B1%87%E6%80%BB/"/>
     
   </entry>
   
