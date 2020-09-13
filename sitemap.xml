@@ -214,6 +214,34 @@
   </url>
   
   <url>
+    <loc>https://blog.nmslwsnd.com/tags/Lychee/</loc>
+    <lastmod>2020-09-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/%E8%8D%94%E6%9E%9D/</loc>
+    <lastmod>2020-09-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/%E5%9B%BE%E5%BA%8A/</loc>
+    <lastmod>2020-09-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/PHP/</loc>
+    <lastmod>2020-09-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.nmslwsnd.com/tags/JavaScript/</loc>
     <lastmod>2020-09-13</lastmod>
     <changefreq>daily</changefreq>
@@ -250,34 +278,6 @@
   
   <url>
     <loc>https://blog.nmslwsnd.com/tags/%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/</loc>
-    <lastmod>2020-09-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.nmslwsnd.com/tags/Lychee/</loc>
-    <lastmod>2020-09-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.nmslwsnd.com/tags/%E8%8D%94%E6%9E%9D/</loc>
-    <lastmod>2020-09-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.nmslwsnd.com/tags/%E5%9B%BE%E5%BA%8A/</loc>
-    <lastmod>2020-09-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.nmslwsnd.com/tags/PHP/</loc>
     <lastmod>2020-09-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -496,14 +496,14 @@
   </url>
   
   <url>
-    <loc>https://blog.nmslwsnd.com/categories/JavaScript/</loc>
+    <loc>https://blog.nmslwsnd.com/categories/%E5%9B%BE%E5%BA%8A/</loc>
     <lastmod>2020-09-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.nmslwsnd.com/categories/%E5%9B%BE%E5%BA%8A/</loc>
+    <loc>https://blog.nmslwsnd.com/categories/JavaScript/</loc>
     <lastmod>2020-09-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
