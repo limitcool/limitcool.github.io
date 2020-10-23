@@ -361,6 +361,13 @@
   </url>
   
   <url>
+    <loc>https://blog.nmslwsnd.com/tags/Hyper-V/</loc>
+    <lastmod>2020-10-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.nmslwsnd.com/tags/%E8%A7%86%E9%A2%91/</loc>
     <lastmod>2020-10-23</lastmod>
     <changefreq>daily</changefreq>
@@ -369,13 +376,6 @@
   
   <url>
     <loc>https://blog.nmslwsnd.com/tags/bilibili/</loc>
-    <lastmod>2020-10-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.nmslwsnd.com/tags/Hyper-V/</loc>
     <lastmod>2020-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
