@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Hexo和Hexo主题升级指南</title>
+      <link href="hexo-he-hexo-zhu-ti-sheng-ji-zhi-nan/"/>
+      <url>hexo-he-hexo-zhu-ti-sheng-ji-zhi-nan/</url>
+      
+        <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote><p><code>matery</code>主题的代码块插件<code>prismjs</code>在<code>hexo@5.0.2</code>版本中存在转义花括号的bug,需要对Hexo进行升级.</p></blockquote><h1 id="一、升级Hexo"><a href="#一、升级Hexo" class="headerlink" title="一、升级Hexo"></a>一、升级Hexo</h1><h3 id="1-升级hexo-cli"><a href="#1-升级hexo-cli" class="headerlink" title="1.升级hexo-cli"></a>1.升级<code>hexo-cli</code></h3><p>进入<code>Hexo</code>目录,使用<code>hexo version</code>查看<code>hexo</code>升级之前的版本,输入<code>npm i hexo-cli -g</code>进行<code>hexo-cli</code>的更新，再次输入<code>hexo version</code>查看是否升级成功。</p><h3 id="2-检查已安装的插件是否有插件可进行升级"><a href="#2-检查已安装的插件是否有插件可进行升级" class="headerlink" title="2.检查已安装的插件是否有插件可进行升级"></a>2.检查已安装的插件是否有插件可进行升级</h3><p>使用<code>npm install -g npm-check</code>全局安装<code>npm-check</code>插件，安装后键入<code>npm-check</code>检查目前已安装的插件是否有可升级的插件。</p><h3 id="3-升级已安装的插件"><a href="#3-升级已安装的插件" class="headerlink" title="3.升级已安装的插件"></a>3.升级已安装的插件</h3><p>使用<code>npm install -g npm-upgrade</code>全局安装<code>npm install -g npm-upgrade</code>插件，安装后键入<code>npm-upgrade</code>升级已安装的插件。</p><h3 id="4、更新全局包及生产环境依赖"><a href="#4、更新全局包及生产环境依赖" class="headerlink" title="4、更新全局包及生产环境依赖"></a>4、更新全局包及生产环境依赖</h3><p>使用<code>npm update -g</code>更新全局包和<code>npm update --save</code>更新生产环境依赖。</p><p>至此Hexo的升级就完成了</p><h1 id="二、Hexo主题升级"><a href="#二、Hexo主题升级" class="headerlink" title="二、Hexo主题升级"></a>二、Hexo主题升级</h1><p>进入Hexo目录主题<code>D:\hexo\themes\hexo-theme-matery</code></p><p>更新工作的状态树：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> add <span class="token keyword">.</span></code></pre><p>之后，输入如下命令，将文件放在堆栈中，获取更新后，再进行弹栈：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> stash<span class="token function">git</span> pull<span class="token function">git</span> stash pop</code></pre><p>执行这几条简单的命令之后，Hexo主题便可以进行无损更新。</p><p><a href="https://blog.csdn.net/qq_41462923/article/details/100149605">本文参考:果子酱</a></p><p><a href="https://www.jianshu.com/p/802182c01b59">本文参考:LANVNAL</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Matery </tag>
+            
+            <tag> Npm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用Github+jsDelivr存储视频</title>
       <link href="shi-yong-github-jsdelivr-cun-chu-shi-pin/"/>
       <url>shi-yong-github-jsdelivr-cun-chu-shi-pin/</url>
@@ -198,13 +227,13 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Lychee </tag>
             
             <tag> 荔枝 </tag>
             
             <tag> 图床 </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> PHP </tag>
             
@@ -473,11 +502,11 @@
       
         <tags>
             
+            <tag> Hexo </tag>
+            
             <tag> Markdown </tag>
             
             <tag> 语法 </tag>
-            
-            <tag> Hexo </tag>
             
         </tags>
       

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.nmslwsnd.com/hexo-he-hexo-zhu-ti-sheng-ji-zhi-nan/</loc>
+    <lastmod>2020-10-27</lastmod>
+  </url>
+  <url>
     <loc>https://blog.nmslwsnd.com/shi-yong-github-jsdelivr-cun-chu-shi-pin/</loc>
     <lastmod>2020-09-14</lastmod>
   </url>
