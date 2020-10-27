@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.nmslwsnd.com/shi-yong-n2n-da-jian-xu-ni-ju-yu-wang-jin-xing-you-xi-lian-ji-fu-wu-duan-ji-ke-hu-duan/</loc>
+    
+    <lastmod>2020-10-27</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.nmslwsnd.com/hexo-he-hexo-zhu-ti-sheng-ji-zhi-nan/</loc>
     
     <lastmod>2020-10-27</lastmod>
@@ -494,6 +501,27 @@
   </url>
   
   <url>
+    <loc>https://blog.nmslwsnd.com/tags/N2N/</loc>
+    <lastmod>2020-10-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
+    <lastmod>2020-10-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/%E6%B8%B8%E6%88%8F/</loc>
+    <lastmod>2020-10-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.nmslwsnd.com/tags/%E5%8F%88%E6%8B%8D%E4%BA%91/</loc>
     <lastmod>2020-10-27</lastmod>
     <changefreq>daily</changefreq>
@@ -574,6 +602,13 @@
   
   <url>
     <loc>https://blog.nmslwsnd.com/categories/CDN/</loc>
+    <lastmod>2020-10-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
     <lastmod>2020-10-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
