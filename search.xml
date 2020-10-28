@@ -8,9 +8,27 @@
       <link href="shi-yong-frp-nei-wang-chuan-tou-tong-guo-ssh-lian-jie-nei-wang-fu-wu-qi/"/>
       <url>shi-yong-frp-nei-wang-chuan-tou-tong-guo-ssh-lian-jie-nei-wang-fu-wu-qi/</url>
       
-        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>由于网络的普及,IPV4的数量越来越少,运营商没有足够的公网IPV4地址分配给用户，大部分用户使用的都是内网IP,由于博主有远程SS连接本地服务器的需求,故想到了frp. frp是一个专注于内网穿透的高性能的反向代理应用，支持 TCP、UDP、HTTP、HTTPS 等多种协议。可以将内网服务以安全、便捷的方式通过具有公网 IP 节点的中转暴露到公网。</p></blockquote><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>搭建一个<code>frp</code>的服务链,我们需要以下条件.</p><p>1.一台具有<strong>公网IP</strong>的服务器,用于做<code>frp</code><strong>服务端</strong>.(简称<code>frps</code>)</p><p>2.<code>frp</code>的<strong>客户端</strong>,用于从内网映射出去的服务器.(简称<code>frpc</code>)</p><p>3.<code>frp</code>项目地址: <a href="https://github.com/fatedier/frp">https://github.com/fatedier/frp</a></p><h1 id="安装frp"><a href="#安装frp" class="headerlink" title="安装frp"></a>安装frp</h1><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>目前可以在<code>Github </code>的 <a href="https://github.com/fatedier/frp/releases">Release</a> 页面中下载到最新版本的客户端和服务端二进制文件，所有文件被打包在一个压缩包中。</p><h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>将刚下载的服务端及客户端二进制文件分别上传至服务端及客户端.并分别给与二进制文件执行权限.</p><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#给予frp服务端程序frps运行权限</span><span class="token function">chmod</span> u+x frps <span class="token comment" spellcheck="true">#给予frp客户端程序frpc运行权限</span><span class="token function">chmod</span> u+x frps</code></pre><h1 id="运行服务端及客户端"><a href="#运行服务端及客户端" class="headerlink" title="运行服务端及客户端"></a>运行服务端及客户端</h1><h3 id="编写配置文件"><a href="#编写配置文件" class="headerlink" title="编写配置文件"></a>编写配置文件</h3><p>分别修改服务端配置文件<code>frps.ini</code>及客户端配置文件<code>frpc.ini</code></p><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#frps.ini修改如下</span><span class="token punctuation">[</span>common<span class="token punctuation">]</span>bind_port <span class="token operator">=</span> 7000<span class="token comment" spellcheck="true">#frpc.ini修改如下 其中 x.x.x.x为frps 所在服务器的公网 IP</span><span class="token punctuation">[</span>common<span class="token punctuation">]</span>server_addr <span class="token operator">=</span> x.x.x.xserver_port <span class="token operator">=</span> 7000<span class="token punctuation">[</span>ssh<span class="token punctuation">]</span><span class="token function">type</span> <span class="token operator">=</span> tcplocal_ip <span class="token operator">=</span> 127.0.0.1local_port <span class="token operator">=</span> 22remote_port <span class="token operator">=</span> 6000</code></pre><p><code>local_ip</code> 和 <code>local_port</code> 配置为本地需要暴露到公网的服务地址和端口。<code>remote_port</code> 表示在 frp 服务端监听的端口，访问此端口的流量将会被转发到本地服务对应的端口。</p><h3 id="运行服务端"><a href="#运行服务端" class="headerlink" title="运行服务端"></a>运行服务端</h3><p>在<code>服务端</code>执行以下命令:</p><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#-c指定服务端配置文件</span>./frps -c ./frps.ini</code></pre><p>在<code>客户端</code>执行以下命令:</p><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#-c指定客户端配置文件</span>./frpc -c ./frpc.ini</code></pre><h1 id="通过ssh连接内网机器"><a href="#通过ssh连接内网机器" class="headerlink" title="通过ssh连接内网机器"></a>通过ssh连接内网机器</h1><p>运行<code>powershell</code>(或使用其他<code>ssh</code>客户端)键入以下命令:</p><pre class=" language-bash"><code class="language-bash"><span class="token function">ssh</span> -oPort<span class="token operator">=</span>6000 root@x.x.x.x</code></pre><p><code>frp</code>会将请求 <code>x.x.x.x:6000</code> 的流量转发到内网机器的<code>22</code>端口。</p><p><a href="https://gofrp.org/docs/">本文参考:frp官方文档</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
+      <categories>
+          
+          <category> 内网穿透 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> 内网穿透 </tag>
+            
+            <tag> frp </tag>
+            
+            <tag> SSH </tag>
+            
+        </tags>
       
     </entry>
     
