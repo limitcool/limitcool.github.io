@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>使用Gitee+PicGo搭建自己的图床</title>
+      <link href="shi-yong-gitee-picgo-da-jian-zi-ji-de-tu-chuang/"/>
+      <url>shi-yong-gitee-picgo-da-jian-zi-ji-de-tu-chuang/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用frp内网穿透,通过ssh连接内网服务器</title>
       <link href="shi-yong-frp-nei-wang-chuan-tou-tong-guo-ssh-lian-jie-nei-wang-fu-wu-qi/"/>
       <url>shi-yong-frp-nei-wang-chuan-tou-tong-guo-ssh-lian-jie-nei-wang-fu-wu-qi/</url>

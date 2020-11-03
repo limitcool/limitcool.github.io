@@ -6,7 +6,7 @@
   <link href="https://blog.nmslwsnd.com/atom.xml" rel="self"/>
   
   <link href="https://blog.nmslwsnd.com/"/>
-  <updated>2020-10-28T16:36:51.189Z</updated>
+  <updated>2020-10-30T15:54:13.918Z</updated>
   <id>https://blog.nmslwsnd.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Gitee+PicGo搭建自己的图床</title>
+    <link href="https://blog.nmslwsnd.com/shi-yong-gitee-picgo-da-jian-zi-ji-de-tu-chuang/"/>
+    <id>https://blog.nmslwsnd.com/shi-yong-gitee-picgo-da-jian-zi-ji-de-tu-chuang/</id>
+    <published>2020-10-30T15:54:13.000Z</published>
+    <updated>2020-10-30T15:54:13.918Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>使用frp内网穿透,通过ssh连接内网服务器</title>
@@ -651,38 +676,6 @@
     <category term="Markdown" scheme="https://blog.nmslwsnd.com/tags/Markdown/"/>
     
     <category term="语法" scheme="https://blog.nmslwsnd.com/tags/%E8%AF%AD%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows下安装Hexo教程</title>
-    <link href="https://blog.nmslwsnd.com/windows-xia-an-zhuang-hexo-jiao-cheng/"/>
-    <id>https://blog.nmslwsnd.com/windows-xia-an-zhuang-hexo-jiao-cheng/</id>
-    <published>2017-02-02T16:43:08.000Z</published>
-    <updated>2020-08-19T07:51:49.519Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Hexo 是一个快速、简洁且高效的博客框架，本文笔者带大家安装 Hexo。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;安装前提&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Node.js:&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Hexo" scheme="https://blog.nmslwsnd.com/categories/Hexo/"/>
-    
-    
-    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
-    
-    <category term="Hexo" scheme="https://blog.nmslwsnd.com/tags/Hexo/"/>
     
   </entry>
   
