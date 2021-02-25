@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.nmslwsnd.com/zhong-wen-wen-dang-xie-zuo-gui-fan/</loc>
+    <loc>https://blog.nmslwsnd.com/shi-yong-gitee-picgo-da-jian-zi-ji-de-tu-chuang/</loc>
     
     <lastmod>2021-02-25</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.nmslwsnd.com/shi-yong-gitee-picgo-da-jian-zi-ji-de-tu-chuang/</loc>
+    <loc>https://blog.nmslwsnd.com/zhong-wen-wen-dang-xie-zuo-gui-fan/</loc>
     
     <lastmod>2021-02-25</lastmod>
     
@@ -572,6 +572,27 @@
   
   <url>
     <loc>https://blog.nmslwsnd.com/tags/%E5%8F%88%E6%8B%8D%E4%BA%91/</loc>
+    <lastmod>2021-02-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/%E5%AD%98%E5%82%A8/</loc>
+    <lastmod>2021-02-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/Gitee/</loc>
+    <lastmod>2021-02-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nmslwsnd.com/tags/PicGo/</loc>
     <lastmod>2021-02-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
