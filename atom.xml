@@ -6,7 +6,7 @@
   <link href="https://blog.nmslwsnd.com/atom.xml" rel="self"/>
   
   <link href="https://blog.nmslwsnd.com/"/>
-  <updated>2021-02-25T13:35:07.644Z</updated>
+  <updated>2021-02-26T05:44:19.809Z</updated>
   <id>https://blog.nmslwsnd.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用密钥进行SSH连接</title>
+    <link href="https://blog.nmslwsnd.com/shi-yong-mi-yao-jin-xing-ssh-lian-jie/"/>
+    <id>https://blog.nmslwsnd.com/shi-yong-mi-yao-jin-xing-ssh-lian-jie/</id>
+    <published>2021-02-26T05:17:47.000Z</published>
+    <updated>2021-02-26T05:44:19.809Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://blog.nmslwsnd.com/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://blog.nmslwsnd.com/tags/Linux/"/>
+    
+    <category term="ssh" scheme="https://blog.nmslwsnd.com/tags/ssh/"/>
+    
+    <category term="Git" scheme="https://blog.nmslwsnd.com/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>中文文档写作规范</title>
@@ -436,20 +465,20 @@
     <updated>2020-08-19T07:43:59.266Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;文章内超链接样式设置&quot;&gt;&lt;a href=&quot;#文章内超链接样式设置&quot; class=&quot;headerlink&quot; title=&quot;文章内超链接样式设置&quot;&gt;&lt;/a&gt;文章内超链接样式设置&lt;/h1&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&amp;lt;section class=&quot;link-braces&quot;&amp;gt;
-&amp;lt;p&amp;gt;这是一个&amp;lt;a href=&quot;#&quot;&amp;gt;超链接&amp;lt;/a&amp;gt;
+    <summary type="html">&lt;h1 id=&quot;文章内超链接样式设置&quot;&gt;&lt;a href=&quot;#文章内超链接样式设置&quot; class=&quot;headerlink&quot; title=&quot;文章内超链接样式设置&quot;&gt;&lt;/a&gt;文章内超链接样式设置&lt;/h1&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&amp;lt;section class=&amp;quot;link-braces&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;这是一个&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;超链接&amp;lt;/a&amp;gt;
 &amp;lt;/section&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;span id=&quot;inline-blue&quot;&gt;Demo:&lt;/span&gt;&lt;/p&gt;
 &lt;section class=&quot;link-braces&quot;&gt;
 &lt;p&gt;这是一个&lt;a href=&quot;#&quot;&gt;超链接&lt;/a&gt;
-&lt;/p&gt;&lt;/section&gt;
+&lt;/section&gt;
 
 &lt;p&gt;需要注意的是，使用时需要在”a”标签前增加”p”标签进行分割。&lt;/p&gt;
 &lt;h1 id=&quot;文章内居中引用设置&quot;&gt;&lt;a href=&quot;#文章内居中引用设置&quot; class=&quot;headerlink&quot; title=&quot;文章内居中引用设置&quot;&gt;&lt;/a&gt;文章内居中引用设置&lt;/h1&gt;&lt;p&gt;将文章内部分内容自动居中，并加上引号。推荐单行使用。&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;
 &amp;lt;!-- Html方式: 直接在 Markdown 文件中编写 Html 来调用 --&amp;gt;
-&amp;lt;!-- 其中 class=&quot;blockquote-center&quot; 是必须的 --&amp;gt;
-&amp;lt;blockquote class=&quot;blockquote-center&quot;&amp;gt;Html方式文本居中&amp;lt;/blockquote&amp;gt;
+&amp;lt;!-- 其中 class=&amp;quot;blockquote-center&amp;quot; 是必须的 --&amp;gt;
+&amp;lt;blockquote class=&amp;quot;blockquote-center&amp;quot;&amp;gt;Html方式文本居中&amp;lt;/blockquote&amp;gt;
 
 
 &lt;/code&gt;&lt;/pre&gt;
@@ -655,35 +684,6 @@
     <category term="常用网站" scheme="https://blog.nmslwsnd.com/tags/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99/"/>
     
     <category term="汇总" scheme="https://blog.nmslwsnd.com/tags/%E6%B1%87%E6%80%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>个人常用软件汇总</title>
-    <link href="https://blog.nmslwsnd.com/ge-ren-chang-yong-ruan-jian-hui-zong/"/>
-    <id>https://blog.nmslwsnd.com/ge-ren-chang-yong-ruan-jian-hui-zong/</id>
-    <published>2017-05-11T16:15:26.000Z</published>
-    <updated>2020-09-12T12:48:24.582Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;视频&quot;&gt;&lt;a href=&quot;#视频&quot; class=&quot;headerlink&quot; title=&quot;视频&quot;&gt;&lt;/a&gt;视频&lt;/h1&gt;&lt;p id=&quot;div-border-right-red&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="汇总" scheme="https://blog.nmslwsnd.com/categories/%E6%B1%87%E6%80%BB/"/>
-    
-    
-    <category term="汇总" scheme="https://blog.nmslwsnd.com/tags/%E6%B1%87%E6%80%BB/"/>
-    
-    <category term="软件" scheme="https://blog.nmslwsnd.com/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="常用软件" scheme="https://blog.nmslwsnd.com/tags/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   

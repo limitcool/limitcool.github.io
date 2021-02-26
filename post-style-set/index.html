@@ -770,7 +770,7 @@
 <p><span id="inline-blue">Demo:</span></p>
 <section class="link-braces">
 <p>这是一个<a href="#">超链接</a>
-</p></section>
+</section>
 
 <p>需要注意的是，使用时需要在”a”标签前增加”p”标签进行分割。</p>
 <h1 id="文章内居中引用设置"><a href="#文章内居中引用设置" class="headerlink" title="文章内居中引用设置"></a>文章内居中引用设置</h1><p>将文章内部分内容自动居中，并加上引号。推荐单行使用。</p>
@@ -818,49 +818,49 @@
 <div class="alert alert-danger"><i class="fa fa-bug"></i> Bug</div>
 
 <p>除了在文中设置之外，还需要在themes\next\source\css_custom\custom.styl文件中添加以下样式。</p>
-<pre class=" language-css"><code class="language-css"><span class="token selector">// Alert 样式修改 start
-<span class="token class">.alert</span> </span><span class="token punctuation">{</span>
+<pre class=" language-css"><code class="language-css">// Alert 样式修改 start
+<span class="token number">.</span>alert &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">15</span>px<span class="token punctuation">;</span>
     <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token number">20</span>px<span class="token punctuation">;</span>
     <span class="token property">border</span><span class="token punctuation">:</span> <span class="token number">1</span>px solid transparent<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">4</span>px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector"><span class="token class">.alert-success</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+<span class="token number">.</span>alert-success &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
   <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#468847</span><span class="token punctuation">;</span>
   <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#dff0d8</span><span class="token punctuation">;</span>
   <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token hexcode">#d6e9c6</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector"><span class="token class">.alert-success</span> hr </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+<span class="token number">.</span>alert-success hr &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
   <span class="token property">border-top-color</span><span class="token punctuation">:</span> <span class="token hexcode">#c9e2b3</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector"><span class="token class">.alert-success</span> <span class="token class">.alert-link</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+<span class="token number">.</span>alert-success <span class="token number">.</span>alert-link &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
   <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#356635</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector"><span class="token class">.alert-success</span> code </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+<span class="token number">.</span>alert-success code &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
   <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">214</span>,<span class="token number">233</span>,<span class="token number">198</span>,<span class="token number">0.8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector"><span class="token class">.alert-success</span> a </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+<span class="token number">.</span>alert-success a &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
   <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#468847</span><span class="token punctuation">;</span>
   <span class="token property">border-bottom</span><span class="token punctuation">:</span> <span class="token number">1</span>px solid <span class="token hexcode">#468847</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
 
-<span class="token selector"><span class="token class">.alert-info</span> </span><span class="token punctuation">{</span>
+<span class="token number">.</span>alert-info &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#3a87ad</span><span class="token punctuation">;</span>
     <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#e2eaee</span><span class="token punctuation">;</span>
     <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token hexcode">#c5d5dd</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
 
-<span class="token selector"><span class="token class">.alert-warning</span> </span><span class="token punctuation">{</span>
+<span class="token number">.</span>alert-warning &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#c09853</span><span class="token punctuation">;</span>
     <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#fcf8e3</span><span class="token punctuation">;</span>
     <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token hexcode">#faebcc</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
 
-<span class="token selector"><span class="token class">.alert-danger</span> </span><span class="token punctuation">{</span>
+<span class="token number">.</span>alert-danger &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#b94a48</span><span class="token punctuation">;</span>
     <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#f2dede</span><span class="token punctuation">;</span>
     <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token hexcode">#ebccd1</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
 // Alert 样式修改 end</code></pre>
 <h1 id="文字增加背景色块"><a href="#文字增加背景色块" class="headerlink" title="文字增加背景色块"></a>文字增加背景色块</h1><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>inline-blue<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>增加蓝色背景色块<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span> 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>inline-purple<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>增加紫色背景色块<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
@@ -868,8 +868,8 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>inline-green<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>增加绿色背景色块<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span></code></pre>
 <p><span id="inline-blue">增加蓝色背景色块</span><br><span id="inline-purple">增加紫色背景色块</span><br><span id="inline-yellow">增加黄色背景色块</span><br><span id="inline-green">增加绿色背景色块</span></p>
 <p>除了在文中设置之外，还需要在themes\next\source\css_custom\custom.styl文件中添加以下样式。</p>
-<pre class=" language-css"><code class="language-css"><span class="token selector">//文字增加背景色块
-span<span class="token id">#inline-blue</span> </span><span class="token punctuation">{</span>
+<pre class=" language-css"><code class="language-css">//文字增加背景色块
+span#inline-blue &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">.2</span>em <span class="token number">.6</span>em <span class="token number">.3</span>em<span class="token punctuation">;</span>
     <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">90%</span><span class="token punctuation">;</span>
@@ -881,8 +881,8 @@ span<span class="token id">#inline-blue</span> </span><span class="token punctua
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> baseline<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
     <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#2780e3</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">span<span class="token id">#inline-purple</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+span#inline-purple &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">.2</span>em <span class="token number">.6</span>em <span class="token number">.3</span>em<span class="token punctuation">;</span>
     <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">90%</span><span class="token punctuation">;</span>
@@ -894,8 +894,8 @@ span<span class="token id">#inline-blue</span> </span><span class="token punctua
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> baseline<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
     <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#9954bb</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">span<span class="token id">#inline-yellow</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+span#inline-yellow &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">.2</span>em <span class="token number">.6</span>em <span class="token number">.3</span>em<span class="token punctuation">;</span>
     <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">90%</span><span class="token punctuation">;</span>
@@ -907,8 +907,8 @@ span<span class="token id">#inline-blue</span> </span><span class="token punctua
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> baseline<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
     <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#f0ad4e</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">span<span class="token id">#inline-green</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+span#inline-green &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">.2</span>em <span class="token number">.6</span>em <span class="token number">.3</span>em<span class="token punctuation">;</span>
     <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">90%</span><span class="token punctuation">;</span>
@@ -920,7 +920,7 @@ span<span class="token id">#inline-blue</span> </span><span class="token punctua
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> baseline<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
     <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#5cb85c</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
 // 文字增加背景色块 end</code></pre>
 <h1 id="引用边框样式修改"><a href="#引用边框样式修改" class="headerlink" title="引用边框样式修改"></a>引用边框样式修改</h1><p>修改颜色</p>
 <pre class=" language-css"><code class="language-css">&lt;p id=<span class="token string">"div-border-left-red"</span>>左红&lt;/p>
@@ -967,8 +967,8 @@ span<span class="token id">#inline-blue</span> </span><span class="token punctua
 
 
 <p>除了在文中设置之外，还需要在themes\next\source\css_custom\custom.styl文件中添加以下样式。</p>
-<pre class=" language-css"><code class="language-css"><span class="token selector">// 引用边框样式修改 start
-p<span class="token id">#div-border-left-red</span> </span><span class="token punctuation">{</span>
+<pre class=" language-css"><code class="language-css">// 引用边框样式修改 start
+p#div-border-left-red &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -976,8 +976,8 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-left-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-left-color</span><span class="token punctuation">:</span> <span class="token hexcode">#df3e3e</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">p<span class="token id">#div-border-left-yellow</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+p#div-border-left-yellow &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -985,8 +985,8 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-left-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-left-color</span><span class="token punctuation">:</span> <span class="token hexcode">#f0ad4e</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">p<span class="token id">#div-border-left-green</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+p#div-border-left-green &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -994,8 +994,8 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-left-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-left-color</span><span class="token punctuation">:</span> <span class="token hexcode">#5cb85c</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">p<span class="token id">#div-border-left-blue</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+p#div-border-left-blue &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -1003,8 +1003,8 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-left-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-left-color</span><span class="token punctuation">:</span> <span class="token hexcode">#2780e3</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">p<span class="token id">#div-border-left-purple</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+p#div-border-left-purple &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -1012,8 +1012,8 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-left-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-left-color</span><span class="token punctuation">:</span> <span class="token hexcode">#9954bb</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">p<span class="token id">#div-border-right-red</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+p#div-border-right-red &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -1021,8 +1021,8 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-right-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-right-color</span><span class="token punctuation">:</span> <span class="token hexcode">#df3e3e</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">p<span class="token id">#div-border-right-yellow</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+p#div-border-right-yellow &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -1030,8 +1030,8 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-right-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-right-color</span><span class="token punctuation">:</span> <span class="token hexcode">#f0ad4e</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">p<span class="token id">#div-border-right-green</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+p#div-border-right-green &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -1039,8 +1039,8 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-right-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-right-color</span><span class="token punctuation">:</span> <span class="token hexcode">#5cb85c</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">p<span class="token id">#div-border-right-blue</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+p#div-border-right-blue &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -1048,8 +1048,8 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-right-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-right-color</span><span class="token punctuation">:</span> <span class="token hexcode">#2780e3</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">p<span class="token id">#div-border-right-purple</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+p#div-border-right-purple &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -1057,8 +1057,8 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-right-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-right-color</span><span class="token punctuation">:</span> <span class="token hexcode">#9954bb</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">p<span class="token id">#div-border-top-red</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+p#div-border-top-red &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -1066,8 +1066,8 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-top-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-top-color</span><span class="token punctuation">:</span> <span class="token hexcode">#df3e3e</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">p<span class="token id">#div-border-top-yellow</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+p#div-border-top-yellow &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -1075,8 +1075,8 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-top-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-top-color</span><span class="token punctuation">:</span> <span class="token hexcode">#f0ad4e</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">p<span class="token id">#div-border-top-green</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+p#div-border-top-green &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -1084,9 +1084,9 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-top-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-top-color</span><span class="token punctuation">:</span> <span class="token hexcode">#5cb85c</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
 
-<span class="token selector">p<span class="token id">#div-border-top-blue</span> </span><span class="token punctuation">{</span>
+p#div-border-top-blue &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -1094,8 +1094,8 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-top-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-top-color</span><span class="token punctuation">:</span> <span class="token hexcode">#2780e3</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">p<span class="token id">#div-border-top-purple</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+p#div-border-top-purple &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -1103,8 +1103,8 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-top-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-top-color</span><span class="token punctuation">:</span> <span class="token hexcode">#9954bb</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">p<span class="token id">#div-border-bottom-red</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+p#div-border-bottom-red &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -1112,8 +1112,8 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-bottom-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-bottom-color</span><span class="token punctuation">:</span> <span class="token hexcode">#df3e3e</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">p<span class="token id">#div-border-bottom-yellow</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+p#div-border-bottom-yellow &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -1121,8 +1121,8 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-bottom-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-bottom-color</span><span class="token punctuation">:</span> <span class="token hexcode">#f0ad4e</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">p<span class="token id">#div-border-bottom-green</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+p#div-border-bottom-green &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -1130,8 +1130,8 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-bottom-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-bottom-color</span><span class="token punctuation">:</span> <span class="token hexcode">#5cb85c</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">p<span class="token id">#div-border-bottom-blue</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+p#div-border-bottom-blue &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -1139,8 +1139,8 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-bottom-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-bottom-color</span><span class="token punctuation">:</span> <span class="token hexcode">#2780e3</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">p<span class="token id">#div-border-bottom-purple</span> </span><span class="token punctuation">{</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+p#div-border-bottom-purple &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">0</span><span class="token punctuation">;</span>
@@ -1148,7 +1148,7 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
     <span class="token property">border-bottom-width</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
     <span class="token property">border-bottom-color</span><span class="token punctuation">:</span> <span class="token hexcode">#9954bb</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
 // 引用边框样式修改 end</code></pre>
 <h1 id="在文档中增加图标"><a href="#在文档中增加图标" class="headerlink" title="在文档中增加图标"></a>在文档中增加图标</h1><p><span id="inline-blue">图标库awesome:</span>  <a target="_blank" rel="noopener" href="https://fontawesome.com/">https://fontawesome.com</a></p>
 <p><span id="inline-green">仅增加图标</span></p>
@@ -1162,27 +1162,9 @@ p<span class="token id">#div-border-left-red</span> </span><span class="token pu
 <p><i class="fa fa-github fa-2x"></i> </p>
 <p><span id="inline-green">图标链接</span></p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tube<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://www.youtube.com/<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>fa fa-youtube-play<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span> YouTube <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span></code></pre>
-<p><a id="tube" target="_blank" rel="noopener" href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i><span> YouTube </span></a></p><a id="tube" target="_blank" rel="noopener" href="https://www.youtube.com/">
-</a><p><a id="tube" target="_blank" rel="noopener" href="https://www.youtube.com/">本文部分内容参考自：</a><a target="_blank" rel="noopener" href="https://qianling.pw/style/">https://qianling.pw/style/</a></p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+<p><a id="tube" target="_blank" rel="noopener" href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i><span> YouTube </span></p>
+<p>本文部分内容参考自：<a target="_blank" rel="noopener" href="https://qianling.pw/style/">https://qianling.pw/style/</a></p>
+
             </div>
             <hr/>
 
@@ -2029,7 +2011,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">25.5k</span>&nbsp;字
+                class="white-color">25.6k</span>&nbsp;字
             
             
             

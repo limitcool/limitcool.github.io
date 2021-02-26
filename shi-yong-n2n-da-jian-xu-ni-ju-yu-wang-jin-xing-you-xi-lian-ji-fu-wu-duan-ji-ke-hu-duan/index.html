@@ -814,26 +814,8 @@ ufw allow 8888/udp</code></pre>
 <p><strong>中转模式下，A到B的延迟 ≈ A到服务器的延迟 + B到服务器的延迟</strong></p>
 <h3 id="通过NAT类型解释传输方案"><a href="#通过NAT类型解释传输方案" class="headerlink" title="通过NAT类型解释传输方案"></a>通过<code>NAT</code>类型解释传输方案</h3><p>1.双方中只要有一方是<strong>Full Cone</strong>，可以直连<br>2.双方都是<strong>Restricted Cone</strong>或<strong>Port Restricted Cone</strong>，这种情况可以打洞，通过N2N服务器握手以后，双方的数据不再经过服务端<br>3.一方为<strong>Restricted Cone</strong>，另一方为<strong>Symmetric NAT</strong>，可以打洞，通过N2N服务器握手以后，双方的数据不再经过服务端<br>4.一方为端口<strong>Port Restricted Cone</strong>，另一方为<strong>Symmetric NAT</strong>，这种情况无法打洞，数据要走N2N服务器中转<br>5.双方都为<strong>Symmetric NAT</strong>，这种情况也是无法打洞的，数据要走N2N服务器中转</p>
 <p><a target="_blank" rel="noopener" href="https://bugxia.com/">本文参考：bug侠</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/forum.php?mod=viewthread&amp;tid=260898">本文参考：恩山论坛</a></p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+<p><a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/forum.php?mod=viewthread&tid=260898">本文参考：恩山论坛</a></p>
+
             </div>
             <hr/>
 
@@ -1684,7 +1666,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">25.5k</span>&nbsp;字
+                class="white-color">25.6k</span>&nbsp;字
             
             
             

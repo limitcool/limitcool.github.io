@@ -892,7 +892,7 @@ Apple, Inc.</code></pre>
 
 中文：5 分钟过去了……</code></pre>
 <p>（4）英文书名或电影名改用中文表达时，双引号应改为书名号。</p>
-<pre><code>英文：He published an article entitled "The Future of the Aviation".
+<pre><code>英文：He published an article entitled &quot;The Future of the Aviation&quot;.
 
 中文：他发表了一篇名为《航空业的未来》的文章。</code></pre>
 <p>（5）第一次出现英文词汇时，在括号中给出中文标注。此后再次出现时，直接使用英文缩写即可。</p>
@@ -982,7 +982,7 @@ Apple, Inc.</code></pre>
 </tr>
 </thead>
 <tbody><tr>
-<td><code>{ }</code></td>
+<td><code>&#123; &#125;</code></td>
 <td>braces 或 curly brackets</td>
 <td>大括号</td>
 </tr>
@@ -1085,25 +1085,7 @@ Apple, Inc.</code></pre>
 <pre><code>不佳：advanced_usage.md
 
 正确：advanced-usage.md</code></pre>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+
             </div>
             <hr/>
 
@@ -1606,55 +1588,54 @@ Apple, Inc.</code></pre>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/zhong-wen-wen-dang-xie-zuo-gui-fan/">
+                <a href="/shi-yong-mi-yao-jin-xing-ssh-lian-jie/">
                     <div class="card-image">
                         
-                        <img src="http://www.ruanyifeng.com/blogimg/asset/2016/bg2016101801.jpg" class="responsive-img" alt="中文文档写作规范">
                         
-                        <span class="card-title">中文文档写作规范</span>
+                        <img src="https://gitee.com/initcool/Picture/raw/master/featureimages/82jC3X9M.webp" class="responsive-img" alt="使用密钥进行SSH连接">
+                        
+                        <span class="card-title">使用密钥进行SSH连接</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            之前写文档一直都是凭感觉写的，没有固定的排版，导致文章的排版参差不齐，很影响观赏性。近期发现了阮一峰大佬曾经写过的《中文技术文档的写作规范》，故进行了学习。
+                            SSH拥有两种登录方法，一种是常规的使用密码口令的登陆验证方式，另一种则为设置密钥进行安全验证，需要将本地生成的公钥传送至服务端，进行公共密钥的对比。
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-25
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-26
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Markdown/" class="post-category">
-                                    Markdown
+                            <a href="/categories/Linux/" class="post-category">
+                                    Linux
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Markdown/">
-                        <span class="chip bg-color">Markdown</span>
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
                     </a>
                     
-                    <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                        <span class="chip bg-color">语法</span>
+                    <a href="/tags/ssh/">
+                        <span class="chip bg-color">ssh</span>
                     </a>
                     
-                    <a href="/tags/%E6%96%87%E6%A1%A3/">
-                        <span class="chip bg-color">文档</span>
+                    <a href="/tags/Git/">
+                        <span class="chip bg-color">Git</span>
                     </a>
                     
                 </div>
@@ -1956,7 +1937,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">25.5k</span>&nbsp;字
+                class="white-color">25.6k</span>&nbsp;字
             
             
             

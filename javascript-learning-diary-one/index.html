@@ -754,7 +754,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    226
+                    186
                 </div>
                 
 
@@ -802,40 +802,22 @@
 <pre class=" language-bash"><code class="language-bash"><span class="token string">"use strict"</span><span class="token punctuation">;</span> （全局使用）
 /*其他代码*/
 
-<span class="token keyword">function</span> strict<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token keyword">function</span> strict<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
     <span class="token string">"use strict"</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token string">"这是严格模式"</span>；
-<span class="token punctuation">}</span></code></pre>
+<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span></code></pre>
 <p><strong>Tips：不要省略”；”和”{ }”</strong></p>
-<h2 id="全局变量和局部变量"><a href="#全局变量和局部变量" class="headerlink" title="全局变量和局部变量"></a>全局变量和局部变量</h2><pre class=" language-bash"><code class="language-bash"><span class="token keyword">function</span> test<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<h2 id="全局变量和局部变量"><a href="#全局变量和局部变量" class="headerlink" title="全局变量和局部变量"></a>全局变量和局部变量</h2><pre class=" language-bash"><code class="language-bash"><span class="token keyword">function</span> test<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
     var message <span class="token operator">=</span> <span class="token string">"hi"</span> //局部变量
-<span class="token punctuation">}</span>
+<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
 test<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 alert<span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>//错误！</code></pre>
-<pre class=" language-bash"><code class="language-bash"><span class="token keyword">function</span> test<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<pre class=" language-bash"><code class="language-bash"><span class="token keyword">function</span> test<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
     message <span class="token operator">=</span> <span class="token string">"hi"</span> //全局变量
-<span class="token punctuation">}</span>
+<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
 test<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 alert<span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span> //<span class="token string">"hi"</span></code></pre>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+
             </div>
             <hr/>
 
@@ -1690,7 +1672,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">25.5k</span>&nbsp;字
+                class="white-color">25.6k</span>&nbsp;字
             
             
             
