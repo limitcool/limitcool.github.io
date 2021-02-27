@@ -6,7 +6,7 @@
   <link href="https://blog.nmslwsnd.com/atom.xml" rel="self"/>
   
   <link href="https://blog.nmslwsnd.com/"/>
-  <updated>2021-02-26T06:16:27.190Z</updated>
+  <updated>2021-02-27T11:53:49.042Z</updated>
   <id>https://blog.nmslwsnd.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Scoop包管理工具管理Windows软件</title>
+    <link href="https://blog.nmslwsnd.com/shi-yong-scoop-bao-guan-li-gong-ju-guan-li-windows-ruan-jian/"/>
+    <id>https://blog.nmslwsnd.com/shi-yong-scoop-bao-guan-li-gong-ju-guan-li-windows-ruan-jian/</id>
+    <published>2021-02-27T11:24:09.000Z</published>
+    <updated>2021-02-27T11:53:49.042Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;在Linux以及Mac平台都有自己的包管理工具，在windows同样有好用的包管理工具，Scoop就是其中之一。&lt;/p&gt;
+&lt;h1</summary>
+        
+      
+    
+    
+    
+    <category term="Windows" scheme="https://blog.nmslwsnd.com/categories/Windows/"/>
+    
+    
+    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
+    
+    <category term="Scoop" scheme="https://blog.nmslwsnd.com/tags/Scoop/"/>
+    
+  </entry>
   
   <entry>
     <title>使用密钥进行SSH连接</title>
@@ -655,35 +683,6 @@
     <category term="变量" scheme="https://blog.nmslwsnd.com/tags/%E5%8F%98%E9%87%8F/"/>
     
     <category term="严格模式" scheme="https://blog.nmslwsnd.com/tags/%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>个人常用网站汇总</title>
-    <link href="https://blog.nmslwsnd.com/ge-ren-chang-yong-wang-zhan-hui-zong/"/>
-    <id>https://blog.nmslwsnd.com/ge-ren-chang-yong-wang-zhan-hui-zong/</id>
-    <published>2017-05-12T15:15:25.000Z</published>
-    <updated>2020-08-19T07:45:17.666Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;社区&quot;&gt;&lt;a href=&quot;#社区&quot; class=&quot;headerlink&quot; title=&quot;社区&quot;&gt;&lt;/a&gt;社区&lt;/h1&gt;&lt;p id=&quot;div-border-left-red&quot;&gt;&lt;a href=&quot;https://www.v2ex.com/&quot;&gt;V2EX:</summary>
-        
-      
-    
-    
-    
-    <category term="汇总" scheme="https://blog.nmslwsnd.com/categories/%E6%B1%87%E6%80%BB/"/>
-    
-    
-    <category term="网站" scheme="https://blog.nmslwsnd.com/tags/%E7%BD%91%E7%AB%99/"/>
-    
-    <category term="常用网站" scheme="https://blog.nmslwsnd.com/tags/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99/"/>
-    
-    <category term="汇总" scheme="https://blog.nmslwsnd.com/tags/%E6%B1%87%E6%80%BB/"/>
     
   </entry>
   

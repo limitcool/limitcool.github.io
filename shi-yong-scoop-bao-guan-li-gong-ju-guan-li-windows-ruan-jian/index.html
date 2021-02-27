@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="KMS,kms激活office,最新版office下载,windows激活office,win10激活office,office最新版下载">
+    <meta name="keywords" content="使用Scoop包管理工具管理Windows软件,Scoop的安装即使用,Windows的包管理工具">
     <meta name="description" content="We&#39;re all heroes if you catch us at the right moment.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>CentOS8安装并激活Office | InitCool</title>
+    <title>使用Scoop包管理工具管理Windows软件 | InitCool</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -573,12 +573,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://gitee.com/initcool/Picture/raw/master/post-cover/office.webp')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://gitee.com/initcool/Picture/raw/master/featureimages/3RdrGut6.webp')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">CentOS8安装并激活Office</h1>
+                    <h1 class="description center-align post-title">使用Scoop包管理工具管理Windows软件</h1>
                 </div>
             </div>
         </div>
@@ -695,24 +695,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/CentOS/">
-                                <span class="chip bg-color">CentOS</span>
-                            </a>
-                        
-                            <a href="/tags/Office/">
-                                <span class="chip bg-color">Office</span>
-                            </a>
-                        
-                            <a href="/tags/KMS/">
-                                <span class="chip bg-color">KMS</span>
-                            </a>
-                        
                             <a href="/tags/Windows/">
                                 <span class="chip bg-color">Windows</span>
                             </a>
                         
-                            <a href="/tags/Linux/">
-                                <span class="chip bg-color">Linux</span>
+                            <a href="/tags/Scoop/">
+                                <span class="chip bg-color">Scoop</span>
                             </a>
                         
                     </div>
@@ -723,8 +711,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Office/" class="post-category">
-                                Office
+                            <a href="/categories/Windows/" class="post-category">
+                                Windows
                             </a>
                         
                     </div>
@@ -736,28 +724,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-07-01
+                    2021-02-27
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-08-19
+                    2021-02-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    506
+                    2.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    11 分
                 </div>
                 
 
@@ -772,53 +760,289 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p>Key Management Service（简称：KMS），这个功能是在 Windows Vista 之后的产品中的一种新型产品激活机制，目的是为了 Microsoft 更好的遏制非法软件授权行为 (盗版)。</p>
-</blockquote>
-<h1 id="近期使用-Outlook-Outlook-的试用即将到期，就想到了-KMS-激活-Office-的方法。本文以-CentOS-8-为例介绍部署-KMS-服务的方法。"><a href="#近期使用-Outlook-Outlook-的试用即将到期，就想到了-KMS-激活-Office-的方法。本文以-CentOS-8-为例介绍部署-KMS-服务的方法。" class="headerlink" title="近期使用 Outlook,Outlook 的试用即将到期，就想到了 KMS 激活 Office 的方法。本文以 CentOS 8 为例介绍部署 KMS 服务的方法。"></a>近期使用 Outlook,Outlook 的试用即将到期，就想到了 KMS 激活 Office 的方法。本文以 CentOS 8 为例介绍部署 KMS 服务的方法。</h1><h1 id="将文件下载至服务器"><a href="#将文件下载至服务器" class="headerlink" title="将文件下载至服务器"></a>将文件下载至服务器</h1><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#下载Vlmcsd</span>
-<span class="token function">wget</span> https://github.com/Wind4/vlmcsd/releases/download/svn1111/binaries.tar.gz
-<span class="token comment" spellcheck="true">#查看1688端口是否开启    </span>
-<span class="token function">netstat</span> -nxtlp <span class="token operator">|</span> <span class="token function">grep</span> 1688
-<span class="token comment" spellcheck="true">#解压binaries.tar.gz </span>
-<span class="token function">tar</span> -xzvf binaries.tar.gz 
-<span class="token comment" spellcheck="true">#进入binaries/Linux/intel/static/</span>
-<span class="token function">cd</span> binaries/Linux/intel/static/
-<span class="token comment" spellcheck="true">#执行命令启动Vlmcsd</span>
-./vlmcsd-x64-musl-static
-<span class="token comment" spellcheck="true">#查看Vlmcsd运行状态是否正常</span>
-<span class="token function">ps</span> -ef <span class="token operator">|</span><span class="token function">grep</span> vlmcsd-x64-musl-static</code></pre>
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://i.loli.net/2020/04/20/abiHhFzxr5TvpYk.png" alt="VLMCSD正常运行"></p>
-<p>近期国内访问 Github 出现问题，此步骤可能会弹出连接失败，需在服务器修改 Host 后，方可执行下载 Vlmcsd 脚本的命令。</p>
-<p>CentOS8 修改 Github Host</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#使用VI修改host文件</span>
-<span class="token function">vi</span> /etc/hosts
-<span class="token comment" spellcheck="true">#修改Github解析地址</span>
-151.101.76.133 raw.githubusercontent.com
-192.30.253.112 github.com
-151.101.185.194 github.global.ssl.fastly.net
-140.82.114.6 api.github.com</code></pre>
-<p>Office2019 镜像下载及激活<br>通过微软官方渠道下载 Office2019 镜像<br>Microsoft Office 2019 Professional :</p>
-<p><a target="_blank" rel="noopener" href="https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/VisioPro2019Retail.img">点我下载</a></p>
-<p>Microsoft Office 2019 Project ：</p>
-<p><a target="_blank" rel="noopener" href="https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProjectPro2019Retail.img">点我下载</a></p>
-<p>Microsoft Office 2019 Visio ：</p>
-<p><a target="_blank" rel="noopener" href="https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/VisioPro2019Retail.img">点我下载</a></p>
-<p>以管理员模式运行 CMD 或者 Powershell</p>
-<pre class=" language-powershell"><code class="language-powershell"><span class="token comment" spellcheck="true">#输入命令，进入Office文件目录</span>
-cd C:\Program Files <span class="token punctuation">(</span>x86<span class="token punctuation">)</span>\Microsoft Office\Office16
-<span class="token comment" spellcheck="true">#转换Office 版本</span>
-<span class="token keyword">for</span> <span class="token operator">/</span>f <span class="token operator">%</span>x in <span class="token punctuation">(</span>‘<span class="token function">dir</span> <span class="token operator">/</span>b <span class="token punctuation">.</span><span class="token punctuation">.</span>\root\Licenses16\ProPlus2019VL<span class="token operator">*</span><span class="token punctuation">.</span>xrm<span class="token operator">-</span>ms’<span class="token punctuation">)</span> <span class="token keyword">do</span> cscript ospp<span class="token punctuation">.</span>vbs <span class="token operator">/</span>inslic:”<span class="token punctuation">.</span><span class="token punctuation">.</span>\root\Licenses16\<span class="token operator">%</span>x
-<span class="token comment" spellcheck="true">#指定KMS服务器端口为1688</span>
-cscript ospp<span class="token punctuation">.</span>vbs <span class="token operator">/</span>setprt:1688</code></pre>
-<pre class=" language-powershell"><code class="language-powershell"><span class="token comment" spellcheck="true">#清除默认key</span>
-cscript ospp<span class="token punctuation">.</span>vbs <span class="token operator">/</span>unpkey:6MWKP >nul
-<span class="token comment" spellcheck="true">#设置key为NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP</span>
-<span class="token comment" spellcheck="true">#指定KMS服务器地址</span>
-cscript ospp<span class="token punctuation">.</span>vbs <span class="token operator">/</span>sethst:&lt;> <span class="token operator">/</span><span class="token operator">/</span>填写KMS服务器地址</code></pre>
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://i.loli.net/2020/04/20/bUCfIhyDdzFskTi.png" alt="激活成功效果图"><br>Office 现在已经激活成功了，但是可能不会连接到 KMS 服务器进行激活，使用一下命令可以立即进行激活</p>
-<pre class=" language-powershell"><code class="language-powershell">cscript ospp<span class="token punctuation">.</span>vbs <span class="token operator">/</span>act</code></pre>
-<p>打开Office即可看到效果<br><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://i.loli.net/2020/04/20/XvPmapA5Rg3q7wt.png" alt="激活成功效果图"><br>Office成功激活</p>
-<p>本文部分内容参考自：<a target="_blank" rel="noopener" href="https://getproductkey.net/microsoft-office-2019-product-key-free-2020/">https://getproductkey.net/microsoft-office-2019-product-key-free-2020/</a></p>
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在Linux以及Mac平台都有自己的包管理工具，在windows同样有好用的包管理工具，Scoop就是其中之一。</p>
+<h1 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h1><p>Scoop需要Powershell 5以上以及<a target="_blank" rel="noopener" href="https://www.microsoft.com/net/download">.NET Framework 4.5 </a>以上。</p>
+<p>打开<code>Powershell</code>,键入以下命令，可以查看Powershell以及.NET Framework版本。</p>
+<pre class=" language-powershell"><code class="language-powershell"><span class="token variable">$PSVersionTable</span><span class="token punctuation">.</span>PSVersion<span class="token punctuation">.</span>Major   <span class="token comment" spellcheck="true">#查看Powershell版本</span>
+<span class="token variable">$PSVersionTable</span><span class="token punctuation">.</span>CLRVersion<span class="token punctuation">.</span>Major  <span class="token comment" spellcheck="true">#查看.NET Framework版本</span></code></pre>
+<h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><p>打开<code>Powershell</code>,键入以下命令。</p>
+<pre class=" language-powershell"><code class="language-powershell"><span class="token function">Invoke-Expression</span> <span class="token punctuation">(</span><span class="token function">New-Object</span> System<span class="token punctuation">.</span>Net<span class="token punctuation">.</span>WebClient<span class="token punctuation">)</span><span class="token punctuation">.</span>DownloadString<span class="token punctuation">(</span><span class="token string">'https://get.scoop.sh'</span><span class="token punctuation">)</span></code></pre>
+<p>可能会遇到报错，则需要使用以下命令更改执行策略。</p>
+<pre class=" language-powershell"><code class="language-powershell"><span class="token function">Set</span><span class="token operator">-</span>ExecutionPolicy RemoteSigned <span class="token operator">-</span>scope CurrentUser</code></pre>
+<h1 id="使用Scoop"><a href="#使用Scoop" class="headerlink" title="使用Scoop"></a>使用Scoop</h1><h2 id="修改Scoop安装路径"><a href="#修改Scoop安装路径" class="headerlink" title="修改Scoop安装路径"></a>修改Scoop安装路径</h2><p>Scoop默认安装路径为 C:\Users&lt;user&gt;\scoop</p>
+<p>全局安装的程序（所有用户可用，使用<code>--global</code>或 <code>-g</code> 选项）默认位<br>于<code>C\ProgramData\scoop</code>路径中。</p>
+<pre class=" language-powershell"><code class="language-powershell"><span class="token variable">$env</span>:SCOOP=<span class="token string">'D:\Scoop'</span>
+<span class="token comment" spellcheck="true"># 先添加用户级别的环境变量 SCOOP</span>
+<span class="token namespace">[environment]</span>::setEnvironmentVariable<span class="token punctuation">(</span><span class="token string">'SCOOP'</span><span class="token punctuation">,</span><span class="token variable">$env</span>:SCOOP<span class="token punctuation">,</span><span class="token string">'User'</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 修改全局安装路径</span>
+<span class="token variable">$env</span>:SCOOP_GLOBAL=<span class="token string">'D:\GlobalScoopApps'</span>
+
+<span class="token namespace">[environment]</span>::setEnvironmentVariable<span class="token punctuation">(</span><span class="token string">'SCOOP_GLOBAL'</span><span class="token punctuation">,</span><span class="token variable">$env</span>:SCOOP_GLOBAL<span class="token punctuation">,</span><span class="token string">'Machine'</span><span class="token punctuation">)</span></code></pre>
+<p><strong>为什么需要全局安装？</strong></p>
+<p>对于那些需要管理员权限的程序需要进行全局安装。我当前遇到的是当使用 Scoop 安装字体时需要使用全局安装，因为字体需要给所有用户使用。</p>
+<p>初次安装 Scoop 后，建议安装的程序：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 但 scoop 进行全局安装时需要使用到 sudo 命令</span>
+scoop <span class="token function">install</span> <span class="token function">sudo</span>
+
+<span class="token comment" spellcheck="true"># scoop下载程序时支持使用 aria2 来加速下载</span>
+scoop <span class="token function">install</span> aria2</code></pre>
+<p>我们可以发现，下载的过程中自动下载了依赖 7-zip。 在安装方面，它利用了 7zip 去解<br>压安装包/压缩包，因此它对绿色软件有天生的友好属性 。不仅如此，下载之后的内容会自<br>动将加入到（Path）环境变量中，十分方便。</p>
+<h2 id="检测Scoop存在的问题"><a href="#检测Scoop存在的问题" class="headerlink" title="检测Scoop存在的问题"></a>检测Scoop存在的问题</h2><p><strong>补充：</strong> 初次安装之后我们可以通过运行 <code>scoop checkup</code> 来检测当前潜在问题，然后根据提示进行修正。</p>
+<pre class=" language-text"><code class="language-text"># 检测本人当前环境存在的问题
+$ scoop checkup
+
+WARN  Windows Defender may slow down or disrupt installs with realtime scanning.
+  Consider running:
+    sudo Add-MpPreference -ExclusionPath 'D:\Scoop\Applications'
+  (Requires 'sudo' command. Run 'scoop install sudo' if you don't have it.)
+WARN  Windows Defender may slow down or disrupt installs with realtime scanning.
+  Consider running:
+    sudo Add-MpPreference -ExclusionPath 'C:\ProgramData\scoop'
+  (Requires 'sudo' command. Run 'scoop install sudo' if you don't have it.)
+WARN  LongPaths support is not enabled.
+You can enable it with running:
+    Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
+ERROR 'dark' is not installed! It's required for unpacking installers created with the WiX Toolset. Please run 'scoop install dark' or 'scoop install wixtoolset'.
+WARN  Found 4 potential problems.</code></pre>
+<p>可以看到存在三个警告（WARN），一个错误（ERROR），并给出了解决对应问题的命令：</p>
+<ul>
+<li><p>前两个警告（WARN）提示：杀毒软件 Windows Defender 有可能会使得下载变慢或阻止安装</p>
+</li>
+<li><p>第三个警告（WARN）提示：Windows中的 NTFS 中默认不允许大于 260 个字符（byte）的文件全路径存在的限制还未解除。（可能需要添加<code>sudo</code>才能运行给出的命令）</p>
+</li>
+<li><p>最后一个错误提示（ERROR）：需要安装 <code>dark</code> 才能解压使用 WiX Toolset 创建的安装包。</p>
+</li>
+<li><h2 id="添加软件源-Bucket"><a href="#添加软件源-Bucket" class="headerlink" title="添加软件源 Bucket"></a>添加软件源 Bucket</h2><p> Scoop 可安装的软件信息存储在 Bucket（翻译为：桶）中，也可以称其为软件源。Scoop 默认的 Bucket 为 <code>main</code> ；官方维护的另一个 Bucket 为 <code>extras</code>，我们需要手动添加。</p>
+<pre class=" language-text"><code class="language-text"># bucket的用法
+scoop bucket add|list|known|rm [<args>]</code></pre>
+<p> 添加 extras :</p>
+<pre class=" language-text"><code class="language-text">scoop bucket add extras</code></pre>
+<p> 我们也可以添加第三方 bucket ，示例：</p>
+<pre class=" language-text"><code class="language-text">scoop bucket add dorado https://github.com/h404bi/dorado</code></pre>
+<p> 并且明确指定安装此 bucket （软件源）中的的程序：</p>
+<pre class=" language-text"><code class="language-text">scoop install dorado/<app_name>
+# 下面是dorado中特有的软件，测试其是否添加成功
+scoop search trash</code></pre>
+<p> 推荐的 Bucket（软件源）：</p>
+<ul>
+<li><p><code>extras</code>：Scoop 官方维护的一个仓库，涵盖了大部分因为种种原因不能被收录进主仓库的常用软件（在我看来是必须要添加的）。地址：<a href="https://link.zhihu.com/?target=https://github.com/lukesampson/scoop-extras/tree/master/bucket">lukesampson/scoop-extras</a></p>
+</li>
+<li><p><code>nirsoft</code>：是一个 NirSoft 开发的小工具的安装合集。NirSoft 制作了大量的小工具，包括系统工具、网络工具、密码恢复等等，孜孜不倦、持续更新。</p>
+</li>
+<li><ul>
+<li>Bucket 地址：<a href="https://link.zhihu.com/?target=https://github.com/kodybrown/scoop-nirsoft">kodybrown/scoop-nirsoft</a></li>
+<li>NirSoft 官网地址：<a href="https://link.zhihu.com/?target=http://www.nirsoft.net/">NirSoft</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>dorado（添加了一些国内的app，比如 qqplayer ️）<a href="https://link.zhihu.com/?target=https://github.com/h404bi/dorado">h404bi/dorado</a></p>
+</li>
+<li><p>ash258：<a href="https://link.zhihu.com/?target=https://github.com/Ash258/scoop-Ash258">Ash258/scoop-Ash258</a></p>
+</li>
+<li><p>java：添加后可以通过它安装各种 jdk 、 jre</p>
+</li>
+<li><p>nerd-fonts ：包含各种字体</p>
+<pre class=" language-text"><code class="language-text"># 先添加bucket
+scoop bucket add extras
+scoop bucket add nirsoft
+scoop bucket add dorado https://github.com/h404bi/dorado
+scoop bucket add Ash258 'https://github.com/Ash258/Scoop-Ash258.git'
+scoop bucket add nerd-fonts
+# 对于开发人员，可添加下面的两个
+scoop bucket add java
+scoop bucket add versions</code></pre>
+<h2 id="bucket-更新时遇到问题"><a href="#bucket-更新时遇到问题" class="headerlink" title="bucket 更新时遇到问题"></a>bucket 更新时遇到问题</h2><p>情况是这样：当我运行 <code>scoop update</code> 进行更新时提示： <code>extras</code> bucket 更新失败。于是我将其删除后再添加，提示成功，但是它却把 main<br>bucket (默认的 bucket) 给删除了。通过”scoop status”检查状态时出现 “These app<br>manifests have been removed”并且下面列出了已被移除的软件名单。 <strong>那么如何解决此问题？</strong></p>
+<p>我们需要重新添加 main bucket ：</p>
+<pre class=" language-text"><code class="language-text">scoop bucket add main #添加 main bucket</code></pre>
+<h2 id="网络问题导致app安装失败"><a href="#网络问题导致app安装失败" class="headerlink" title="网络问题导致app安装失败"></a>网络问题导致app安装失败</h2><p>一个示例：</p>
+<pre class=" language-text"><code class="language-text">scoop install mediainfo</code></pre>
+<p>当安装 mediainfo 时由于网络问题，安装包无法下载，从命令行输出信息中可以看到如下<br>内容</p>
+<pre class=" language-text"><code class="language-text">ERROR Download failed! (Error 1) An unknown error occurred
+ERROR https://mediaarea.net/download/binary/mediainfo/19.09/MediaInfo_CLI_19.09_Windows_x64.zip
+  referer=https://mediaarea.net/download/binary/mediainfo/19.09/
+  dir=D:\Scoop\Applications\cache
+  out=mediainfo#19.09#https_mediaarea.net_download_binary_mediainfo_19.09_MediaInfo_CLI_19.09_Windows_x64.zip
+
+ERROR & 'D:\Scoop\Applications\apps\aria2\current\aria2c.exe' --input-file='D:\Scoop\Applications\cache\mediainfo.txt'</code></pre>
+<p>我们可以发现文件的下载路径和下载后的文件名称，这里 <code>out=</code> 后面的压缩包就是下载后<br>文件的名称，(也可以在 scoop 的 <code>cache</code> 目录下的 <code>mediainfo.txt</code> 文件中找到下载路径与文<br>件名称)</p>
+<p>然后我们可以尝试在浏览器或其他下载程序中（可以 fq 的程序中）下载该程序，下载完成<br>后再更改文件名并将其放入 scoop 的 <code>cache</code> 目录，最后再次运行<br><code>scoop install mediainfo</code> 即可安装。</p>
+<h2 id="如何利用-aria2-进行断点续传？"><a href="#如何利用-aria2-进行断点续传？" class="headerlink" title="如何利用 aria2 进行断点续传？"></a>如何利用 aria2 进行断点续传？</h2><p>先看具体示例：</p>
+<pre class=" language-text"><code class="language-text"># 更新 vscode
+scoop update vscode-portable</code></pre>
+<p>scoop 更新 vscode 时下载到 80%的时候 失败了（安装时处理方法也一样）。我们需要在提示中找到如下内容：</p>
+<p>```text<br>‘D:\Scoop\Applications\apps\aria2\current\aria2c.exe’ –input-file=’D:\Scoop\Applications\cache\vscode-portable.txt’ </p>
+</li>
+<li><p>-user-agent=’Scoop/1.0 (+<a target="_blank" rel="noopener" href="http://scoop.sh/">http://scoop.sh/</a>) PowerShell/5.1 (Windows NT 10.0; Win64; x64; Desktop)’ </p>
+</li>
+<li><p>-allow-overwrite=true –auto-file-renaming=false </p>
+</li>
+<li><p>-retry-wait=2 –split=5 –max-connection-per-server=5 </p>
+</li>
+<li><p>-min-split-size=5M –console-log-level=warn –enable-color=false </p>
+</li>
+<li><p>-no-conf=true –follow-metalink=true –metalink-preferred-protocol=https </p>
+</li>
+<li><p>-min-tls-version=TLSv1.2 –stop-with-process=15584 –continue</p>
+<pre><code>
+我们从上面的信息中提取出下面的命令；若要进行断点续传，只需再次执行下面的命令即可：
+
+```text
+aria2c.exe --input-file=&#39;D:\Scoop\Applications\cache\vscode-portable.txt&#39;</code></pre>
+<p>当提示下载完成后，我们需要再次运行 scoop 对应的 app 更新命令（或安装命令），即可完成 app 更新（或安装）：</p>
+<pre class=" language-text"><code class="language-text">scoop update vscode-portable</code></pre>
+<h2 id="安装和切换JDK、Python的版本"><a href="#安装和切换JDK、Python的版本" class="headerlink" title="安装和切换JDK、Python的版本"></a>安装和切换JDK、Python的版本</h2><p>这里需要使用 <code>scoop reset</code> 它的作用是：重置一个应用程序来解决冲突。</p>
+<p>命令格式为：</p>
+<pre class=" language-text"><code class="language-text">scoop reset <java>[@<version>]</code></pre>
+</li>
+</ul>
+<p>  <strong>安装和切换不同的 JDK 版本：</strong></p>
+<pre class=" language-text"><code class="language-text">PS C:> scoop bucket add java
+
+PS C:> scoop install oraclejdk
+Installing 'oraclejdk' (12.0.2-10) [64bit]
+
+PS C:> scoop install zulu6
+Installing 'zulu6' (6.18.1.5) [64bit]
+
+PS C:> scoop install openjdk10
+Installing 'openjdk10' (10.0.1) [64bit]
+
+PS C:> java -version
+openjdk version "10.0.1" 2018-04-17
+OpenJDK Runtime Environment (build 10.0.1+10)
+OpenJDK 64-Bit Server VM (build 10.0.1+10, mixed mode)
+
+PS C:> scoop reset zulu6
+Resetting zulu6 (6.18.1.5).
+Linking ~\scoop\apps\zulu6\current => ~\scoop\apps\zulu6\6.18.1.5
+
+PS C:> java -version
+openjdk version "1.6.0-99"
+OpenJDK Runtime Environment (Zulu 6.18.1.5-win64) (build 1.6.0-99-b99)
+OpenJDK 64-Bit Server VM (Zulu 6.18.1.5-win64) (build 23.77-b99, mixed mode)
+
+PS C:> scoop reset oraclejdk
+
+PS C:> java -version
+java version "12.0.2" 2019-07-16
+Java(TM) SE Runtime Environment (build 12.0.2+10)
+Java HotSpot(TM) 64-Bit Server VM (build 12.0.2+10, mixed mode, sharing)</code></pre>
+<p>  安装和切换不同的 Python 版本：</p>
+<pre class=" language-text"><code class="language-text">$ scoop bucket add versions # add the 'versions' bucket if you haven't already
+
+$ scoop install python27 python
+python --version # -> Python 3.6.2
+
+# switch to python 2.7.x
+$ scoop reset python27
+python --version # -> Python 2.7.13
+
+# switch back (to 3.x)
+$ scoop reset python
+python --version # -> Python 3.6.2</code></pre>
+<h2 id="Scoop-常用命令"><a href="#Scoop-常用命令" class="headerlink" title="Scoop 常用命令"></a>Scoop 常用命令</h2><pre class=" language-text"><code class="language-text">scoop help #查看帮助
+scoop help <某个命令> # 具体查看某个命令的帮助
+
+scoop install <app>   # 安装 APP
+scoop uinstall <app>  # 卸载 APP
+
+scoop list  # 列出已安装的 APP
+scoop search # 搜索 APP
+scoop status # 检查哪些软件有更新
+
+scoop update # 更新 Scoop 自身
+scoop update appName1 appName2 # 更新某些app
+scoop update *  # 更新所有 app （前提是需要在apps目录下操作）
+
+scoop bucket known #通过此命令列出已知所有 bucket（软件源）
+scoop bucket add bucketName #添加某个 bucket
+
+scoop cache rm <app> # 移除某个app的缓存</code></pre>
+<h2 id="安装卸载软件"><a href="#安装卸载软件" class="headerlink" title="安装卸载软件"></a>安装卸载软件</h2><pre class=" language-text"><code class="language-text"># 安装之前，通过 search 搜索 APP, 确定软件名称
+scoop search  xxx
+
+# 安装 APP
+scoop install AppName
+
+# 安装特定版本的 APP；语法 AppName@[version]，示例
+scoop install git@2.23.0.windows.1
+
+# 卸载 APP 
+scoop uninstall #卸载 APP</code></pre>
+<h2 id="更新软件"><a href="#更新软件" class="headerlink" title="更新软件"></a>更新软件</h2><p>包含：如何禁用更新</p>
+<pre class=" language-text"><code class="language-text">scoop update # 更新 Scoop 自身
+
+scoop update appName1 appName2 # 更新某些app
+
+# 更新所有 app （可能需要在apps目录下操作）
+scoop update *
+
+# 禁止某程序更新
+scoop hold <app>
+# 允许某程序更新
+scoop unhold <app></code></pre>
+<h2 id="清除缓存与旧版本"><a href="#清除缓存与旧版本" class="headerlink" title="清除缓存与旧版本"></a>清除缓存与旧版本</h2><pre class=" language-text"><code class="language-text"># 查看所有以下载的缓存信息
+scoop cache show
+
+# 清除指定程序的下载缓存
+scoop cache rm <app>
+
+# 清除所有缓存
+scoop cache rm *
+
+# 删除某软件的旧版本
+scoop cleanup <app>
+
+# 删除全局安装的某软件的旧版本
+scoop cleanup <app> -g
+
+# 删除过期的下载缓存
+scoop cleanup <app> -k</code></pre>
+<h2 id="别名"><a href="#别名" class="headerlink" title="别名"></a>别名</h2><p>⚠️️ 注意：请在 Powershell 中运行下面的命令</p>
+<pre class=" language-text"><code class="language-text"># 可用操作
+scoop alias add|list|rm [<args>]
+
+## 添加别名，格式：
+scoop alias add <name> <command> <description>
+
+# 示例：（注意：必须在 Powershell中运行）
+scoop alias add st 'scoop status' '检查更新'
+# 检查已添加的别名
+scoop alias list -v
+
+Name Command      Summary
+---- -------      -------
+st   scoop status 检查更新
+
+# 测试已添加的别名 st
+scoop st
+
+
+# 另一个示例：
+scoop alias add rm 'scoop uninstall $args[0]' '卸载某 app'</code></pre>
+<h2 id="在同一程序的不同版本之间切换"><a href="#在同一程序的不同版本之间切换" class="headerlink" title="在同一程序的不同版本之间切换"></a>在同一程序的不同版本之间切换</h2><p>使用命令：</p>
+<pre class=" language-text"><code class="language-text">scoop reset [app]@[version]</code></pre>
+<p>示例：</p>
+<pre class=" language-text"><code class="language-text">scoop reset idea-ultimate-eap@201.6668.13
+
+scoop reset idea-ultimate-eap@201.6073.9
+
+# 切换到最新版本
+scoop reset idea-ultimate-eap</code></pre>
+<p>对应版本的程序需要已经安装于本地系统中；所以在你清除某个软件的旧版本时考虑一下自己是否还会再次使用到此旧版本。</p>
+<p>另外 idea-ultimate-eap 切换过程可能需要更长时间。</p>
+<h2 id="其它命令"><a href="#其它命令" class="headerlink" title="其它命令"></a>其它命令</h2><pre class=" language-text"><code class="language-text"># 显示某个app的信息
+scoop info <app>
+
+# 在浏览器中打开某app的主页
+scoop home <app>
+
+# 比如
+scoop home git</code></pre>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/135278662">本文参考</a></p>
 
             </div>
             <hr/>
@@ -844,7 +1068,7 @@ cscript ospp<span class="token punctuation">.</span>vbs <span class="token opera
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://blog.nmslwsnd.com/centos8-an-zhuang-bing-ji-huo-office/">https://blog.nmslwsnd.com/centos8-an-zhuang-bing-ji-huo-office/</a>
+                    <a href="https://blog.nmslwsnd.com/shi-yong-scoop-bao-guan-li-gong-ju-guan-li-windows-ruan-jian/">https://blog.nmslwsnd.com/shi-yong-scoop-bao-guan-li-gong-ju-guan-li-windows-ruan-jian/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -882,24 +1106,12 @@ cscript ospp<span class="token punctuation">.</span>vbs <span class="token opera
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/CentOS/">
-                                    <span class="chip bg-color">CentOS</span>
-                                </a>
-                            
-                                <a href="/tags/Office/">
-                                    <span class="chip bg-color">Office</span>
-                                </a>
-                            
-                                <a href="/tags/KMS/">
-                                    <span class="chip bg-color">KMS</span>
-                                </a>
-                            
                                 <a href="/tags/Windows/">
                                     <span class="chip bg-color">Windows</span>
                                 </a>
                             
-                                <a href="/tags/Linux/">
-                                    <span class="chip bg-color">Linux</span>
+                                <a href="/tags/Scoop/">
+                                    <span class="chip bg-color">Scoop</span>
                                 </a>
                             
                         </div>
@@ -1330,61 +1542,52 @@ cscript ospp<span class="token punctuation">.</span>vbs <span class="token opera
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/centos-an-zhuang-lychee-tu-chuang/">
+                <a href="/shi-yong-scoop-bao-guan-li-gong-ju-guan-li-windows-ruan-jian/">
                     <div class="card-image">
                         
-                        <img src="https://gitee.com/initcool/Picture/raw/master/post-cover/Lychee.webp" class="responsive-img" alt="Centos安装Lychee图床">
                         
-                        <span class="card-title">Centos安装Lychee图床</span>
+                        <img src="https://gitee.com/initcool/Picture/raw/master/featureimages/3RdrGut6.webp" class="responsive-img" alt="使用Scoop包管理工具管理Windows软件">
+                        
+                        <span class="card-title">使用Scoop包管理工具管理Windows软件</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Lychee 是一款开源的图床，由 php 构建，该项目一直在 Github 更新!
+                            在Linux以及Mac平台都有自己的包管理工具，在windows同样有好用的包管理工具，Scoop就是其中之一。
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%9B%BE%E5%BA%8A/" class="post-category">
-                                    图床
+                            <a href="/categories/Windows/" class="post-category">
+                                    Windows
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/CentOS/">
-                        <span class="chip bg-color">CentOS</span>
+                    <a href="/tags/Windows/">
+                        <span class="chip bg-color">Windows</span>
                     </a>
                     
-                    <a href="/tags/Lychee/">
-                        <span class="chip bg-color">Lychee</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%8D%94%E6%9E%9D/">
-                        <span class="chip bg-color">荔枝</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%9B%BE%E5%BA%8A/">
-                        <span class="chip bg-color">图床</span>
-                    </a>
-                    
-                    <a href="/tags/PHP/">
-                        <span class="chip bg-color">PHP</span>
+                    <a href="/tags/Scoop/">
+                        <span class="chip bg-color">Scoop</span>
                     </a>
                     
                 </div>
@@ -1398,30 +1601,31 @@ cscript ospp<span class="token punctuation">.</span>vbs <span class="token opera
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/post-style-set/">
+                <a href="/shi-yong-mi-yao-jin-xing-ssh-lian-jie/">
                     <div class="card-image">
                         
-                        <img src="https://gitee.com/initcool/Picture/raw/master/post-cover/hexocss.webp" class="responsive-img" alt="Hexo 文章内样式设置">
                         
-                        <span class="card-title">Hexo 文章内样式设置</span>
+                        <img src="https://gitee.com/initcool/Picture/raw/master/featureimages/82jC3X9M.webp" class="responsive-img" alt="使用密钥进行SSH连接">
+                        
+                        <span class="card-title">使用密钥进行SSH连接</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            个人常用的hexo的一些Css样式设置！
+                            SSH拥有两种登录方法，一种是常规的使用密码口令的登陆验证方式，另一种则为设置密钥进行安全验证，需要将本地生成的公钥传送至服务端，进行公共密钥的对比。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-07-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-26
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Hexo/" class="post-category">
-                                    Hexo
+                            <a href="/categories/Linux/" class="post-category">
+                                    Linux
                                 </a>
                             
                             
@@ -1431,16 +1635,16 @@ cscript ospp<span class="token punctuation">.</span>vbs <span class="token opera
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
                     </a>
                     
-                    <a href="/tags/Hexo%E4%BC%98%E5%8C%96/">
-                        <span class="chip bg-color">Hexo优化</span>
+                    <a href="/tags/ssh/">
+                        <span class="chip bg-color">ssh</span>
                     </a>
                     
-                    <a href="/tags/Css%E6%A0%B7%E5%BC%8F/">
-                        <span class="chip bg-color">Css样式</span>
+                    <a href="/tags/Git/">
+                        <span class="chip bg-color">Git</span>
                     </a>
                     
                 </div>
