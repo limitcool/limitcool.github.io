@@ -6,7 +6,7 @@
   <link href="https://blog.nmslwsnd.com/atom.xml" rel="self"/>
   
   <link href="https://blog.nmslwsnd.com/"/>
-  <updated>2021-05-21T08:07:22.911Z</updated>
+  <updated>2021-05-15T03:17:20.000Z</updated>
   <id>https://blog.nmslwsnd.com/</id>
   
   <author>
@@ -15,62 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>docker修改端口</title>
-    <link href="https://blog.nmslwsnd.com/article/null.html"/>
-    <id>https://blog.nmslwsnd.com/article/null.html</id>
-    <published>2021-05-21T08:07:22.000Z</published>
-    <updated>2021-05-21T08:07:22.911Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>linux安装ntfs</title>
-    <link href="https://blog.nmslwsnd.com/article/ntfs.html"/>
-    <id>https://blog.nmslwsnd.com/article/ntfs.html</id>
-    <published>2021-05-18T09:01:33.000Z</published>
-    <updated>2021-05-18T10:24:45.563Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;安装Fuse依赖&lt;/p&gt;
-&lt;pre class=&quot; language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;yum &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; -y</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>lxml的使用</title>
-    <link href="https://blog.nmslwsnd.com/article/lxml.html"/>
-    <id>https://blog.nmslwsnd.com/article/lxml.html</id>
-    <published>2021-05-15T05:07:11.000Z</published>
-    <updated>2021-05-21T08:12:37.671Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;安装lxml&quot;&gt;&lt;a href=&quot;#安装lxml&quot; class=&quot;headerlink&quot; title=&quot;安装lxml&quot;&gt;&lt;/a&gt;安装lxml&lt;/h1&gt;&lt;pre class=&quot; language-python&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Linux常用命令汇总</title>
@@ -338,8 +282,6 @@
     <category term="CDN" scheme="https://blog.nmslwsnd.com/categories/CDN/"/>
     
     
-    <category term="视频" scheme="https://blog.nmslwsnd.com/tags/%E8%A7%86%E9%A2%91/"/>
-    
     <category term="Github" scheme="https://blog.nmslwsnd.com/tags/Github/"/>
     
     <category term="jsDelivr" scheme="https://blog.nmslwsnd.com/tags/jsDelivr/"/>
@@ -347,6 +289,8 @@
     <category term="CDN" scheme="https://blog.nmslwsnd.com/tags/CDN/"/>
     
     <category term="FFMPEG" scheme="https://blog.nmslwsnd.com/tags/FFMPEG/"/>
+    
+    <category term="视频" scheme="https://blog.nmslwsnd.com/tags/%E8%A7%86%E9%A2%91/"/>
     
   </entry>
   
@@ -429,9 +373,9 @@
     <category term="Windows" scheme="https://blog.nmslwsnd.com/categories/Windows/"/>
     
     
-    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
-    
     <category term="MPV" scheme="https://blog.nmslwsnd.com/tags/MPV/"/>
+    
+    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
     
     <category term="视频播放器" scheme="https://blog.nmslwsnd.com/tags/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/"/>
     
@@ -560,11 +504,11 @@
     
     <category term="CentOS" scheme="https://blog.nmslwsnd.com/tags/CentOS/"/>
     
+    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
+    
     <category term="Office" scheme="https://blog.nmslwsnd.com/tags/Office/"/>
     
     <category term="KMS" scheme="https://blog.nmslwsnd.com/tags/KMS/"/>
-    
-    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
     
     <category term="Linux" scheme="https://blog.nmslwsnd.com/tags/Linux/"/>
     
@@ -614,6 +558,119 @@
     <category term="Hexo优化" scheme="https://blog.nmslwsnd.com/tags/Hexo%E4%BC%98%E5%8C%96/"/>
     
     <category term="Css样式" scheme="https://blog.nmslwsnd.com/tags/Css%E6%A0%B7%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Win10开启 Hyper-V 以及 Device Guard 和 Credential Guard</title>
+    <link href="https://blog.nmslwsnd.com/article/bd2369f2.html"/>
+    <id>https://blog.nmslwsnd.com/article/bd2369f2.html</id>
+    <published>2019-05-28T13:39:04.000Z</published>
+    <updated>2021-05-15T02:59:24.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;由于无良的网易MuMu模拟器关闭了Hyper-V,并且他们不提供开启Hyper-V的方法，笔者为大家提供教程来开启Hyper-V&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;cmd 或 powershell 下运行 Enable-WindowsOptionalFeature -Online</summary>
+        
+      
+    
+    
+    
+    <category term="Windows" scheme="https://blog.nmslwsnd.com/categories/Windows/"/>
+    
+    
+    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
+    
+    <category term="Hyper-V" scheme="https://blog.nmslwsnd.com/tags/Hyper-V/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为你的网站添加小绿锁！</title>
+    <link href="https://blog.nmslwsnd.com/article/ssl.html"/>
+    <id>https://blog.nmslwsnd.com/article/ssl.html</id>
+    <published>2017-06-04T18:19:37.000Z</published>
+    <updated>2021-05-15T03:02:18.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;使用Coding部署Blog站点添加https证书&quot;&gt;&lt;a href=&quot;#使用Coding部署Blog站点添加https证书&quot; class=&quot;headerlink&quot; title=&quot;使用Coding部署Blog站点添加https证书&quot;&gt;&lt;/a&gt;使用Coding部署Blog站点添加https证书&lt;/h2&gt;&lt;p&gt;进入Coding，在代码下，选择Pages服务。&lt;br&gt;&lt;img src=&quot;https://i.loli.net/2018/07/29/5b5d9adc4f513.png&quot; alt=&quot;9}PTMC[Q72%OEVZC(@D`2~X.png](https://i.loli.net/2018/07/29/5b5d9adc4f513.png)&quot;&gt;&lt;br&gt;在SSL/TLS 证书出，进行申请。（30分钟内只能申请一次，如果你的Blog同时部署至了GitHub和Coding，并且海外的线路解析至了GitHub，Coding申请证书的时候要把海外线路修改为Coding）&lt;/p&gt;
+&lt;h2 id=&quot;云服务器添加https证书&quot;&gt;&lt;a href=&quot;#云服务器添加https证书&quot; class=&quot;headerlink&quot; title=&quot;云服务器添加https证书&quot;&gt;&lt;/a&gt;云服务器添加https证书&lt;/h2&gt;&lt;p&gt;如果你使用的是云服务器，那么你需要先申请证书，在阿里云和腾讯云，都可以申请免费的证书。&lt;br&gt;申请证书，需要验证域名所有权，大致为文件验证（上传文件至指定目录）和DNS验证（添加DNS解析记录进行验证）。&lt;br&gt;证书申请完毕后，可进行下载证书。&lt;br&gt;下载得到的文件解压获得3个文件夹，分别是Apache、IIS、Nginx 服务器的证书文件。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="SSL证书部署" scheme="https://blog.nmslwsnd.com/categories/SSL%E8%AF%81%E4%B9%A6%E9%83%A8%E7%BD%B2/"/>
+    
+    
+    <category term="https" scheme="https://blog.nmslwsnd.com/tags/https/"/>
+    
+    <category term="Nginx" scheme="https://blog.nmslwsnd.com/tags/Nginx/"/>
+    
+    <category term="ssl证书" scheme="https://blog.nmslwsnd.com/tags/ssl%E8%AF%81%E4%B9%A6/"/>
+    
+    <category term="Apache" scheme="https://blog.nmslwsnd.com/tags/Apache/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript学习日记02-JavaScript数据类型</title>
+    <link href="https://blog.nmslwsnd.com/article/a196f8f2.html"/>
+    <id>https://blog.nmslwsnd.com/article/a196f8f2.html</id>
+    <published>2017-05-15T13:39:04.000Z</published>
+    <updated>2021-05-15T02:57:33.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;ECMAScript-5种基本数据类型&quot;&gt;&lt;a href=&quot;#ECMAScript-5种基本数据类型&quot; class=&quot;headerlink&quot; title=&quot;ECMAScript 5种基本数据类型&quot;&gt;&lt;/a&gt;ECMAScript 5种基本数据类型&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;Undefined Null Boolean Number String&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Boolean&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;DATE TYPE&lt;/th&gt;
+&lt;th&gt;VALUES CONVERTED TO TRUE&lt;/th&gt;
+&lt;th&gt;VALUES CONVERTED TO  FALSE&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;Boolean&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;String&lt;/td&gt;
+&lt;td&gt;Any nonempty string&lt;/td&gt;
+&lt;td&gt;- -(empty string)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Number&lt;/td&gt;
+&lt;td&gt;Any nonzero number(including infinity)&lt;/td&gt;
+&lt;td&gt;0,NaN(See the “NaN” section later in this chapter.)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Object&lt;/td&gt;
+&lt;td&gt;Any object&lt;/td&gt;
+&lt;td&gt;null&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Undefind&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td&gt;undefind&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
+    
+    
+    
+    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/categories/JavaScript/"/>
+    
+    
+    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/tags/JavaScript/"/>
+    
+    <category term="学习" scheme="https://blog.nmslwsnd.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="数据类型" scheme="https://blog.nmslwsnd.com/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
     
   </entry>
   

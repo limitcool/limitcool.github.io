@@ -1,6 +1,3 @@
-https://blog.nmslwsnd.com/article/null.html
-https://blog.nmslwsnd.com/article/ntfs.html
-https://blog.nmslwsnd.com/article/lxml.html
 https://blog.nmslwsnd.com/article/ops.html
 https://blog.nmslwsnd.com/article/scoop.html
 https://blog.nmslwsnd.com/article/e67fabbe.html

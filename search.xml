@@ -4,45 +4,6 @@
   
     
     <entry>
-      <title>docker修改端口</title>
-      <link href="article/null.html"/>
-      <url>article/null.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>linux安装ntfs</title>
-      <link href="article/ntfs.html"/>
-      <url>article/ntfs.html</url>
-      
-        <content type="html"><![CDATA[<p>安装Fuse依赖</p><pre class=" language-bash"><code class="language-bash">yum <span class="token function">install</span> -y fuse</code></pre><p>使用rpm安装NTFS-3G</p><pre class=" language-bash"><code class="language-bash">rpm -ivh http://rpmfind.net/linux/epel/8/Everything/x86_64/Packages/n/ntfs-3g-2017.3.23-11.el8.x86_64.rpm</code></pre><p>修改bin以及sbin文件目录权限</p><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 查看/usr/bin权限</span>lsattr /usr/bin/<span class="token comment" spellcheck="true"># 去掉/usr/bin的-i权限</span>chattr -i /usr/bin<span class="token comment" spellcheck="true"># 查看/usr/sbin权限</span>lsattr /usr/sbin/<span class="token comment" spellcheck="true"># 去掉/usr/sbin的-i权限</span>chattr -i /usr/bin</code></pre><p>挂载ntfs磁盘</p><pre class=" language-bash"><code class="language-bash"><span class="token function">mount</span> -t ntfs-3g /dev/vdb1 /mnt</code></pre><p>挂载出现以下错误</p><pre class=" language-bash"><code class="language-bash">ntfs-3g: symbol lookup error: ntfs-3g: undefined symbol: ntfs_xattr_build_mapping</code></pre><p>使用以下方式解决</p><pre class=" language-bash"><code class="language-bash"> <span class="token function">mv</span> /lib/libntfs-3g.so.88 /lib/libntfs-3g.so.88.useless ldd <span class="token variable"><span class="token variable">$(</span><span class="token function">which</span> ntfs-3g<span class="token variable">)</span></span> <span class="token comment" spellcheck="true"># 再次进行挂载即可使用</span></code></pre>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>lxml的使用</title>
-      <link href="article/lxml.html"/>
-      <url>article/lxml.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="安装lxml"><a href="#安装lxml" class="headerlink" title="安装lxml"></a>安装lxml</h1><pre class=" language-python"><code class="language-python">pip3 install pip3<span class="token operator">-</span>Upip3 install lxml</code></pre><p>使用</p><h3 id="读取文本解析节点"><a href="#读取文本解析节点" class="headerlink" title="读取文本解析节点"></a>读取文本解析节点</h3><pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> lxml <span class="token keyword">import</span> etreetext <span class="token operator">=</span> <span class="token triple-quoted-string string">'''&lt;div> tree    &lt;ul>        &lt;li class="item-0">&lt;a href="links1.html">第一个&lt;/a>&lt;/li>        &lt;li class="item-1">&lt;a href="links2.html">second item&lt;/a>&lt;/li>        &lt;li class="item-0">&lt;a href="links3.html">a属性&lt;/a>&lt;/lit>    &lt;/ul>&lt;/div>'''</span>html  <span class="token operator">=</span> etree<span class="token punctuation">.</span>HTML<span class="token punctuation">(</span>text<span class="token punctuation">)</span> <span class="token comment" spellcheck="true"># 初始化生成一个Xpath解析对象</span>result <span class="token operator">=</span> etree<span class="token punctuation">.</span>tostring<span class="token punctuation">(</span>html<span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true"># 解析对象输出代码</span><span class="token keyword">print</span><span class="token punctuation">(</span>type<span class="token punctuation">(</span>html<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span>type<span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true"># 对result进行解码，etree会修复HTML文本节点</span><span class="token comment" spellcheck="true"># 输出结果如下</span></code></pre>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Linux常用命令汇总</title>
       <link href="article/ops.html"/>
       <url>article/ops.html</url>
@@ -297,8 +258,6 @@
       
         <tags>
             
-            <tag> 视频 </tag>
-            
             <tag> Github </tag>
             
             <tag> jsDelivr </tag>
@@ -306,6 +265,8 @@
             <tag> CDN </tag>
             
             <tag> FFMPEG </tag>
+            
+            <tag> 视频 </tag>
             
         </tags>
       
@@ -384,9 +345,9 @@
       
         <tags>
             
-            <tag> Windows </tag>
-            
             <tag> MPV </tag>
+            
+            <tag> Windows </tag>
             
             <tag> 视频播放器 </tag>
             
@@ -510,11 +471,11 @@
             
             <tag> CentOS </tag>
             
+            <tag> Windows </tag>
+            
             <tag> Office </tag>
             
             <tag> KMS </tag>
-            
-            <tag> Windows </tag>
             
             <tag> Linux </tag>
             
@@ -692,11 +653,11 @@
       
         <tags>
             
-            <tag> 汇总 </tag>
-            
             <tag> 网站 </tag>
             
             <tag> 常用网站 </tag>
+            
+            <tag> 汇总 </tag>
             
         </tags>
       
