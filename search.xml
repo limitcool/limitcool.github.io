@@ -258,6 +258,8 @@
       
         <tags>
             
+            <tag> 视频 </tag>
+            
             <tag> Github </tag>
             
             <tag> jsDelivr </tag>
@@ -265,8 +267,6 @@
             <tag> CDN </tag>
             
             <tag> FFMPEG </tag>
-            
-            <tag> 视频 </tag>
             
         </tags>
       
@@ -345,9 +345,9 @@
       
         <tags>
             
-            <tag> MPV </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> MPV </tag>
             
             <tag> 视频播放器 </tag>
             
@@ -378,9 +378,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> Hexo </tag>
             
             <tag> Hexo优化 </tag>
             
@@ -436,13 +436,13 @@
       
         <tags>
             
+            <tag> CentOS </tag>
+            
             <tag> Lychee </tag>
             
             <tag> 荔枝 </tag>
             
             <tag> 图床 </tag>
-            
-            <tag> CentOS </tag>
             
             <tag> PHP </tag>
             
@@ -471,11 +471,11 @@
             
             <tag> CentOS </tag>
             
-            <tag> Windows </tag>
-            
             <tag> Office </tag>
             
             <tag> KMS </tag>
+            
+            <tag> Windows </tag>
             
             <tag> Linux </tag>
             
@@ -740,9 +740,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
