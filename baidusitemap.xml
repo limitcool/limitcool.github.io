@@ -2,7 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blog.nmslwsnd.com/article/ops.html</loc>
-    <lastmod>2021-05-15</lastmod>
+    <lastmod>2021-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.nmslwsnd.com/article/mysql.html</loc>
+    <lastmod>2021-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.nmslwsnd.com/article/git.html</loc>
+    <lastmod>2021-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.nmslwsnd.com/article/mongodb.html</loc>
+    <lastmod>2021-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.nmslwsnd.com/article/magisk.html</loc>
+    <lastmod>2021-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.nmslwsnd.com/article/re.html</loc>
+    <lastmod>2021-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.nmslwsnd.com/article/ntfs.html</loc>
+    <lastmod>2021-05-30</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.nmslwsnd.com/article/Scrcpy.html</loc>
+    <lastmod>2021-05-30</lastmod>
   </url>
   <url>
     <loc>https://blog.nmslwsnd.com/article/frp.html</loc>

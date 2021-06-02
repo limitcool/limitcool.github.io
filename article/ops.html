@@ -699,12 +699,12 @@
                                 <span class="chip bg-color">Linux</span>
                             </a>
                         
-                            <a href="/tags/SSH/">
-                                <span class="chip bg-color">SSH</span>
-                            </a>
-                        
                             <a href="/tags/Centos/">
                                 <span class="chip bg-color">Centos</span>
+                            </a>
+                        
+                            <a href="/tags/SSH-Debian/">
+                                <span class="chip bg-color">SSH - Debian</span>
                             </a>
                         
                     </div>
@@ -735,14 +735,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-05-15
+                    2021-06-02
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    96
+                    140
                 </div>
                 
 
@@ -776,8 +776,14 @@ rz #上传文件</code></pre>
 <pre class=" language-bash"><code class="language-bash">chattr -i config.php <span class="token comment" spellcheck="true">#使用chattr取消文件权限</span></code></pre>
 <p>查看权限</p>
 <pre class=" language-bash"><code class="language-bash">lsattr <span class="token comment" spellcheck="true">#查看权限</span></code></pre>
-<h1 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h1><p>查看正在运行的端口</p>
+<h1 id="修改SSH端口"><a href="#修改SSH端口" class="headerlink" title="修改SSH端口"></a>修改SSH端口</h1><p>查看正在运行的端口</p>
 <pre class=" language-bash"><code class="language-bash"><span class="token function">netstat</span> -nutlp <span class="token operator">|</span><span class="token function">grep</span> *</code></pre>
+<p>修改<code>ssh</code>配置文件</p>
+<pre class=" language-bash"><code class="language-bash">vim /etc/ssh/sshd_config</code></pre>
+<p>在<code>#Port 22</code>下新增一行</p>
+<pre class=" language-bash"><code class="language-bash">Port 2233 <span class="token comment" spellcheck="true"># 修改端口为2233</span></code></pre>
+<p>重启ssh服务使修改生效</p>
+<pre class=" language-bash"><code class="language-bash"> systemctl restart sshd.service</code></pre>
 
             </div>
             <hr/>
@@ -845,12 +851,12 @@ rz #上传文件</code></pre>
                                     <span class="chip bg-color">Linux</span>
                                 </a>
                             
-                                <a href="/tags/SSH/">
-                                    <span class="chip bg-color">SSH</span>
-                                </a>
-                            
                                 <a href="/tags/Centos/">
                                     <span class="chip bg-color">Centos</span>
+                                </a>
+                            
+                                <a href="/tags/SSH-Debian/">
+                                    <span class="chip bg-color">SSH - Debian</span>
                                 </a>
                             
                         </div>
@@ -1281,18 +1287,17 @@ rz #上传文件</code></pre>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/article/ops.html">
+                <a href="/article/Scrcpy.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://gitee.com/initcool/Picture/raw/master/featureimages/3X8ahPAi.webp" class="responsive-img" alt="Linux常用命令汇总">
+                        <img src="https://gitee.com/initcool/Picture/raw/master/featureimages/On86Qrio.webp" class="responsive-img" alt="Scrcpy常用命令">
                         
-                        <span class="card-title">Linux常用命令汇总</span>
+                        <span class="card-title">Scrcpy常用命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1302,35 +1307,34 @@ rz #上传文件</code></pre>
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-05
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-07
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux/" class="post-category">
-                                    Linux
+                            <a href="/categories/Android/" class="post-category">
+                                    Android
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Linux/">
-                        <span class="chip bg-color">Linux</span>
+                    <a href="/tags/apps/">
+                        <span class="chip bg-color">apps</span>
                     </a>
                     
-                    <a href="/tags/SSH/">
-                        <span class="chip bg-color">SSH</span>
+                    <a href="/tags/Scrcpy/">
+                        <span class="chip bg-color">Scrcpy</span>
                     </a>
                     
-                    <a href="/tags/Centos/">
-                        <span class="chip bg-color">Centos</span>
+                    <a href="/tags/Android/">
+                        <span class="chip bg-color">Android</span>
                     </a>
                     
                 </div>
@@ -1621,7 +1625,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">28.3k</span>&nbsp;字
+                class="white-color">34k</span>&nbsp;字
             
             
             

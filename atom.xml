@@ -6,7 +6,7 @@
   <link href="https://blog.nmslwsnd.com/atom.xml" rel="self"/>
   
   <link href="https://blog.nmslwsnd.com/"/>
-  <updated>2021-05-15T03:17:20.000Z</updated>
+  <updated>2021-05-30T02:13:46.145Z</updated>
   <id>https://blog.nmslwsnd.com/</id>
   
   <author>
@@ -17,11 +17,233 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Linux下挂载Windows磁盘</title>
+    <link href="https://blog.nmslwsnd.com/article/ntfs.html"/>
+    <id>https://blog.nmslwsnd.com/article/ntfs.html</id>
+    <published>2021-05-18T09:01:33.000Z</published>
+    <updated>2021-05-30T02:13:46.145Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;安装Fuse依赖&lt;/p&gt;
+&lt;pre class=&quot; language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;yum &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; -y</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://blog.nmslwsnd.com/categories/Linux/"/>
+    
+    
+    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
+    
+    <category term="Linux" scheme="https://blog.nmslwsnd.com/tags/Linux/"/>
+    
+    <category term="NTFS" scheme="https://blog.nmslwsnd.com/tags/NTFS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>正则表达式汇总</title>
+    <link href="https://blog.nmslwsnd.com/article/re.html"/>
+    <id>https://blog.nmslwsnd.com/article/re.html</id>
+    <published>2021-05-06T06:58:34.000Z</published>
+    <updated>2021-06-02T07:54:45.078Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;常用的元字符&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;代码&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;.&lt;/td&gt;
+&lt;td&gt;匹配除换行符以外的任意字符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\w&lt;/t</summary>
+        
+      
+    
+    
+    
+    <category term="汇总" scheme="https://blog.nmslwsnd.com/categories/%E6%B1%87%E6%80%BB/"/>
+    
+    
+    <category term="汇总" scheme="https://blog.nmslwsnd.com/tags/%E6%B1%87%E6%80%BB/"/>
+    
+    <category term="正则表达式" scheme="https://blog.nmslwsnd.com/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql常用命令大全</title>
+    <link href="https://blog.nmslwsnd.com/article/mysql.html"/>
+    <id>https://blog.nmslwsnd.com/article/mysql.html</id>
+    <published>2021-04-02T05:54:54.000Z</published>
+    <updated>2021-06-02T08:12:13.014Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;启动&lt;code&gt;mysql&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&quot; language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://blog.nmslwsnd.com/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://blog.nmslwsnd.com/tags/Linux/"/>
+    
+    <category term="Mysql" scheme="https://blog.nmslwsnd.com/tags/Mysql/"/>
+    
+    <category term="Sql" scheme="https://blog.nmslwsnd.com/tags/Sql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MongoDB常用命令大全</title>
+    <link href="https://blog.nmslwsnd.com/article/mongodb.html"/>
+    <id>https://blog.nmslwsnd.com/article/mongodb.html</id>
+    <published>2021-03-18T07:23:56.000Z</published>
+    <updated>2021-06-02T08:05:51.442Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;进入命令行模式&lt;/p&gt;
+&lt;p&gt;mongo&lt;/p&gt;
+&lt;p&gt;使用管理员账户&lt;/p&gt;
+&lt;p&gt;use admin&lt;/p&gt;
+&lt;p&gt;导出数据库 -d后跟数据库，-o后跟输出目录&lt;/p&gt;
+&lt;pre class=&quot; language-bash&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://blog.nmslwsnd.com/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://blog.nmslwsnd.com/tags/Linux/"/>
+    
+    <category term="MongoDB" scheme="https://blog.nmslwsnd.com/tags/MongoDB/"/>
+    
+    <category term="数据库" scheme="https://blog.nmslwsnd.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Magisk常用模块汇总</title>
+    <link href="https://blog.nmslwsnd.com/article/magisk.html"/>
+    <id>https://blog.nmslwsnd.com/article/magisk.html</id>
+    <published>2021-03-15T01:08:50.000Z</published>
+    <updated>2021-06-02T08:01:26.548Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Magisk&quot;&gt;&lt;a href=&quot;#Magisk&quot; class=&quot;headerlink&quot; title=&quot;Magisk&quot;&gt;&lt;/a&gt;Magisk&lt;/h1&gt;&lt;h1 id=&quot;riru&quot;&gt;&lt;a href=&quot;#riru&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="汇总" scheme="https://blog.nmslwsnd.com/categories/%E6%B1%87%E6%80%BB/"/>
+    
+    
+    <category term="Linux" scheme="https://blog.nmslwsnd.com/tags/Linux/"/>
+    
+    <category term="Android" scheme="https://blog.nmslwsnd.com/tags/Android/"/>
+    
+    <category term="Magisk" scheme="https://blog.nmslwsnd.com/tags/Magisk/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux搭建Git服务器</title>
+    <link href="https://blog.nmslwsnd.com/article/git.html"/>
+    <id>https://blog.nmslwsnd.com/article/git.html</id>
+    <published>2021-03-09T07:51:32.000Z</published>
+    <updated>2021-06-02T08:06:48.394Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;进入服务器目录&lt;/p&gt;
+&lt;p&gt;键入&lt;/p&gt;
+&lt;pre class=&quot; language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; init  --bare</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://blog.nmslwsnd.com/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://blog.nmslwsnd.com/tags/Linux/"/>
+    
+    <category term="Git" scheme="https://blog.nmslwsnd.com/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scrcpy常用命令</title>
+    <link href="https://blog.nmslwsnd.com/article/Scrcpy.html"/>
+    <id>https://blog.nmslwsnd.com/article/Scrcpy.html</id>
+    <published>2021-03-07T04:04:20.000Z</published>
+    <updated>2021-05-30T02:03:19.757Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;修改码率&quot;&gt;&lt;a href=&quot;#修改码率&quot; class=&quot;headerlink&quot; title=&quot;修改码率&quot;&gt;&lt;/a&gt;修改码率&lt;/h4&gt;&lt;p&gt;默认码率是 8Mbps。要改变视频的码率 (例如改为 2Mbps)：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;scrcpy</summary>
+        
+      
+    
+    
+    
+    <category term="Android" scheme="https://blog.nmslwsnd.com/categories/Android/"/>
+    
+    
+    <category term="apps" scheme="https://blog.nmslwsnd.com/tags/apps/"/>
+    
+    <category term="Scrcpy" scheme="https://blog.nmslwsnd.com/tags/Scrcpy/"/>
+    
+    <category term="Android" scheme="https://blog.nmslwsnd.com/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux常用命令汇总</title>
     <link href="https://blog.nmslwsnd.com/article/ops.html"/>
     <id>https://blog.nmslwsnd.com/article/ops.html</id>
     <published>2021-03-05T02:08:42.000Z</published>
-    <updated>2021-05-15T03:17:20.000Z</updated>
+    <updated>2021-06-02T08:12:42.716Z</updated>
     
     
       
@@ -39,9 +261,9 @@
     
     <category term="Linux" scheme="https://blog.nmslwsnd.com/tags/Linux/"/>
     
-    <category term="SSH" scheme="https://blog.nmslwsnd.com/tags/SSH/"/>
-    
     <category term="Centos" scheme="https://blog.nmslwsnd.com/tags/Centos/"/>
+    
+    <category term="SSH - Debian" scheme="https://blog.nmslwsnd.com/tags/SSH-Debian/"/>
     
   </entry>
   
@@ -96,9 +318,9 @@
     
     <category term="Linux" scheme="https://blog.nmslwsnd.com/tags/Linux/"/>
     
-    <category term="ssh" scheme="https://blog.nmslwsnd.com/tags/ssh/"/>
-    
     <category term="Git" scheme="https://blog.nmslwsnd.com/tags/Git/"/>
+    
+    <category term="ssh" scheme="https://blog.nmslwsnd.com/tags/ssh/"/>
     
   </entry>
   
@@ -406,271 +628,13 @@
     <category term="Hexo" scheme="https://blog.nmslwsnd.com/categories/Hexo/"/>
     
     
-    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
-    
     <category term="Hexo" scheme="https://blog.nmslwsnd.com/tags/Hexo/"/>
+    
+    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
     
     <category term="Hexo优化" scheme="https://blog.nmslwsnd.com/tags/Hexo%E4%BC%98%E5%8C%96/"/>
     
     <category term="matery" scheme="https://blog.nmslwsnd.com/tags/matery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Powertoys功能介绍及使用教程</title>
-    <link href="https://blog.nmslwsnd.com/article/powertoys.html"/>
-    <id>https://blog.nmslwsnd.com/article/powertoys.html</id>
-    <published>2020-04-09T16:43:34.000Z</published>
-    <updated>2021-05-15T02:58:57.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;PowerToys 是微软最初发布于 Windows 95 平台的系统增强工具，这一项目在当时因为 Bug 多，功能不稳定，测试不严格，在安全审查中未能幸免，被微软从 Windows 系统移除。而现在，微软重启了该项目，并在 Github</summary>
-        
-      
-    
-    
-    
-    <category term="Windows" scheme="https://blog.nmslwsnd.com/categories/Windows/"/>
-    
-    
-    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
-    
-    <category term="Powertoys" scheme="https://blog.nmslwsnd.com/tags/Powertoys/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Centos安装Lychee图床</title>
-    <link href="https://blog.nmslwsnd.com/article/8a03ee77.html"/>
-    <id>https://blog.nmslwsnd.com/article/8a03ee77.html</id>
-    <published>2020-03-17T19:49:17.000Z</published>
-    <updated>2021-05-15T02:56:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Lychee 是一款开源的图床，由 php 构建，该项目一直在 Github 更新，会 Docker 的同学也可以使用 Docker 进行构建。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;安装前提&quot;&gt;&lt;a href=&quot;#安装前提&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="图床" scheme="https://blog.nmslwsnd.com/categories/%E5%9B%BE%E5%BA%8A/"/>
-    
-    
-    <category term="Lychee" scheme="https://blog.nmslwsnd.com/tags/Lychee/"/>
-    
-    <category term="荔枝" scheme="https://blog.nmslwsnd.com/tags/%E8%8D%94%E6%9E%9D/"/>
-    
-    <category term="图床" scheme="https://blog.nmslwsnd.com/tags/%E5%9B%BE%E5%BA%8A/"/>
-    
-    <category term="CentOS" scheme="https://blog.nmslwsnd.com/tags/CentOS/"/>
-    
-    <category term="PHP" scheme="https://blog.nmslwsnd.com/tags/PHP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS8安装并激活Office</title>
-    <link href="https://blog.nmslwsnd.com/article/36b01f81.html"/>
-    <id>https://blog.nmslwsnd.com/article/36b01f81.html</id>
-    <published>2019-07-01T10:58:35.000Z</published>
-    <updated>2021-05-15T02:55:51.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Key Management Service（简称：KMS），这个功能是在 Windows Vista 之后的产品中的一种新型产品激活机制，目的是为了 Microsoft 更好的遏制非法软件授权行为</summary>
-        
-      
-    
-    
-    
-    <category term="Office" scheme="https://blog.nmslwsnd.com/categories/Office/"/>
-    
-    
-    <category term="CentOS" scheme="https://blog.nmslwsnd.com/tags/CentOS/"/>
-    
-    <category term="Office" scheme="https://blog.nmslwsnd.com/tags/Office/"/>
-    
-    <category term="KMS" scheme="https://blog.nmslwsnd.com/tags/KMS/"/>
-    
-    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
-    
-    <category term="Linux" scheme="https://blog.nmslwsnd.com/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo 文章内样式设置</title>
-    <link href="https://blog.nmslwsnd.com/article/f12c04de.html"/>
-    <id>https://blog.nmslwsnd.com/article/f12c04de.html</id>
-    <published>2019-07-01T10:58:35.000Z</published>
-    <updated>2021-05-15T02:58:40.000Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;文章内超链接样式设置&quot;&gt;&lt;a href=&quot;#文章内超链接样式设置&quot; class=&quot;headerlink&quot; title=&quot;文章内超链接样式设置&quot;&gt;&lt;/a&gt;文章内超链接样式设置&lt;/h1&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&amp;lt;section class=&amp;quot;link-braces&amp;quot;&amp;gt;
-&amp;lt;p&amp;gt;这是一个&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;超链接&amp;lt;/a&amp;gt;
-&amp;lt;/section&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;span id=&quot;inline-blue&quot;&gt;Demo:&lt;/span&gt;&lt;/p&gt;
-&lt;section class=&quot;link-braces&quot;&gt;
-&lt;p&gt;这是一个&lt;a href=&quot;#&quot;&gt;超链接&lt;/a&gt;
-&lt;/section&gt;
-
-&lt;p&gt;需要注意的是，使用时需要在”a”标签前增加”p”标签进行分割。&lt;/p&gt;
-&lt;h1 id=&quot;文章内居中引用设置&quot;&gt;&lt;a href=&quot;#文章内居中引用设置&quot; class=&quot;headerlink&quot; title=&quot;文章内居中引用设置&quot;&gt;&lt;/a&gt;文章内居中引用设置&lt;/h1&gt;&lt;p&gt;将文章内部分内容自动居中，并加上引号。推荐单行使用。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;
-&amp;lt;!-- Html方式: 直接在 Markdown 文件中编写 Html 来调用 --&amp;gt;
-&amp;lt;!-- 其中 class=&amp;quot;blockquote-center&amp;quot; 是必须的 --&amp;gt;
-&amp;lt;blockquote class=&amp;quot;blockquote-center&amp;quot;&amp;gt;Html方式文本居中&amp;lt;/blockquote&amp;gt;
-
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;!-- Html方式: 直接在 Markdown 文件中编写 Html 来调用 --&gt;
-&lt;!-- 其中 class=&quot;blockquote-center&quot; 是必须的 --&gt;
-&lt;blockquote class=&quot;blockquote-center&quot;&gt;Html方式文本居中&lt;/blockquote&gt;
-
-&lt;!-- 标签方式 --&gt;
-
-
-&lt;!-- 标签简写 --&gt;</summary>
-    
-    
-    
-    <category term="Hexo" scheme="https://blog.nmslwsnd.com/categories/Hexo/"/>
-    
-    
-    <category term="Hexo" scheme="https://blog.nmslwsnd.com/tags/Hexo/"/>
-    
-    <category term="Hexo优化" scheme="https://blog.nmslwsnd.com/tags/Hexo%E4%BC%98%E5%8C%96/"/>
-    
-    <category term="Css样式" scheme="https://blog.nmslwsnd.com/tags/Css%E6%A0%B7%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Win10开启 Hyper-V 以及 Device Guard 和 Credential Guard</title>
-    <link href="https://blog.nmslwsnd.com/article/bd2369f2.html"/>
-    <id>https://blog.nmslwsnd.com/article/bd2369f2.html</id>
-    <published>2019-05-28T13:39:04.000Z</published>
-    <updated>2021-05-15T02:59:24.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;由于无良的网易MuMu模拟器关闭了Hyper-V,并且他们不提供开启Hyper-V的方法，笔者为大家提供教程来开启Hyper-V&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;cmd 或 powershell 下运行 Enable-WindowsOptionalFeature -Online</summary>
-        
-      
-    
-    
-    
-    <category term="Windows" scheme="https://blog.nmslwsnd.com/categories/Windows/"/>
-    
-    
-    <category term="Windows" scheme="https://blog.nmslwsnd.com/tags/Windows/"/>
-    
-    <category term="Hyper-V" scheme="https://blog.nmslwsnd.com/tags/Hyper-V/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>为你的网站添加小绿锁！</title>
-    <link href="https://blog.nmslwsnd.com/article/ssl.html"/>
-    <id>https://blog.nmslwsnd.com/article/ssl.html</id>
-    <published>2017-06-04T18:19:37.000Z</published>
-    <updated>2021-05-15T03:02:18.000Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;使用Coding部署Blog站点添加https证书&quot;&gt;&lt;a href=&quot;#使用Coding部署Blog站点添加https证书&quot; class=&quot;headerlink&quot; title=&quot;使用Coding部署Blog站点添加https证书&quot;&gt;&lt;/a&gt;使用Coding部署Blog站点添加https证书&lt;/h2&gt;&lt;p&gt;进入Coding，在代码下，选择Pages服务。&lt;br&gt;&lt;img src=&quot;https://i.loli.net/2018/07/29/5b5d9adc4f513.png&quot; alt=&quot;9}PTMC[Q72%OEVZC(@D`2~X.png](https://i.loli.net/2018/07/29/5b5d9adc4f513.png)&quot;&gt;&lt;br&gt;在SSL/TLS 证书出，进行申请。（30分钟内只能申请一次，如果你的Blog同时部署至了GitHub和Coding，并且海外的线路解析至了GitHub，Coding申请证书的时候要把海外线路修改为Coding）&lt;/p&gt;
-&lt;h2 id=&quot;云服务器添加https证书&quot;&gt;&lt;a href=&quot;#云服务器添加https证书&quot; class=&quot;headerlink&quot; title=&quot;云服务器添加https证书&quot;&gt;&lt;/a&gt;云服务器添加https证书&lt;/h2&gt;&lt;p&gt;如果你使用的是云服务器，那么你需要先申请证书，在阿里云和腾讯云，都可以申请免费的证书。&lt;br&gt;申请证书，需要验证域名所有权，大致为文件验证（上传文件至指定目录）和DNS验证（添加DNS解析记录进行验证）。&lt;br&gt;证书申请完毕后，可进行下载证书。&lt;br&gt;下载得到的文件解压获得3个文件夹，分别是Apache、IIS、Nginx 服务器的证书文件。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="SSL证书部署" scheme="https://blog.nmslwsnd.com/categories/SSL%E8%AF%81%E4%B9%A6%E9%83%A8%E7%BD%B2/"/>
-    
-    
-    <category term="https" scheme="https://blog.nmslwsnd.com/tags/https/"/>
-    
-    <category term="Nginx" scheme="https://blog.nmslwsnd.com/tags/Nginx/"/>
-    
-    <category term="ssl证书" scheme="https://blog.nmslwsnd.com/tags/ssl%E8%AF%81%E4%B9%A6/"/>
-    
-    <category term="Apache" scheme="https://blog.nmslwsnd.com/tags/Apache/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript学习日记02-JavaScript数据类型</title>
-    <link href="https://blog.nmslwsnd.com/article/a196f8f2.html"/>
-    <id>https://blog.nmslwsnd.com/article/a196f8f2.html</id>
-    <published>2017-05-15T13:39:04.000Z</published>
-    <updated>2021-05-15T02:57:33.000Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;ECMAScript-5种基本数据类型&quot;&gt;&lt;a href=&quot;#ECMAScript-5种基本数据类型&quot; class=&quot;headerlink&quot; title=&quot;ECMAScript 5种基本数据类型&quot;&gt;&lt;/a&gt;ECMAScript 5种基本数据类型&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;Undefined Null Boolean Number String&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Boolean&lt;/strong&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;DATE TYPE&lt;/th&gt;
-&lt;th&gt;VALUES CONVERTED TO TRUE&lt;/th&gt;
-&lt;th&gt;VALUES CONVERTED TO  FALSE&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;Boolean&lt;/td&gt;
-&lt;td&gt;true&lt;/td&gt;
-&lt;td&gt;false&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;String&lt;/td&gt;
-&lt;td&gt;Any nonempty string&lt;/td&gt;
-&lt;td&gt;- -(empty string)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Number&lt;/td&gt;
-&lt;td&gt;Any nonzero number(including infinity)&lt;/td&gt;
-&lt;td&gt;0,NaN(See the “NaN” section later in this chapter.)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Object&lt;/td&gt;
-&lt;td&gt;Any object&lt;/td&gt;
-&lt;td&gt;null&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Undefind&lt;/td&gt;
-&lt;td&gt;n/a&lt;/td&gt;
-&lt;td&gt;undefind&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;</summary>
-    
-    
-    
-    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/categories/JavaScript/"/>
-    
-    
-    <category term="JavaScript" scheme="https://blog.nmslwsnd.com/tags/JavaScript/"/>
-    
-    <category term="学习" scheme="https://blog.nmslwsnd.com/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="数据类型" scheme="https://blog.nmslwsnd.com/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
     
   </entry>
   

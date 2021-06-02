@@ -1,3 +1,10 @@
+https://blog.nmslwsnd.com/article/ntfs.html
+https://blog.nmslwsnd.com/article/re.html
+https://blog.nmslwsnd.com/article/mysql.html
+https://blog.nmslwsnd.com/article/mongodb.html
+https://blog.nmslwsnd.com/article/magisk.html
+https://blog.nmslwsnd.com/article/git.html
+https://blog.nmslwsnd.com/article/Scrcpy.html
 https://blog.nmslwsnd.com/article/ops.html
 https://blog.nmslwsnd.com/article/scoop.html
 https://blog.nmslwsnd.com/article/e67fabbe.html
