@@ -30,7 +30,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/atom.xml" title="InitCool" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="InitCool" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
  <!-- 添加加载动画 -->
@@ -769,33 +769,42 @@
 <p>使用管理员账户</p>
 <p>use admin</p>
 <p>导出数据库 -d后跟数据库，-o后跟输出目录</p>
-<pre class=" language-bash"><code class="language-bash">mongodump --host <span class="token operator">&lt;</span>mongodb_host<span class="token operator">></span> --port <span class="token operator">&lt;</span>port<span class="token operator">></span>  -u <span class="token operator">&lt;</span>username<span class="token operator">></span>  --authenticationDatabase  admin</code></pre>
+<pre class=" language-bash"><code class="language-bash">mongodump --host <span class="token operator">&lt;</span>mongodb_host<span class="token operator">></span> --port <span class="token operator">&lt;</span>port<span class="token operator">></span>  -u <span class="token operator">&lt;</span>username<span class="token operator">></span>  --authenticationDatabase  admin
+</code></pre>
 <p>示例：</p>
-<pre class=" language-bash"><code class="language-bash">mongodump --host 127.0.0.1 --port 27017 -u admin --authenticationDatabase admin</code></pre>
+<pre class=" language-bash"><code class="language-bash">mongodump --host 127.0.0.1 --port 27017 -u admin --authenticationDatabase admin
+</code></pre>
 <p><a target="_blank" rel="noopener" href="https://help.aliyun.com/document_detail/61416.html">https://help.aliyun.com/document_detail/61416.html</a></p>
 <p>进入mongodb官网<a target="_blank" rel="noopener" href="https://www.mongodb.com/try/download/community">https://www.mongodb.com/try/download/community</a></p>
 <p>下载mongodb安装包 </p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">wget</span> https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel80-4.4.5.tgz</code></pre>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">wget</span> https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel80-4.4.5.tgz
+</code></pre>
 <p>使用tar解压文件    </p>
-<pre class=" language-bash"><code class="language-bash"> <span class="token function">tar</span> -zxvf mongodb-linux-x86_64-rhel80-4.4.5.tgz</code></pre>
+<pre class=" language-bash"><code class="language-bash"> <span class="token function">tar</span> -zxvf mongodb-linux-x86_64-rhel80-4.4.5.tgz
+</code></pre>
 <p> 将解压后的文件夹移动到/usr/local/的mongodb目录下 </p>
 <p> 配置系统文件profile </p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> vim /etc/profile</code></pre>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> vim /etc/profile
+</code></pre>
 <p>在文末插入以下内容</p>
 <pre class=" language-bash"><code class="language-bash"><span class="token function">export</span> MONGODB_HOME<span class="token operator">=</span>/usr/local/mongodb  
-<span class="token function">export</span> PATH<span class="token operator">=</span><span class="token variable">$PATH</span><span class="token keyword">:</span><span class="token variable">$MONGODB_HOME</span>/bin</code></pre>
+<span class="token function">export</span> PATH<span class="token operator">=</span><span class="token variable">$PATH</span><span class="token keyword">:</span><span class="token variable">$MONGODB_HOME</span>/bin
+</code></pre>
 <p>保存后重启系统配置：</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">source</span> /etc/profile</code></pre>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">source</span> /etc/profile
+</code></pre>
 <p>创建用于存放数据和日志文件的文件夹，并修改其权限增加读写权限</p>
 <pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> /usr/local/mongodb
 <span class="token function">sudo</span> <span class="token function">mkdir</span> -p data/db
 <span class="token function">sudo</span> <span class="token function">chmod</span> -r 777 data/db
 <span class="token function">sudo</span> <span class="token function">mkdir</span> logs
 <span class="token function">cd</span> logs
-<span class="token function">touch</span> mongodb.log</code></pre>
+<span class="token function">touch</span> mongodb.log
+</code></pre>
 <p>进入到bin目录，增加一个配置文件：</p>
 <pre><code>cd /usr/local/mongodb/bin  
-sudo vi mongodb.conf</code></pre>
+sudo vi mongodb.conf
+</code></pre>
 <p>插入下列内容：</p>
 <pre class=" language-bash"><code class="language-bash">dbpath <span class="token operator">=</span> /usr/local/mongodb/data/db <span class="token comment" spellcheck="true">#数据文件存放目录</span>
 logpath <span class="token operator">=</span> /usr/local/mongodb/logs/mongodb.log <span class="token comment" spellcheck="true">#日志文件存放目录</span>
@@ -804,17 +813,21 @@ bind_ip <span class="token operator">=</span> 0.0.0.0 <span class="token comment
 port <span class="token operator">=</span> 27017  <span class="token comment" spellcheck="true">#端口</span>
 fork <span class="token operator">=</span> <span class="token boolean">true</span>  <span class="token comment" spellcheck="true">#以守护程序的方式启用即在后台运行</span>
 auth <span class="token operator">=</span> <span class="token boolean">true</span>
-<span class="token comment" spellcheck="true">#nohttpinterface = true</span></code></pre>
+<span class="token comment" spellcheck="true">#nohttpinterface = true</span>
+</code></pre>
 <p>mongodb设置账户密码</p>
 <p>mongodb密码和传统数据如mysql等有些区别： mongodb的用户名和密码是基于特定数据库的，而不是基于整个系统的。所有所有数据库db都需要设置密码。</p>
 <ol>
 <li>查看所有数据库(在mongodb新版本里并没有admin数据库，但是并不妨碍第2步操作。)</li>
 </ol>
-<pre class=" language-bash"><code class="language-bash">show dbs</code></pre>
+<pre class=" language-bash"><code class="language-bash">show dbs
+</code></pre>
 <p>进入admin数据库</p>
-<pre class=" language-bash"><code class="language-bash">use admin</code></pre>
+<pre class=" language-bash"><code class="language-bash">use admin
+</code></pre>
 <p>3.创建管理员账户</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token number">db</span><span class="token punctuation">.</span>createUser<span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123; user: "admin", pwd: "password", roles: [&amp;#123; role: "userAdminAnyDatabase", db: "admin" &amp;#125;] &amp;#125;)</span></code></pre>
+<pre class=" language-sql"><code class="language-sql"><span class="token number">db</span><span class="token punctuation">.</span>createUser<span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123; user: "admin", pwd: "password", roles: [&amp;#123; role: "userAdminAnyDatabase", db: "admin" &amp;#125;] &amp;#125;)</span>
+</code></pre>
 <p>mongodb允许远程访问</p>
 <ul>
 <li>然后修改bind和auth允许远程访问</li>
@@ -823,7 +836,8 @@ auth <span class="token operator">=</span> <span class="token boolean">true</spa
 Copy<span class="token comment" spellcheck="true"># line 11:</span>
 bind_ip <span class="token operator">=</span> 0.0.0.0
 <span class="token comment" spellcheck="true"># line 22:</span>
-auth <span class="token operator">=</span> <span class="token boolean">true</span></code></pre>
+auth <span class="token operator">=</span> <span class="token boolean">true</span>
+</code></pre>
 <p>mongodb缺失工具</p>
 <p><a target="_blank" rel="noopener" href="https://www.mongodb.com/try/download/database-tools">https://www.mongodb.com/try/download/database-tools</a></p>
 
@@ -1701,7 +1715,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     var years = days * 365;
                     var today = new Date();
                     var startYear = "2020";
-                    var startMonth = "08";
+                    var startMonth = "8";
                     var startDate = "16";
                     var startHour = "0";
                     var startMinute = "0";
@@ -1890,8 +1904,9 @@ $(function () {
 <script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
+                preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BHw6N1XmTsI6igkYNxTqcaSXT-jafWIL-VVmqt7F5hgbfGRdIY8WO7HZyHVpBBsQzDqJD2dmIXnGlEHBiOA909g');</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BHw6N1XmTsI6igkYNxTqcaSXT-jafWIL-VVmqt7F5hgbfGRdIY8WO7HZyHVpBBsQzDqJD2dmIXnGlEHBiOA909g');</script></body>
 
 </html>

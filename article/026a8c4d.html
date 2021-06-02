@@ -30,7 +30,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/atom.xml" title="InitCool" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="InitCool" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
  <!-- 添加加载动画 -->
@@ -787,13 +787,14 @@
 <h3 id="2-使用ffmpeg进行转码"><a href="#2-使用ffmpeg进行转码" class="headerlink" title="2.使用ffmpeg进行转码"></a>2.使用<code>ffmpeg</code>进行转码</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># infile.mp4 是待转码的文件(可以是其他格式，比如 FLV/AVI之类的)</span>
 <span class="token comment" spellcheck="true"># outfile.mp4 是转码输出文件的格式及文件名</span>
 <span class="token comment" spellcheck="true"># libx264 转为 h.264 编码</span>
-
-ffmpeg -i infile.mp4  -c:v libx264 -strict -2 outfile.mp4</code></pre>
+ 
+ffmpeg -i infile.mp4  -c:v libx264 -strict -2 outfile.mp4
+</code></pre>
 <h3 id="3-使用ffmpeg将视频进行分片，并生成M3U8文件"><a href="#3-使用ffmpeg将视频进行分片，并生成M3U8文件" class="headerlink" title="3.使用ffmpeg将视频进行分片，并生成M3U8文件"></a>3.使用<code>ffmpeg</code>将视频进行分片，并生成<code>M3U8</code>文件</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># output.mp4 需要切片的视频文件</span>
 <span class="token comment" spellcheck="true"># playlist.m3u8 待生成的 m3u8 文件名</span>
 <span class="token comment" spellcheck="true"># 5 切片时间，表示隔几秒进行切一个文件</span>
 <span class="token comment" spellcheck="true"># output%03d.ts 生成切割ts文件名，output%03d.ts 代表生成 output001.ts、output002.ts 这样的格式，03d 可以随意修改，占位符</span>
-
+ 
 ffmpeg -i output.mp4 -c copy -map 0 -f segment -segment_list playlist.m3u8 -segment_time 5 output%03d.ts
 </code></pre>
 <h1 id="二、推送至Github并使用jsDelivr"><a href="#二、推送至Github并使用jsDelivr" class="headerlink" title="二、推送至Github并使用jsDelivr"></a>二、推送至<code>Github</code>并使用<code>jsDelivr</code></h1><h3 id="1-在Github新建仓库"><a href="#1-在Github新建仓库" class="headerlink" title="1.在Github新建仓库"></a>1.在<code>Github</code>新建仓库</h3><p><code>Github</code>新建仓库地址：<a target="_blank" rel="noopener" href="https://github.com/new">https://github.com/new</a></p>
@@ -805,16 +806,19 @@ ffmpeg -i output.mp4 -c copy -map 0 -f segment -segment_list playlist.m3u8 -segm
 <span class="token function">git</span> commit -m <span class="token string">"first commit"</span>
 <span class="token function">git</span> branch -M master
 <span class="token function">git</span> remote add origin https://github.com/用户名/仓库地址.git
-<span class="token function">git</span> push -u origin master</code></pre>
+<span class="token function">git</span> push -u origin master
+</code></pre>
 <h3 id="3-使用jsDelivr的链接"><a href="#3-使用jsDelivr的链接" class="headerlink" title="3.使用jsDelivr的链接"></a>3.使用<code>jsDelivr</code>的链接</h3><p><code>jsDelivr</code>视频链接格式为：<code>https://cdn.jsdelivr.net/gh/&lt;用户名&gt;/&lt;仓库名&gt;/&lt;文件及路径&gt;</code>/playlist.m3u8</p>
 <h3 id="4-Chrome无法加载视频"><a href="#4-Chrome无法加载视频" class="headerlink" title="4.Chrome无法加载视频"></a>4.<code>Chrome</code>无法加载视频</h3><p><code>Matery</code>使用的<code>Dplayer</code>没有支持<code>Hls</code>协议</p>
 <blockquote>
 <p>hls.js 是一款基于 Media Source Extensions 开发的，用于实现 HTTP Live Streaming 开源JavaScript类库。它可以实现将MPEG-2 和 AAC/MP3码流变成自制的 MP4的分片。并且可以直接绑定在Video 上，实现播放。</p>
 </blockquote>
 <p>直接使用我好兄弟缓存的<code>hls.js</code>                  :smile:   :arrow_left:</p>
-<pre class=" language-javascript"><code class="language-javascript">https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>cdn<span class="token punctuation">.</span>jsdelivr<span class="token punctuation">.</span>net<span class="token operator">/</span>gh<span class="token operator">/</span>TianZonglin<span class="token operator">/</span>tuchuang<span class="token operator">/</span>file<span class="token operator">/</span>hls<span class="token punctuation">.</span>min<span class="token punctuation">.</span>js</code></pre>
+<pre class=" language-javascript"><code class="language-javascript">https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>cdn<span class="token punctuation">.</span>jsdelivr<span class="token punctuation">.</span>net<span class="token operator">/</span>gh<span class="token operator">/</span>TianZonglin<span class="token operator">/</span>tuchuang<span class="token operator">/</span>file<span class="token operator">/</span>hls<span class="token punctuation">.</span>min<span class="token punctuation">.</span>js
+</code></pre>
 <p>在<code>Matery</code>主题的<code>layout.ejs</code>内新增一行</p>
-<pre class=" language-javascript"><code class="language-javascript">  <span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span> src<span class="token operator">=</span><span class="token string">"https://cdn.jsdelivr.net/gh/TianZonglin/tuchuang/file/hls.min.js"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span> </code></pre>
+<pre class=" language-javascript"><code class="language-javascript">  <span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span> src<span class="token operator">=</span><span class="token string">"https://cdn.jsdelivr.net/gh/TianZonglin/tuchuang/file/hls.min.js"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span> 
+</code></pre>
 <p><a target="_blank" rel="noopener" href="https://m1314.cn/403.html">本文参考:雾时之森博客</a></p>
 
             </div>
@@ -1693,7 +1697,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     var years = days * 365;
                     var today = new Date();
                     var startYear = "2020";
-                    var startMonth = "08";
+                    var startMonth = "8";
                     var startDate = "16";
                     var startHour = "0";
                     var startMinute = "0";
@@ -1882,8 +1886,9 @@ $(function () {
 <script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
+                preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BHw6N1XmTsI6igkYNxTqcaSXT-jafWIL-VVmqt7F5hgbfGRdIY8WO7HZyHVpBBsQzDqJD2dmIXnGlEHBiOA909g');</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BHw6N1XmTsI6igkYNxTqcaSXT-jafWIL-VVmqt7F5hgbfGRdIY8WO7HZyHVpBBsQzDqJD2dmIXnGlEHBiOA909g');</script></body>
 
 </html>

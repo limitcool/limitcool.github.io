@@ -30,7 +30,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/atom.xml" title="InitCool" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="InitCool" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
  <!-- 添加加载动画 -->
@@ -764,11 +764,14 @@
 <h1 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h1><p>Scoop需要Powershell 5以上以及<a target="_blank" rel="noopener" href="https://www.microsoft.com/net/download">.NET Framework 4.5 </a>以上。</p>
 <p>打开<code>Powershell</code>,键入以下命令，可以查看Powershell以及.NET Framework版本。</p>
 <pre class=" language-powershell"><code class="language-powershell"><span class="token variable">$PSVersionTable</span><span class="token punctuation">.</span>PSVersion<span class="token punctuation">.</span>Major   <span class="token comment" spellcheck="true">#查看Powershell版本</span>
-<span class="token variable">$PSVersionTable</span><span class="token punctuation">.</span>CLRVersion<span class="token punctuation">.</span>Major  <span class="token comment" spellcheck="true">#查看.NET Framework版本</span></code></pre>
+<span class="token variable">$PSVersionTable</span><span class="token punctuation">.</span>CLRVersion<span class="token punctuation">.</span>Major  <span class="token comment" spellcheck="true">#查看.NET Framework版本</span>
+</code></pre>
 <h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><p>打开<code>Powershell</code>,键入以下命令。</p>
-<pre class=" language-powershell"><code class="language-powershell"><span class="token function">Invoke-Expression</span> <span class="token punctuation">(</span><span class="token function">New-Object</span> System<span class="token punctuation">.</span>Net<span class="token punctuation">.</span>WebClient<span class="token punctuation">)</span><span class="token punctuation">.</span>DownloadString<span class="token punctuation">(</span><span class="token string">'https://get.scoop.sh'</span><span class="token punctuation">)</span></code></pre>
+<pre class=" language-powershell"><code class="language-powershell"><span class="token function">Invoke-Expression</span> <span class="token punctuation">(</span><span class="token function">New-Object</span> System<span class="token punctuation">.</span>Net<span class="token punctuation">.</span>WebClient<span class="token punctuation">)</span><span class="token punctuation">.</span>DownloadString<span class="token punctuation">(</span><span class="token string">'https://get.scoop.sh'</span><span class="token punctuation">)</span>
+</code></pre>
 <p>可能会遇到报错，则需要使用以下命令更改执行策略。</p>
-<pre class=" language-powershell"><code class="language-powershell"><span class="token function">Set</span><span class="token operator">-</span>ExecutionPolicy RemoteSigned <span class="token operator">-</span>scope CurrentUser</code></pre>
+<pre class=" language-powershell"><code class="language-powershell"><span class="token function">Set</span><span class="token operator">-</span>ExecutionPolicy RemoteSigned <span class="token operator">-</span>scope CurrentUser
+</code></pre>
 <h1 id="使用Scoop"><a href="#使用Scoop" class="headerlink" title="使用Scoop"></a>使用Scoop</h1><h2 id="修改Scoop安装路径"><a href="#修改Scoop安装路径" class="headerlink" title="修改Scoop安装路径"></a>修改Scoop安装路径</h2><p>Scoop默认安装路径为 C:\Users&lt;user&gt;\scoop</p>
 <p>全局安装的程序（所有用户可用，使用<code>--global</code>或 <code>-g</code> 选项）默认位<br>于<code>C\ProgramData\scoop</code>路径中。</p>
 <pre class=" language-powershell"><code class="language-powershell"><span class="token variable">$env</span>:SCOOP=<span class="token string">'D:\Scoop'</span>
@@ -777,7 +780,8 @@
 <span class="token comment" spellcheck="true"># 修改全局安装路径</span>
 <span class="token variable">$env</span>:SCOOP_GLOBAL=<span class="token string">'D:\GlobalScoopApps'</span>
 
-<span class="token namespace">[environment]</span>::setEnvironmentVariable<span class="token punctuation">(</span><span class="token string">'SCOOP_GLOBAL'</span><span class="token punctuation">,</span><span class="token variable">$env</span>:SCOOP_GLOBAL<span class="token punctuation">,</span><span class="token string">'Machine'</span><span class="token punctuation">)</span></code></pre>
+<span class="token namespace">[environment]</span>::setEnvironmentVariable<span class="token punctuation">(</span><span class="token string">'SCOOP_GLOBAL'</span><span class="token punctuation">,</span><span class="token variable">$env</span>:SCOOP_GLOBAL<span class="token punctuation">,</span><span class="token string">'Machine'</span><span class="token punctuation">)</span>
+</code></pre>
 <p><strong>为什么需要全局安装？</strong></p>
 <p>对于那些需要管理员权限的程序需要进行全局安装。我当前遇到的是当使用 Scoop 安装字体时需要使用全局安装，因为字体需要给所有用户使用。</p>
 <p>初次安装 Scoop 后，建议安装的程序：</p>
@@ -785,7 +789,8 @@
 scoop <span class="token function">install</span> <span class="token function">sudo</span>
 
 <span class="token comment" spellcheck="true"># scoop下载程序时支持使用 aria2 来加速下载</span>
-scoop <span class="token function">install</span> aria2</code></pre>
+scoop <span class="token function">install</span> aria2
+</code></pre>
 <p>我们可以发现，下载的过程中自动下载了依赖 7-zip。 在安装方面，它利用了 7zip 去解<br>压安装包/压缩包，因此它对绿色软件有天生的友好属性 。不仅如此，下载之后的内容会自<br>动将加入到（Path）环境变量中，十分方便。</p>
 <h2 id="检测Scoop存在的问题"><a href="#检测Scoop存在的问题" class="headerlink" title="检测Scoop存在的问题"></a>检测Scoop存在的问题</h2><p><strong>补充：</strong> 初次安装之后我们可以通过运行 <code>scoop checkup</code> 来检测当前潜在问题，然后根据提示进行修正。</p>
 <pre class=" language-text"><code class="language-text"># 检测本人当前环境存在的问题
@@ -803,7 +808,8 @@ WARN  LongPaths support is not enabled.
 You can enable it with running:
     Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
 ERROR 'dark' is not installed! It's required for unpacking installers created with the WiX Toolset. Please run 'scoop install dark' or 'scoop install wixtoolset'.
-WARN  Found 4 potential problems.</code></pre>
+WARN  Found 4 potential problems.
+</code></pre>
 <p>可以看到存在三个警告（WARN），一个错误（ERROR），并给出了解决对应问题的命令：</p>
 <ul>
 <li><p>前两个警告（WARN）提示：杀毒软件 Windows Defender 有可能会使得下载变慢或阻止安装</p>
@@ -814,15 +820,19 @@ WARN  Found 4 potential problems.</code></pre>
 </li>
 <li><h2 id="添加软件源-Bucket"><a href="#添加软件源-Bucket" class="headerlink" title="添加软件源 Bucket"></a>添加软件源 Bucket</h2><p> Scoop 可安装的软件信息存储在 Bucket（翻译为：桶）中，也可以称其为软件源。Scoop 默认的 Bucket 为 <code>main</code> ；官方维护的另一个 Bucket 为 <code>extras</code>，我们需要手动添加。</p>
 <pre class=" language-text"><code class="language-text"># bucket的用法
-scoop bucket add|list|known|rm [<args>]</code></pre>
+scoop bucket add|list|known|rm [<args>]
+</code></pre>
 <p> 添加 extras :</p>
-<pre class=" language-text"><code class="language-text">scoop bucket add extras</code></pre>
+<pre class=" language-text"><code class="language-text">scoop bucket add extras
+</code></pre>
 <p> 我们也可以添加第三方 bucket ，示例：</p>
-<pre class=" language-text"><code class="language-text">scoop bucket add dorado https://github.com/h404bi/dorado</code></pre>
+<pre class=" language-text"><code class="language-text">scoop bucket add dorado https://github.com/h404bi/dorado
+</code></pre>
 <p> 并且明确指定安装此 bucket （软件源）中的的程序：</p>
 <pre class=" language-text"><code class="language-text">scoop install dorado/<app_name>
 # 下面是dorado中特有的软件，测试其是否添加成功
-scoop search trash</code></pre>
+scoop search trash
+</code></pre>
 <p> 推荐的 Bucket（软件源）：</p>
 <ul>
 <li><p><code>extras</code>：Scoop 官方维护的一个仓库，涵盖了大部分因为种种原因不能被收录进主仓库的常用软件（在我看来是必须要添加的）。地址：<a href="https://link.zhihu.com/?target=https://github.com/lukesampson/scoop-extras/tree/master/bucket">lukesampson/scoop-extras</a></p>
@@ -834,10 +844,6 @@ scoop search trash</code></pre>
 <li>NirSoft 官网地址：<a href="https://link.zhihu.com/?target=http://www.nirsoft.net/">NirSoft</a></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-<ul>
 <li><p>dorado（添加了一些国内的app，比如 qqplayer ️）<a href="https://link.zhihu.com/?target=https://github.com/h404bi/dorado">h404bi/dorado</a></p>
 </li>
 <li><p>ash258：<a href="https://link.zhihu.com/?target=https://github.com/Ash258/scoop-Ash258">Ash258/scoop-Ash258</a></p>
@@ -853,12 +859,15 @@ scoop bucket add Ash258 'https://github.com/Ash258/Scoop-Ash258.git'
 scoop bucket add nerd-fonts
 # 对于开发人员，可添加下面的两个
 scoop bucket add java
-scoop bucket add versions</code></pre>
+scoop bucket add versions
+</code></pre>
 <h2 id="bucket-更新时遇到问题"><a href="#bucket-更新时遇到问题" class="headerlink" title="bucket 更新时遇到问题"></a>bucket 更新时遇到问题</h2><p>情况是这样：当我运行 <code>scoop update</code> 进行更新时提示： <code>extras</code> bucket 更新失败。于是我将其删除后再添加，提示成功，但是它却把 main<br>bucket (默认的 bucket) 给删除了。通过”scoop status”检查状态时出现 “These app<br>manifests have been removed”并且下面列出了已被移除的软件名单。 <strong>那么如何解决此问题？</strong></p>
 <p>我们需要重新添加 main bucket ：</p>
-<pre class=" language-text"><code class="language-text">scoop bucket add main #添加 main bucket</code></pre>
+<pre class=" language-text"><code class="language-text">scoop bucket add main #添加 main bucket
+</code></pre>
 <h2 id="网络问题导致app安装失败"><a href="#网络问题导致app安装失败" class="headerlink" title="网络问题导致app安装失败"></a>网络问题导致app安装失败</h2><p>一个示例：</p>
-<pre class=" language-text"><code class="language-text">scoop install mediainfo</code></pre>
+<pre class=" language-text"><code class="language-text">scoop install mediainfo
+</code></pre>
 <p>当安装 mediainfo 时由于网络问题，安装包无法下载，从命令行输出信息中可以看到如下<br>内容</p>
 <pre class=" language-text"><code class="language-text">ERROR Download failed! (Error 1) An unknown error occurred
 ERROR https://mediaarea.net/download/binary/mediainfo/19.09/MediaInfo_CLI_19.09_Windows_x64.zip
@@ -866,12 +875,14 @@ ERROR https://mediaarea.net/download/binary/mediainfo/19.09/MediaInfo_CLI_19.09_
   dir=D:\Scoop\Applications\cache
   out=mediainfo#19.09#https_mediaarea.net_download_binary_mediainfo_19.09_MediaInfo_CLI_19.09_Windows_x64.zip
 
-ERROR & 'D:\Scoop\Applications\apps\aria2\current\aria2c.exe' --input-file='D:\Scoop\Applications\cache\mediainfo.txt'</code></pre>
+ERROR & 'D:\Scoop\Applications\apps\aria2\current\aria2c.exe' --input-file='D:\Scoop\Applications\cache\mediainfo.txt'
+</code></pre>
 <p>我们可以发现文件的下载路径和下载后的文件名称，这里 <code>out=</code> 后面的压缩包就是下载后<br>文件的名称，(也可以在 scoop 的 <code>cache</code> 目录下的 <code>mediainfo.txt</code> 文件中找到下载路径与文<br>件名称)</p>
 <p>然后我们可以尝试在浏览器或其他下载程序中（可以 fq 的程序中）下载该程序，下载完成<br>后再更改文件名并将其放入 scoop 的 <code>cache</code> 目录，最后再次运行<br><code>scoop install mediainfo</code> 即可安装。</p>
 <h2 id="如何利用-aria2-进行断点续传？"><a href="#如何利用-aria2-进行断点续传？" class="headerlink" title="如何利用 aria2 进行断点续传？"></a>如何利用 aria2 进行断点续传？</h2><p>先看具体示例：</p>
 <pre class=" language-text"><code class="language-text"># 更新 vscode
-scoop update vscode-portable</code></pre>
+scoop update vscode-portable
+</code></pre>
 <p>scoop 更新 vscode 时下载到 80%的时候 失败了（安装时处理方法也一样）。我们需要在提示中找到如下内容：</p>
 <p>```text<br>‘D:\Scoop\Applications\apps\aria2\current\aria2c.exe’ –input-file=’D:\Scoop\Applications\cache\vscode-portable.txt’ </p>
 </li>
@@ -890,15 +901,18 @@ scoop update vscode-portable</code></pre>
 我们从上面的信息中提取出下面的命令；若要进行断点续传，只需再次执行下面的命令即可：
 
 ```text
-aria2c.exe --input-file=&#39;D:\Scoop\Applications\cache\vscode-portable.txt&#39;</code></pre>
+aria2c.exe --input-file=&#39;D:\Scoop\Applications\cache\vscode-portable.txt&#39;
+</code></pre>
 <p>当提示下载完成后，我们需要再次运行 scoop 对应的 app 更新命令（或安装命令），即可完成 app 更新（或安装）：</p>
-<pre class=" language-text"><code class="language-text">scoop update vscode-portable</code></pre>
+<pre class=" language-text"><code class="language-text">scoop update vscode-portable
+</code></pre>
 <h2 id="安装和切换JDK、Python的版本"><a href="#安装和切换JDK、Python的版本" class="headerlink" title="安装和切换JDK、Python的版本"></a>安装和切换JDK、Python的版本</h2><p>这里需要使用 <code>scoop reset</code> 它的作用是：重置一个应用程序来解决冲突。</p>
 <p>命令格式为：</p>
-<pre class=" language-text"><code class="language-text">scoop reset <java>[@<version>]</code></pre>
+<pre class=" language-text"><code class="language-text">scoop reset <java>[@<version>]
+</code></pre>
 </li>
 </ul>
-<p>  <strong>安装和切换不同的 JDK 版本：</strong></p>
+<p> <strong>安装和切换不同的 JDK 版本：</strong></p>
 <pre class=" language-text"><code class="language-text">PS C:> scoop bucket add java
 
 PS C:> scoop install oraclejdk
@@ -929,8 +943,9 @@ PS C:> scoop reset oraclejdk
 PS C:> java -version
 java version "12.0.2" 2019-07-16
 Java(TM) SE Runtime Environment (build 12.0.2+10)
-Java HotSpot(TM) 64-Bit Server VM (build 12.0.2+10, mixed mode, sharing)</code></pre>
-<p>  安装和切换不同的 Python 版本：</p>
+Java HotSpot(TM) 64-Bit Server VM (build 12.0.2+10, mixed mode, sharing)
+</code></pre>
+<p> 安装和切换不同的 Python 版本：</p>
 <pre class=" language-text"><code class="language-text">$ scoop bucket add versions # add the 'versions' bucket if you haven't already
 
 $ scoop install python27 python
@@ -942,7 +957,10 @@ python --version # -> Python 2.7.13
 
 # switch back (to 3.x)
 $ scoop reset python
-python --version # -> Python 3.6.2</code></pre>
+python --version # -> Python 3.6.2
+</code></pre>
+</li>
+</ul>
 <h2 id="Scoop-常用命令"><a href="#Scoop-常用命令" class="headerlink" title="Scoop 常用命令"></a>Scoop 常用命令</h2><pre class=" language-text"><code class="language-text">scoop help #查看帮助
 scoop help <某个命令> # 具体查看某个命令的帮助
 
@@ -960,7 +978,8 @@ scoop update *  # 更新所有 app （前提是需要在apps目录下操作）
 scoop bucket known #通过此命令列出已知所有 bucket（软件源）
 scoop bucket add bucketName #添加某个 bucket
 
-scoop cache rm <app> # 移除某个app的缓存</code></pre>
+scoop cache rm <app> # 移除某个app的缓存
+</code></pre>
 <h2 id="安装卸载软件"><a href="#安装卸载软件" class="headerlink" title="安装卸载软件"></a>安装卸载软件</h2><pre class=" language-text"><code class="language-text"># 安装之前，通过 search 搜索 APP, 确定软件名称
 scoop search  xxx
 
@@ -971,7 +990,8 @@ scoop install AppName
 scoop install git@2.23.0.windows.1
 
 # 卸载 APP 
-scoop uninstall #卸载 APP</code></pre>
+scoop uninstall #卸载 APP
+</code></pre>
 <h2 id="更新软件"><a href="#更新软件" class="headerlink" title="更新软件"></a>更新软件</h2><p>包含：如何禁用更新</p>
 <pre class=" language-text"><code class="language-text">scoop update # 更新 Scoop 自身
 
@@ -983,7 +1003,8 @@ scoop update *
 # 禁止某程序更新
 scoop hold <app>
 # 允许某程序更新
-scoop unhold <app></code></pre>
+scoop unhold <app>
+</code></pre>
 <h2 id="清除缓存与旧版本"><a href="#清除缓存与旧版本" class="headerlink" title="清除缓存与旧版本"></a>清除缓存与旧版本</h2><pre class=" language-text"><code class="language-text"># 查看所有以下载的缓存信息
 scoop cache show
 
@@ -1000,7 +1021,8 @@ scoop cleanup <app>
 scoop cleanup <app> -g
 
 # 删除过期的下载缓存
-scoop cleanup <app> -k</code></pre>
+scoop cleanup <app> -k
+</code></pre>
 <h2 id="别名"><a href="#别名" class="headerlink" title="别名"></a>别名</h2><p>⚠️️ 注意：请在 Powershell 中运行下面的命令</p>
 <pre class=" language-text"><code class="language-text"># 可用操作
 scoop alias add|list|rm [<args>]
@@ -1022,16 +1044,19 @@ scoop st
 
 
 # 另一个示例：
-scoop alias add rm 'scoop uninstall $args[0]' '卸载某 app'</code></pre>
+scoop alias add rm 'scoop uninstall $args[0]' '卸载某 app'
+</code></pre>
 <h2 id="在同一程序的不同版本之间切换"><a href="#在同一程序的不同版本之间切换" class="headerlink" title="在同一程序的不同版本之间切换"></a>在同一程序的不同版本之间切换</h2><p>使用命令：</p>
-<pre class=" language-text"><code class="language-text">scoop reset [app]@[version]</code></pre>
+<pre class=" language-text"><code class="language-text">scoop reset [app]@[version]
+</code></pre>
 <p>示例：</p>
 <pre class=" language-text"><code class="language-text">scoop reset idea-ultimate-eap@201.6668.13
 
 scoop reset idea-ultimate-eap@201.6073.9
 
 # 切换到最新版本
-scoop reset idea-ultimate-eap</code></pre>
+scoop reset idea-ultimate-eap
+</code></pre>
 <p>对应版本的程序需要已经安装于本地系统中；所以在你清除某个软件的旧版本时考虑一下自己是否还会再次使用到此旧版本。</p>
 <p>另外 idea-ultimate-eap 切换过程可能需要更长时间。</p>
 <h2 id="其它命令"><a href="#其它命令" class="headerlink" title="其它命令"></a>其它命令</h2><pre class=" language-text"><code class="language-text"># 显示某个app的信息
@@ -1041,7 +1066,8 @@ scoop info <app>
 scoop home <app>
 
 # 比如
-scoop home git</code></pre>
+scoop home git
+</code></pre>
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/135278662">本文参考</a></p>
 
             </div>
@@ -1914,7 +1940,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     var years = days * 365;
                     var today = new Date();
                     var startYear = "2020";
-                    var startMonth = "08";
+                    var startMonth = "8";
                     var startDate = "16";
                     var startHour = "0";
                     var startMinute = "0";
@@ -2103,8 +2129,9 @@ $(function () {
 <script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
+                preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BHw6N1XmTsI6igkYNxTqcaSXT-jafWIL-VVmqt7F5hgbfGRdIY8WO7HZyHVpBBsQzDqJD2dmIXnGlEHBiOA909g');</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BHw6N1XmTsI6igkYNxTqcaSXT-jafWIL-VVmqt7F5hgbfGRdIY8WO7HZyHVpBBsQzDqJD2dmIXnGlEHBiOA909g');</script></body>
 
 </html>

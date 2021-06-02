@@ -30,7 +30,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/atom.xml" title="InitCool" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="InitCool" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
  <!-- 添加加载动画 -->
@@ -765,9 +765,11 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>安装Fuse依赖</p>
-<pre class=" language-bash"><code class="language-bash">yum <span class="token function">install</span> -y fuse</code></pre>
+<pre class=" language-bash"><code class="language-bash">yum <span class="token function">install</span> -y fuse
+</code></pre>
 <p>使用rpm安装NTFS-3G</p>
-<pre class=" language-bash"><code class="language-bash">rpm -ivh http://rpmfind.net/linux/epel/8/Everything/x86_64/Packages/n/ntfs-3g-2017.3.23-11.el8.x86_64.rpm</code></pre>
+<pre class=" language-bash"><code class="language-bash">rpm -ivh http://rpmfind.net/linux/epel/8/Everything/x86_64/Packages/n/ntfs-3g-2017.3.23-11.el8.x86_64.rpm
+</code></pre>
 <p>修改bin以及sbin文件目录权限</p>
 <pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 查看/usr/bin权限</span>
 lsattr /usr/bin/
@@ -776,15 +778,19 @@ chattr -i /usr/bin
 <span class="token comment" spellcheck="true"># 查看/usr/sbin权限</span>
 lsattr /usr/sbin/
 <span class="token comment" spellcheck="true"># 去掉/usr/sbin的-i权限</span>
-chattr -i /usr/bin</code></pre>
+chattr -i /usr/bin
+</code></pre>
 <p>挂载ntfs磁盘</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">mount</span> -t ntfs-3g /dev/vdb1 /mnt</code></pre>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">mount</span> -t ntfs-3g /dev/vdb1 /mnt
+</code></pre>
 <p>挂载出现以下错误</p>
-<pre class=" language-bash"><code class="language-bash">ntfs-3g: symbol lookup error: ntfs-3g: undefined symbol: ntfs_xattr_build_mapping</code></pre>
+<pre class=" language-bash"><code class="language-bash">ntfs-3g: symbol lookup error: ntfs-3g: undefined symbol: ntfs_xattr_build_mapping
+</code></pre>
 <p>使用以下方式解决</p>
 <pre class=" language-bash"><code class="language-bash"> <span class="token function">mv</span> /lib/libntfs-3g.so.88 /lib/libntfs-3g.so.88.useless
  ldd <span class="token variable"><span class="token variable">$(</span><span class="token function">which</span> ntfs-3g<span class="token variable">)</span></span>
- <span class="token comment" spellcheck="true"># 再次进行挂载即可使用</span></code></pre>
+ <span class="token comment" spellcheck="true"># 再次进行挂载即可使用</span>
+</code></pre>
 
             </div>
             <hr/>
@@ -1658,7 +1664,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     var years = days * 365;
                     var today = new Date();
                     var startYear = "2020";
-                    var startMonth = "08";
+                    var startMonth = "8";
                     var startDate = "16";
                     var startHour = "0";
                     var startMinute = "0";
@@ -1847,8 +1853,9 @@ $(function () {
 <script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
+                preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BHw6N1XmTsI6igkYNxTqcaSXT-jafWIL-VVmqt7F5hgbfGRdIY8WO7HZyHVpBBsQzDqJD2dmIXnGlEHBiOA909g');</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BHw6N1XmTsI6igkYNxTqcaSXT-jafWIL-VVmqt7F5hgbfGRdIY8WO7HZyHVpBBsQzDqJD2dmIXnGlEHBiOA909g');</script></body>
 
 </html>

@@ -30,7 +30,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/atom.xml" title="InitCool" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="InitCool" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
  <!-- 添加加载动画 -->
@@ -765,11 +765,14 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>启动<code>mysql</code></p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">service</span> mysql start</code></pre>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">service</span> mysql start
+</code></pre>
 <p>使用<code>root</code>账户登录<code>mysql</code></p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> mysql -u root</code></pre>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> mysql -u root
+</code></pre>
 <p>查看数据库信息</p>
-<pre class=" language-mysql"><code class="language-mysql">show databases;</code></pre>
+<pre class=" language-mysql"><code class="language-mysql">show databases;
+</code></pre>
 <p>新增数据库</p>
 <pre class=" language-mysql"><code class="language-mysql">create database <新增的数据库名>;
 # 示例，新增一个名为gradesystem的数据库
@@ -778,10 +781,12 @@ create database gradesystem;
 <p>切换数据库</p>
 <pre class=" language-mysql"><code class="language-mysql">use <切换的数据库名>;
 # 示例，切换至gradesystem数据库
-use gradesystem;</code></pre>
+use gradesystem;
+</code></pre>
 <p>查看数据库中的表</p>
 <pre class=" language-mysql"><code class="language-mysql"># 查看数据库中所有的表
-show tables;</code></pre>
+show tables;
+</code></pre>
 <p>新增表</p>
 <pre class=" language-mysql"><code class="language-mysql"># MySQL不区分大小写
 CREATE TABLE student(
@@ -822,12 +827,14 @@ insert into course values(1,'math'),(2,'physics'),(3,'chemistry');
 # 向course表插入数据，sid为1，cname为'math'
 
 insert into mark values(1,1,1,80);
-# 向mark表插入数据，mid为1，sid为1,cid为1，score为80</code></pre>
+# 向mark表插入数据，mid为1，sid为1,cid为1，score为80
+</code></pre>
 <h3 id="向数据库插入数据"><a href="#向数据库插入数据" class="headerlink" title="向数据库插入数据"></a>向数据库插入数据</h3><pre class=" language-mysql"><code class="language-mysql"> source <数据库文件所在目录>
 
 </code></pre>
 <h2 id="SELECT语句查询"><a href="#SELECT语句查询" class="headerlink" title="SELECT语句查询"></a>SELECT语句查询</h2><p> SELECT 语句的基本格式为： </p>
-<pre class=" language-bash"><code class="language-bash">SELECT 要查询的列名 FROM 表名字 WHERE 限制条件<span class="token punctuation">;</span></code></pre>
+<pre class=" language-bash"><code class="language-bash">SELECT 要查询的列名 FROM 表名字 WHERE 限制条件<span class="token punctuation">;</span>
+</code></pre>
 <pre class=" language-mysql"><code class="language-mysql">select name,age from employee;
 # 查看employee的name列和age列
 
@@ -859,12 +866,14 @@ select name,age,phone,in_dpt from employee where in_dpt not in('dpt1','dpt3');
 # 筛选出1101开头的六位数字的name,age,phone
 
 select name,age,phone from employee where name like 'J%';
-# 筛选出name位J开头的人的name,age,phone</code></pre>
+# 筛选出name位J开头的人的name,age,phone
+</code></pre>
 <h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><p> 为了使查询结果看起来更顺眼，我们可能需要对结果按某一列来排序，这就要用到 <strong>ORDER BY</strong> 排序关键词。默认情况下，<strong>ORDER BY</strong> 的结果是<strong>升序</strong>排列，而使用关键词 <strong>ASC</strong> 和 <strong>DESC</strong> 可指定<strong>升序</strong>或<strong>降序</strong>排序。 比如，我们<strong>按 salary 降序排列</strong>，SQL 语句为 </p>
 <pre class=" language-mysql"><code class="language-mysql">select name,age,salary,phone from employee order by salary desc;
 # salary列按降序排列
 select name,age,salary,phone from employee order by salary;
-# 不加 DESC 或 ASC 将默认按照升序排列。</code></pre>
+# 不加 DESC 或 ASC 将默认按照升序排列。
+</code></pre>
 <h2 id="SQL-内置函数和计算"><a href="#SQL-内置函数和计算" class="headerlink" title="SQL 内置函数和计算"></a>SQL 内置函数和计算</h2><p>置函数，这些函数都对 SELECT 的结果做操作：</p>
 <table>
 <thead>
@@ -890,82 +899,105 @@ select name,age,salary,phone from employee order by salary;
 <p>其中 COUNT 函数可用于任何数据类型(因为它只是计数)，而 SUM 、AVG 函数都只能对数字类数据类型做计算，MAX 和 MIN 可用于数值、字符串或是日期时间数据类型。</p>
 </blockquote>
 <pre class=" language-mysql"><code class="language-mysql">select max(salary) as max_salary,min(salary) from employee;
-# 使用as关键字可以给值重命名，</code></pre>
+# 使用as关键字可以给值重命名，
+</code></pre>
 <h2 id="连接查询"><a href="#连接查询" class="headerlink" title="连接查询"></a>连接查询</h2><p> 在处理多个表时，子查询只有在结果来自一个表时才有用。但如果需要显示两个表或多个表中的数据，这时就必须使用连接 <strong>(join)</strong> 操作。 连接的基本思想是把两个或多个表当作一个新的表来操作，如下： </p>
 <pre class=" language-mysql"><code class="language-mysql">select id,name,people_num from employee,department where employee.in_dpt = department.dpt_name order by id;
 # 这条语句查询出的是，各员工所在部门的人数，其中员工的 id 和 name 来自 employee 表，people_num 来自 department 表：
 
 select id,name,people_num from employee join department on employee.in_dpt = department.dpt_name order by id;
-# 另一个连接语句格式是使用 JOIN ON 语法，刚才的语句等同于以上语句</code></pre>
+# 另一个连接语句格式是使用 JOIN ON 语法，刚才的语句等同于以上语句
+</code></pre>
 <h2 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h2><pre class=" language-mysql"><code class="language-mysql">drop database test_01;
-# 删除名为test_01的数据库;</code></pre>
+# 删除名为test_01的数据库;
+</code></pre>
 <h3 id="修改表"><a href="#修改表" class="headerlink" title="修改表"></a>修改表</h3><p>重命名一张表的语句有多种形式，以下 3 种格式效果是一样的：</p>
 <pre class=" language-sql"><code class="language-sql"><span class="token keyword">RENAME</span> <span class="token keyword">TABLE</span> 原名 <span class="token keyword">TO</span> 新名字<span class="token punctuation">;</span>
 
 <span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 原名 <span class="token keyword">RENAME</span> 新名<span class="token punctuation">;</span>
 
-<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 原名 <span class="token keyword">RENAME</span> <span class="token keyword">TO</span> 新名<span class="token punctuation">;</span></code></pre>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 原名 <span class="token keyword">RENAME</span> <span class="token keyword">TO</span> 新名<span class="token punctuation">;</span>
+</code></pre>
 <p>进入数据库 mysql_shiyan ：</p>
-<pre class=" language-mysql"><code class="language-mysql">use mysql_shiyan</code></pre>
+<pre class=" language-mysql"><code class="language-mysql">use mysql_shiyan
+</code></pre>
 <p>使用命令尝试修改 <code>table_1</code> 的名字为 <code>table_2</code> ：</p>
-<pre class=" language-mysql"><code class="language-mysql">RENAME TABLE table_1 TO table_2;</code></pre>
+<pre class=" language-mysql"><code class="language-mysql">RENAME TABLE table_1 TO table_2;
+</code></pre>
 <p>删除一张表的语句，类似于刚才用过的删除数据库的语句，格式是这样的：</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> 表名字<span class="token punctuation">;</span></code></pre>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> 表名字<span class="token punctuation">;</span>
+</code></pre>
 <p>比如我们把 <code>table_2</code> 表删除：</p>
-<pre class=" language-mysql"><code class="language-mysql">DROP TABLE table_2;</code></pre>
+<pre class=" language-mysql"><code class="language-mysql">DROP TABLE table_2;
+</code></pre>
 <h4 id="增加一列"><a href="#增加一列" class="headerlink" title="增加一列"></a>增加一列</h4><p>在表中增加一列的语句格式为：</p>
 <pre class=" language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名字 <span class="token keyword">ADD</span> <span class="token keyword">COLUMN</span> 列名字 数据类型 约束<span class="token punctuation">;</span>
 或：
-<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名字 <span class="token keyword">ADD</span> 列名字 数据类型 约束<span class="token punctuation">;</span></code></pre>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名字 <span class="token keyword">ADD</span> 列名字 数据类型 约束<span class="token punctuation">;</span>
+</code></pre>
 <p>现在 employee 表中有 <code>id、name、age、salary、phone、in_dpt</code> 这 6 个列，我们尝试加入 <code>height</code> (身高)一个列并指定 DEFAULT 约束：</p>
-<pre class=" language-mysql"><code class="language-mysql">ALTER TABLE employee ADD height INT(4) DEFAULT 170;</code></pre>
+<pre class=" language-mysql"><code class="language-mysql">ALTER TABLE employee ADD height INT(4) DEFAULT 170;
+</code></pre>
 <p>可以发现：新增加的列，被默认放置在这张表的最右边。如果要把增加的列插入在指定位置，则需要在语句的最后使用 AFTER 关键词(<strong>“AFTER 列 1” 表示新增的列被放置在 “列 1” 的后面</strong>)。</p>
 <blockquote>
 <p>提醒：语句中的 INT(4) 不是表示整数的字节数，而是表示该值的显示宽度，如果设置填充字符为 0，则 170 显示为 0170</p>
 </blockquote>
 <p>比如我们新增一列 <code>weight</code>(体重) 放置在 <code>age</code>(年龄) 的后面：</p>
-<pre class=" language-mysql"><code class="language-mysql">ALTER TABLE employee ADD weight INT(4) DEFAULT 120 AFTER age;</code></pre>
+<pre class=" language-mysql"><code class="language-mysql">ALTER TABLE employee ADD weight INT(4) DEFAULT 120 AFTER age;
+</code></pre>
 <p>上面的效果是把新增的列加在某位置的后面，如果想放在第一列的位置，则使用 <code>FIRST</code> 关键词，如语句：</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> employee <span class="token keyword">ADD</span> test <span class="token keyword">INT</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">DEFAULT</span> <span class="token number">11</span> <span class="token keyword">FIRST</span><span class="token punctuation">;</span></code></pre>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> employee <span class="token keyword">ADD</span> test <span class="token keyword">INT</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">DEFAULT</span> <span class="token number">11</span> <span class="token keyword">FIRST</span><span class="token punctuation">;</span>
+</code></pre>
 <h4 id="删除一列"><a href="#删除一列" class="headerlink" title="删除一列"></a>删除一列</h4><p>删除表中的一列和刚才使用的新增一列的语句格式十分相似，只是把关键词 <code>ADD</code> 改为 <code>DROP</code> ，语句后面不需要有数据类型、约束或位置信息。具体语句格式：</p>
 <pre class=" language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名字 <span class="token keyword">DROP</span> <span class="token keyword">COLUMN</span> 列名字<span class="token punctuation">;</span>
 
-或： <span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名字 <span class="token keyword">DROP</span> 列名字<span class="token punctuation">;</span></code></pre>
+或： <span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名字 <span class="token keyword">DROP</span> 列名字<span class="token punctuation">;</span>
+</code></pre>
 <p>我们把刚才新增的 <code>test</code> 删除：</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> employee <span class="token keyword">DROP</span> test<span class="token punctuation">;</span></code></pre>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> employee <span class="token keyword">DROP</span> test<span class="token punctuation">;</span>
+</code></pre>
 <h4 id="重命名一列"><a href="#重命名一列" class="headerlink" title="重命名一列"></a>重命名一列</h4><p>这条语句其实不只可用于重命名一列，准确地说，它是对一个列做修改(CHANGE) ：</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名字 CHANGE 原列名 新列名 数据类型 约束<span class="token punctuation">;</span></code></pre>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名字 CHANGE 原列名 新列名 数据类型 约束<span class="token punctuation">;</span>
+</code></pre>
 <blockquote>
 <p><strong>注意：这条重命名语句后面的 “数据类型” 不能省略，否则重命名失败。</strong></p>
 </blockquote>
 <p>当<strong>原列名</strong>和<strong>新列名</strong>相同的时候，指定新的<strong>数据类型</strong>或<strong>约束</strong>，就可以用于修改数据类型或约束。需要注意的是，修改数据类型可能会导致数据丢失，所以要慎重使用。</p>
 <p>我们用这条语句将 “height” 一列重命名为汉语拼音 “shengao” ，效果如下：</p>
-<pre class=" language-mysql"><code class="language-mysql">ALTER TABLE employee CHANGE height shengao INT(4) DEFAULT 170;</code></pre>
+<pre class=" language-mysql"><code class="language-mysql">ALTER TABLE employee CHANGE height shengao INT(4) DEFAULT 170;
+</code></pre>
 <h4 id="改变数据类型"><a href="#改变数据类型" class="headerlink" title="改变数据类型"></a>改变数据类型</h4><p>要修改一列的数据类型，除了使用刚才的 <strong>CHANGE</strong> 语句外，还可以用这样的 <strong>MODIFY</strong> 语句：</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名字 <span class="token keyword">MODIFY</span> 列名字 新数据类型<span class="token punctuation">;</span></code></pre>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名字 <span class="token keyword">MODIFY</span> 列名字 新数据类型<span class="token punctuation">;</span>
+</code></pre>
 <p>再次提醒，修改数据类型必须小心，因为这可能会导致数据丢失。在尝试修改数据类型之前，请慎重考虑。</p>
 <h4 id="修改表中某个值"><a href="#修改表中某个值" class="headerlink" title="修改表中某个值"></a>修改表中某个值</h4><p>大多数时候我们需要做修改的不会是整个数据库或整张表，而是表中的某一个或几个数据，这就需要我们用下面这条命令达到精确的修改：</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">UPDATE</span> 表名字 <span class="token keyword">SET</span> 列<span class="token number">1</span><span class="token operator">=</span>值<span class="token number">1</span><span class="token punctuation">,</span>列<span class="token number">2</span><span class="token operator">=</span>值<span class="token number">2</span> <span class="token keyword">WHERE</span> 条件<span class="token punctuation">;</span></code></pre>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">UPDATE</span> 表名字 <span class="token keyword">SET</span> 列<span class="token number">1</span><span class="token operator">=</span>值<span class="token number">1</span><span class="token punctuation">,</span>列<span class="token number">2</span><span class="token operator">=</span>值<span class="token number">2</span> <span class="token keyword">WHERE</span> 条件<span class="token punctuation">;</span>
+</code></pre>
 <p>比如，我们要把 Tom 的 age 改为 21，salary 改为 3000：</p>
-<pre class=" language-mysql"><code class="language-mysql">UPDATE employee SET age=21,salary=3000 WHERE name='Tom';</code></pre>
+<pre class=" language-mysql"><code class="language-mysql">UPDATE employee SET age=21,salary=3000 WHERE name='Tom';
+</code></pre>
 <blockquote>
 <p><strong>注意：一定要有 WHERE 条件，否则会出现你不想看到的后果</strong></p>
 </blockquote>
 <h4 id="删除一行记录"><a href="#删除一行记录" class="headerlink" title="删除一行记录"></a>删除一行记录</h4><p>删除表中的一行数据，也必须加上 WHERE 条件，否则整列的数据都会被删除。删除语句：</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> 表名字 <span class="token keyword">WHERE</span> 条件<span class="token punctuation">;</span></code></pre>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> 表名字 <span class="token keyword">WHERE</span> 条件<span class="token punctuation">;</span>
+</code></pre>
 <p>我们尝试把 Tom 的数据删除：</p>
-<pre class=" language-mysql"><code class="language-mysql">DELETE FROM employee WHERE name='Tom';</code></pre>
+<pre class=" language-mysql"><code class="language-mysql">DELETE FROM employee WHERE name='Tom';
+</code></pre>
 <h4 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h4><p>索引是一种与表有关的结构，它的作用相当于书的目录，可以根据目录中的页码快速找到所需的内容。</p>
 <p>当表中有大量记录时，若要对表进行查询，没有索引的情况是全表搜索：将所有记录一一取出，和查询条件进行对比，然后返回满足条件的记录。这样做会执行大量磁盘 I/O 操作，并花费大量数据库系统时间。</p>
 <p>而如果在表中已建立索引，在索引中找到符合查询条件的索引值，通过索引值就可以快速找到表中的数据，可以<strong>大大加快查询速度</strong>。</p>
 <p>对一张表中的某个列建立索引，有以下两种语句格式：</p>
 <pre class=" language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名字 <span class="token keyword">ADD</span> <span class="token keyword">INDEX</span> 索引名 <span class="token punctuation">(</span>列名<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-<span class="token keyword">CREATE</span> <span class="token keyword">INDEX</span> 索引名 <span class="token keyword">ON</span> 表名字 <span class="token punctuation">(</span>列名<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<span class="token keyword">CREATE</span> <span class="token keyword">INDEX</span> 索引名 <span class="token keyword">ON</span> 表名字 <span class="token punctuation">(</span>列名<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 <p>我们用这两种语句分别建立索引：</p>
 <pre class=" language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> employee <span class="token keyword">ADD</span> <span class="token keyword">INDEX</span> idx_id <span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">#在employee表的id列上建立名为idx_id的索引</span>
 
-<span class="token keyword">CREATE</span> <span class="token keyword">INDEX</span> idx_name <span class="token keyword">ON</span> employee <span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">#在employee表的name列上建立名为idx_name的索引</span></code></pre>
+<span class="token keyword">CREATE</span> <span class="token keyword">INDEX</span> idx_name <span class="token keyword">ON</span> employee <span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">#在employee表的name列上建立名为idx_name的索引</span>
+</code></pre>
 <p>索引的效果是加快查询速度，当表中数据不够多的时候是感受不出它的效果的。这里我们使用命令 <strong>SHOW INDEX FROM 表名字;</strong> 查看刚才新建的索引：</p>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://doc.shiyanlou.com/MySQL/sql-06-01.png" alt="01"></p>
 <p>在使用 SELECT 语句查询的时候，语句中 WHERE 里面的条件，会<strong>自动判断有没有可用的索引</strong>。</p>
@@ -981,16 +1013,20 @@ select id,name,people_num from employee join department on employee.in_dpt = dep
 <li>在使用视图的时候，可以把它当作一张表。</li>
 </ul>
 <p>创建视图的语句格式为：</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">VIEW</span> 视图名<span class="token punctuation">(</span>列<span class="token number">a</span><span class="token punctuation">,</span>列<span class="token number">b</span><span class="token punctuation">,</span>列<span class="token number">c</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> <span class="token keyword">SELECT</span> 列<span class="token number">1</span><span class="token punctuation">,</span>列<span class="token number">2</span><span class="token punctuation">,</span>列<span class="token number">3</span> <span class="token keyword">FROM</span> 表名字<span class="token punctuation">;</span></code></pre>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">VIEW</span> 视图名<span class="token punctuation">(</span>列<span class="token number">a</span><span class="token punctuation">,</span>列<span class="token number">b</span><span class="token punctuation">,</span>列<span class="token number">c</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> <span class="token keyword">SELECT</span> 列<span class="token number">1</span><span class="token punctuation">,</span>列<span class="token number">2</span><span class="token punctuation">,</span>列<span class="token number">3</span> <span class="token keyword">FROM</span> 表名字<span class="token punctuation">;</span>
+</code></pre>
 <p>可见创建视图的语句，后半句是一个 SELECT 查询语句，所以<strong>视图也可以建立在多张表上</strong>，只需在 SELECT 语句中使用<strong>子查询</strong>或<strong>连接查询</strong>，这些在之前的实验已经进行过。</p>
 <p>现在我们创建一个简单的视图，名为 <strong>v_emp</strong>，包含<strong>v_name</strong>，<strong>v_age</strong>，<strong>v_phone</strong>三个列：</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">VIEW</span> v_emp <span class="token punctuation">(</span>v_name<span class="token punctuation">,</span>v_age<span class="token punctuation">,</span>v_phone<span class="token punctuation">)</span> <span class="token keyword">AS</span> <span class="token keyword">SELECT</span> name<span class="token punctuation">,</span>age<span class="token punctuation">,</span>phone <span class="token keyword">FROM</span> employee<span class="token punctuation">;</span></code></pre>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">VIEW</span> v_emp <span class="token punctuation">(</span>v_name<span class="token punctuation">,</span>v_age<span class="token punctuation">,</span>v_phone<span class="token punctuation">)</span> <span class="token keyword">AS</span> <span class="token keyword">SELECT</span> name<span class="token punctuation">,</span>age<span class="token punctuation">,</span>phone <span class="token keyword">FROM</span> employee<span class="token punctuation">;</span>
+</code></pre>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://doc.shiyanlou.com/MySQL/sql-06-02.png" alt="02"></p>
 <h2 id="导出"><a href="#导出" class="headerlink" title="导出"></a>导出</h2><p>导出与导入是相反的过程，是把数据库某个表中的数据保存到一个文件之中。导出语句基本格式为：</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> 列<span class="token number">1</span>，列<span class="token number">2</span> <span class="token keyword">INTO</span> <span class="token keyword">OUTFILE</span> <span class="token string">'文件路径和文件名'</span> <span class="token keyword">FROM</span> 表名字<span class="token punctuation">;</span></code></pre>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> 列<span class="token number">1</span>，列<span class="token number">2</span> <span class="token keyword">INTO</span> <span class="token keyword">OUTFILE</span> <span class="token string">'文件路径和文件名'</span> <span class="token keyword">FROM</span> 表名字<span class="token punctuation">;</span>
+</code></pre>
 <p><strong>注意：语句中 “文件路径” 之下不能已经有同名文件。</strong></p>
 <p>现在我们把整个 employee 表的数据导出到 /var/lib/mysql-files/ 目录下，导出文件命名为 <strong>out.txt</strong> 具体语句为：</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">INTO</span> <span class="token keyword">OUTFILE</span> <span class="token string">'/var/lib/mysql-files/out.txt'</span> <span class="token keyword">FROM</span> employee<span class="token punctuation">;</span></code></pre>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">INTO</span> <span class="token keyword">OUTFILE</span> <span class="token string">'/var/lib/mysql-files/out.txt'</span> <span class="token keyword">FROM</span> employee<span class="token punctuation">;</span>
+</code></pre>
 <p>用 gedit 可以查看导出文件 <code>/var/lib/mysql-files/out.txt</code> 的内容：</p>
 <blockquote>
 <p>也可以使用 <code>sudo cat /var/lib/mysql-files/out.txt</code> 命令查看。</p>
@@ -1003,31 +1039,37 @@ select id,name,people_num from employee join department on employee.in_dpt = dep
 <p>使用 mysqldump 备份的语句：</p>
 <pre class=" language-bash"><code class="language-bash">mysqldump -u root 数据库名<span class="token operator">></span>备份文件名<span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">#备份整个数据库</span>
 
-mysqldump -u root 数据库名 表名字<span class="token operator">></span>备份文件名<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">#备份整个表</span></code></pre>
+mysqldump -u root 数据库名 表名字<span class="token operator">></span>备份文件名<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">#备份整个表</span>
+</code></pre>
 <blockquote>
 <p>mysqldump 是一个备份工具，因此该命令是在终端中执行的，而不是在 mysql 交互环境下</p>
 </blockquote>
 <p>我们尝试备份整个数据库 <code>mysql_shiyan</code>，将备份文件命名为 <code>bak.sql</code>，先 <code>Ctrl+D</code> 退出 MySQL 控制台，再打开 Xfce 终端，在终端中输入命令：</p>
 <pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> /home/shiyanlou/
-mysqldump -u root mysql_shiyan <span class="token operator">></span> bak.sql<span class="token punctuation">;</span></code></pre>
+mysqldump -u root mysql_shiyan <span class="token operator">></span> bak.sql<span class="token punctuation">;</span>
+</code></pre>
 <p>使用命令 “ls” 可见已经生成备份文件 <code>bak.sql</code>：</p>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://doc.shiyanlou.com/MySQL/sql-06-07.png" alt="07"></p>
 <blockquote>
 <p>你可以用 gedit 查看备份文件的内容，可以看见里面不仅保存了数据，还有所备份的数据库的其它信息。</p>
 </blockquote>
 <h2 id="恢复"><a href="#恢复" class="headerlink" title="恢复"></a>恢复</h2><p>用备份文件恢复数据库，其实我们早就使用过了。在本次实验的开始，我们使用过这样一条命令：</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">source</span> /tmp/SQL6/MySQL-06.sql</code></pre>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">source</span> /tmp/SQL6/MySQL-06.sql
+</code></pre>
 <p>这就是一条恢复语句，它把 MySQL-06.sql 文件中保存的 <code>mysql_shiyan</code> 数据库恢复。</p>
 <p>还有另一种方式恢复数据库，但是在这之前我们先使用命令新建一个<strong>空的数据库 test</strong>：</p>
 <pre class=" language-bash"><code class="language-bash">mysql -u root          <span class="token comment" spellcheck="true">#因为在上一步已经退出了 MySQL，现在需要重新登录</span>
-CREATE DATABASE <span class="token function">test</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">#新建一个名为test的数据库</span></code></pre>
+CREATE DATABASE <span class="token function">test</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">#新建一个名为test的数据库</span>
+</code></pre>
 <p>再次 <strong>Ctrl+D</strong> 退出 MySQL，然后输入语句进行恢复，把刚才备份的 <strong>bak.sql</strong> 恢复到 <strong>test</strong> 数据库：</p>
-<pre class=" language-bash"><code class="language-bash">mysql -u root <span class="token function">test</span> <span class="token operator">&lt;</span> bak.sql</code></pre>
+<pre class=" language-bash"><code class="language-bash">mysql -u root <span class="token function">test</span> <span class="token operator">&lt;</span> bak.sql
+</code></pre>
 <p>我们输入命令查看 test 数据库的表，便可验证是否恢复成功：</p>
 <pre class=" language-bash"><code class="language-bash">mysql -u root  <span class="token comment" spellcheck="true"># 因为在上一步已经退出了 MySQL，现在需要重新登录</span>
 use <span class="token function">test</span>  <span class="token comment" spellcheck="true"># 连接数据库 test</span>
 
-SHOW TABLES<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true"># 查看 test 数据库的表</span></code></pre>
+SHOW TABLES<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true"># 查看 test 数据库的表</span>
+</code></pre>
 <p>可以看见原数据库的 4 张表和 1 个视图，现在已经恢复到 test 数据库中：</p>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://doc.shiyanlou.com/MySQL/sql-06-08.png" alt="08"></p>
 <p>再查看 employee 表的恢复情况：</p>
@@ -1035,18 +1077,23 @@ SHOW TABLES<span class="token punctuation">;</span>  <span class="token comment"
 <pre class=" language-sql"><code class="language-sql"><span class="token comment" spellcheck="true"># mysql -u root -p</span>
 <span class="token comment" spellcheck="true">#use mysql;</span>
 <span class="token comment" spellcheck="true">#select host,user from user;</span>
-<span class="token comment" spellcheck="true">#update user set host='%' where user='root';</span></code></pre>
+<span class="token comment" spellcheck="true">#update user set host='%' where user='root';</span>
+</code></pre>
 <p>mysql刷新授权</p>
 <p>mysql授权允许远程登录后，linux中安装的mysql可以与Navicat for Mysql（可视化）等连接，在可视化软件下管理数据库。<br>注意：不能使用临时密码<br>设置密码命令：</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">alter</span> <span class="token keyword">user</span> <span class="token string">'root'</span>@'localhost<span class="token string">' identified by '</span>这里是你的密码'<span class="token punctuation">;</span></code></pre>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">alter</span> <span class="token keyword">user</span> <span class="token string">'root'</span>@'localhost<span class="token string">' identified by '</span>这里是你的密码'<span class="token punctuation">;</span>
+</code></pre>
 <p>授权允许远程访问<br>一、授权命令：</p>
 <pre class=" language-sql"><code class="language-sql"><span class="token keyword">grant</span> <span class="token keyword">all</span> <span class="token keyword">privileges</span> <span class="token keyword">on</span> <span class="token operator">*</span><span class="token punctuation">.</span><span class="token operator">*</span> <span class="token keyword">to</span> <span class="token string">'root'</span>@'<span class="token operator">%</span><span class="token string">' identified by '</span><span class="token variable">@wjb1319</span>
-注意：请把命令中的【<span class="token variable">@wjb13191835106</span>】更改为自己的Mysql密码。</code></pre>
+注意：请把命令中的【<span class="token variable">@wjb13191835106</span>】更改为自己的Mysql密码。
+</code></pre>
 <p>二、刷新授权：</p>
-<pre class=" language-sql"><code class="language-sql">flush <span class="token keyword">privileges</span><span class="token punctuation">;</span> </code></pre>
+<pre class=" language-sql"><code class="language-sql">flush <span class="token keyword">privileges</span><span class="token punctuation">;</span> 
+</code></pre>
 <p>此时，你的Mysql就可以被远程连接了。</p>
 <p>关闭授权</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">revoke</span> <span class="token keyword">all</span> <span class="token keyword">on</span> <span class="token operator">*</span><span class="token punctuation">.</span><span class="token operator">*</span> <span class="token keyword">from</span> <span class="token number">dba</span><span class="token variable">@localhost</span><span class="token punctuation">;</span></code></pre>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">revoke</span> <span class="token keyword">all</span> <span class="token keyword">on</span> <span class="token operator">*</span><span class="token punctuation">.</span><span class="token operator">*</span> <span class="token keyword">from</span> <span class="token number">dba</span><span class="token variable">@localhost</span><span class="token punctuation">;</span>
+</code></pre>
 
             </div>
             <hr/>
@@ -1918,7 +1965,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     var years = days * 365;
                     var today = new Date();
                     var startYear = "2020";
-                    var startMonth = "08";
+                    var startMonth = "8";
                     var startDate = "16";
                     var startHour = "0";
                     var startMinute = "0";
@@ -2107,8 +2154,9 @@ $(function () {
 <script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
+                preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BHw6N1XmTsI6igkYNxTqcaSXT-jafWIL-VVmqt7F5hgbfGRdIY8WO7HZyHVpBBsQzDqJD2dmIXnGlEHBiOA909g');</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BHw6N1XmTsI6igkYNxTqcaSXT-jafWIL-VVmqt7F5hgbfGRdIY8WO7HZyHVpBBsQzDqJD2dmIXnGlEHBiOA909g');</script></body>
 
 </html>

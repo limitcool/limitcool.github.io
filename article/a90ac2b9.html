@@ -30,7 +30,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/atom.xml" title="InitCool" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="InitCool" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
  <!-- 添加加载动画 -->
@@ -789,7 +789,7 @@
 <li>V8</li>
 <li>Chakra</li>
 </ul>
-<a id="more"></a>
+<span id="more"></span>
 
 <h2 id="Chrome-Dev-Tools"><a href="#Chrome-Dev-Tools" class="headerlink" title="Chrome Dev Tools"></a>Chrome Dev Tools</h2><ul>
 <li>Console</li>
@@ -805,18 +805,21 @@
 <span class="token keyword">function</span> strict<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
     <span class="token string">"use strict"</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token string">"这是严格模式"</span>；
-<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span></code></pre>
+<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
+</code></pre>
 <p><strong>Tips：不要省略”；”和”{ }”</strong></p>
 <h2 id="全局变量和局部变量"><a href="#全局变量和局部变量" class="headerlink" title="全局变量和局部变量"></a>全局变量和局部变量</h2><pre class=" language-bash"><code class="language-bash"><span class="token keyword">function</span> test<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
     var message <span class="token operator">=</span> <span class="token string">"hi"</span> //局部变量
 <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
 test<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-alert<span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>//错误！</code></pre>
+alert<span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>//错误！
+</code></pre>
 <pre class=" language-bash"><code class="language-bash"><span class="token keyword">function</span> test<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
     message <span class="token operator">=</span> <span class="token string">"hi"</span> //全局变量
 <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
 test<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-alert<span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span> //<span class="token string">"hi"</span></code></pre>
+alert<span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span> //<span class="token string">"hi"</span>
+</code></pre>
 
             </div>
             <hr/>
@@ -1425,16 +1428,16 @@ alert<span class="token punctuation">(</span>message<span class="token punctuati
                 
                 <div class="card-action article-tags">
                     
+                    <a href="/tags/%E6%B1%87%E6%80%BB/">
+                        <span class="chip bg-color">汇总</span>
+                    </a>
+                    
                     <a href="/tags/%E7%BD%91%E7%AB%99/">
                         <span class="chip bg-color">网站</span>
                     </a>
                     
                     <a href="/tags/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99/">
                         <span class="chip bg-color">常用网站</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%B1%87%E6%80%BB/">
-                        <span class="chip bg-color">汇总</span>
                     </a>
                     
                 </div>
@@ -1702,7 +1705,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     var years = days * 365;
                     var today = new Date();
                     var startYear = "2020";
-                    var startMonth = "08";
+                    var startMonth = "8";
                     var startDate = "16";
                     var startHour = "0";
                     var startMinute = "0";
@@ -1891,8 +1894,9 @@ $(function () {
 <script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
+                preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BHw6N1XmTsI6igkYNxTqcaSXT-jafWIL-VVmqt7F5hgbfGRdIY8WO7HZyHVpBBsQzDqJD2dmIXnGlEHBiOA909g');</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BHw6N1XmTsI6igkYNxTqcaSXT-jafWIL-VVmqt7F5hgbfGRdIY8WO7HZyHVpBBsQzDqJD2dmIXnGlEHBiOA909g');</script></body>
 
 </html>

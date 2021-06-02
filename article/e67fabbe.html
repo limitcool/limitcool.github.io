@@ -30,7 +30,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/atom.xml" title="InitCool" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="InitCool" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
  <!-- 添加加载动画 -->
@@ -767,16 +767,19 @@
                 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><code>SSH</code>拥有两种登录方法，一种是常规的使用密码口令的登陆验证方式，另一种则为设置密钥进行安全验证，需要将本地生成的<strong>公钥</strong>传送至服务端，进行公共密钥的对比。</p>
 <h1 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h1><p>安装Git：<a target="_blank" rel="noopener" href="https://git-scm.com/">Git官网下载地址</a></p>
 <h1 id="进行部署"><a href="#进行部署" class="headerlink" title="进行部署"></a>进行部署</h1><h2 id="1-在本机生成密钥对"><a href="#1-在本机生成密钥对" class="headerlink" title="1.在本机生成密钥对"></a>1.在本机生成密钥对</h2><p>打开<code>Powershell</code>,键入以下命令.</p>
-<pre><code>ssh-keygen</code></pre>
+<pre><code>ssh-keygen
+</code></pre>
 <p>之后依次按提示键入回车即可生成密钥文件。</p>
 <p>生成后的文件存放目录位于<code>C:\Users\&lt;username&gt;\.ssh</code></p>
 <h2 id="2-将本机生成的密钥传输至服务端"><a href="#2-将本机生成的密钥传输至服务端" class="headerlink" title="2.将本机生成的密钥传输至服务端"></a>2.将本机生成的密钥传输至服务端</h2><p>打开<code>Powershell</code>,键入以下命令。</p>
 <pre class=" language-bash"><code class="language-bash">ssh-copy-id -i~/.ssh/id_rsa.pub user@hostname
 <span class="token comment" spellcheck="true">#按照以上格式修改即可。</span>
-ssh-copy-id -i~/.ssh/id_rsa.pub root@192.168.123.39</code></pre>
+ssh-copy-id -i~/.ssh/id_rsa.pub root@192.168.123.39
+</code></pre>
 <p>传输完成后会在服务端生成<code>~/.ssh</code>目录，并将公钥写到了远程主机的<code>~/.ssh/authorized_keys</code>文件中。</p>
 <h3 id="3-测试，连接远程主机的效果"><a href="#3-测试，连接远程主机的效果" class="headerlink" title="3.测试，连接远程主机的效果"></a>3.测试，连接远程主机的效果</h3><p>打开<code>Powershell</code>,键入以下命令。</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">ssh</span> -i ~/.ssh/id_rsa user@hostname</code></pre>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">ssh</span> -i ~/.ssh/id_rsa user@hostname
+</code></pre>
 <p>现在就可以不用密码进行<code>ssh</code>连接了，而是通过密钥进行连接<code>ssh</code>服务。</p>
 <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/zydev/p/5779927.html">本文参考：头痛不头痛</a></p>
 
@@ -1649,7 +1652,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     var years = days * 365;
                     var today = new Date();
                     var startYear = "2020";
-                    var startMonth = "08";
+                    var startMonth = "8";
                     var startDate = "16";
                     var startHour = "0";
                     var startMinute = "0";
@@ -1838,8 +1841,9 @@ $(function () {
 <script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
+                preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BHw6N1XmTsI6igkYNxTqcaSXT-jafWIL-VVmqt7F5hgbfGRdIY8WO7HZyHVpBBsQzDqJD2dmIXnGlEHBiOA909g');</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BHw6N1XmTsI6igkYNxTqcaSXT-jafWIL-VVmqt7F5hgbfGRdIY8WO7HZyHVpBBsQzDqJD2dmIXnGlEHBiOA909g');</script></body>
 
 </html>
