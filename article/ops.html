@@ -735,14 +735,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-06-02
+                    2021-06-04
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    140
+                    309
                 </div>
                 
 
@@ -791,6 +791,22 @@ rz #上传文件
 </code></pre>
 <p>重启ssh服务使修改生效</p>
 <pre class=" language-bash"><code class="language-bash"> systemctl restart sshd.service
+</code></pre>
+<h1 id="History"><a href="#History" class="headerlink" title="History"></a>History</h1><p>设置保存50000条历史记录</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">export</span> HISTSIZE<span class="token operator">=</span>50000
+</code></pre>
+<p>设置保存多个并发shell会话的历史记录</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">shopt</span> -s histappend
+</code></pre>
+<p>使用<code>Ctrl+R</code>搜索历史记录</p>
+<pre class=" language-bash"><code class="language-bash">Ctrl + R
+</code></pre>
+<p> 使用 HISTIGNORE 从历史记录中删除无意义的命令</p>
+<p>一些 bash 命令用于提供一些即时信息，但不会改变您的环境，并且在您的历史记录中没有用。将 HISTIGNORE 变量添加到您的<code>.bashrc</code>文件中，您可以选择要从历史记录中删除哪些独立命令。按照以下方式添加：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">export</span> HISTIGNORE<span class="token operator">=</span><span class="token string">'pwd:exit:fg:bg:top:clear:history:ls:uptime:df'</span>
+</code></pre>
+<p>设置历史记录显示日期：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">export</span> HISTTIMEFORMAT<span class="token operator">=</span><span class="token string">"%Y-%M-%D %H:%M:%S"</span>
 </code></pre>
 
             </div>
@@ -1633,7 +1649,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">34k</span>&nbsp;字
+                class="white-color">34.2k</span>&nbsp;字
             
             
             
@@ -1855,6 +1871,6 @@ $(function () {
                 preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BHw6N1XmTsI6igkYNxTqcaSXT-jafWIL-VVmqt7F5hgbfGRdIY8WO7HZyHVpBBsQzDqJD2dmIXnGlEHBiOA909g');</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>
