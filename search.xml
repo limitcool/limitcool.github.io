@@ -207,7 +207,7 @@
       <link href="article/ops.html"/>
       <url>article/ops.html</url>
       
-        <content type="html"><![CDATA[<h2 id="Centos8-防火墙关闭"><a href="#Centos8-防火墙关闭" class="headerlink" title="Centos8 防火墙关闭"></a>Centos8 防火墙关闭</h2><pre class=" language-bash"><code class="language-bash">systemctl stop  firewalld.servicesystemctl disable  firewalld.service</code></pre><h2 id="上传下载文件（仅Xshell）"><a href="#上传下载文件（仅Xshell）" class="headerlink" title="上传下载文件（仅Xshell）"></a>上传下载文件（仅Xshell）</h2><pre class=" language-shell"><code class="language-shell">sz #保存文件rz #上传文件</code></pre><h1 id="权限"><a href="#权限" class="headerlink" title="权限"></a>权限</h1><p>使用chattr给权限</p><pre class=" language-bash"><code class="language-bash">chattr +i config.php <span class="token comment" spellcheck="true">#使用chattr给予文件权限</span></code></pre><p>使用chattr取消权限</p><pre class=" language-bash"><code class="language-bash">chattr -i config.php <span class="token comment" spellcheck="true">#使用chattr取消文件权限</span></code></pre><p>查看权限</p><pre class=" language-bash"><code class="language-bash">lsattr <span class="token comment" spellcheck="true">#查看权限</span></code></pre><h1 id="修改SSH端口"><a href="#修改SSH端口" class="headerlink" title="修改SSH端口"></a>修改SSH端口</h1><p>查看正在运行的端口</p><pre class=" language-bash"><code class="language-bash"><span class="token function">netstat</span> -nutlp <span class="token operator">|</span><span class="token function">grep</span> *</code></pre><p>修改<code>ssh</code>配置文件</p><pre class=" language-bash"><code class="language-bash">vim /etc/ssh/sshd_config</code></pre><p>在<code>#Port 22</code>下新增一行</p><pre class=" language-bash"><code class="language-bash">Port 2233 <span class="token comment" spellcheck="true"># 修改端口为2233</span></code></pre><p>重启ssh服务使修改生效</p><pre class=" language-bash"><code class="language-bash"> systemctl restart sshd.service</code></pre><h1 id="History"><a href="#History" class="headerlink" title="History"></a>History</h1><p>设置保存50000条历史记录</p><pre class=" language-bash"><code class="language-bash"><span class="token function">export</span> HISTSIZE<span class="token operator">=</span>50000</code></pre><p>设置保存多个并发shell会话的历史记录</p><pre class=" language-bash"><code class="language-bash"><span class="token function">shopt</span> -s histappend</code></pre><p>使用<code>Ctrl+R</code>搜索历史记录</p><pre class=" language-bash"><code class="language-bash">Ctrl + R</code></pre><p> 使用 HISTIGNORE 从历史记录中删除无意义的命令</p><p>一些 bash 命令用于提供一些即时信息，但不会改变您的环境，并且在您的历史记录中没有用。将 HISTIGNORE 变量添加到您的<code>.bashrc</code>文件中，您可以选择要从历史记录中删除哪些独立命令。按照以下方式添加：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">export</span> HISTIGNORE<span class="token operator">=</span><span class="token string">'pwd:exit:fg:bg:top:clear:history:ls:uptime:df'</span></code></pre><p>设置历史记录显示日期：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">export</span> HISTTIMEFORMAT<span class="token operator">=</span><span class="token string">"%Y-%M-%D %H:%M:%S"</span></code></pre>]]></content>
+        <content type="html"><![CDATA[<h2 id="Centos8-防火墙关闭"><a href="#Centos8-防火墙关闭" class="headerlink" title="Centos8 防火墙关闭"></a>Centos8 防火墙关闭</h2><pre class=" language-bash"><code class="language-bash">systemctl stop  firewalld.servicesystemctl disable  firewalld.service</code></pre><h2 id="上传下载文件（仅Xshell）"><a href="#上传下载文件（仅Xshell）" class="headerlink" title="上传下载文件（仅Xshell）"></a>上传下载文件（仅Xshell）</h2><pre class=" language-shell"><code class="language-shell">sz #保存文件rz #上传文件</code></pre><h1 id="权限"><a href="#权限" class="headerlink" title="权限"></a>权限</h1><p>使用chattr给权限</p><pre class=" language-bash"><code class="language-bash">chattr +i config.php <span class="token comment" spellcheck="true">#使用chattr给予文件权限</span></code></pre><p>使用chattr取消权限</p><pre class=" language-bash"><code class="language-bash">chattr -i config.php <span class="token comment" spellcheck="true">#使用chattr取消文件权限</span></code></pre><p>查看权限</p><pre class=" language-bash"><code class="language-bash">lsattr <span class="token comment" spellcheck="true">#查看权限</span></code></pre><h1 id="修改SSH端口"><a href="#修改SSH端口" class="headerlink" title="修改SSH端口"></a>修改SSH端口</h1><p>查看正在运行的端口</p><pre class=" language-bash"><code class="language-bash"><span class="token function">netstat</span> -nutlp <span class="token operator">|</span><span class="token function">grep</span> *</code></pre><p>修改<code>ssh</code>配置文件</p><pre class=" language-bash"><code class="language-bash">vim /etc/ssh/sshd_config</code></pre><p>在<code>#Port 22</code>下新增一行</p><pre class=" language-bash"><code class="language-bash">Port 2233 <span class="token comment" spellcheck="true"># 修改端口为2233</span></code></pre><p>重启ssh服务使修改生效</p><pre class=" language-bash"><code class="language-bash"> systemctl restart sshd.service</code></pre><h1 id="History"><a href="#History" class="headerlink" title="History"></a>History</h1><p>设置保存50000条历史记录</p><pre class=" language-bash"><code class="language-bash"><span class="token function">export</span> HISTSIZE<span class="token operator">=</span>50000</code></pre><p>设置保存多个并发shell会话的历史记录</p><pre class=" language-bash"><code class="language-bash"><span class="token function">shopt</span> -s histappend</code></pre><p>使用<code>Ctrl+R</code>搜索历史记录</p><pre class=" language-bash"><code class="language-bash">Ctrl + R</code></pre><p> 使用 HISTIGNORE 从历史记录中删除无意义的命令</p><p>一些 bash 命令用于提供一些即时信息，但不会改变您的环境，并且在您的历史记录中没有用。将 HISTIGNORE 变量添加到您的<code>.bashrc</code>文件中，您可以选择要从历史记录中删除哪些独立命令。按照以下方式添加：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">export</span> HISTIGNORE<span class="token operator">=</span><span class="token string">'pwd:exit:fg:bg:top:clear:history:ls:uptime:df'</span></code></pre><p>设置历史记录显示日期：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">export</span> HISTTIMEFORMAT<span class="token operator">=</span><span class="token string">"%Y-%M-%D %H:%M:%S"</span></code></pre><h2 id="磁盘空间清理"><a href="#磁盘空间清理" class="headerlink" title="磁盘空间清理"></a>磁盘空间清理</h2><pre class=" language-bash"><code class="language-bash">1.查询磁盘空间占用情况<span class="token function">df</span> -h2.进入根目录，查询大文件与目录<span class="token function">cd</span> /<span class="token function">du</span> -sh * <span class="token operator">|</span> <span class="token function">sort</span> -n查看上GB的目录并且排序,可以用这个命令<span class="token function">du</span> -h --max-depth<span class="token operator">=</span>1 <span class="token operator">|</span><span class="token function">grep</span> <span class="token string">'G'</span> <span class="token operator">|</span><span class="token function">sort</span>3 然后不断执行上面的过程，进入大文件目录，定位大文件并删除4.如果删除大文件，df -h查看磁盘空间并没有释放，那么就是被删除的文件关联的进程还在执行，那么需要我们将相关进程kill掉或重启，可以用这个命令来查看进程<span class="token function">lsof</span> <span class="token operator">|</span><span class="token function">grep</span> delete</code></pre><p>宝塔NginxLog</p><pre class=" language-bash"><code class="language-bash">/www/server/total/logs</code></pre>]]></content>
       
       
       <categories>
@@ -368,9 +368,9 @@
             
             <tag> Linux </tag>
             
-            <tag> 内网穿透 </tag>
-            
             <tag> frp </tag>
+            
+            <tag> 内网穿透 </tag>
             
             <tag> SSH </tag>
             
@@ -399,9 +399,9 @@
             
             <tag> Linux </tag>
             
-            <tag> N2N </tag>
-            
             <tag> 内网穿透 </tag>
+            
+            <tag> N2N </tag>
             
             <tag> 游戏 </tag>
             
@@ -635,13 +635,13 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Lychee </tag>
             
             <tag> 荔枝 </tag>
             
             <tag> 图床 </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> PHP </tag>
             
@@ -788,11 +788,11 @@
       
         <tags>
             
-            <tag> JavaScript </tag>
-            
             <tag> 学习 </tag>
             
             <tag> 数据类型 </tag>
+            
+            <tag> JavaScript </tag>
             
         </tags>
       
@@ -817,9 +817,9 @@
       
         <tags>
             
-            <tag> JavaScript </tag>
-            
             <tag> 学习 </tag>
+            
+            <tag> JavaScript </tag>
             
             <tag> 编程 </tag>
             
@@ -852,11 +852,11 @@
       
         <tags>
             
+            <tag> 汇总 </tag>
+            
             <tag> 网站 </tag>
             
             <tag> 常用网站 </tag>
-            
-            <tag> 汇总 </tag>
             
         </tags>
       
