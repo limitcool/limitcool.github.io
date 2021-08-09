@@ -635,13 +635,13 @@
       
         <tags>
             
-            <tag> CentOS </tag>
-            
             <tag> Lychee </tag>
             
             <tag> 荔枝 </tag>
             
             <tag> 图床 </tag>
+            
+            <tag> CentOS </tag>
             
             <tag> PHP </tag>
             
@@ -788,11 +788,11 @@
       
         <tags>
             
+            <tag> JavaScript </tag>
+            
             <tag> 学习 </tag>
             
             <tag> 数据类型 </tag>
-            
-            <tag> JavaScript </tag>
             
         </tags>
       
@@ -817,9 +817,9 @@
       
         <tags>
             
-            <tag> 学习 </tag>
-            
             <tag> JavaScript </tag>
+            
+            <tag> 学习 </tag>
             
             <tag> 编程 </tag>
             
