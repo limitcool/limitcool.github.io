@@ -735,7 +735,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-06-23
+                    2021-09-07
                 </div>
                 
 
@@ -1084,7 +1084,7 @@ SHOW TABLES<span class="token punctuation">;</span>  <span class="token comment"
 <pre class=" language-sql"><code class="language-sql"><span class="token keyword">alter</span> <span class="token keyword">user</span> <span class="token string">'root'</span>@'localhost<span class="token string">' identified by '</span>这里是你的密码'<span class="token punctuation">;</span>
 </code></pre>
 <p>授权允许远程访问<br>一、授权命令：</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">grant</span> <span class="token keyword">all</span> <span class="token keyword">privileges</span> <span class="token keyword">on</span> <span class="token operator">*</span><span class="token punctuation">.</span><span class="token operator">*</span> <span class="token keyword">to</span> <span class="token string">'root'</span>@'<span class="token operator">%</span><span class="token string">' identified by '</span><span class="token variable">@wjb1319</span>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">grant</span> <span class="token keyword">all</span> <span class="token keyword">privileges</span> <span class="token keyword">on</span> <span class="token operator">*</span><span class="token punctuation">.</span><span class="token operator">*</span> <span class="token keyword">to</span> <span class="token string">'root'</span>@'<span class="token operator">%</span><span class="token string">' identified by '</span>password'
 注意：请把命令中的【<span class="token variable">@wjb13191835106</span>】更改为自己的Mysql密码。
 </code></pre>
 <p>二、刷新授权：</p>
@@ -1093,6 +1093,9 @@ SHOW TABLES<span class="token punctuation">;</span>  <span class="token comment"
 <p>此时，你的Mysql就可以被远程连接了。</p>
 <p>关闭授权</p>
 <pre class=" language-sql"><code class="language-sql"><span class="token keyword">revoke</span> <span class="token keyword">all</span> <span class="token keyword">on</span> <span class="token operator">*</span><span class="token punctuation">.</span><span class="token operator">*</span> <span class="token keyword">from</span> <span class="token number">dba</span><span class="token variable">@localhost</span><span class="token punctuation">;</span>
+</code></pre>
+<p>执行以下命令，查看MySQL初始密码。</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">grep</span> <span class="token string">"password"</span> /var/log/mysqld.log
 </code></pre>
 
             </div>
