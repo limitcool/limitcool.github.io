@@ -1,0 +1,24 @@
+baseurl= 'https://blog.nmslwsnd.com'
+languageCode= 'zh-cn'
+theme='hugo-theme-stack'
+paginate= 5
+title='InitCool'
+
+# 左侧语言切换按钮
+# [languages]
+#   [languages.zh-cn]
+#     LanguageName = "中文"
+#     title = "InitCool"
+#     weight = 1
+#   [languages.en]
+#     LanguageName = "English"
+#     title = "InitCool"
+#     weight = 2
+
+enableInlineShortcodes = true
+[permalinks]
+  posts = "/p/:slug/"
+  page=  "/:slug/"
+
+DefaultContentLanguage= "zh-cn"
+enableEmoji=true
