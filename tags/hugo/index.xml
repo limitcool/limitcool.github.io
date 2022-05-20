@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on InitCool</title><link>https://blog.nmslwsnd.com/tags/hugo/</link><description>Recent content in Hugo on InitCool</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 20 May 2022 10:23:53 +0800</lastBuildDate><atom:link href="https://blog.nmslwsnd.com/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo使用指南l</title><link>https://blog.nmslwsnd.com/p/hugo/</link><pubDate>Fri, 20 May 2022 10:23:53 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/hugo/</guid><description>&lt;p>查看Hugo版本号&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>hugo version
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>新建一个Hugo页面&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo new site &amp;lt;siteName&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>设置主题&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>cd &amp;lt;siteName&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git init
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 设置为 Stack主题&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git clone https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>部署Hugo到github&lt;/p></description></item></channel></rss>
