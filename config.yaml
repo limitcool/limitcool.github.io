@@ -4,7 +4,6 @@ module:
         min: "0.87.0"
 
 
-
 # Toml Start
 baseurl: https://blog.nmslwsnd.com
 languageCode: zh-cn
