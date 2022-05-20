@@ -40,7 +40,7 @@ params:
         - posts
     featuredImageField: image
     rssFullContent: true
-    favicon:
+    favicon: img/favicon.png
 
     footer:
         since: 2022
@@ -56,7 +56,7 @@ params:
         avatar:
             enabled: true
             local: true
-            src: img/logo.gif
+            src: img/avatar.jpg
 
     article:
         math: false
