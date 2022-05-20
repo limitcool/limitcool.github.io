@@ -40,7 +40,8 @@ params:
         - posts
     featuredImageField: image
     rssFullContent: true
-    favicon: img/favicon.png
+    # 这里有主题的坑点,favicon需要放置在static目录下 https://github.com/CaiJimmy/hugo-theme-stack/issues/597
+    favicon: favicon.png
 
     footer:
         since: 2022
@@ -162,7 +163,7 @@ params:
     opengraph:
         twitter:
             # Your Twitter username
-            site:
+            site: cooolqaq
 
             # Available values: summary, summary_large_image
             card: summary_large_image
