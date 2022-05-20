@@ -5,6 +5,22 @@ module:
 
 
 
+# Toml Start
+baseurl: https://blog.nmslwsnd.com
+languageCode: zh-cn
+theme: hugo-theme-stack
+paginate: 5
+title: InitCool
+enableInlineShortcodes : true
+enableEmoji: true
+
+permalinks:
+  posts: /p/:slug/
+  page:  /:slug/
+
+# DefaultContentLanguage: "zh-cn"
+# Toml End
+
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
 
