@@ -1,5 +1,5 @@
 ---
-title: "Hugo使用指南l"
+title: "Hugo使用指南！"
 slug: "hugo"
 draft: false
 date: 2022-05-20T10:23:53+08:00
