@@ -6,6 +6,6 @@ draft: false
 slug: {{.Name}}
 image:
 categories:
-tag:
+tags:
 ---
 
