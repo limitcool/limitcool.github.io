@@ -1,4 +1,163 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>InitCool</title><link>https://blog.nmslwsnd.com/</link><description>Recent content on InitCool</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 26 May 2022 14:17:33 +0800</lastBuildDate><atom:link href="https://blog.nmslwsnd.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Go使用gRPC进行通信</title><link>https://blog.nmslwsnd.com/p/go-grpc/</link><pubDate>Thu, 26 May 2022 14:17:33 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/go-grpc/</guid><description>&lt;h1 id="安装grpc和protoc">安装&lt;code>gRPC&lt;/code>和&lt;code>Protoc&lt;/code>&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>InitCool</title><link>https://blog.nmslwsnd.com/</link><description>Recent content on InitCool</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 25 Jul 2022 14:02:22 +0800</lastBuildDate><atom:link href="https://blog.nmslwsnd.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Rust使用Serde进行序列化及反序列化</title><link>https://blog.nmslwsnd.com/p/rust-serde/</link><pubDate>Mon, 25 Jul 2022 14:02:22 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/rust-serde/</guid><description>&lt;h1 id="开始之前">开始之前&lt;/h1>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="cl">&lt;span class="c"># 在Cargo.toml 新增以下依赖&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="nx">dependencies&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">serde&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">version&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;1.0.140&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="nx">features&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;derive&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">serde_json&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;1.0.82&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">serde_yaml&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;0.8&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">serde_urlencoded&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;0.7.1&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c"># 使用yaserde解析xml&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">yaserde&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;0.8.0&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">yaserde_derive&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;0.8.0&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="serde通用规则jsonyamlxml">&lt;code>Serde&lt;/code>通用规则(&lt;code>json&lt;/code>,&lt;code>yaml&lt;/code>,&lt;code>xml&lt;/code>)&lt;/h2>
+&lt;h3 id="1使用serde宏通过具体结构实现序列化及反序列化">1.使用&lt;code>Serde&lt;/code>宏通过具体结构实现序列化及反序列化&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-rust" data-lang="rust">&lt;span class="line">&lt;span class="cl">&lt;span class="k">use&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">serde&lt;/span>::&lt;span class="p">{&lt;/span>&lt;span class="n">Deserialize&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Serialize&lt;/span>&lt;span class="p">};&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c1">// 为结构体实现 Serialize(序列化)属性和Deserialize(反序列化)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="cp">#[derive(Debug, Serialize, Deserialize, Clone)]&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">pub&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">struct&lt;/span> &lt;span class="nc">Person&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c1">// 将该字段名称修改为lastname
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="cp">#[serde(rename = &lt;/span>&lt;span class="s">&amp;#34;lastname&amp;#34;&lt;/span>&lt;span class="cp">)]&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">name&lt;/span>: &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c1">// 反序列化及序列化时忽略该字段(nickname)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="cp">#[serde(skip)]&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">nickname&lt;/span>: &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c1">// 分别设置序列化及反序列化时输出的字段名称
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="cp">#[serde(rename(serialize = &lt;/span>&lt;span class="s">&amp;#34;serialize_id&amp;#34;&lt;/span>&lt;span class="cp">, deserialize = &lt;/span>&lt;span class="s">&amp;#34;derialize_id&amp;#34;&lt;/span>&lt;span class="cp">))
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp"> id: i32,
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp"> // 为age设置默认值
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp"> #[serde(default)]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp"> age: i32,
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">}
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="2使用serde_json序列化及反序列化">2.使用&lt;code>serde_json&lt;/code>序列化及反序列化&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-rust" data-lang="rust">&lt;span class="line">&lt;span class="cl">&lt;span class="k">use&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">serde_json&lt;/span>::&lt;span class="p">{&lt;/span>&lt;span class="n">json&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Value&lt;/span>&lt;span class="p">};&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kd">let&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">v&lt;/span>:&lt;span class="nc">serde_json&lt;/span>::&lt;span class="n">Value&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">json&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="s">&amp;#34;x&amp;#34;&lt;/span>:&lt;span class="mf">20.0&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="s">&amp;#34;y&amp;#34;&lt;/span>:&lt;span class="mf">15.0&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="fm">println!&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;x:{:#?},y:{:#?}&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">v&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s">&amp;#34;x&amp;#34;&lt;/span>&lt;span class="p">],&lt;/span>&lt;span class="n">v&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s">&amp;#34;y&amp;#34;&lt;/span>&lt;span class="p">]);&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// x:20.0, y:15.0
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="3使用serde宏统一格式化输入输出字段名称">3.使用&lt;code>Serde&lt;/code>宏统一格式化输入、输出字段名称&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>方法名&lt;/th>
+&lt;th>方法效果&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>PascalCase&lt;/code>&lt;/td>
+&lt;td>首字母为大写的驼峰式命名,推荐结构体、枚举等名称以及&lt;code>Yaml&lt;/code>配置文件读取使用。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>camelCase&lt;/code>&lt;/td>
+&lt;td>首字母为小写的驼峰式命名,推荐&lt;code>Yaml&lt;/code>配置文件读取使用。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>snake_case&lt;/code>&lt;/td>
+&lt;td>小蛇形命名,用下划线&amp;quot;&lt;code>_&lt;/code>&amp;ldquo;连接单词,推荐函数命名以及变量名称使用此种方式。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>SCREAMING_SNAKE_CASE&lt;/code>&lt;/td>
+&lt;td>大蛇形命名,单词均为大写形式,用下划线&amp;rdquo;&lt;code>_&lt;/code>&amp;ldquo;连接单词。推荐常数及全局变量使用此种方式。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>kebab-case&lt;/code>(小串烤肉)&lt;/td>
+&lt;td>同&lt;code>snake_case&lt;/code>,使用中横线&amp;rdquo;&lt;code>-&lt;/code>&amp;ldquo;替换了下划线&amp;rdquo;&lt;code>_&lt;/code>&amp;quot;。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>SCREAMING-KEBAB-CAS&lt;/code>(大串烤肉)&lt;/td>
+&lt;td>同&lt;code>SCREAMING_SNAKE_CASE&lt;/code>,使用中横线&amp;quot;&lt;code>-&lt;/code>&amp;ldquo;替换了下划线&amp;rdquo;&lt;code>_&lt;/code>&amp;quot;。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>示例:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-rust" data-lang="rust">&lt;span class="line">&lt;span class="cl">&lt;span class="k">pub&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">struct&lt;/span> &lt;span class="nc">App&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="cp">#[serde(rename_all = &lt;/span>&lt;span class="s">&amp;#34;PascalCase&amp;#34;&lt;/span>&lt;span class="cp">)]&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="sd">/// 统一格式化输入、输出字段名称
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd">&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="sd">/// #[serde(rename_all = &amp;#34;camelCase&amp;#34;)]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd">&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="sd">/// #[serde(rename_all = &amp;#34;snake_case&amp;#34;)]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd">&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="sd">/// #[serde(rename_all = &amp;#34;SCREAMING_SNAKE_CASE&amp;#34;)]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd">&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="sd">/// 仅设置
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd">&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">version&lt;/span>: &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">app_name&lt;/span>: &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">host&lt;/span>: &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;a class="link" href="https://github.com/media-io/yaserde" target="_blank" rel="noopener"
+>本文参考:yaserde&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://magiclen.org/rust-serde/" target="_blank" rel="noopener"
+>本文参考:magiclen&lt;/a>&lt;/p></description></item><item><title>Go使用gRPC进行通信</title><link>https://blog.nmslwsnd.com/p/go-grpc/</link><pubDate>Thu, 26 May 2022 14:17:33 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/go-grpc/</guid><description>&lt;h1 id="安装grpc和protoc">安装&lt;code>gRPC&lt;/code>和&lt;code>Protoc&lt;/code>&lt;/h1>
 &lt;h2 id="安装protobuf">安装&lt;code>protobuf&lt;/code>&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
