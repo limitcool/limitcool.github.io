@@ -41,7 +41,7 @@ params:
     featuredImageField: image
     rssFullContent: true
     # 这里有主题的坑点,favicon需要放置在static目录下 https://github.com/CaiJimmy/hugo-theme-stack/issues/597
-    favicon: favicon.png
+    favicon: https://blog.nmslwsnd.com/favicon.png
 
     footer:
         since: 2022
