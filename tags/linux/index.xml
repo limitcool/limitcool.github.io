@@ -1,4 +1,438 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on InitCool</title><link>https://blog.nmslwsnd.com/tags/linux/</link><description>Recent content in Linux on InitCool</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 23 May 2022 11:11:40 +0800</lastBuildDate><atom:link href="https://blog.nmslwsnd.com/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux部署DHCP服务</title><link>https://blog.nmslwsnd.com/p/linux-dhcp/</link><pubDate>Mon, 23 May 2022 11:11:40 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/linux-dhcp/</guid><description>&lt;p>拉取&lt;code>networkboot/dhcpd&lt;/code>镜像&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on InitCool</title><link>https://blog.nmslwsnd.com/tags/linux/</link><description>Recent content in Linux on InitCool</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 08 Sep 2022 15:19:00 +0800</lastBuildDate><atom:link href="https://blog.nmslwsnd.com/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux</title><link>https://blog.nmslwsnd.com/p/linux/</link><pubDate>Thu, 08 Sep 2022 15:19:00 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/linux/</guid><description>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 使用cd 进入到上一个目录&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> -
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>复制和粘贴&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">ctrl + &lt;span class="nb">shift&lt;/span> + c
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ctrl + &lt;span class="nb">shift&lt;/span> + v
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>快速移动&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 移动到行首&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ctrl + a
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 移动到行尾&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ctrl + e
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>快速删除&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 删除光标之前的内容&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ctrl + u
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 删除光标之后的内容&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ctrl + k
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 恢复之前删除的内容&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ctrl + y
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>不适用cat&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">使用less 查看 顶部的文件
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">less filename
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>使用alt+backspace删除,以单词为单位&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> tcpdump host 1.1.1.1
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># 并行执行命令 Parallel
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">find . -type f -name &amp;#39;*.html&amp;#39; -print | parallel gzip
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Canokey入门指南:2FA、OpenPGP、PIV</title><link>https://blog.nmslwsnd.com/p/canokeys/</link><pubDate>Fri, 19 Aug 2022 16:42:40 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/canokeys/</guid><description>&lt;p>Canokeys&lt;/p>
+&lt;h1 id="2fa">2FA&lt;/h1>
+&lt;p>&lt;code>Canokey&lt;/code>使用&lt;code>Yubikey Authenticator&lt;/code>来进行管理&lt;code>2FA&lt;/code>。&lt;/p>
+&lt;p>下载&lt;code>Yubikey Authenticator&lt;/code>,以下为&lt;code>Yubikey Authenticator&lt;/code>官方下载网址&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-http" data-lang="http">&lt;span class="line">&lt;span class="cl">&lt;span class="err">https://www.yubico.com/products/yubico-authenticator/#h-download-yubico-authenticator
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>运行&lt;code>Yubikey Authenticator&lt;/code>&lt;/p>
+&lt;p>进入&lt;code>custom reader&lt;/code>，在&lt;code>Custom reader fiter&lt;/code>处填入 &lt;code>CanoKey&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/9676051-ff0cd60f38ac7334.png"
+loading="lazy"
+alt="填入CanoKey"
+>&lt;/p>
+&lt;p>右上角&lt;code>Add account&lt;/code> 增加&lt;code>2FA&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/9676051-1031857fe0f13d08.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+alt="添加2FA"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">Issuer&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">备注 可选&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">Account name &lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">用户名 必填项&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">Secret Key &lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Hotp或Totp的key 必填项&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="openpgp">OpenPGP&lt;/h1>
+&lt;h2 id="安装gpg">安装GPG&lt;/h2>
+&lt;p>Windows 用户可下载 &lt;a class="link" href="https://gpg4win.org/download.html" target="_blank" rel="noopener"
+>Gpg4Win&lt;/a>，Linux/macOS 用户使用对应包管理软件安装即可.&lt;/p>
+&lt;h2 id="生成主密钥">生成主密钥&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">gpg --expert --full-gen-key &lt;span class="c1">#生成GPG KEY&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>推荐使用&lt;code>ECC&lt;/code>算法&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/9676051-df42e4b958e9a238.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+alt="image-20220102223722475"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">选择&lt;span class="o">(&lt;/span>11&lt;span class="o">)&lt;/span> ECC &lt;span class="o">(&lt;/span>&lt;span class="nb">set&lt;/span> your own capabilities&lt;span class="o">)&lt;/span> &lt;span class="c1"># 设置自己的功能 主密钥只保留 Certify 功能，其他功能（Encr,Sign,Auth）使用子密钥&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 子密钥分成三份,分别获得三个不同的功能&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># encr 解密功能&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># sign 签名功能&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># auth 登录验证功能&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">先选择 &lt;span class="o">(&lt;/span>S&lt;span class="o">)&lt;/span> Toggle the sign capability
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/9676051-c3bb19eb398419e1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+alt="image-20220102224151589"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">之后输入q 退出
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>键入1,选择默认算法&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/9676051-7a2c5ee8ed4800af.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+alt="键入1,选择默认算法"
+>&lt;/p>
+&lt;p>设置主密钥永不过期&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/9676051-cca6100917c2ffaa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+alt="image-20220102224451731"
+>&lt;/p>
+&lt;p>填写信息,按照实际情况填写即可&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/9676051-10430afe3aa592c7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+alt="image-20220102224612167"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Windnows 下会弹出窗口输入密码，注意一定要保管好！！！
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 会自动生成吊销证书，注意保存到安全的地方&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gpg: AllowSetForegroundWindow&lt;span class="o">(&lt;/span>22428&lt;span class="o">)&lt;/span> failed: �ܾ����ʡ�
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gpg: revocation certificate stored as &lt;span class="s1">&amp;#39;C:\\Users\\Andorid\\AppData\\Roaming\\gnupg\\openpgp-revocs.d\\&amp;lt;此处为私钥&amp;gt;.rev&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 以上的REV文件即为吊销证书&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">public and secret key created and signed.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">pub ed25519 2022-01-02 &lt;span class="o">[&lt;/span>SC&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;此处为Pub&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">uid &amp;lt;此处为Name&amp;gt; &amp;lt;此处为email&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>生成子密钥&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl"> gpg --fingerprint --keyid-format long -K
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>下面生成不同功能的子密钥，其中 &lt;code>&amp;lt;fingerprint&amp;gt;&lt;/code> 为上面输出的密钥指纹，本示例中即为 &lt;code>私钥&lt;/code>。最后的 &lt;code>2y&lt;/code> 为密钥过期时间，可自行设置，如不填写默认永不过期。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">gpg --quick-add-key &amp;lt;fingerprint&amp;gt; cv25519 encr 2y
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gpg --quick-add-key &amp;lt;fingerprint&amp;gt; ed25519 auth 2y
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gpg --quick-add-key &amp;lt;fingerprint&amp;gt; ed25519 sign 2y
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>再次查看目前的私钥，可以看到已经包含了这三个子密钥。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">gpg --fingerprint --keyid-format long -K
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>上面生成了三种功能的子密钥（ssb），分别为加密（E）、认证（A）、签名（S），对应 &lt;code>OpenPGP Applet&lt;/code> 中的三个插槽。由于 &lt;code>ECC&lt;/code> 实现的原因，加密密钥的算法区别于其他密钥的算法。&lt;/p>
+&lt;p>加密密钥用于加密文件和信息。签名密钥主要用于给自己的信息签名，保证这真的是来自&lt;strong>我&lt;/strong>的信息。认证密钥主要用于 SSH 登录。&lt;/p>
+&lt;h2 id="备份gpg">备份GPG&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 公钥&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gpg -ao public-key.pub --export &amp;lt;ed25519/16位&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 主密钥，请务必保存好！！！&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 注意 key id 后面的 !，表示只导出这一个私钥，若没有的话默认导出全部私钥。&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gpg -ao sec-key.asc --export-secret-key &amp;lt;ed25519/16位&amp;gt;!
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># sign子密钥&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gpg -ao sign-key.asc --export-secret-key &amp;lt;ed25519/16位&amp;gt;!
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gpg -ao auth-key.asc --export-secret-key &amp;lt;ed25519/16位&amp;gt;!
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gpg -ao encr-key.asc --export-secret-key &amp;lt;ed25519/16位&amp;gt;!
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="导入canokey">导入Canokey&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 查看智能卡设备状态&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gpg --card-status
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 写入GPG&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gpg --edit-key &amp;lt;ed25519/16位&amp;gt; &lt;span class="c1"># 为上方的sec-key&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 选中第一个子密钥&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">key &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 写入到智能卡&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">keytocard
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 再次输入,取消选择&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">key &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 选择第二个子密钥&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">key &lt;span class="m">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">keytocard
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">key &lt;span class="m">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">key &lt;span class="m">3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">keytocard
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 保存修改并退出&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">save
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#再次查看设备状态,可以看到此时子密钥标识符为 ssb&amp;gt;，表示本地只有一个指向 card-no: F1D0 xxxxxxxx 智能卡的指针，已不存在私钥。现在可以删除掉主密钥了，请再次确认你已安全备份好主密钥。&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gpg --card-status
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="删除本地密钥">删除本地密钥&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">gpg --delete-secret-keys &amp;lt;ed25519/16位&amp;gt; &lt;span class="c1"># 为上方的sec-key&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>为确保安全，也可直接删除 gpg 的工作目录：&lt;code>%APPDATA%\gnupg&lt;/code>，Linux/macOS: &lt;code>~/.gunpg&lt;/code>。&lt;/p>
+&lt;h2 id="使用-canokey">使用 Canokey&lt;/h2>
+&lt;p>此时切换回日常使用的环境，首先导入公钥&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">gpg --import public-key.pub
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后设置子密钥指向 Canokey&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">gpg --edit-card
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gpg/card&amp;gt; fetch
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>此时查看本地的私钥，可以看到已经指向了 Canokey&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">gpg --fingerprint --keyid-format long -K
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>配置gpg路径&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git config --global gpg.program &lt;span class="s2">&amp;#34;C:\Program Files (x86)\GnuPG\bin\gpg.exe&amp;#34;&lt;/span> --replace-all
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="git-commit-签名">Git Commit 签名&lt;/h2>
+&lt;p>首先确保 Git 本地配置以及 GitHub 中的邮箱信息包含在 &lt;code>UID&lt;/code> 中，然后设置 Git 来指定使用子密钥中的签名（S）密钥。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">git config --global user.signingkey &amp;lt;ed25519/16位&amp;gt; &lt;span class="c1"># 为上方的Sign密钥&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>之后在 &lt;code>git commit&lt;/code> 时增加 &lt;code>-S&lt;/code> 参数即可使用 gpg 进行签名。也可在配置中设置自动 gpg 签名，此处不建议全局开启该选项，因为有的脚本可能会使用 &lt;code>git am&lt;/code> 之类的涉及到 &lt;code>commit&lt;/code> 的命令，如果全局开启的话会导致问题。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">git config commit.gpgsign &lt;span class="nb">true&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果提交到 GitHub，前往 &lt;a class="link" href="https://github.com/settings/keys" target="_blank" rel="noopener"
+>GitHub SSH and GPG keys&lt;/a> 添加公钥。此处添加后，可以直接通过对应 GitHub ID 来获取公钥：&lt;code>https://github.com/&amp;lt;yourid&amp;gt;.gpg&lt;/code>&lt;/p>
+&lt;h2 id="piv">PIV&lt;/h2>
+&lt;p>首先在Web端添加自己的私钥到智能卡，之后前往 &lt;a class="link" href="https://github.com/buptczq/WinCryptSSHAgent" target="_blank" rel="noopener"
+>WinCrypt SSH Agent&lt;/a> 下载并运行，此时查看 &lt;code>ssh-agent&lt;/code> 读取到的公钥信息，把输出的公钥信息添加到服务器的 &lt;code>~/.ssh/authorized_keys&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 设置环境池&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">$Env&lt;/span>:SSH_AUTH_SOCK&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;\\.\pipe\openssh-ssh-agent&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 查看ssh列表&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ssh-add -L
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>此时连接 &lt;code>ssh user@host&lt;/code>，会弹出提示输入 &lt;code>PIN&lt;/code> 的页面，注意此时输入的是 &lt;code>PIV Applet PIN&lt;/code>，输入后即可成功连接服务器。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">tips&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">可能会出现权限不够的情况,需要禁用Windows服务OpenSSH Authentication Agent&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>最后可以把该程序快捷方式添加到启动目录 &lt;code>%AppData%\Microsoft\Windows\Start Menu\Programs\Startup&lt;/code>，方便直接使用。&lt;/p></description></item><item><title>Linux部署DHCP服务</title><link>https://blog.nmslwsnd.com/p/linux-dhcp/</link><pubDate>Mon, 23 May 2022 11:11:40 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/linux-dhcp/</guid><description>&lt;p>拉取&lt;code>networkboot/dhcpd&lt;/code>镜像&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
