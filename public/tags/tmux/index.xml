@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tmux on InitCool</title>
+        <link>https://blog.nmslwsnd.com/tags/tmux/</link>
+        <description>Recent content in Tmux on InitCool</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Tue, 02 Aug 2022 14:54:08 +0800</lastBuildDate><atom:link href="https://blog.nmslwsnd.com/tags/tmux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>如何在 Tmux 会话窗格中发送命令</title>
+        <link>https://blog.nmslwsnd.com/p/tmux/</link>
+        <pubDate>Tue, 02 Aug 2022 14:54:08 +0800</pubDate>
+        
+        <guid>https://blog.nmslwsnd.com/p/tmux/</guid>
+        <description>&lt;h2 id=&#34;在-tmux-会话窗格中发送命令的方法&#34;&gt;在 Tmux 会话窗格中发送命令的方法&lt;/h2&gt;
+&lt;p&gt;在 &lt;code&gt;Tmux&lt;/code&gt; 中，可以使用 &lt;code&gt;send-keys&lt;/code&gt; 命令将命令发送到会话窗格中。以下是在 &lt;code&gt;Tmux&lt;/code&gt; 中发送命令的步骤：&lt;/p&gt;
+&lt;h3 id=&#34;1-新建一个分离detached会话&#34;&gt;1. 新建一个分离(&lt;code&gt;Detached&lt;/code&gt;)会话&lt;/h3&gt;
+&lt;p&gt;使用以下命令新建一个分离会话：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux new -d -s mySession
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;2-发送命令至会话窗格&#34;&gt;2. 发送命令至会话窗格&lt;/h3&gt;
+&lt;p&gt;使用以下命令将命令发送到会话窗格：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux send-keys -t mySession &lt;span class=&#34;s2&#34;&gt;&amp;#34;echo &amp;#39;Hello World!&amp;#39;&amp;#34;&lt;/span&gt; ENTER
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这将发送 &lt;code&gt;echo &#39;Hello World!&#39;&lt;/code&gt; 命令，并模拟按下回车键(&lt;code&gt;ENTER&lt;/code&gt;)，以在会话窗格中执行该命令。&lt;/p&gt;
+&lt;h3 id=&#34;3-连接attach会话窗格&#34;&gt;3. 连接(&lt;code&gt;Attach&lt;/code&gt;)会话窗格&lt;/h3&gt;
+&lt;p&gt;使用以下命令连接会话窗格：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux a -t mySession
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这将连接到名为 &lt;code&gt;mySession&lt;/code&gt; 的会话窗格。&lt;/p&gt;
+&lt;h3 id=&#34;4-发送特殊命令&#34;&gt;4. 发送特殊命令&lt;/h3&gt;
+&lt;p&gt;要发送特殊命令，例如清除当前行或使用管理员权限运行命令，请使用以下命令：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;清除当前行：&lt;code&gt;tmux send-keys C-c&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;以管理员身份运行命令：&lt;code&gt;sudo tmux send-keys ...&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

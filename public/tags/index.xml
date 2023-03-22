@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tags on InitCool</title>
+        <link>https://blog.nmslwsnd.com/tags/</link>
+        <description>Recent content in Tags on InitCool</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sat, 17 Sep 2022 15:10:26 +0800</lastBuildDate><atom:link href="https://blog.nmslwsnd.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Dll</title>
+        <link>https://blog.nmslwsnd.com/tags/dll/</link>
+        <pubDate>Sat, 17 Sep 2022 15:10:26 +0800</pubDate>
+        
+        <guid>https://blog.nmslwsnd.com/tags/dll/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Rust</title>
+        <link>https://blog.nmslwsnd.com/tags/rust/</link>
+        <pubDate>Sat, 17 Sep 2022 15:10:26 +0800</pubDate>
+        
+        <guid>https://blog.nmslwsnd.com/tags/rust/</guid>
+        <description>&lt;img src="https://blog.nmslwsnd.com/tags/rust/rust.svg" alt="Featured image of post Rust" /&gt;</description>
+        </item>
+        <item>
+        <title>Linux</title>
+        <link>https://blog.nmslwsnd.com/tags/linux/</link>
+        <pubDate>Fri, 19 Aug 2022 16:42:40 +0800</pubDate>
+        
+        <guid>https://blog.nmslwsnd.com/tags/linux/</guid>
+        <description>&lt;img src="https://blog.nmslwsnd.com/tags/linux/Linux.webp" alt="Featured image of post Linux" /&gt;</description>
+        </item>
+        <item>
+        <title>Tmux</title>
+        <link>https://blog.nmslwsnd.com/tags/tmux/</link>
+        <pubDate>Tue, 02 Aug 2022 14:54:08 +0800</pubDate>
+        
+        <guid>https://blog.nmslwsnd.com/tags/tmux/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Xml</title>
+        <link>https://blog.nmslwsnd.com/tags/xml/</link>
+        <pubDate>Mon, 25 Jul 2022 14:02:22 +0800</pubDate>
+        
+        <guid>https://blog.nmslwsnd.com/tags/xml/</guid>
+        <description>&lt;img src="https://blog.nmslwsnd.com/tags/xml/xml.webp" alt="Featured image of post Xml" /&gt;</description>
+        </item>
+        <item>
+        <title>Arm</title>
+        <link>https://blog.nmslwsnd.com/tags/arm/</link>
+        <pubDate>Fri, 10 Jun 2022 15:00:26 +0800</pubDate>
+        
+        <guid>https://blog.nmslwsnd.com/tags/arm/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>GLIBC</title>
+        <link>https://blog.nmslwsnd.com/tags/glibc/</link>
+        <pubDate>Fri, 10 Jun 2022 15:00:26 +0800</pubDate>
+        
+        <guid>https://blog.nmslwsnd.com/tags/glibc/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Go</title>
+        <link>https://blog.nmslwsnd.com/tags/go/</link>
+        <pubDate>Fri, 10 Jun 2022 15:00:26 +0800</pubDate>
+        
+        <guid>https://blog.nmslwsnd.com/tags/go/</guid>
+        <description>&lt;img src="https://blog.nmslwsnd.com/tags/go/go.webp" alt="Featured image of post Go" /&gt;</description>
+        </item>
+        <item>
+        <title>gRPC</title>
+        <link>https://blog.nmslwsnd.com/tags/grpc/</link>
+        <pubDate>Thu, 26 May 2022 14:17:33 +0800</pubDate>
+        
+        <guid>https://blog.nmslwsnd.com/tags/grpc/</guid>
+        <description>&lt;img src="https://blog.nmslwsnd.com/tags/grpc/grpc.webp" alt="Featured image of post gRPC" /&gt;</description>
+        </item>
+        <item>
+        <title>DHCP</title>
+        <link>https://blog.nmslwsnd.com/tags/dhcp/</link>
+        <pubDate>Mon, 23 May 2022 11:11:40 +0800</pubDate>
+        
+        <guid>https://blog.nmslwsnd.com/tags/dhcp/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Hugo</title>
+        <link>https://blog.nmslwsnd.com/tags/hugo/</link>
+        <pubDate>Fri, 20 May 2022 10:23:53 +0800</pubDate>
+        
+        <guid>https://blog.nmslwsnd.com/tags/hugo/</guid>
+        <description>&lt;img src="https://blog.nmslwsnd.com/tags/hugo/hugo.png" alt="Featured image of post Hugo" /&gt;</description>
+        </item>
+        <item>
+        <title>Database</title>
+        <link>https://blog.nmslwsnd.com/tags/database/</link>
+        <pubDate>Thu, 21 Apr 2022 09:42:24 +0800</pubDate>
+        
+        <guid>https://blog.nmslwsnd.com/tags/database/</guid>
+        <description>&lt;img src="https://blog.nmslwsnd.com/tags/database/database.webp" alt="Featured image of post Database" /&gt;</description>
+        </item>
+        <item>
+        <title>Redis</title>
+        <link>https://blog.nmslwsnd.com/tags/redis/</link>
+        <pubDate>Thu, 21 Apr 2022 09:42:24 +0800</pubDate>
+        
+        <guid>https://blog.nmslwsnd.com/tags/redis/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
