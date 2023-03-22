@@ -1,6 +1,6 @@
 ---
 title: "Canokey入门指南:2FA、OpenPGP、PIV"
-description: 
+description: 本文是一份Canokey入门指南，将介绍如何使用Canokey进行2FA、OpenPGP和PIV等操作。其中，2FA部分将介绍如何使用Yubikey Authenticator进行管理，OpenPGP部分将介绍如何生成GPG密钥并使用Canokey进行身份验证和加密解密，PIV部分将介绍如何在Canokey中生成PIV证书并使用其进行身份验证。
 date: 2022-08-19T16:42:40+08:00
 draft: false
 slug: canokeys
@@ -10,8 +10,6 @@ categories:
 tags:
   - Linux
 ---
-
-Canokeys
 
 
 

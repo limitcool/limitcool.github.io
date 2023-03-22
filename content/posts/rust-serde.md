@@ -1,6 +1,6 @@
 ---
 title: "Rust使用Serde进行序列化及反序列化"
-description: 
+description: 这篇文章将介绍如何在Rust编程语言中使用Serde库进行序列化和反序列化操作。Serde是一个广泛使用的序列化和反序列化库，能够支持JSON、BSON、CBOR、MessagePack和YAML等常见数据格式。
 date: 2022-07-25T14:02:22+08:00
 draft: false
 slug: rust-serde

@@ -2,7 +2,7 @@
 title: "Rust Sqlx"
 description: 
 date: 2022-08-29T13:55:08+08:00
-draft: false
+draft: true
 slug: rust-sqlx
 image:
 categories:

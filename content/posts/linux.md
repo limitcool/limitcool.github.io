@@ -2,7 +2,7 @@
 title: "Linux"
 description: 
 date: 2022-09-08T15:19:00+08:00
-draft: false
+draft: true
 slug: linux
 image:
 categories:
