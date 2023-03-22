@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GLIBC on InitCool</title><link>https://blog.nmslwsnd.com/tags/glibc/</link><description>Recent content in GLIBC on InitCool</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 10 Jun 2022 15:00:26 +0800</lastBuildDate><atom:link href="https://blog.nmslwsnd.com/tags/glibc/index.xml" rel="self" type="application/rss+xml"/><item><title>使用arm交叉编译工具并解决GLIBC版本不匹配的问题</title><link>https://blog.nmslwsnd.com/p/go-arm/</link><pubDate>Fri, 10 Jun 2022 15:00:26 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/go-arm/</guid><description>&lt;ol>
+&lt;li>
+&lt;p>下载 ARM 交叉编译工具，可以从官方网站下载。比如，可以从如下链接下载 GNU 工具链：&lt;a class="link" href="https://developer.arm.com/downloads/-/gnu-a" target="_blank" rel="noopener"
+>https://developer.arm.com/downloads/-/gnu-a&lt;/a>&lt;/p>
+&lt;p>示例:https://developer.arm.com/-/media/Files/downloads/gnu-a/10.3-2021.07/binrel/gcc-arm-10.3-2021.07-mingw-w64-i686-aarch64-none-elf.tar.xz&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>设置 Go ARM 交叉编译环境变量。具体来说，需要设置以下变量：&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ruby" data-lang="ruby">&lt;span class="line">&lt;span class="cl">&lt;span class="vg">$env&lt;/span>&lt;span class="ss">:GOOS&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;linux&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="vg">$env&lt;/span>&lt;span class="ss">:GOARCH&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;arm64&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="vg">$env&lt;/span>&lt;span class="ss">:CGO_ENABLED&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="vg">$env&lt;/span>&lt;span class="ss">:CC&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;D:&lt;/span>&lt;span class="se">\a&lt;/span>&lt;span class="s2">rm\gcc-arm-10.3-2021.07-mingw-w64-i686-aarch64-none-linux-gnu&lt;/span>&lt;span class="se">\b&lt;/span>&lt;span class="s2">in&lt;/span>&lt;span class="se">\a&lt;/span>&lt;span class="s2">arch64-none-linux-gnu-gcc.exe&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="vg">$env&lt;/span>&lt;span class="ss">:CXX&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;D:&lt;/span>&lt;span class="se">\a&lt;/span>&lt;span class="s2">rm\gcc-arm-10.3-2021.07-mingw-w64-i686-aarch64-none-linux-gnu&lt;/span>&lt;span class="se">\b&lt;/span>&lt;span class="s2">in&lt;/span>&lt;span class="se">\a&lt;/span>&lt;span class="s2">arch64-none-linux-gnu-g++.exe&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>在 ARM 上运行程序时可能会出现如下错误：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">./bupload: /lib/aarch64-linux-gnu/libc.so.6: version &lt;span class="sb">`&lt;/span>GLIBC_2.28&lt;span class="s1">&amp;#39; not found (required by ./bupload)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1">./bupload: /lib/aarch64-linux-gnu/libc.so.6: version `GLIBC_2.32&amp;#39;&lt;/span> not found &lt;span class="o">(&lt;/span>required by ./bupload&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">./bupload: /lib/aarch64-linux-gnu/libc.so.6: version &lt;span class="sb">`&lt;/span>GLIBC_2.33&lt;span class="err">&amp;#39;&lt;/span> not found &lt;span class="o">(&lt;/span>required by ./bupload&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这是因为程序需要使用较新版本的 GLIBC 库，而 ARM 上安装的库版本较旧。可以通过以下步骤来解决这个问题：&lt;/p>
+&lt;ol start="4">
+&lt;li>查看当前系统中 libc 库所支持的版本：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">strings /lib/aarch64-linux-gnu/libc.so.6 &lt;span class="p">|&lt;/span> grep GLIBC_
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="5">
+&lt;li>备份整个 &lt;code>/lib&lt;/code> 目录和 &lt;code>/usr/include&lt;/code> 目录，以便稍后还原。&lt;/li>
+&lt;li>从 GNU libc 官方网站下载对应版本的 libc 库。例如，可以从如下链接下载 2.35 版本的 libc 库：&lt;a class="link" href="http://ftp.gnu.org/gnu/glibc/glibc-2.35.tar.xz" target="_blank" rel="noopener"
+>http://ftp.gnu.org/gnu/glibc/glibc-2.35.tar.xz&lt;/a>&lt;/li>
+&lt;li>解压 libc 库：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">xz -d glibc-2.35.tar.xz
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">tar xvf glibc-2.35.tar glibc-2.35
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="8">
+&lt;li>创建并进入 build 目录：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">mkdir build
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> build
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="9">
+&lt;li>配置 libc 库的安装选项：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="p">..&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">configure&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="nx">prefix&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="err">/usr --disable-profile --enable-add-ons --with-headers=/usr/include --with-binutils=/usr/bin&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="10">
+&lt;li>编译并安装 libc 库：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">make&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="nx">j4&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">make&lt;/span> &lt;span class="nx">install&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>接下来是关于 &lt;code>make&lt;/code> 报错的部分：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">asm/errno.h&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">No&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">such file or directory&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这个报错是因为 &lt;code>errno.h&lt;/code> 文件中包含了 &lt;code>asm/errno.h&lt;/code> 文件，但是找不到这个文件。为了解决这个问题，我们需要创建一个软链接：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">ln -s /usr/include/asm-generic /usr/include/asm
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后又出现了另一个报错：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">/usr/include/aarch64-linux-gnu/asm/sigcontext.h: No such file or directory
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这个问题也可以通过重新安装&lt;code>linux-libc-dev&lt;/code>后创建软链接来解决：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># find / -name sigcontext.h&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get install --reinstall linux-libc-dev
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ln -s /usr/include/aarch64-linux-gnu/asm/sigcontext.h /usr/include/asm/sigcontext.h
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>接下来，还有一个报错：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">asm/sve_context.h&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">No&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">such file or directory&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这个报错是因为最新的 Linux 内核在启用 ARM Scalable Vector Extension (SVE) 后，需要包含 &lt;code>asm/sve_context.h&lt;/code> 文件。我们需要创建一个软链接来解决这个问题：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># find / -name sve_context.h&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ln -s /usr/include/aarch64-linux-gnu/asm/sve_context.h /usr/include/asm/sve_context.h
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>最后，还需要创建一个软链接：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># find / -name byteorder.h&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ln -s /usr/include/aarch64-linux-gnu/asm/byteorder.h /usr/include/asm/byteorder.h
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>完成以上步骤后，我们再次执行 &lt;code>make&lt;/code> 命令，就应该可以顺利地编译和安装 glibc 了。&lt;/p></description></item></channel></rss>

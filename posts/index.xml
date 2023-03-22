@@ -232,132 +232,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 运行之后,大功告成,成功在Tcp服务端看到了,客户端对我们发起了请求。&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Linux</title><link>https://blog.nmslwsnd.com/p/linux/</link><pubDate>Thu, 08 Sep 2022 15:19:00 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/linux/</guid><description>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 使用cd 进入到上一个目录&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> -
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>复制和粘贴&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">ctrl + &lt;span class="nb">shift&lt;/span> + c
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ctrl + &lt;span class="nb">shift&lt;/span> + v
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>快速移动&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 移动到行首&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ctrl + a
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 移动到行尾&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ctrl + e
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>快速删除&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 删除光标之前的内容&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ctrl + u
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 删除光标之后的内容&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ctrl + k
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 恢复之前删除的内容&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ctrl + y
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>不适用cat&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">使用less 查看 顶部的文件
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">less filename
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>使用alt+backspace删除,以单词为单位&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> tcpdump host 1.1.1.1
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># 并行执行命令 Parallel
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">find . -type f -name &amp;#39;*.html&amp;#39; -print | parallel gzip
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>Rust Sqlx</title><link>https://blog.nmslwsnd.com/p/rust-sqlx/</link><pubDate>Mon, 29 Aug 2022 13:55:08 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/rust-sqlx/</guid><description>&lt;h1 id="sqlx-cli">sqlx-cli&lt;/h1>
-&lt;h2 id="创建-migration">创建 migration&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sqlx migrate add categories
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-sql" data-lang="sql">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">-- Add migration script here
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">CREATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">IF&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">NOT&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">EXISTS&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">categories&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">id&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">INT&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">PRIMARY&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">KEY&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">DEFAULT&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">AUTO_INCREMENT&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">type_id&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">INT&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">UNIQUE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">NOT&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">NULL&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">parent_id&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">INT&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">NOT&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">NULL&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">TEXT&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">UNIQUE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">NOT&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">NULL&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="运行-migration">运行 migration&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">sqlx migrate run
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>Canokey入门指南:2FA、OpenPGP、PIV</title><link>https://blog.nmslwsnd.com/p/canokeys/</link><pubDate>Fri, 19 Aug 2022 16:42:40 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/canokeys/</guid><description>&lt;p>Canokeys&lt;/p>
-&lt;h1 id="2fa">2FA&lt;/h1>
+&lt;/div></description></item><item><title>Canokey入门指南:2FA、OpenPGP、PIV</title><link>https://blog.nmslwsnd.com/p/canokeys/</link><pubDate>Fri, 19 Aug 2022 16:42:40 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/canokeys/</guid><description>&lt;h1 id="2fa">2FA&lt;/h1>
 &lt;p>&lt;code>Canokey&lt;/code>使用&lt;code>Yubikey Authenticator&lt;/code>来进行管理&lt;code>2FA&lt;/code>。&lt;/p>
 &lt;p>下载&lt;code>Yubikey Authenticator&lt;/code>,以下为&lt;code>Yubikey Authenticator&lt;/code>官方下载网址&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -705,7 +580,46 @@ alt="image-20220102224612167"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">tips&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">可能会出现权限不够的情况,需要禁用Windows服务OpenSSH Authentication Agent&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>最后可以把该程序快捷方式添加到启动目录 &lt;code>%AppData%\Microsoft\Windows\Start Menu\Programs\Startup&lt;/code>，方便直接使用。&lt;/p></description></item><item><title>Rust使用Serde进行序列化及反序列化</title><link>https://blog.nmslwsnd.com/p/rust-serde/</link><pubDate>Mon, 25 Jul 2022 14:02:22 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/rust-serde/</guid><description>&lt;h1 id="开始之前">开始之前&lt;/h1>
+&lt;/div>&lt;p>最后可以把该程序快捷方式添加到启动目录 &lt;code>%AppData%\Microsoft\Windows\Start Menu\Programs\Startup&lt;/code>，方便直接使用。&lt;/p></description></item><item><title>如何在 Tmux 会话窗格中发送命令</title><link>https://blog.nmslwsnd.com/p/tmux/</link><pubDate>Tue, 02 Aug 2022 14:54:08 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/tmux/</guid><description>&lt;h2 id="在-tmux-会话窗格中发送命令的方法">在 Tmux 会话窗格中发送命令的方法&lt;/h2>
+&lt;p>在 &lt;code>Tmux&lt;/code> 中，可以使用 &lt;code>send-keys&lt;/code> 命令将命令发送到会话窗格中。以下是在 &lt;code>Tmux&lt;/code> 中发送命令的步骤：&lt;/p>
+&lt;h3 id="1-新建一个分离detached会话">1. 新建一个分离(&lt;code>Detached&lt;/code>)会话&lt;/h3>
+&lt;p>使用以下命令新建一个分离会话：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">tmux new -d -s mySession
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="2-发送命令至会话窗格">2. 发送命令至会话窗格&lt;/h3>
+&lt;p>使用以下命令将命令发送到会话窗格：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">tmux send-keys -t mySession &lt;span class="s2">&amp;#34;echo &amp;#39;Hello World!&amp;#39;&amp;#34;&lt;/span> ENTER
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这将发送 &lt;code>echo 'Hello World!'&lt;/code> 命令，并模拟按下回车键(&lt;code>ENTER&lt;/code>)，以在会话窗格中执行该命令。&lt;/p>
+&lt;h3 id="3-连接attach会话窗格">3. 连接(&lt;code>Attach&lt;/code>)会话窗格&lt;/h3>
+&lt;p>使用以下命令连接会话窗格：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">tmux a -t mySession
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这将连接到名为 &lt;code>mySession&lt;/code> 的会话窗格。&lt;/p>
+&lt;h3 id="4-发送特殊命令">4. 发送特殊命令&lt;/h3>
+&lt;p>要发送特殊命令，例如清除当前行或使用管理员权限运行命令，请使用以下命令：&lt;/p>
+&lt;ul>
+&lt;li>清除当前行：&lt;code>tmux send-keys C-c&lt;/code>&lt;/li>
+&lt;li>以管理员身份运行命令：&lt;code>sudo tmux send-keys ...&lt;/code>&lt;/li>
+&lt;/ul></description></item><item><title>Rust使用Serde进行序列化及反序列化</title><link>https://blog.nmslwsnd.com/p/rust-serde/</link><pubDate>Mon, 25 Jul 2022 14:02:22 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/rust-serde/</guid><description>&lt;h1 id="开始之前">开始之前&lt;/h1>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -864,7 +778,184 @@ alt="image-20220102224612167"
 &lt;/div>&lt;p>&lt;a class="link" href="https://github.com/media-io/yaserde" target="_blank" rel="noopener"
 >本文参考:yaserde&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://magiclen.org/rust-serde/" target="_blank" rel="noopener"
->本文参考:magiclen&lt;/a>&lt;/p></description></item><item><title>Go使用gRPC进行通信</title><link>https://blog.nmslwsnd.com/p/go-grpc/</link><pubDate>Thu, 26 May 2022 14:17:33 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/go-grpc/</guid><description>&lt;h1 id="安装grpc和protoc">安装&lt;code>gRPC&lt;/code>和&lt;code>Protoc&lt;/code>&lt;/h1>
+>本文参考:magiclen&lt;/a>&lt;/p></description></item><item><title>使用arm交叉编译工具并解决GLIBC版本不匹配的问题</title><link>https://blog.nmslwsnd.com/p/go-arm/</link><pubDate>Fri, 10 Jun 2022 15:00:26 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/go-arm/</guid><description>&lt;ol>
+&lt;li>
+&lt;p>下载 ARM 交叉编译工具，可以从官方网站下载。比如，可以从如下链接下载 GNU 工具链：&lt;a class="link" href="https://developer.arm.com/downloads/-/gnu-a" target="_blank" rel="noopener"
+>https://developer.arm.com/downloads/-/gnu-a&lt;/a>&lt;/p>
+&lt;p>示例:https://developer.arm.com/-/media/Files/downloads/gnu-a/10.3-2021.07/binrel/gcc-arm-10.3-2021.07-mingw-w64-i686-aarch64-none-elf.tar.xz&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>设置 Go ARM 交叉编译环境变量。具体来说，需要设置以下变量：&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ruby" data-lang="ruby">&lt;span class="line">&lt;span class="cl">&lt;span class="vg">$env&lt;/span>&lt;span class="ss">:GOOS&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;linux&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="vg">$env&lt;/span>&lt;span class="ss">:GOARCH&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;arm64&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="vg">$env&lt;/span>&lt;span class="ss">:CGO_ENABLED&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="vg">$env&lt;/span>&lt;span class="ss">:CC&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;D:&lt;/span>&lt;span class="se">\a&lt;/span>&lt;span class="s2">rm\gcc-arm-10.3-2021.07-mingw-w64-i686-aarch64-none-linux-gnu&lt;/span>&lt;span class="se">\b&lt;/span>&lt;span class="s2">in&lt;/span>&lt;span class="se">\a&lt;/span>&lt;span class="s2">arch64-none-linux-gnu-gcc.exe&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="vg">$env&lt;/span>&lt;span class="ss">:CXX&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;D:&lt;/span>&lt;span class="se">\a&lt;/span>&lt;span class="s2">rm\gcc-arm-10.3-2021.07-mingw-w64-i686-aarch64-none-linux-gnu&lt;/span>&lt;span class="se">\b&lt;/span>&lt;span class="s2">in&lt;/span>&lt;span class="se">\a&lt;/span>&lt;span class="s2">arch64-none-linux-gnu-g++.exe&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>在 ARM 上运行程序时可能会出现如下错误：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">./bupload: /lib/aarch64-linux-gnu/libc.so.6: version &lt;span class="sb">`&lt;/span>GLIBC_2.28&lt;span class="s1">&amp;#39; not found (required by ./bupload)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1">./bupload: /lib/aarch64-linux-gnu/libc.so.6: version `GLIBC_2.32&amp;#39;&lt;/span> not found &lt;span class="o">(&lt;/span>required by ./bupload&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">./bupload: /lib/aarch64-linux-gnu/libc.so.6: version &lt;span class="sb">`&lt;/span>GLIBC_2.33&lt;span class="err">&amp;#39;&lt;/span> not found &lt;span class="o">(&lt;/span>required by ./bupload&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这是因为程序需要使用较新版本的 GLIBC 库，而 ARM 上安装的库版本较旧。可以通过以下步骤来解决这个问题：&lt;/p>
+&lt;ol start="4">
+&lt;li>查看当前系统中 libc 库所支持的版本：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">strings /lib/aarch64-linux-gnu/libc.so.6 &lt;span class="p">|&lt;/span> grep GLIBC_
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="5">
+&lt;li>备份整个 &lt;code>/lib&lt;/code> 目录和 &lt;code>/usr/include&lt;/code> 目录，以便稍后还原。&lt;/li>
+&lt;li>从 GNU libc 官方网站下载对应版本的 libc 库。例如，可以从如下链接下载 2.35 版本的 libc 库：&lt;a class="link" href="http://ftp.gnu.org/gnu/glibc/glibc-2.35.tar.xz" target="_blank" rel="noopener"
+>http://ftp.gnu.org/gnu/glibc/glibc-2.35.tar.xz&lt;/a>&lt;/li>
+&lt;li>解压 libc 库：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">xz -d glibc-2.35.tar.xz
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">tar xvf glibc-2.35.tar glibc-2.35
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="8">
+&lt;li>创建并进入 build 目录：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">mkdir build
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> build
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="9">
+&lt;li>配置 libc 库的安装选项：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="p">..&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">configure&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="nx">prefix&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="err">/usr --disable-profile --enable-add-ons --with-headers=/usr/include --with-binutils=/usr/bin&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="10">
+&lt;li>编译并安装 libc 库：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">make&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="nx">j4&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">make&lt;/span> &lt;span class="nx">install&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>接下来是关于 &lt;code>make&lt;/code> 报错的部分：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">asm/errno.h&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">No&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">such file or directory&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这个报错是因为 &lt;code>errno.h&lt;/code> 文件中包含了 &lt;code>asm/errno.h&lt;/code> 文件，但是找不到这个文件。为了解决这个问题，我们需要创建一个软链接：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">ln -s /usr/include/asm-generic /usr/include/asm
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后又出现了另一个报错：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">/usr/include/aarch64-linux-gnu/asm/sigcontext.h: No such file or directory
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这个问题也可以通过重新安装&lt;code>linux-libc-dev&lt;/code>后创建软链接来解决：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># find / -name sigcontext.h&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get install --reinstall linux-libc-dev
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ln -s /usr/include/aarch64-linux-gnu/asm/sigcontext.h /usr/include/asm/sigcontext.h
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>接下来，还有一个报错：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">asm/sve_context.h&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">No&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">such file or directory&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这个报错是因为最新的 Linux 内核在启用 ARM Scalable Vector Extension (SVE) 后，需要包含 &lt;code>asm/sve_context.h&lt;/code> 文件。我们需要创建一个软链接来解决这个问题：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># find / -name sve_context.h&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ln -s /usr/include/aarch64-linux-gnu/asm/sve_context.h /usr/include/asm/sve_context.h
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>最后，还需要创建一个软链接：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># find / -name byteorder.h&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ln -s /usr/include/aarch64-linux-gnu/asm/byteorder.h /usr/include/asm/byteorder.h
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>完成以上步骤后，我们再次执行 &lt;code>make&lt;/code> 命令，就应该可以顺利地编译和安装 glibc 了。&lt;/p></description></item><item><title>Go使用gRPC进行通信</title><link>https://blog.nmslwsnd.com/p/go-grpc/</link><pubDate>Thu, 26 May 2022 14:17:33 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/go-grpc/</guid><description>&lt;h1 id="安装grpc和protoc">安装&lt;code>gRPC&lt;/code>和&lt;code>Protoc&lt;/code>&lt;/h1>
 &lt;h2 id="安装protobuf">安装&lt;code>protobuf&lt;/code>&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">

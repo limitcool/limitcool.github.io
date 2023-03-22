@@ -1,90 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on InitCool</title><link>https://blog.nmslwsnd.com/tags/linux/</link><description>Recent content in Linux on InitCool</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 08 Sep 2022 15:19:00 +0800</lastBuildDate><atom:link href="https://blog.nmslwsnd.com/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux</title><link>https://blog.nmslwsnd.com/p/linux/</link><pubDate>Thu, 08 Sep 2022 15:19:00 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/linux/</guid><description>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 使用cd 进入到上一个目录&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> -
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>复制和粘贴&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">ctrl + &lt;span class="nb">shift&lt;/span> + c
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ctrl + &lt;span class="nb">shift&lt;/span> + v
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>快速移动&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 移动到行首&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ctrl + a
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 移动到行尾&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ctrl + e
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>快速删除&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 删除光标之前的内容&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ctrl + u
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 删除光标之后的内容&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ctrl + k
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 恢复之前删除的内容&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ctrl + y
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>不适用cat&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">使用less 查看 顶部的文件
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">less filename
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>使用alt+backspace删除,以单词为单位&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> tcpdump host 1.1.1.1
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># 并行执行命令 Parallel
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">find . -type f -name &amp;#39;*.html&amp;#39; -print | parallel gzip
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>Canokey入门指南:2FA、OpenPGP、PIV</title><link>https://blog.nmslwsnd.com/p/canokeys/</link><pubDate>Fri, 19 Aug 2022 16:42:40 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/canokeys/</guid><description>&lt;p>Canokeys&lt;/p>
-&lt;h1 id="2fa">2FA&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on InitCool</title><link>https://blog.nmslwsnd.com/tags/linux/</link><description>Recent content in Linux on InitCool</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 19 Aug 2022 16:42:40 +0800</lastBuildDate><atom:link href="https://blog.nmslwsnd.com/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Canokey入门指南:2FA、OpenPGP、PIV</title><link>https://blog.nmslwsnd.com/p/canokeys/</link><pubDate>Fri, 19 Aug 2022 16:42:40 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/canokeys/</guid><description>&lt;h1 id="2fa">2FA&lt;/h1>
 &lt;p>&lt;code>Canokey&lt;/code>使用&lt;code>Yubikey Authenticator&lt;/code>来进行管理&lt;code>2FA&lt;/code>。&lt;/p>
 &lt;p>下载&lt;code>Yubikey Authenticator&lt;/code>,以下为&lt;code>Yubikey Authenticator&lt;/code>官方下载网址&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -432,7 +346,46 @@ alt="image-20220102224612167"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">tips&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">可能会出现权限不够的情况,需要禁用Windows服务OpenSSH Authentication Agent&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>最后可以把该程序快捷方式添加到启动目录 &lt;code>%AppData%\Microsoft\Windows\Start Menu\Programs\Startup&lt;/code>，方便直接使用。&lt;/p></description></item><item><title>Linux部署DHCP服务</title><link>https://blog.nmslwsnd.com/p/linux-dhcp/</link><pubDate>Mon, 23 May 2022 11:11:40 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/linux-dhcp/</guid><description>&lt;p>拉取&lt;code>networkboot/dhcpd&lt;/code>镜像&lt;/p>
+&lt;/div>&lt;p>最后可以把该程序快捷方式添加到启动目录 &lt;code>%AppData%\Microsoft\Windows\Start Menu\Programs\Startup&lt;/code>，方便直接使用。&lt;/p></description></item><item><title>如何在 Tmux 会话窗格中发送命令</title><link>https://blog.nmslwsnd.com/p/tmux/</link><pubDate>Tue, 02 Aug 2022 14:54:08 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/tmux/</guid><description>&lt;h2 id="在-tmux-会话窗格中发送命令的方法">在 Tmux 会话窗格中发送命令的方法&lt;/h2>
+&lt;p>在 &lt;code>Tmux&lt;/code> 中，可以使用 &lt;code>send-keys&lt;/code> 命令将命令发送到会话窗格中。以下是在 &lt;code>Tmux&lt;/code> 中发送命令的步骤：&lt;/p>
+&lt;h3 id="1-新建一个分离detached会话">1. 新建一个分离(&lt;code>Detached&lt;/code>)会话&lt;/h3>
+&lt;p>使用以下命令新建一个分离会话：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">tmux new -d -s mySession
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="2-发送命令至会话窗格">2. 发送命令至会话窗格&lt;/h3>
+&lt;p>使用以下命令将命令发送到会话窗格：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">tmux send-keys -t mySession &lt;span class="s2">&amp;#34;echo &amp;#39;Hello World!&amp;#39;&amp;#34;&lt;/span> ENTER
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这将发送 &lt;code>echo 'Hello World!'&lt;/code> 命令，并模拟按下回车键(&lt;code>ENTER&lt;/code>)，以在会话窗格中执行该命令。&lt;/p>
+&lt;h3 id="3-连接attach会话窗格">3. 连接(&lt;code>Attach&lt;/code>)会话窗格&lt;/h3>
+&lt;p>使用以下命令连接会话窗格：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">tmux a -t mySession
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这将连接到名为 &lt;code>mySession&lt;/code> 的会话窗格。&lt;/p>
+&lt;h3 id="4-发送特殊命令">4. 发送特殊命令&lt;/h3>
+&lt;p>要发送特殊命令，例如清除当前行或使用管理员权限运行命令，请使用以下命令：&lt;/p>
+&lt;ul>
+&lt;li>清除当前行：&lt;code>tmux send-keys C-c&lt;/code>&lt;/li>
+&lt;li>以管理员身份运行命令：&lt;code>sudo tmux send-keys ...&lt;/code>&lt;/li>
+&lt;/ul></description></item><item><title>Linux部署DHCP服务</title><link>https://blog.nmslwsnd.com/p/linux-dhcp/</link><pubDate>Mon, 23 May 2022 11:11:40 +0800</pubDate><guid>https://blog.nmslwsnd.com/p/linux-dhcp/</guid><description>&lt;p>拉取&lt;code>networkboot/dhcpd&lt;/code>镜像&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
